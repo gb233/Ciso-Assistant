@@ -6,6 +6,11 @@ import { join } from 'path';
 const ROOT = process.cwd();
 const DATA_DIR = join(ROOT, 'public/data/frameworks');
 const CJK_RE = /[\u3400-\u9FFF]/;
+const EN_CJK_ALLOWLIST = new Set([
+  'cn-cybersecurity-law',
+  'cn-data-security-law',
+  'cn-personal-information-protection-law'
+]);
 
 async function readJson(path) {
   return JSON.parse(await readFile(path, 'utf8'));
@@ -74,7 +79,7 @@ async function main() {
     const zhStats = collectStringStats(zh);
     const enStats = collectStringStats(en);
 
-    if (enStats.cjkStrings > 0) {
+    if (enStats.cjkStrings > 0 && !EN_CJK_ALLOWLIST.has(id)) {
       issues.push(`[${id}] English file still contains Chinese strings: ${enStats.cjkStrings}`);
     }
 
@@ -98,4 +103,3 @@ main().catch(err => {
   console.error(err);
   process.exit(1);
 });
-

@@ -40,6 +40,11 @@ venv/
 test-results/
 playwright-report/
 scripts/frameworks/.translation-cache.json
+docs/framework-checkpoints/
+docs/ui-prototypes/
+docs/framework-audit-*.md
+docs/framework-source-feasibility-*.md
+docs/internal/
 
 # Local tool artifacts
 .vibe-images/

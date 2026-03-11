@@ -2,11 +2,12 @@
   "name": "ciso-assistant",
   "version": "1.0.0",
   "description": "CISO助手 - 面向CISO的安全框架评估与治理工作台",
+  "license": "AGPL-3.0-only",
   "private": true,
   "scripts": {
     "dev": "next dev -p 5001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5001",
     "lint": "next lint",
     "frameworks:audit": "node scripts/frameworks/audit-sammy.mjs",
     "frameworks:pull-asvs": "python3 scripts/frameworks/pull-owasp-asvs.py",
@@ -42,6 +43,8 @@
     "@types/react": "^18.2.0",
     "autoprefixer": "^10.4.16",
     "bing-translate-api": "^4.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.0.4",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
     "typescript": "^5.3.0"
