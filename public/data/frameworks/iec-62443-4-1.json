@@ -1,0 +1,571 @@
+{
+  "id": "iec-62443-4-1",
+  "name": "IEC 62443-4-1",
+  "fullName": "IEC 62443-4-1: Secure Product Development Lifecycle Requirements",
+  "version": "1.0",
+  "type": "standard",
+  "domain": "cybersecurity",
+  "description": "IEC 62443-4-1是工业自动化和控制系统(IACS)安全标准系列的一部分，规定了安全产品开发生命周期的要求。它为工业控制系统产品的安全开发提供了一套全面的要求，涵盖从概念到退役的整个生命周期。",
+  "website": "https://webstore.iec.ch/publication/66912",
+  "organization": "IEC",
+  "releaseDate": "2018-01-01",
+  "lastUpdated": "2023-01-01",
+  "language": "zh",
+  "stats": {
+    "totalRequirements": 52,
+    "maturity1": 18,
+    "maturity2": 18,
+    "maturity3": 16,
+    "totalCategories": 4,
+    "totalSubcategories": 11,
+    "level1": 11,
+    "level2": 29,
+    "level3": 12
+  },
+  "categories": [
+    {
+      "id": "sdlc-management",
+      "code": "SM",
+      "name": "SDLC管理",
+      "description": "管理安全产品开发生命周期",
+      "requirements": 16,
+      "subcategories": [
+        {
+          "id": "sm-policy",
+          "code": "SM.1",
+          "name": "安全开发政策",
+          "description": "建立安全开发的政策和流程",
+          "requirements": [
+            {
+              "id": "sm-1-1",
+              "code": "SM-1.1",
+              "name": "安全开发政策",
+              "description": "制定并维护安全产品开发的正式政策。",
+              "level": "1",
+              "verification": "审查安全开发政策文档"
+            },
+            {
+              "id": "sm-1-2",
+              "code": "SM-1.2",
+              "name": "安全流程定义",
+              "description": "定义安全产品开发的流程和程序。",
+              "level": "1",
+              "verification": "审查流程文档"
+            },
+            {
+              "id": "sm-1-3",
+              "code": "SM-1.3",
+              "name": "角色责任",
+              "description": "明确安全开发各角色的责任。",
+              "level": "1",
+              "verification": "审查角色责任矩阵"
+            },
+            {
+              "id": "sm-1-4",
+              "code": "SM-1.4",
+              "name": "资源分配",
+              "description": "为安全开发分配必要资源。",
+              "level": "2",
+              "verification": "审查资源分配"
+            },
+            {
+              "id": "sm-1-5",
+              "code": "SM-1.5",
+              "name": "持续改进",
+              "description": "建立安全开发流程的持续改进机制。",
+              "level": "2",
+              "verification": "审查改进记录"
+            },
+            {
+              "id": "sm-1-6",
+              "code": "SM-1.6",
+              "name": "合规监控",
+              "description": "监控安全开发流程的合规性。",
+              "level": "3",
+              "verification": "审查合规监控报告"
+            }
+          ]
+        },
+        {
+          "id": "sm-training",
+          "code": "SM.2",
+          "name": "人员能力",
+          "description": "确保人员具备安全开发能力",
+          "requirements": [
+            {
+              "id": "sm-2-1",
+              "code": "SM-2.1",
+              "name": "安全培训",
+              "description": "为开发人员提供安全培训。",
+              "level": "1",
+              "verification": "审查培训记录"
+            },
+            {
+              "id": "sm-2-2",
+              "code": "SM-2.2",
+              "name": "能力评估",
+              "description": "评估人员安全开发能力。",
+              "level": "2",
+              "verification": "审查能力评估"
+            },
+            {
+              "id": "sm-2-3",
+              "code": "SM-2.3",
+              "name": "专业认证",
+              "description": "鼓励获得安全相关专业认证。",
+              "level": "2",
+              "verification": "审查认证记录"
+            },
+            {
+              "id": "sm-2-4",
+              "code": "SM-2.4",
+              "name": "持续学习",
+              "description": "建立持续安全学习机制。",
+              "level": "3",
+              "verification": "审查学习记录"
+            },
+            {
+              "id": "sm-2-5",
+              "code": "SM-2.5",
+              "name": "知识管理",
+              "description": "管理安全开发知识库。",
+              "level": "3",
+              "verification": "审查知识库"
+            }
+          ]
+        },
+        {
+          "id": "sm-planning",
+          "code": "SM.3",
+          "name": "开发规划",
+          "description": "规划安全开发活动",
+          "requirements": [
+            {
+              "id": "sm-3-1",
+              "code": "SM-3.1",
+              "name": "安全需求规划",
+              "description": "在产品规划中纳入安全需求。",
+              "level": "1",
+              "verification": "审查产品规划文档"
+            },
+            {
+              "id": "sm-3-2",
+              "code": "SM-3.2",
+              "name": "安全里程碑",
+              "description": "在开发计划中设置安全里程碑。",
+              "level": "2",
+              "verification": "审查开发计划"
+            },
+            {
+              "id": "sm-3-3",
+              "code": "SM-3.3",
+              "name": "风险评估",
+              "description": "评估产品开发的安全风险。",
+              "level": "2",
+              "verification": "审查风险评估"
+            },
+            {
+              "id": "sm-3-4",
+              "code": "SM-3.4",
+              "name": "安全预算",
+              "description": "为安全活动分配预算。",
+              "level": "2",
+              "verification": "审查预算分配"
+            },
+            {
+              "id": "sm-3-5",
+              "code": "SM-3.5",
+              "name": "供应商安全",
+              "description": "评估和管理供应商安全。",
+              "level": "3",
+              "verification": "审查供应商评估"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-requirements",
+      "code": "SR",
+      "name": "安全需求",
+      "description": "定义和管理产品安全需求",
+      "requirements": 14,
+      "subcategories": [
+        {
+          "id": "sr-identification",
+          "code": "SR.1",
+          "name": "需求识别",
+          "description": "识别产品安全需求",
+          "requirements": [
+            {
+              "id": "sr-1-1",
+              "code": "SR-1.1",
+              "name": "威胁分析",
+              "description": "进行产品威胁分析。",
+              "level": "1",
+              "verification": "审查威胁分析文档"
+            },
+            {
+              "id": "sr-1-2",
+              "code": "SR-1.2",
+              "name": "用例定义",
+              "description": "定义产品安全用例。",
+              "level": "1",
+              "verification": "审查用例文档"
+            },
+            {
+              "id": "sr-1-3",
+              "code": "SR-1.3",
+              "name": "安全目标",
+              "description": "定义产品安全目标。",
+              "level": "1",
+              "verification": "审查安全目标"
+            },
+            {
+              "id": "sr-1-4",
+              "code": "SR-1.4",
+              "name": "合规要求",
+              "description": "识别适用的安全合规要求。",
+              "level": "2",
+              "verification": "审查合规要求清单"
+            },
+            {
+              "id": "sr-1-5",
+              "code": "SR-1.5",
+              "name": "安全基线",
+              "description": "建立产品安全基线。",
+              "level": "2",
+              "verification": "审查安全基线"
+            }
+          ]
+        },
+        {
+          "id": "sr-specification",
+          "code": "SR.2",
+          "name": "需求规范",
+          "description": "规范产品安全需求",
+          "requirements": [
+            {
+              "id": "sr-2-1",
+              "code": "SR-2.1",
+              "name": "需求文档",
+              "description": "文档化产品安全需求。",
+              "level": "1",
+              "verification": "审查需求文档"
+            },
+            {
+              "id": "sr-2-2",
+              "code": "SR-2.2",
+              "name": "需求追溯",
+              "description": "建立安全需求追溯矩阵。",
+              "level": "2",
+              "verification": "审查追溯矩阵"
+            },
+            {
+              "id": "sr-2-3",
+              "code": "SR-2.3",
+              "name": "需求验证",
+              "description": "验证安全需求的完整性和一致性。",
+              "level": "2",
+              "verification": "审查验证记录"
+            },
+            {
+              "id": "sr-2-4",
+              "code": "SR-2.4",
+              "name": "需求变更",
+              "description": "管理安全需求变更。",
+              "level": "2",
+              "verification": "审查变更管理"
+            },
+            {
+              "id": "sr-2-5",
+              "code": "SR-2.5",
+              "name": "需求优先级",
+              "description": "确定安全需求优先级。",
+              "level": "3",
+              "verification": "审查优先级分析"
+            }
+          ]
+        },
+        {
+          "id": "sr-validation",
+          "code": "SR.3",
+          "name": "需求验证",
+          "description": "验证安全需求实现",
+          "requirements": [
+            {
+              "id": "sr-3-1",
+              "code": "SR-3.1",
+              "name": "设计评审",
+              "description": "评审安全设计满足需求。",
+              "level": "2",
+              "verification": "审查设计评审"
+            },
+            {
+              "id": "sr-3-2",
+              "code": "SR-3.2",
+              "name": "测试覆盖",
+              "description": "确保安全需求测试覆盖。",
+              "level": "2",
+              "verification": "审查测试覆盖"
+            },
+            {
+              "id": "sr-3-3",
+              "code": "SR-3.3",
+              "name": "验收标准",
+              "description": "定义安全验收标准。",
+              "level": "2",
+              "verification": "审查验收标准"
+            },
+            {
+              "id": "sr-3-4",
+              "code": "SR-3.4",
+              "name": "需求闭环",
+              "description": "确保安全需求闭环验证。",
+              "level": "3",
+              "verification": "审查闭环验证"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secure-design",
+      "code": "SD",
+      "name": "安全设计",
+      "description": "实施安全产品设计",
+      "requirements": 12,
+      "subcategories": [
+        {
+          "id": "sd-architecture",
+          "code": "SD.1",
+          "name": "安全架构",
+          "description": "设计产品安全架构",
+          "requirements": [
+            {
+              "id": "sd-1-1",
+              "code": "SD-1.1",
+              "name": "架构设计",
+              "description": "设计安全产品架构。",
+              "level": "1",
+              "verification": "审查架构设计"
+            },
+            {
+              "id": "sd-1-2",
+              "code": "SD-1.2",
+              "name": "安全分区",
+              "description": "实施安全分区设计。",
+              "level": "2",
+              "verification": "审查分区设计"
+            },
+            {
+              "id": "sd-1-3",
+              "code": "SD-1.3",
+              "name": "信任边界",
+              "description": "定义产品信任边界。",
+              "level": "2",
+              "verification": "审查信任边界"
+            },
+            {
+              "id": "sd-1-4",
+              "code": "SD-1.4",
+              "name": "纵深防御",
+              "description": "实施纵深防御设计。",
+              "level": "3",
+              "verification": "审查纵深防御"
+            }
+          ]
+        },
+        {
+          "id": "sd-patterns",
+          "code": "SD.2",
+          "name": "安全设计模式",
+          "description": "应用安全设计模式",
+          "requirements": [
+            {
+              "id": "sd-2-1",
+              "code": "SD-2.1",
+              "name": "设计模式库",
+              "description": "建立安全设计模式库。",
+              "level": "2",
+              "verification": "审查模式库"
+            },
+            {
+              "id": "sd-2-2",
+              "code": "SD-2.2",
+              "name": "模式应用",
+              "description": "应用安全设计模式。",
+              "level": "2",
+              "verification": "审查模式应用"
+            },
+            {
+              "id": "sd-2-3",
+              "code": "SD-2.3",
+              "name": "反模式识别",
+              "description": "识别和避免安全反模式。",
+              "level": "3",
+              "verification": "审查反模式识别"
+            },
+            {
+              "id": "sd-2-4",
+              "code": "SD-2.4",
+              "name": "架构评审",
+              "description": "进行安全架构评审。",
+              "level": "3",
+              "verification": "审查架构评审"
+            }
+          ]
+        },
+        {
+          "id": "sd-crypto",
+          "code": "SD.3",
+          "name": "密码设计",
+          "description": "设计密码学保护机制",
+          "requirements": [
+            {
+              "id": "sd-3-1",
+              "code": "SD-3.1",
+              "name": "加密设计",
+              "description": "设计数据加密机制。",
+              "level": "2",
+              "verification": "审查加密设计"
+            },
+            {
+              "id": "sd-3-2",
+              "code": "SD-3.2",
+              "name": "密钥设计",
+              "description": "设计密钥管理方案。",
+              "level": "2",
+              "verification": "审查密钥设计"
+            },
+            {
+              "id": "sd-3-3",
+              "code": "SD-3.3",
+              "name": "认证设计",
+              "description": "设计认证机制。",
+              "level": "2",
+              "verification": "审查认证设计"
+            },
+            {
+              "id": "sd-3-4",
+              "code": "SD-3.4",
+              "name": "协议设计",
+              "description": "设计安全通信协议。",
+              "level": "3",
+              "verification": "审查协议设计"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secure-implementation",
+      "code": "SI",
+      "name": "安全实现",
+      "description": "安全地实现产品功能",
+      "requirements": 10,
+      "subcategories": [
+        {
+          "id": "si-coding",
+          "code": "SI.1",
+          "name": "安全编码",
+          "description": "实施安全编码实践",
+          "requirements": [
+            {
+              "id": "si-1-1",
+              "code": "SI-1.1",
+              "name": "编码标准",
+              "description": "遵循安全编码标准。",
+              "level": "1",
+              "verification": "审查编码标准"
+            },
+            {
+              "id": "si-1-2",
+              "code": "SI-1.2",
+              "name": "静态分析",
+              "description": "使用静态分析工具。",
+              "level": "2",
+              "verification": "审查静态分析"
+            },
+            {
+              "id": "si-1-3",
+              "code": "SI-1.3",
+              "name": "代码审查",
+              "description": "进行安全代码审查。",
+              "level": "2",
+              "verification": "审查代码审查"
+            },
+            {
+              "id": "si-1-4",
+              "code": "SI-1.4",
+              "name": "漏洞修复",
+              "description": "修复代码安全漏洞。",
+              "level": "2",
+              "verification": "审查漏洞修复"
+            }
+          ]
+        },
+        {
+          "id": "si-build",
+          "code": "SI.2",
+          "name": "安全构建",
+          "description": "安全地构建产品",
+          "requirements": [
+            {
+              "id": "si-2-1",
+              "code": "SI-2.1",
+              "name": "构建环境",
+              "description": "保护构建环境安全。",
+              "level": "2",
+              "verification": "审查构建环境"
+            },
+            {
+              "id": "si-2-2",
+              "code": "SI-2.2",
+              "name": "依赖管理",
+              "description": "管理第三方依赖安全。",
+              "level": "2",
+              "verification": "审查依赖管理"
+            },
+            {
+              "id": "si-2-3",
+              "code": "SI-2.3",
+              "name": "构建验证",
+              "description": "验证构建产物完整性。",
+              "level": "3",
+              "verification": "审查构建验证"
+            },
+            {
+              "id": "si-2-4",
+              "code": "SI-2.4",
+              "name": "签名发布",
+              "description": "对发布产物进行签名。",
+              "level": "3",
+              "verification": "审查签名发布"
+            },
+            {
+              "id": "si-2-5",
+              "code": "SI-2.5",
+              "name": "构建完整性校验",
+              "description": "对构建产物执行完整性校验，并保存校验结果以支持后续审计。",
+              "level": "2",
+              "verification": "审查构建产物完整性校验记录"
+            },
+            {
+              "id": "si-2-6",
+              "code": "SI-2.6",
+              "name": "构建可追溯性",
+              "description": "确保构建过程、工具链版本和发布产物均具备可追溯记录。",
+              "level": "2",
+              "verification": "审查构建链路追溯记录"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-standard-catalog",
+    "primaryUrl": "https://webstore.iec.ch/en/publication/33615"
+  }
+}

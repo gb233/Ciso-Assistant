@@ -1,0 +1,247 @@
+{
+  "id": "pci-dss",
+  "name": "PCI DSS",
+  "fullName": "支付卡行业数据安全标准 v4.0.1",
+  "version": "4.0.1",
+  "type": "compliance",
+  "domain": "payment-security",
+  "description": "PCI DSS 是支付卡行业数据安全标准，用于保护持卡人数据并降低支付生态中的安全风险。",
+  "website": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+  "organization": "PCI Security Standards Council",
+  "releaseDate": "2022-03-01",
+  "lastUpdated": "2024-03-31",
+  "language": "zh",
+  "stats": {
+    "totalRequirements": 18,
+    "level1": 6,
+    "level2": 6,
+    "level3": 6,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "build-maintain",
+      "code": "PCI.BM",
+      "name": "安全网络与系统",
+      "description": "构建并维护安全的网络与系统配置。",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "bm-network",
+          "code": "BM.NET",
+          "name": "网络边界防护",
+          "description": "通过网络控制保护持卡人数据环境。",
+          "requirements": [
+            {
+              "id": "bm-net-1",
+              "code": "REQ-1.1",
+              "name": "边界控制配置",
+              "description": "配置并维护网络边界控制，限制非授权流量。",
+              "level": "1",
+              "verification": "审查防火墙/ACL 配置与变更记录"
+            },
+            {
+              "id": "bm-net-2",
+              "code": "REQ-1.2",
+              "name": "分区与隔离",
+              "description": "将持卡人数据环境与其他网络进行隔离。",
+              "level": "2",
+              "verification": "审查网络分区拓扑与连通性测试"
+            },
+            {
+              "id": "bm-net-3",
+              "code": "REQ-1.3",
+              "name": "流量审查",
+              "description": "定期审查入站和出站规则并清理无效规则。",
+              "level": "3",
+              "verification": "审查规则评审记录和基线"
+            }
+          ]
+        },
+        {
+          "id": "bm-hardening",
+          "code": "BM.HARD",
+          "name": "系统加固",
+          "description": "移除默认弱配置并加固系统。",
+          "requirements": [
+            {
+              "id": "bm-hard-1",
+              "code": "REQ-2.1",
+              "name": "默认配置清理",
+              "description": "更改默认口令与配置，移除不必要服务。",
+              "level": "1",
+              "verification": "审查基线配置与核查结果"
+            },
+            {
+              "id": "bm-hard-2",
+              "code": "REQ-2.2",
+              "name": "安全基线",
+              "description": "建立并执行系统与容器的安全加固基线。",
+              "level": "2",
+              "verification": "审查基线文档与自动化校验"
+            },
+            {
+              "id": "bm-hard-3",
+              "code": "REQ-2.3",
+              "name": "持续合规监测",
+              "description": "持续监测配置偏差并触发整改。",
+              "level": "3",
+              "verification": "审查合规监测告警与工单"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protect-data",
+      "code": "PCI.PD",
+      "name": "数据保护",
+      "description": "保护持卡人数据在存储和传输过程中的安全。",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "pd-storage",
+          "code": "PD.STO",
+          "name": "存储数据保护",
+          "description": "对存储中的持卡人数据进行强保护。",
+          "requirements": [
+            {
+              "id": "pd-sto-1",
+              "code": "REQ-3.1",
+              "name": "数据最小化",
+              "description": "仅保留业务必要的持卡人数据。",
+              "level": "1",
+              "verification": "审查数据保留策略和清理记录"
+            },
+            {
+              "id": "pd-sto-2",
+              "code": "REQ-3.2",
+              "name": "强加密与脱敏",
+              "description": "采用强加密、截断或脱敏保护敏感数据。",
+              "level": "2",
+              "verification": "审查密钥管理和数据样本"
+            },
+            {
+              "id": "pd-sto-3",
+              "code": "REQ-3.3",
+              "name": "密钥生命周期管理",
+              "description": "对密钥生成、存储、轮换和销毁进行全生命周期管理。",
+              "level": "3",
+              "verification": "审查KMS配置和轮换记录"
+            }
+          ]
+        },
+        {
+          "id": "pd-transit",
+          "code": "PD.TRN",
+          "name": "传输数据保护",
+          "description": "保护公开网络传输中的敏感数据。",
+          "requirements": [
+            {
+              "id": "pd-trn-1",
+              "code": "REQ-4.1",
+              "name": "安全传输协议",
+              "description": "使用强加密协议保护传输数据。",
+              "level": "1",
+              "verification": "审查TLS配置和证书状态"
+            },
+            {
+              "id": "pd-trn-2",
+              "code": "REQ-4.2",
+              "name": "不安全协议禁用",
+              "description": "禁用弱协议和弱加密套件。",
+              "level": "2",
+              "verification": "审查扫描报告与整改记录"
+            },
+            {
+              "id": "pd-trn-3",
+              "code": "REQ-4.3",
+              "name": "端到端保护",
+              "description": "对关键支付链路实施端到端加密或同等保护。",
+              "level": "3",
+              "verification": "审查架构设计和验证报告"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitor-test",
+      "code": "PCI.MT",
+      "name": "监控与测试",
+      "description": "持续监控访问行为并开展安全测试。",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "mt-logging",
+          "code": "MT.LOG",
+          "name": "日志与监控",
+          "description": "记录并审查关键安全事件。",
+          "requirements": [
+            {
+              "id": "mt-log-1",
+              "code": "REQ-10.1",
+              "name": "日志全覆盖",
+              "description": "对关键系统和访问行为进行日志记录。",
+              "level": "1",
+              "verification": "审查日志策略与样本"
+            },
+            {
+              "id": "mt-log-2",
+              "code": "REQ-10.2",
+              "name": "集中监控",
+              "description": "集中收集日志并对异常行为告警。",
+              "level": "2",
+              "verification": "审查SIEM规则和告警记录"
+            },
+            {
+              "id": "mt-log-3",
+              "code": "REQ-10.3",
+              "name": "日志完整性保护",
+              "description": "保护日志不被篡改并保留取证链路。",
+              "level": "3",
+              "verification": "审查完整性控制和归档策略"
+            }
+          ]
+        },
+        {
+          "id": "mt-testing",
+          "code": "MT.TST",
+          "name": "漏洞管理与测试",
+          "description": "通过漏洞扫描、渗透测试和修复闭环降低风险。",
+          "requirements": [
+            {
+              "id": "mt-tst-1",
+              "code": "REQ-11.1",
+              "name": "定期漏洞扫描",
+              "description": "按计划开展内部与外部漏洞扫描。",
+              "level": "1",
+              "verification": "审查扫描计划和报告"
+            },
+            {
+              "id": "mt-tst-2",
+              "code": "REQ-11.2",
+              "name": "渗透测试",
+              "description": "定期实施渗透测试并验证修复。",
+              "level": "2",
+              "verification": "审查渗透测试报告与复测记录"
+            },
+            {
+              "id": "mt-tst-3",
+              "code": "REQ-11.3",
+              "name": "持续攻防验证",
+              "description": "结合自动化手段持续验证关键控制有效性。",
+              "level": "3",
+              "verification": "审查持续验证平台和结果"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-framework-publication",
+    "primaryUrl": "https://www.pcisecuritystandards.org/document_library/"
+  }
+}

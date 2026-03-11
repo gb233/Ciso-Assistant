@@ -1,0 +1,101 @@
+{
+  "id": "example-pipl-001",
+  "code": "PIPL-ART-51",
+  "name": "Personal Information Protection Management System",
+  "description": "Organizations handling personal information should establish internal management systems and operating procedures.",
+  "instrumentKinds": [
+    "law"
+  ],
+  "semantics": [
+    "obligation",
+    "control"
+  ],
+  "source": {
+    "sourceRef": "PIPL Article 51",
+    "version": "2021-11-01",
+    "date": "2021-11-01",
+    "captureMethod": "official-html",
+    "accessConstraint": "none",
+    "provenance": {
+      "value": "Direct statute clause extraction",
+      "status": "exact",
+      "basis": "Official publication"
+    }
+  },
+  "profile": {
+    "id": "regulatory-obligation",
+    "targetTier": "silver"
+  },
+  "extension": {
+    "compliance": {
+      "obligationStrength": {
+        "value": "must",
+        "status": "inferred",
+        "basis": "Normative language interpretation rulebook v1"
+      },
+      "applicability": {
+        "subject": {
+          "value": [
+            "personal-information-processor"
+          ],
+          "status": "exact",
+          "basis": "Article scope"
+        },
+        "scenario": {
+          "value": [
+            "general-processing"
+          ],
+          "status": "exact",
+          "basis": "Article scope"
+        },
+        "region": {
+          "value": [
+            "CN"
+          ],
+          "status": "exact",
+          "basis": "Jurisdiction scope"
+        }
+      },
+      "penaltyImpact": {
+        "status": "unknown",
+        "basis": "Penalty linkage maintained in separate article mapping backlog"
+      }
+    },
+    "control": {
+      "verificationMethod": {
+        "value": [
+          "policy-review",
+          "process-walkthrough"
+        ],
+        "status": "inferred",
+        "basis": "Internal compliance methodology"
+      },
+      "evidenceExamples": [
+        {
+          "type": "policy",
+          "description": "Approved personal information protection policy"
+        },
+        {
+          "type": "procedure",
+          "description": "Operational procedure for PI lifecycle management"
+        }
+      ]
+    },
+    "mapping": {
+      "edges": [
+        {
+          "targetFrameworkId": "iso27001-2022",
+          "targetRequirementId": "A.5.1",
+          "relationshipType": "partial-overlap",
+          "confidence": 0.71,
+          "rationale": "Both require governance controls for sensitive information handling"
+        }
+      ]
+    }
+  },
+  "audit": {
+    "lastReviewedAt": "2026-02-28T00:00:00Z",
+    "reviewedBy": "compliance-team",
+    "notes": "Example only"
+  }
+}

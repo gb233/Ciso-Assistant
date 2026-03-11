@@ -1,0 +1,284 @@
+{
+  "id": "eu-dora",
+  "name": "DORA 数字运营韧性法案",
+  "fullName": "Regulation (EU) 2022/2554 Digital Operational Resilience Act",
+  "version": "2022/2554",
+  "type": "regulation",
+  "domain": "financial-cybersecurity",
+  "description": "欧盟金融业数字运营韧性法案，统一ICT风险管理、事件报告、韧性测试和第三方风险管理要求。",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "欧盟",
+  "releaseDate": "2022-12-14",
+  "lastUpdated": "2025-01-17",
+  "language": "zh",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-dora-cat-1",
+      "code": "DORA.GOV",
+      "name": "ICT治理与风险管理",
+      "description": "建立ICT风险治理框架。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-1",
+          "code": "DORA.GOV.1",
+          "name": "治理职责",
+          "description": "明确管理层职责。",
+          "requirements": [
+            {
+              "id": "eu-dora-r1",
+              "code": "DORA-5",
+              "name": "建立ICT风险管理框架",
+              "description": "建立ICT风险管理框架并形成可审计记录。",
+              "level": "3",
+              "verification": "审查建立ICT风险管理框架制度与执行记录",
+              "sourceRef": "DORA 第5条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r2",
+              "code": "DORA-6",
+              "name": "管理层承担ICT风险责任",
+              "description": "管理层承担ICT风险责任并形成可审计记录。",
+              "level": "2",
+              "verification": "审查管理层承担ICT风险责任制度与执行记录",
+              "sourceRef": "DORA 第6条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-2",
+          "code": "DORA.GOV.2",
+          "name": "风险流程",
+          "description": "建立风险评估与控制流程。",
+          "requirements": [
+            {
+              "id": "eu-dora-r3",
+              "code": "DORA-7",
+              "name": "制定ICT策略和政策",
+              "description": "制定ICT策略和政策并形成可审计记录。",
+              "level": "1",
+              "verification": "审查制定ICT策略和政策制度与执行记录",
+              "sourceRef": "DORA 第7条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r4",
+              "code": "DORA-8",
+              "name": "落实识别与防护措施",
+              "description": "落实识别与防护措施并形成可审计记录。",
+              "level": "3",
+              "verification": "审查落实识别与防护措施制度与执行记录",
+              "sourceRef": "DORA 第8条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-dora-cat-2",
+      "code": "DORA.OPS",
+      "name": "事件、测试与恢复",
+      "description": "实施事件管理与韧性测试。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-3",
+          "code": "DORA.OPS.1",
+          "name": "事件通报",
+          "description": "识别、分级并报告事件。",
+          "requirements": [
+            {
+              "id": "eu-dora-r5",
+              "code": "DORA-17",
+              "name": "建立ICT事件管理流程",
+              "description": "建立ICT事件管理流程并形成可审计记录。",
+              "level": "2",
+              "verification": "审查建立ICT事件管理流程制度与执行记录",
+              "sourceRef": "DORA 第17条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r6",
+              "code": "DORA-19",
+              "name": "重大事件分类与报告",
+              "description": "重大事件分类与报告并形成可审计记录。",
+              "level": "1",
+              "verification": "审查重大事件分类与报告制度与执行记录",
+              "sourceRef": "DORA 第19条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-4",
+          "code": "DORA.OPS.2",
+          "name": "韧性测试",
+          "description": "开展测试、备份与恢复。",
+          "requirements": [
+            {
+              "id": "eu-dora-r7",
+              "code": "DORA-24",
+              "name": "开展数字运营韧性测试",
+              "description": "开展数字运营韧性测试并形成可审计记录。",
+              "level": "3",
+              "verification": "审查开展数字运营韧性测试制度与执行记录",
+              "sourceRef": "DORA 第24条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r8",
+              "code": "DORA-25",
+              "name": "威胁驱动渗透测试",
+              "description": "威胁驱动渗透测试并形成可审计记录。",
+              "level": "2",
+              "verification": "审查威胁驱动渗透测试制度与执行记录",
+              "sourceRef": "DORA 第25条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-dora-cat-3",
+      "code": "DORA.TPR",
+      "name": "第三方风险与监督",
+      "description": "管理ICT第三方风险并接受监督。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-5",
+          "code": "DORA.TPR.1",
+          "name": "第三方管理",
+          "description": "合同与持续监督。",
+          "requirements": [
+            {
+              "id": "eu-dora-r9",
+              "code": "DORA-28",
+              "name": "第三方风险管理框架",
+              "description": "第三方风险管理框架并形成可审计记录。",
+              "level": "1",
+              "verification": "审查第三方风险管理框架制度与执行记录",
+              "sourceRef": "DORA 第28条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r10",
+              "code": "DORA-30",
+              "name": "关键第三方合同条款管理",
+              "description": "关键第三方合同条款管理并形成可审计记录。",
+              "level": "3",
+              "verification": "审查关键第三方合同条款管理制度与执行记录",
+              "sourceRef": "DORA 第30条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-6",
+          "code": "DORA.TPR.2",
+          "name": "监管协作",
+          "description": "接受监管和信息报送。",
+          "requirements": [
+            {
+              "id": "eu-dora-r11",
+              "code": "DORA-31",
+              "name": "关键ICT第三方监督机制",
+              "description": "关键ICT第三方监督机制并形成可审计记录。",
+              "level": "2",
+              "verification": "审查关键ICT第三方监督机制制度与执行记录",
+              "sourceRef": "DORA 第31条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r12",
+              "code": "DORA-45",
+              "name": "信息共享机制合规",
+              "description": "信息共享机制合规并形成可审计记录。",
+              "level": "1",
+              "verification": "审查信息共享机制合规制度与执行记录",
+              "sourceRef": "DORA 第45条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "金融实体及关键ICT第三方",
+                "scenario": "金融ICT韧性合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

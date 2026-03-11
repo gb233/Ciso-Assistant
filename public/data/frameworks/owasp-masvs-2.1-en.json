@@ -1,0 +1,284 @@
+{
+  "id": "owasp-masvs-2.1",
+  "name": "OWASP MASVS 2.1",
+  "fullName": "OWASP Mobile Application Security Verification Standard 2.1",
+  "version": "2.1",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "MASVS 2.1 defines mobile application security verification requirements across architecture, data, communication, authentication, code quality, and runtime resilience.",
+  "website": "https://owasp.org/",
+  "organization": "OWASP Foundation",
+  "releaseDate": "2025-01-18",
+  "lastUpdated": "2025-01-18",
+  "language": "en",
+  "source": {
+    "type": "official-framework-release",
+    "primaryUrl": "https://github.com/OWASP/owasp-masvs/releases/tag/v2.1.0",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "owasp-masvs-2.1-cat-1",
+      "code": "MASVS.ARCH",
+      "name": "Architecture and Data Protection",
+      "description": "Secure architecture, storage, and privacy controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-1",
+          "code": "MASVS.ARCH.1",
+          "name": "Secure Architecture",
+          "description": "Architecture and threat modeling controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r1",
+              "code": "MASVS-ARCH-1",
+              "name": "Establish threat modeling for mobile apps",
+              "description": "Define measurable controls for establish threat modeling for mobile apps.",
+              "level": "3",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-ARCH-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-ARCH-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r2",
+              "code": "MASVS-ARCH-2",
+              "name": "Separate sensitive components and apply least privilege",
+              "description": "Define measurable controls for separate sensitive components and apply least privilege.",
+              "level": "2",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-ARCH-2",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-ARCH-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-2",
+          "code": "MASVS.ARCH.2",
+          "name": "Data and Privacy",
+          "description": "Data protection and privacy controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r3",
+              "code": "MASVS-STORAGE-1",
+              "name": "Store sensitive data securely",
+              "description": "Define measurable controls for store sensitive data securely.",
+              "level": "1",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-STORAGE-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-STORAGE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r4",
+              "code": "MASVS-PRIVACY-1",
+              "name": "Implement data minimization and privacy controls",
+              "description": "Define measurable controls for implement data minimization and privacy controls.",
+              "level": "3",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-PRIVACY-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-PRIVACY-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-masvs-2.1-cat-2",
+      "code": "MASVS.AUTH",
+      "name": "Authentication and Network Security",
+      "description": "Authentication, session, and communication security.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-3",
+          "code": "MASVS.AUTH.1",
+          "name": "Authentication and Authorization",
+          "description": "Identity and access controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r5",
+              "code": "MASVS-AUTH-1",
+              "name": "Apply strong authentication and session management",
+              "description": "Define measurable controls for apply strong authentication and session management.",
+              "level": "2",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-AUTH-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-AUTH-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r6",
+              "code": "MASVS-AUTH-2",
+              "name": "Prevent auth bypass and brute-force abuse",
+              "description": "Define measurable controls for prevent auth bypass and brute-force abuse.",
+              "level": "1",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-AUTH-2",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-AUTH-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-4",
+          "code": "MASVS.AUTH.2",
+          "name": "Network and Cryptography",
+          "description": "Transport and cryptography controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r7",
+              "code": "MASVS-NETWORK-1",
+              "name": "Enforce secure transport and certificate validation",
+              "description": "Define measurable controls for enforce secure transport and certificate validation.",
+              "level": "3",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-NETWORK-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-NETWORK-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r8",
+              "code": "MASVS-CRYPTO-1",
+              "name": "Use secure cryptography and key management",
+              "description": "Define measurable controls for use secure cryptography and key management.",
+              "level": "2",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-CRYPTO-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CRYPTO-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-masvs-2.1-cat-3",
+      "code": "MASVS.RES",
+      "name": "Code Quality and Runtime Resilience",
+      "description": "Code hardening, anti-tamper, and runtime protections.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-5",
+          "code": "MASVS.RES.1",
+          "name": "Code and Build Security",
+          "description": "Code quality and build integrity controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r9",
+              "code": "MASVS-CODE-1",
+              "name": "Run static and dynamic security testing",
+              "description": "Define measurable controls for run static and dynamic security testing.",
+              "level": "1",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-CODE-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CODE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r10",
+              "code": "MASVS-CODE-2",
+              "name": "Protect build and release pipeline integrity",
+              "description": "Define measurable controls for protect build and release pipeline integrity.",
+              "level": "3",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-CODE-2",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CODE-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-6",
+          "code": "MASVS.RES.2",
+          "name": "Runtime Protections",
+          "description": "Runtime detection and anti-tamper controls.",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r11",
+              "code": "MASVS-RESILIENCE-1",
+              "name": "Implement anti-debugging and anti-tamper controls",
+              "description": "Define measurable controls for implement anti-debugging and anti-tamper controls.",
+              "level": "2",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-RESILIENCE-1",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-RESILIENCE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r12",
+              "code": "MASVS-RESILIENCE-2",
+              "name": "Detect runtime integrity anomalies",
+              "description": "Define measurable controls for detect runtime integrity anomalies.",
+              "level": "1",
+              "verification": "Review test cases, reports, and remediation evidence for MASVS-RESILIENCE-2",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-RESILIENCE-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Mobile app development and security testing teams",
+                "scenario": "Mobile application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

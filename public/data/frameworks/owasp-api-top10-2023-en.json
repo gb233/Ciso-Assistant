@@ -1,0 +1,246 @@
+{
+  "id": "owasp-api-top10-2023",
+  "name": "OWASP API Top 10:2023",
+  "fullName": "OWASP API Security Top 10 (2023)",
+  "version": "2023",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "OWASP API Security Top 10:2023 enumerates the most critical API security risks for secure development, testing, and governance.",
+  "website": "https://owasp.org/",
+  "organization": "OWASP Foundation",
+  "releaseDate": "2023-06-01",
+  "lastUpdated": "2023-06-01",
+  "language": "en",
+  "source": {
+    "type": "official-framework-publication",
+    "primaryUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 10,
+    "level1": 3,
+    "level2": 3,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 5
+  },
+  "categories": [
+    {
+      "id": "owasp-api-top10-2023-cat-1",
+      "code": "API23.RISK",
+      "name": "Risk Identification",
+      "description": "Identify and classify top API risks.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-1",
+          "code": "API23.RISK.1",
+          "name": "Auth and Authorization",
+          "description": "Access control related risks.",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r1",
+              "code": "API1:2023",
+              "name": "Broken Object Level Authorization",
+              "description": "Establish preventive, detective, and corrective controls for broken object level authorization.",
+              "level": "3",
+              "verification": "Review controls, tests, and remediation evidence for API1:2023",
+              "sourceRef": "OWASP API Top10:2023 API1:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r2",
+              "code": "API2:2023",
+              "name": "Broken Authentication",
+              "description": "Establish preventive, detective, and corrective controls for broken authentication.",
+              "level": "2",
+              "verification": "Review controls, tests, and remediation evidence for API2:2023",
+              "sourceRef": "OWASP API Top10:2023 API2:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-api-top10-2023-sub-2",
+          "code": "API23.RISK.2",
+          "name": "Input and Logic",
+          "description": "Business logic and input handling risks.",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r3",
+              "code": "API3:2023",
+              "name": "Broken Object Property Level Authorization",
+              "description": "Establish preventive, detective, and corrective controls for broken object property level authorization.",
+              "level": "1",
+              "verification": "Review controls, tests, and remediation evidence for API3:2023",
+              "sourceRef": "OWASP API Top10:2023 API3:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r4",
+              "code": "API4:2023",
+              "name": "Unrestricted Resource Consumption",
+              "description": "Establish preventive, detective, and corrective controls for unrestricted resource consumption.",
+              "level": "3",
+              "verification": "Review controls, tests, and remediation evidence for API4:2023",
+              "sourceRef": "OWASP API Top10:2023 API4:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-api-top10-2023-cat-2",
+      "code": "API23.CTRL",
+      "name": "Controls and Verification",
+      "description": "Implement and verify controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-3",
+          "code": "API23.CTRL.1",
+          "name": "Configuration and Inventory",
+          "description": "Configuration and asset visibility controls.",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r5",
+              "code": "API5:2023",
+              "name": "Broken Function Level Authorization",
+              "description": "Establish preventive, detective, and corrective controls for broken function level authorization.",
+              "level": "2",
+              "verification": "Review controls, tests, and remediation evidence for API5:2023",
+              "sourceRef": "OWASP API Top10:2023 API5:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r6",
+              "code": "API6:2023",
+              "name": "Unrestricted Access to Sensitive Business Flows",
+              "description": "Establish preventive, detective, and corrective controls for unrestricted access to sensitive business flows.",
+              "level": "1",
+              "verification": "Review controls, tests, and remediation evidence for API6:2023",
+              "sourceRef": "OWASP API Top10:2023 API6:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-api-top10-2023-sub-4",
+          "code": "API23.CTRL.2",
+          "name": "Integration and Supply Chain",
+          "description": "Third-party integration and supply chain controls.",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r7",
+              "code": "API7:2023",
+              "name": "Server Side Request Forgery",
+              "description": "Establish preventive, detective, and corrective controls for server side request forgery.",
+              "level": "3",
+              "verification": "Review controls, tests, and remediation evidence for API7:2023",
+              "sourceRef": "OWASP API Top10:2023 API7:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r8",
+              "code": "API8:2023",
+              "name": "Security Misconfiguration",
+              "description": "Establish preventive, detective, and corrective controls for security misconfiguration.",
+              "level": "2",
+              "verification": "Review controls, tests, and remediation evidence for API8:2023",
+              "sourceRef": "OWASP API Top10:2023 API8:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-api-top10-2023-cat-3",
+      "code": "API23.OPS",
+      "name": "Operations and Monitoring",
+      "description": "Runtime protection and continuous improvement.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-5",
+          "code": "API23.OPS.1",
+          "name": "Monitoring and Audit",
+          "description": "Monitoring, logging, and audit controls.",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r9",
+              "code": "API9:2023",
+              "name": "Improper Inventory Management",
+              "description": "Establish preventive, detective, and corrective controls for improper inventory management.",
+              "level": "1",
+              "verification": "Review controls, tests, and remediation evidence for API9:2023",
+              "sourceRef": "OWASP API Top10:2023 API9:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r10",
+              "code": "API10:2023",
+              "name": "Unsafe Consumption of APIs",
+              "description": "Establish preventive, detective, and corrective controls for unsafe consumption of apis.",
+              "level": "3",
+              "verification": "Review controls, tests, and remediation evidence for API10:2023",
+              "sourceRef": "OWASP API Top10:2023 API10:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API owners and development teams",
+                "scenario": "API security governance",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

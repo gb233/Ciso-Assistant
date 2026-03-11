@@ -1,0 +1,246 @@
+{
+  "id": "owasp-api-top10-2023",
+  "name": "OWASP API Top 10:2023",
+  "fullName": "OWASP API Security Top 10 (2023)",
+  "version": "2023",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "OWASP API Security Top 10:2023 列出最关键的API安全风险，用于开发、测试和治理基线。",
+  "website": "https://owasp.org/",
+  "organization": "OWASP",
+  "releaseDate": "2023-06-01",
+  "lastUpdated": "2023-06-01",
+  "language": "zh",
+  "source": {
+    "type": "official-framework-publication",
+    "primaryUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 10,
+    "level1": 3,
+    "level2": 3,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 5
+  },
+  "categories": [
+    {
+      "id": "owasp-api-top10-2023-cat-1",
+      "code": "API23.RISK",
+      "name": "API风险识别",
+      "description": "识别和分类API十大风险。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-1",
+          "code": "API23.RISK.1",
+          "name": "鉴别与授权",
+          "description": "访问控制风险。",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r1",
+              "code": "API1:2023",
+              "name": "对象级别授权失效",
+              "description": "针对对象级别授权失效建立预防、检测和纠正控制。",
+              "level": "3",
+              "verification": "审查API1:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API1:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r2",
+              "code": "API2:2023",
+              "name": "认证机制失效",
+              "description": "针对认证机制失效建立预防、检测和纠正控制。",
+              "level": "2",
+              "verification": "审查API2:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API2:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-api-top10-2023-sub-2",
+          "code": "API23.RISK.2",
+          "name": "输入与逻辑",
+          "description": "业务逻辑和输入风险。",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r3",
+              "code": "API3:2023",
+              "name": "对象属性级别授权失效",
+              "description": "针对对象属性级别授权失效建立预防、检测和纠正控制。",
+              "level": "1",
+              "verification": "审查API3:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API3:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r4",
+              "code": "API4:2023",
+              "name": "无限制资源消耗",
+              "description": "针对无限制资源消耗建立预防、检测和纠正控制。",
+              "level": "3",
+              "verification": "审查API4:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API4:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-api-top10-2023-cat-2",
+      "code": "API23.CTRL",
+      "name": "控制与验证",
+      "description": "实施控制并进行验证测试。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-3",
+          "code": "API23.CTRL.1",
+          "name": "配置与资产",
+          "description": "配置与资产可见性控制。",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r5",
+              "code": "API5:2023",
+              "name": "功能级别授权失效",
+              "description": "针对功能级别授权失效建立预防、检测和纠正控制。",
+              "level": "2",
+              "verification": "审查API5:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API5:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r6",
+              "code": "API6:2023",
+              "name": "敏感业务流无限制访问",
+              "description": "针对敏感业务流无限制访问建立预防、检测和纠正控制。",
+              "level": "1",
+              "verification": "审查API6:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API6:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-api-top10-2023-sub-4",
+          "code": "API23.CTRL.2",
+          "name": "供应链与接口",
+          "description": "第三方接口和供应链控制。",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r7",
+              "code": "API7:2023",
+              "name": "服务器端请求伪造",
+              "description": "针对服务器端请求伪造建立预防、检测和纠正控制。",
+              "level": "3",
+              "verification": "审查API7:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API7:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r8",
+              "code": "API8:2023",
+              "name": "安全配置错误",
+              "description": "针对安全配置错误建立预防、检测和纠正控制。",
+              "level": "2",
+              "verification": "审查API8:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API8:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-api-top10-2023-cat-3",
+      "code": "API23.OPS",
+      "name": "运营与监控",
+      "description": "运行期防护与持续改进。",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "owasp-api-top10-2023-sub-5",
+          "code": "API23.OPS.1",
+          "name": "监测与审计",
+          "description": "监测、日志和审计。",
+          "requirements": [
+            {
+              "id": "owasp-api-top10-2023-r9",
+              "code": "API9:2023",
+              "name": "API清单管理不当",
+              "description": "针对API清单管理不当建立预防、检测和纠正控制。",
+              "level": "1",
+              "verification": "审查API9:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API9:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-api-top10-2023-r10",
+              "code": "API10:2023",
+              "name": "API不安全消费",
+              "description": "针对API不安全消费建立预防、检测和纠正控制。",
+              "level": "3",
+              "verification": "审查API10:2023对应控制、测试结果与缺陷修复记录",
+              "sourceRef": "OWASP API Top10:2023 API10:2023",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "API提供者与开发团队",
+                "scenario": "API安全治理",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

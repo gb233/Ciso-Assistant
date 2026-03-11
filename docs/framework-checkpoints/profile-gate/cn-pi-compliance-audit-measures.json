@@ -1,0 +1,117 @@
+{
+  "frameworkId": "cn-pi-compliance-audit-measures",
+  "checkedAt": "2026-02-28T12:50:54.398Z",
+  "mode": "report",
+  "checks": [
+    {
+      "label": "index-zh metadata exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "index-en metadata exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "framework profile assignment exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "profile rule exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "framework type matches profile allowed types",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": "compliance,regulation",
+      "actual": "regulation"
+    },
+    {
+      "label": "official baseline exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical framework file is readable",
+      "pass": true,
+      "severity": "error",
+      "details": "public/data/frameworks/cn-pi-compliance-audit-measures.json",
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical framework file JSON parse",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical requirement ids are unique",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical requirement codes are unique",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "index requirement count equals canonical requirement count",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": 12,
+      "actual": 12
+    },
+    {
+      "label": "requirement-v2 schema exists",
+      "pass": true,
+      "severity": "error",
+      "details": "docs/schemas/requirement-v2.schema.json",
+      "expected": null,
+      "actual": null
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "pass": true,
+    "profileId": "regulatory-obligation",
+    "enforcedTier": "bronze"
+  },
+  "metrics": {
+    "categories": 3,
+    "subcategories": 6,
+    "requirements": 12,
+    "duplicateIds": [],
+    "duplicateCodes": []
+  }
+}

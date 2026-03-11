@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype 04 - Mapping Workspace</title>
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --panel: #fff;
+      --line: #d9e1ec;
+      --text: #1a2433;
+      --muted: #5c6f88;
+      --accent: #0f6cbd;
+      --soft: #eaf3ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .app {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font-size: 14px; font-weight: 700; }
+    .switch {
+      margin-top: 10px;
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .menu, .tree {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-title {
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .menu a {
+      display: block;
+      text-decoration: none;
+      color: #2f425d;
+      font-size: 13px;
+      padding: 7px 9px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      margin-bottom: 4px;
+    }
+    .menu a.active {
+      background: var(--soft);
+      color: var(--accent);
+      border-color: #bfd6f5;
+      font-weight: 600;
+    }
+    .tree { flex: 1; overflow: auto; }
+    .item {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      background: #fff;
+    }
+    .item.active { border-color: #9ec2ef; background: var(--soft); }
+    .item .code { font-size: 11px; color: var(--muted); }
+    .item .name { font-size: 13px; margin-top: 3px; line-height: 1.35; }
+
+    .main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      padding: 14px 20px;
+      background: linear-gradient(90deg, #fff, #f2f8ff, #fff);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .crumb {
+      color: var(--muted);
+      font-size: 12px;
+      flex: 1;
+      min-width: 240px;
+    }
+    .target-switch {
+      width: 260px;
+      max-width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .workspace {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 14px 16px;
+      overflow: auto;
+    }
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .panel-head {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfdff;
+      font-size: 13px;
+      color: #2f425d;
+      font-weight: 600;
+    }
+    .panel-body {
+      padding: 14px;
+      overflow: auto;
+    }
+    .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .h3 {
+      margin-top: 6px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .desc {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #233248;
+    }
+    .map-item {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 9px;
+      background: #fff;
+    }
+    .map-item strong {
+      display: block;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 4px;
+    }
+    .meta {
+      margin-top: 7px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      font-size: 12px;
+      padding: 4px 8px;
+      border: 1px solid #c9d8ea;
+      border-radius: 999px;
+      background: #f5f9ff;
+      color: #2f425d;
+    }
+    .actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border: 1px solid #b8cce6;
+      background: #fff;
+      color: #22456e;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn.primary {
+      background: #0f6cbd;
+      border-color: #0f6cbd;
+      color: #fff;
+    }
+    .note {
+      padding: 10px 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+      background: #fbfdff;
+    }
+    @media (max-width: 1120px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar { height: 44vh; }
+      .workspace { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="head">
+        <div class="brand">Ciso-Assistant</div>
+        <select class="switch">
+          <option>NIST CSF 2.0</option>
+          <option>NIST SP 800-53</option>
+          <option>OWASP ASVS 5.0</option>
+        </select>
+      </div>
+
+      <div class="menu">
+        <div class="section-title">Menu</div>
+        <a href="#">Structure</a>
+        <a href="#">Assessment</a>
+        <a class="active" href="#">Mappings</a>
+        <a href="#">Description</a>
+        <a href="#">Report</a>
+      </div>
+
+      <div class="tree" id="tree"></div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="crumb" id="crumb">Source: NIST CSF 2.0 / Detect / DE.CM-01</div>
+        <select class="target-switch">
+          <option>Target: NIST 800-53</option>
+          <option>Target: ISO 27002:2022</option>
+          <option>Target: CIS Controls v8.1</option>
+        </select>
+      </div>
+
+      <div class="workspace">
+        <section class="panel">
+          <div class="panel-head">Source Control (Leaf Content)</div>
+          <div class="panel-body">
+            <div class="code" id="scode">DE.CM-01</div>
+            <div class="h3" id="sname">Networks and network services are monitored for potential adverse events.</div>
+            <div class="desc" id="sdesc">Critical networks and network services are monitored to detect suspicious activity and enable timely response.</div>
+          </div>
+          <div class="note">映射页聚焦单条源控制项，不展示大面积统计卡和低价值筛选块。</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">Mapped Targets</div>
+          <div class="panel-body" id="targets"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const sources = [
+      {
+        code: "DE.CM-01",
+        name: "Networks and network services are monitored for potential adverse events.",
+        path: "Source: NIST CSF 2.0 / Detect / DE.CM-01",
+        desc: "Critical networks and network services are monitored to detect suspicious activity and enable timely response.",
+        targets: [
+          { code: "SI-4", name: "System Monitoring", confidence: "0.93", rationale: "Direct monitoring objective alignment." },
+          { code: "AU-6", name: "Audit Record Review, Analysis, and Reporting", confidence: "0.84", rationale: "Shared logging and analysis obligations." },
+          { code: "IR-5", name: "Incident Monitoring", confidence: "0.77", rationale: "Detection directly feeds incident monitoring." }
+        ]
+      },
+      {
+        code: "GV.RM-01",
+        name: "Risk management objectives are established and agreed by organizational stakeholders.",
+        path: "Source: NIST CSF 2.0 / Govern / GV.RM-01",
+        desc: "Risk objectives are defined to guide prioritization and governance decisions.",
+        targets: [
+          { code: "PM-9", name: "Risk Management Strategy", confidence: "0.91", rationale: "Same governance-level risk strategy intent." },
+          { code: "RA-1", name: "Risk Assessment Policy and Procedures", confidence: "0.72", rationale: "Policy layer support for risk objective implementation." }
+        ]
+      },
+      {
+        code: "PR.AA-05",
+        name: "Physical and logical access are revoked when no longer needed.",
+        path: "Source: NIST CSF 2.0 / Protect / PR.AA-05",
+        desc: "Access revocation is consistently executed for users, systems, and external parties.",
+        targets: [
+          { code: "AC-2", name: "Account Management", confidence: "0.89", rationale: "Lifecycle management includes timely deprovisioning." },
+          { code: "PS-4", name: "Personnel Termination", confidence: "0.75", rationale: "Termination workflow drives access revocation trigger." }
+        ]
+      }
+    ];
+
+    const tree = document.getElementById("tree");
+    const crumb = document.getElementById("crumb");
+    const scode = document.getElementById("scode");
+    const sname = document.getElementById("sname");
+    const sdesc = document.getElementById("sdesc");
+    const targets = document.getElementById("targets");
+
+    function render(activeCode) {
+      tree.innerHTML = '<div class="section-title">Source Controls</div>';
+      sources.forEach((s) => {
+        const el = document.createElement("div");
+        el.className = "item" + (s.code === activeCode ? " active" : "");
+        el.innerHTML = '<div class="code">' + s.code + '</div><div class="name">' + s.name + "</div>";
+        el.onclick = () => render(s.code);
+        tree.appendChild(el);
+      });
+
+      const selected = sources.find((s) => s.code === activeCode) || sources[0];
+      crumb.textContent = selected.path;
+      scode.textContent = selected.code;
+      sname.textContent = selected.name;
+      sdesc.textContent = selected.desc;
+      targets.innerHTML = selected.targets.map((t) => {
+        return (
+          '<div class="map-item">' +
+            '<div class="code">' + t.code + "</div>" +
+            "<strong>" + t.name + "</strong>" +
+            '<div class="meta">' +
+              '<span class="chip">confidence: ' + t.confidence + "</span>" +
+              '<span class="chip">rationale: ' + t.rationale + "</span>" +
+            "</div>" +
+            '<div class="actions">' +
+              '<button class="btn primary">Accept</button>' +
+              '<button class="btn">Flag</button>' +
+            "</div>" +
+          "</div>"
+        );
+      }).join("");
+    }
+
+    render(sources[0].code);
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Prototypes - SAMMY-like Layout</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --line: #d9e0ea;
+      --text: #1b2430;
+      --muted: #5b6b82;
+      --accent: #0f6cbd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at 10% 10%, #eff6ff, var(--bg));
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .wrap { max-width: 960px; margin: 48px auto; padding: 0 20px; }
+    h1 { margin: 0 0 12px; font-size: 28px; }
+    p { margin: 0 0 20px; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    a.card {
+      display: block;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      color: inherit;
+      text-decoration: none;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    a.card:hover { border-color: #9db6d8; box-shadow: 0 6px 20px rgba(15,108,189,.12); }
+    .title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .desc { font-size: 13px; color: var(--muted); }
+    .note {
+      margin-top: 18px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px dashed var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>SAMMY 风格交互原型</h1>
+    <p>目标：任何页面都保持左侧菜单栏，右侧仅展示末级内容；删除工作流、子分类筛选等低价值块。</p>
+
+    <div class="grid">
+      <a class="card" href="01-control-framework-layout.html">
+        <div class="title">01 控制型框架布局</div>
+        <div class="desc">适用于 ASVS / NIST / ISO / CIS / SCF / CCM 等控制标准。</div>
+      </a>
+      <a class="card" href="02-maturity-framework-layout.html">
+        <div class="title">02 成熟度框架布局</div>
+        <div class="desc">适用于 SAMM / BSIMM / DSOMM / AIMA 等成熟度模型。</div>
+      </a>
+      <a class="card" href="03-regulation-framework-layout.html">
+        <div class="title">03 法规型框架布局</div>
+        <div class="desc">适用于 中国法规 / 欧盟法规 / NIS2 / DORA 等义务型条款。</div>
+      </a>
+      <a class="card" href="04-mapping-framework-layout.html">
+        <div class="title">04 映射工作台布局</div>
+        <div class="desc">左侧源控制项，右侧映射目标控制项。去掉顶部大面积统计卡。</div>
+      </a>
+      <a class="card" href="05-framework-layout-matrix.html">
+        <div class="title">05 框架-布局矩阵</div>
+        <div class="desc">基于当前仓库框架清单，给出推荐布局模式与原因。</div>
+      </a>
+    </div>
+
+    <div class="note">
+      这批是静态 HTML 原型，仅用于确认信息架构与交互密度，不影响现有业务页面。
+    </div>
+  </div>
+</body>
+</html>

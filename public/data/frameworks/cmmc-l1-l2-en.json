@@ -1,0 +1,1257 @@
+{
+  "id": "cmmc-l1-l2",
+  "name": "CMMC",
+  "fullName": "Cybersecurity Maturity Model Certification (Levels 1 and 2)",
+  "version": "2.0",
+  "type": "maturity-model",
+  "domain": "defense",
+  "description": "CMMC Levels 1 and 2 extracted from official NIST SP 800-171r2 control statements, with Level 1 subset tagging aligned to CMMC 2.0 foundational scope.",
+  "website": "https://dodcio.defense.gov/CMMC/Documentation/",
+  "organization": "DoD CIO / NIST",
+  "releaseDate": "2021-11-01",
+  "lastUpdated": "2026-02-26",
+  "language": "en",
+  "source": {
+    "type": "official-machine-readable-derivative",
+    "primaryUrl": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf",
+    "programUrl": "https://dodcio.defense.gov/CMMC/Documentation/"
+  },
+  "stats": {
+    "totalRequirements": 110,
+    "totalCategories": 14,
+    "totalSubcategories": 14,
+    "level1": 17,
+    "level2": 93,
+    "level3": 0
+  },
+  "categories": [
+    {
+      "id": "access-control",
+      "code": "3.1",
+      "name": "Access Control",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Access Control family.",
+      "requirements": 22,
+      "subcategories": [
+        {
+          "id": "access-control-requirements",
+          "code": "3.1",
+          "name": "Access Control",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-1-1",
+              "code": "3.1.1",
+              "name": "Limit system access to authorized users, processes acting on behalf of authorized users, and devices (including other systems).",
+              "description": "Limit system access to authorized users, processes acting on behalf of authorized users, and devices (including other systems).",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.1"
+            },
+            {
+              "id": "3-1-2",
+              "code": "3.1.2",
+              "name": "Limit system access to the types of transactions and functions that authorized users are permitted to execute.",
+              "description": "Limit system access to the types of transactions and functions that authorized users are permitted to execute.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.2"
+            },
+            {
+              "id": "3-1-3",
+              "code": "3.1.3",
+              "name": "Control the flow of CUI in accordance with approved authorizations.",
+              "description": "Control the flow of CUI in accordance with approved authorizations.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.3"
+            },
+            {
+              "id": "3-1-4",
+              "code": "3.1.4",
+              "name": "Separate the duties of individuals to reduce the risk of malevolent activity without collusion.",
+              "description": "Separate the duties of individuals to reduce the risk of malevolent activity without collusion.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.4"
+            },
+            {
+              "id": "3-1-5",
+              "code": "3.1.5",
+              "name": "Employ the principle of least privilege, including for specific security functions and privileged accounts.",
+              "description": "Employ the principle of least privilege, including for specific security functions and privileged accounts.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.5"
+            },
+            {
+              "id": "3-1-6",
+              "code": "3.1.6",
+              "name": "Use non-privileged accounts or roles when accessing nonsecurity functions.",
+              "description": "Use non-privileged accounts or roles when accessing nonsecurity functions.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.6"
+            },
+            {
+              "id": "3-1-7",
+              "code": "3.1.7",
+              "name": "Prevent non-privileged users from executing privileged functions and capture the execution of such functions in audit logs.",
+              "description": "Prevent non-privileged users from executing privileged functions and capture the execution of such functions in audit logs.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.7"
+            },
+            {
+              "id": "3-1-8",
+              "code": "3.1.8",
+              "name": "Limit unsuccessful logon attempts.",
+              "description": "Limit unsuccessful logon attempts.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.8"
+            },
+            {
+              "id": "3-1-9",
+              "code": "3.1.9",
+              "name": "Provide privacy and security notices consistent with applicable CUI rules.",
+              "description": "Provide privacy and security notices consistent with applicable CUI rules.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.9"
+            },
+            {
+              "id": "3-1-10",
+              "code": "3.1.10",
+              "name": "Use session lock with pattern- hiding displays to prevent access and viewing of data after a period of inactivity.",
+              "description": "Use session lock with pattern- hiding displays to prevent access and viewing of data after a period of inactivity.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.10"
+            },
+            {
+              "id": "3-1-11",
+              "code": "3.1.11",
+              "name": "Terminate (automatically) a user session after a defined condition.",
+              "description": "Terminate (automatically) a user session after a defined condition.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.11"
+            },
+            {
+              "id": "3-1-12",
+              "code": "3.1.12",
+              "name": "Monitor and control remote access sessions.",
+              "description": "Monitor and control remote access sessions.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.12"
+            },
+            {
+              "id": "3-1-13",
+              "code": "3.1.13",
+              "name": "Employ cryptographic mechanisms to protect the confidentiality of remote access sessions.",
+              "description": "Employ cryptographic mechanisms to protect the confidentiality of remote access sessions.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.13"
+            },
+            {
+              "id": "3-1-14",
+              "code": "3.1.14",
+              "name": "Route remote access via managed access control points.",
+              "description": "Route remote access via managed access control points.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.14"
+            },
+            {
+              "id": "3-1-15",
+              "code": "3.1.15",
+              "name": "Authorize remote execution of privileged commands and remote access to security-relevant information.",
+              "description": "Authorize remote execution of privileged commands and remote access to security-relevant information.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.15"
+            },
+            {
+              "id": "3-1-16",
+              "code": "3.1.16",
+              "name": "Authorize wireless access prior to allowing such connections.",
+              "description": "Authorize wireless access prior to allowing such connections.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.16"
+            },
+            {
+              "id": "3-1-17",
+              "code": "3.1.17",
+              "name": "Protect wireless access using authentication and encryption.",
+              "description": "Protect wireless access using authentication and encryption.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.17"
+            },
+            {
+              "id": "3-1-18",
+              "code": "3.1.18",
+              "name": "Control connection of mobile devices.",
+              "description": "Control connection of mobile devices.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.18"
+            },
+            {
+              "id": "3-1-19",
+              "code": "3.1.19",
+              "name": "Encrypt CUI on mobile devices and mobile computing platforms.",
+              "description": "Encrypt CUI on mobile devices and mobile computing platforms.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.19"
+            },
+            {
+              "id": "3-1-20",
+              "code": "3.1.20",
+              "name": "Verify and control/limit connections to and use of external systems.",
+              "description": "Verify and control/limit connections to and use of external systems.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.20"
+            },
+            {
+              "id": "3-1-21",
+              "code": "3.1.21",
+              "name": "Limit use of portable storage devices on external systems.",
+              "description": "Limit use of portable storage devices on external systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.21"
+            },
+            {
+              "id": "3-1-22",
+              "code": "3.1.22",
+              "name": "Control CUI posted or processed on publicly accessible systems.",
+              "description": "Control CUI posted or processed on publicly accessible systems.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.1.22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "awareness-and-training",
+      "code": "3.2",
+      "name": "Awareness and Training",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Awareness and Training family.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "awareness-and-training-requirements",
+          "code": "3.2",
+          "name": "Awareness and Training",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-2-1",
+              "code": "3.2.1",
+              "name": "Ensure that managers, systems administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+              "description": "Ensure that managers, systems administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.2.1"
+            },
+            {
+              "id": "3-2-2",
+              "code": "3.2.2",
+              "name": "Ensure that personnel are trained to carry out their assigned information security-related duties and responsibilities.",
+              "description": "Ensure that personnel are trained to carry out their assigned information security-related duties and responsibilities.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.2.2"
+            },
+            {
+              "id": "3-2-3",
+              "code": "3.2.3",
+              "name": "Provide security awareness training on recognizing and reporting potential indicators of insider threat.",
+              "description": "Provide security awareness training on recognizing and reporting potential indicators of insider threat.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audit-and-accountability",
+      "code": "3.3",
+      "name": "Audit and Accountability",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Audit and Accountability family.",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "audit-and-accountability-requirements",
+          "code": "3.3",
+          "name": "Audit and Accountability",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-3-1",
+              "code": "3.3.1",
+              "name": "Create and retain system audit logs and records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity.",
+              "description": "Create and retain system audit logs and records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.1"
+            },
+            {
+              "id": "3-3-2",
+              "code": "3.3.2",
+              "name": "Ensure that the actions of individual system users can be uniquely traced to those users, so they can be held accountable for their actions.",
+              "description": "Ensure that the actions of individual system users can be uniquely traced to those users, so they can be held accountable for their actions.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.2"
+            },
+            {
+              "id": "3-3-3",
+              "code": "3.3.3",
+              "name": "Review and update logged events.",
+              "description": "Review and update logged events.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.3"
+            },
+            {
+              "id": "3-3-4",
+              "code": "3.3.4",
+              "name": "Alert in the event of an audit logging process failure.",
+              "description": "Alert in the event of an audit logging process failure.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.4"
+            },
+            {
+              "id": "3-3-5",
+              "code": "3.3.5",
+              "name": "Correlate audit record review, analysis, and reporting processes for investigation and response to indications of unlawful, unauthorized, suspicious, or unusual activity.",
+              "description": "Correlate audit record review, analysis, and reporting processes for investigation and response to indications of unlawful, unauthorized, suspicious, or unusual activity.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.5"
+            },
+            {
+              "id": "3-3-6",
+              "code": "3.3.6",
+              "name": "Provide audit record reduction and report generation to support on-demand analysis and reporting.",
+              "description": "Provide audit record reduction and report generation to support on-demand analysis and reporting.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.6"
+            },
+            {
+              "id": "3-3-7",
+              "code": "3.3.7",
+              "name": "Provide a system capability that compares and synchronizes internal system clocks with an authoritative source to generate time stamps for audit records.",
+              "description": "Provide a system capability that compares and synchronizes internal system clocks with an authoritative source to generate time stamps for audit records.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.7"
+            },
+            {
+              "id": "3-3-8",
+              "code": "3.3.8",
+              "name": "Protect audit information and audit logging tools from unauthorized access, modification, and deletion.",
+              "description": "Protect audit information and audit logging tools from unauthorized access, modification, and deletion.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.8"
+            },
+            {
+              "id": "3-3-9",
+              "code": "3.3.9",
+              "name": "Limit management of audit logging functionality to a subset of privileged users.",
+              "description": "Limit management of audit logging functionality to a subset of privileged users.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.3.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "configuration-management",
+      "code": "3.4",
+      "name": "Configuration Management",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Configuration Management family.",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "configuration-management-requirements",
+          "code": "3.4",
+          "name": "Configuration Management",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-4-1",
+              "code": "3.4.1",
+              "name": "Establish and maintain baseline configurations and inventories of organizational systems (including hardware, software, firmware, and documentation) throughout the respective system development life cycles.",
+              "description": "Establish and maintain baseline configurations and inventories of organizational systems (including hardware, software, firmware, and documentation) throughout the respective system development life cycles.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.1"
+            },
+            {
+              "id": "3-4-2",
+              "code": "3.4.2",
+              "name": "Establish and enforce security configuration settings for information technology products employed in organizational systems.",
+              "description": "Establish and enforce security configuration settings for information technology products employed in organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.2"
+            },
+            {
+              "id": "3-4-3",
+              "code": "3.4.3",
+              "name": "Track, review, approve or disapprove, and log changes to organizational systems.",
+              "description": "Track, review, approve or disapprove, and log changes to organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.3"
+            },
+            {
+              "id": "3-4-4",
+              "code": "3.4.4",
+              "name": "Analyze the security impact of changes prior to implementation.",
+              "description": "Analyze the security impact of changes prior to implementation.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.4"
+            },
+            {
+              "id": "3-4-5",
+              "code": "3.4.5",
+              "name": "Define, document, approve, and enforce physical and logical access restrictions associated with changes to organizational systems.",
+              "description": "Define, document, approve, and enforce physical and logical access restrictions associated with changes to organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.5"
+            },
+            {
+              "id": "3-4-6",
+              "code": "3.4.6",
+              "name": "Employ the principle of least functionality by configuring organizational systems to provide only essential capabilities.",
+              "description": "Employ the principle of least functionality by configuring organizational systems to provide only essential capabilities.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.6"
+            },
+            {
+              "id": "3-4-7",
+              "code": "3.4.7",
+              "name": "Restrict, disable, or prevent the use of nonessential programs, functions, ports, protocols, and services.",
+              "description": "Restrict, disable, or prevent the use of nonessential programs, functions, ports, protocols, and services.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.7"
+            },
+            {
+              "id": "3-4-8",
+              "code": "3.4.8",
+              "name": "Apply deny-by-exception (blacklisting) policy to prevent the use of unauthorized software or deny-all, permit-by-exception (whitelisting) policy to allow the execution of authorized software.",
+              "description": "Apply deny-by-exception (blacklisting) policy to prevent the use of unauthorized software or deny-all, permit-by-exception (whitelisting) policy to allow the execution of authorized software.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.8"
+            },
+            {
+              "id": "3-4-9",
+              "code": "3.4.9",
+              "name": "Control and monitor user-installed software.",
+              "description": "Control and monitor user-installed software.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.4.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identification-and-authentication",
+      "code": "3.5",
+      "name": "Identification and Authentication",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Identification and Authentication family.",
+      "requirements": 11,
+      "subcategories": [
+        {
+          "id": "identification-and-authentication-requirements",
+          "code": "3.5",
+          "name": "Identification and Authentication",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-5-1",
+              "code": "3.5.1",
+              "name": "Identify system users, processes acting on behalf of users, and devices.",
+              "description": "Identify system users, processes acting on behalf of users, and devices.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.1"
+            },
+            {
+              "id": "3-5-2",
+              "code": "3.5.2",
+              "name": "Authenticate (or verify) the identities of users, processes, or devices, as a prerequisite to allowing access to organizational systems.",
+              "description": "Authenticate (or verify) the identities of users, processes, or devices, as a prerequisite to allowing access to organizational systems.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.2"
+            },
+            {
+              "id": "3-5-3",
+              "code": "3.5.3",
+              "name": "Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.",
+              "description": "Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.3"
+            },
+            {
+              "id": "3-5-4",
+              "code": "3.5.4",
+              "name": "Employ replay-resistant authentication mechanisms for network access to privileged and non- privileged accounts.",
+              "description": "Employ replay-resistant authentication mechanisms for network access to privileged and non- privileged accounts.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.4"
+            },
+            {
+              "id": "3-5-5",
+              "code": "3.5.5",
+              "name": "Prevent reuse of identifiers for a defined period.",
+              "description": "Prevent reuse of identifiers for a defined period.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.5"
+            },
+            {
+              "id": "3-5-6",
+              "code": "3.5.6",
+              "name": "Disable identifiers after a defined period of inactivity.",
+              "description": "Disable identifiers after a defined period of inactivity.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.6"
+            },
+            {
+              "id": "3-5-7",
+              "code": "3.5.7",
+              "name": "Enforce a minimum password complexity and change of characters when new passwords are created.",
+              "description": "Enforce a minimum password complexity and change of characters when new passwords are created.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.7"
+            },
+            {
+              "id": "3-5-8",
+              "code": "3.5.8",
+              "name": "Prohibit password reuse for a specified number of generations.",
+              "description": "Prohibit password reuse for a specified number of generations.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.8"
+            },
+            {
+              "id": "3-5-9",
+              "code": "3.5.9",
+              "name": "Allow temporary password use for system logons with an immediate change to a permanent password.",
+              "description": "Allow temporary password use for system logons with an immediate change to a permanent password.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.9"
+            },
+            {
+              "id": "3-5-10",
+              "code": "3.5.10",
+              "name": "Store and transmit only cryptographically-protected passwords.",
+              "description": "Store and transmit only cryptographically-protected passwords.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.10"
+            },
+            {
+              "id": "3-5-11",
+              "code": "3.5.11",
+              "name": "Obscure feedback of authentication information.",
+              "description": "Obscure feedback of authentication information.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.5.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incident-response",
+      "code": "3.6",
+      "name": "Incident Response",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Incident Response family.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "incident-response-requirements",
+          "code": "3.6",
+          "name": "Incident Response",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-6-1",
+              "code": "3.6.1",
+              "name": "Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities.",
+              "description": "Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.6.1"
+            },
+            {
+              "id": "3-6-2",
+              "code": "3.6.2",
+              "name": "Track, document, and report incidents to designated officials and/or authorities both internal and external to the organization.",
+              "description": "Track, document, and report incidents to designated officials and/or authorities both internal and external to the organization.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.6.2"
+            },
+            {
+              "id": "3-6-3",
+              "code": "3.6.3",
+              "name": "Test the organizational incident response capability.",
+              "description": "Test the organizational incident response capability.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.6.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maintenance",
+      "code": "3.7",
+      "name": "Maintenance",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Maintenance family.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "maintenance-requirements",
+          "code": "3.7",
+          "name": "Maintenance",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-7-1",
+              "code": "3.7.1",
+              "name": "Perform maintenance on organizational systems.",
+              "description": "Perform maintenance on organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.1"
+            },
+            {
+              "id": "3-7-2",
+              "code": "3.7.2",
+              "name": "Provide controls on the tools, techniques, mechanisms, and personnel used to conduct system maintenance.",
+              "description": "Provide controls on the tools, techniques, mechanisms, and personnel used to conduct system maintenance.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.2"
+            },
+            {
+              "id": "3-7-3",
+              "code": "3.7.3",
+              "name": "Ensure equipment removed for off-site maintenance is sanitized of any CUI.",
+              "description": "Ensure equipment removed for off-site maintenance is sanitized of any CUI.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.3"
+            },
+            {
+              "id": "3-7-4",
+              "code": "3.7.4",
+              "name": "Check media containing diagnostic and test programs for malicious code before the media are used in organizational systems.",
+              "description": "Check media containing diagnostic and test programs for malicious code before the media are used in organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.4"
+            },
+            {
+              "id": "3-7-5",
+              "code": "3.7.5",
+              "name": "Require multifactor authentication to establish nonlocal maintenance sessions via external network connections and terminate such connections when nonlocal maintenance is complete.",
+              "description": "Require multifactor authentication to establish nonlocal maintenance sessions via external network connections and terminate such connections when nonlocal maintenance is complete.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.5"
+            },
+            {
+              "id": "3-7-6",
+              "code": "3.7.6",
+              "name": "Supervise the maintenance activities of maintenance personnel without required access authorization.",
+              "description": "Supervise the maintenance activities of maintenance personnel without required access authorization.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.7.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-protection",
+      "code": "3.8",
+      "name": "Media Protection",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Media Protection family.",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "media-protection-requirements",
+          "code": "3.8",
+          "name": "Media Protection",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-8-1",
+              "code": "3.8.1",
+              "name": "Protect (i.",
+              "description": "Protect (i.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.1"
+            },
+            {
+              "id": "3-8-2",
+              "code": "3.8.2",
+              "name": "Limit access to CUI on system media to authorized users.",
+              "description": "Limit access to CUI on system media to authorized users.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.2"
+            },
+            {
+              "id": "3-8-3",
+              "code": "3.8.3",
+              "name": "Sanitize or destroy system media containing CUI before disposal or release for reuse.",
+              "description": "Sanitize or destroy system media containing CUI before disposal or release for reuse.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.3"
+            },
+            {
+              "id": "3-8-4",
+              "code": "3.8.4",
+              "name": "Mark media with necessary CUI markings and distribution limitations.",
+              "description": "Mark media with necessary CUI markings and distribution limitations.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.4"
+            },
+            {
+              "id": "3-8-5",
+              "code": "3.8.5",
+              "name": "Control access to media containing CUI and maintain accountability for media during transport outside of controlled areas.",
+              "description": "Control access to media containing CUI and maintain accountability for media during transport outside of controlled areas.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.5"
+            },
+            {
+              "id": "3-8-6",
+              "code": "3.8.6",
+              "name": "Implement cryptographic mechanisms to protect the confidentiality of CUI stored on digital media during transport unless otherwise protected by alternative physical safeguards.",
+              "description": "Implement cryptographic mechanisms to protect the confidentiality of CUI stored on digital media during transport unless otherwise protected by alternative physical safeguards.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.6"
+            },
+            {
+              "id": "3-8-7",
+              "code": "3.8.7",
+              "name": "Control the use of removable media on system components.",
+              "description": "Control the use of removable media on system components.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.7"
+            },
+            {
+              "id": "3-8-8",
+              "code": "3.8.8",
+              "name": "Prohibit the use of portable storage devices when such devices have no identifiable owner.",
+              "description": "Prohibit the use of portable storage devices when such devices have no identifiable owner.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.8"
+            },
+            {
+              "id": "3-8-9",
+              "code": "3.8.9",
+              "name": "Protect the confidentiality of backup CUI at storage locations.",
+              "description": "Protect the confidentiality of backup CUI at storage locations.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.8.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personnel-security",
+      "code": "3.9",
+      "name": "Personnel Security",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Personnel Security family.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "personnel-security-requirements",
+          "code": "3.9",
+          "name": "Personnel Security",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-9-1",
+              "code": "3.9.1",
+              "name": "Screen individuals prior to authorizing access to organizational systems containing CUI.",
+              "description": "Screen individuals prior to authorizing access to organizational systems containing CUI.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.9.1"
+            },
+            {
+              "id": "3-9-2",
+              "code": "3.9.2",
+              "name": "Ensure that organizational systems containing CUI are protected during and after personnel actions such as terminations and transfers.",
+              "description": "Ensure that organizational systems containing CUI are protected during and after personnel actions such as terminations and transfers.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.9.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-protection",
+      "code": "3.10",
+      "name": "Physical Protection",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Physical Protection family.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "physical-protection-requirements",
+          "code": "3.10",
+          "name": "Physical Protection",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-10-1",
+              "code": "3.10.1",
+              "name": "Limit physical access to organizational systems, equipment, and the respective operating environments to authorized individuals.",
+              "description": "Limit physical access to organizational systems, equipment, and the respective operating environments to authorized individuals.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.1"
+            },
+            {
+              "id": "3-10-2",
+              "code": "3.10.2",
+              "name": "Protect and monitor the physical facility and support infrastructure for organizational systems.",
+              "description": "Protect and monitor the physical facility and support infrastructure for organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.2"
+            },
+            {
+              "id": "3-10-3",
+              "code": "3.10.3",
+              "name": "Escort visitors and monitor visitor activity.",
+              "description": "Escort visitors and monitor visitor activity.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.3"
+            },
+            {
+              "id": "3-10-4",
+              "code": "3.10.4",
+              "name": "Maintain audit logs of physical access.",
+              "description": "Maintain audit logs of physical access.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.4"
+            },
+            {
+              "id": "3-10-5",
+              "code": "3.10.5",
+              "name": "Control and manage physical access devices.",
+              "description": "Control and manage physical access devices.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.5"
+            },
+            {
+              "id": "3-10-6",
+              "code": "3.10.6",
+              "name": "Enforce safeguarding measures for CUI at alternate work sites.",
+              "description": "Enforce safeguarding measures for CUI at alternate work sites.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.10.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "risk-assessment",
+      "code": "3.11",
+      "name": "Risk Assessment",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Risk Assessment family.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "risk-assessment-requirements",
+          "code": "3.11",
+          "name": "Risk Assessment",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-11-1",
+              "code": "3.11.1",
+              "name": "Periodically assess the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals, resulting from the operation of organizational systems and the associated processing, storage, or transmission of CUI.",
+              "description": "Periodically assess the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals, resulting from the operation of organizational systems and the associated processing, storage, or transmission of CUI.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.11.1"
+            },
+            {
+              "id": "3-11-2",
+              "code": "3.11.2",
+              "name": "Scan for vulnerabilities in organizational systems and applications periodically and when new vulnerabilities affecting those systems and applications are identified.",
+              "description": "Scan for vulnerabilities in organizational systems and applications periodically and when new vulnerabilities affecting those systems and applications are identified.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.11.2"
+            },
+            {
+              "id": "3-11-3",
+              "code": "3.11.3",
+              "name": "Remediate vulnerabilities in accordance with risk assessments.",
+              "description": "Remediate vulnerabilities in accordance with risk assessments.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.11.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-assessment",
+      "code": "3.12",
+      "name": "Security Assessment",
+      "description": "CMMC requirements mapped to NIST 800-171r2 Security Assessment family.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "security-assessment-requirements",
+          "code": "3.12",
+          "name": "Security Assessment",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-12-1",
+              "code": "3.12.1",
+              "name": "Periodically assess the security controls in organizational systems to determine if the controls are effective in their application.",
+              "description": "Periodically assess the security controls in organizational systems to determine if the controls are effective in their application.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.12.1"
+            },
+            {
+              "id": "3-12-2",
+              "code": "3.12.2",
+              "name": "Develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational systems.",
+              "description": "Develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.12.2"
+            },
+            {
+              "id": "3-12-3",
+              "code": "3.12.3",
+              "name": "Monitor security controls on an ongoing basis to ensure the continued effectiveness of the controls.",
+              "description": "Monitor security controls on an ongoing basis to ensure the continued effectiveness of the controls.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.12.3"
+            },
+            {
+              "id": "3-12-4",
+              "code": "3.12.4",
+              "name": "Develop, document, and periodically update system security plans that describe system boundaries, system environments of operation, how security requirements are implemented, and the relationships with or connections to other systems.",
+              "description": "Develop, document, and periodically update system security plans that describe system boundaries, system environments of operation, how security requirements are implemented, and the relationships with or connections to other systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.12.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-and-communications-protection",
+      "code": "3.13",
+      "name": "System and Communications Protection",
+      "description": "CMMC requirements mapped to NIST 800-171r2 System and Communications Protection family.",
+      "requirements": 16,
+      "subcategories": [
+        {
+          "id": "system-and-communications-protection-requirements",
+          "code": "3.13",
+          "name": "System and Communications Protection",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-13-1",
+              "code": "3.13.1",
+              "name": "Monitor, control, and protect communications (i.",
+              "description": "Monitor, control, and protect communications (i.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.1"
+            },
+            {
+              "id": "3-13-2",
+              "code": "3.13.2",
+              "name": "Employ architectural designs, software development techniques, and systems engineering principles that promote effective information security within organizational systems.",
+              "description": "Employ architectural designs, software development techniques, and systems engineering principles that promote effective information security within organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.2"
+            },
+            {
+              "id": "3-13-3",
+              "code": "3.13.3",
+              "name": "Separate user functionality from system management functionality.",
+              "description": "Separate user functionality from system management functionality.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.3"
+            },
+            {
+              "id": "3-13-4",
+              "code": "3.13.4",
+              "name": "Prevent unauthorized and unintended information transfer via shared system resources.",
+              "description": "Prevent unauthorized and unintended information transfer via shared system resources.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.4"
+            },
+            {
+              "id": "3-13-5",
+              "code": "3.13.5",
+              "name": "Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.",
+              "description": "Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.5"
+            },
+            {
+              "id": "3-13-6",
+              "code": "3.13.6",
+              "name": "Deny network communications traffic by default and allow network communications traffic by exception (i.",
+              "description": "Deny network communications traffic by default and allow network communications traffic by exception (i.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.6"
+            },
+            {
+              "id": "3-13-7",
+              "code": "3.13.7",
+              "name": "Prevent remote devices from simultaneously establishing non-remote connections with organizational systems and communicating via some other connection to resources in external networks (i.",
+              "description": "Prevent remote devices from simultaneously establishing non-remote connections with organizational systems and communicating via some other connection to resources in external networks (i.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.7"
+            },
+            {
+              "id": "3-13-8",
+              "code": "3.13.8",
+              "name": "Implement cryptographic mechanisms to prevent unauthorized disclosure of CUI during transmission unless otherwise protected by alternative physical safeguards.",
+              "description": "Implement cryptographic mechanisms to prevent unauthorized disclosure of CUI during transmission unless otherwise protected by alternative physical safeguards.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.8"
+            },
+            {
+              "id": "3-13-9",
+              "code": "3.13.9",
+              "name": "Terminate network connections associated with communications sessions at the end of the sessions or after a defined period of inactivity.",
+              "description": "Terminate network connections associated with communications sessions at the end of the sessions or after a defined period of inactivity.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.9"
+            },
+            {
+              "id": "3-13-10",
+              "code": "3.13.10",
+              "name": "Establish and manage cryptographic keys for cryptography employed in organizational systems.",
+              "description": "Establish and manage cryptographic keys for cryptography employed in organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.10"
+            },
+            {
+              "id": "3-13-11",
+              "code": "3.13.11",
+              "name": "Employ FIPS-validated cryptography when used to protect the confidentiality of CUI.",
+              "description": "Employ FIPS-validated cryptography when used to protect the confidentiality of CUI.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.11"
+            },
+            {
+              "id": "3-13-12",
+              "code": "3.13.12",
+              "name": "Prohibit remote activation of collaborative computing devices and provide indication of devices in use to users present at the device.",
+              "description": "Prohibit remote activation of collaborative computing devices and provide indication of devices in use to users present at the device.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.12"
+            },
+            {
+              "id": "3-13-13",
+              "code": "3.13.13",
+              "name": "Control and monitor the use of mobile code.",
+              "description": "Control and monitor the use of mobile code.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.13"
+            },
+            {
+              "id": "3-13-14",
+              "code": "3.13.14",
+              "name": "Control and monitor the use of Voice over Internet Protocol (VoIP) technologies.",
+              "description": "Control and monitor the use of Voice over Internet Protocol (VoIP) technologies.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.14"
+            },
+            {
+              "id": "3-13-15",
+              "code": "3.13.15",
+              "name": "Protect the authenticity of communications sessions.",
+              "description": "Protect the authenticity of communications sessions.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.15"
+            },
+            {
+              "id": "3-13-16",
+              "code": "3.13.16",
+              "name": "Protect the confidentiality of CUI at rest.",
+              "description": "Protect the confidentiality of CUI at rest.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.13.16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-and-information-integrity",
+      "code": "3.14",
+      "name": "System and Information Integrity",
+      "description": "CMMC requirements mapped to NIST 800-171r2 System and Information Integrity family.",
+      "requirements": 7,
+      "subcategories": [
+        {
+          "id": "system-and-information-integrity-requirements",
+          "code": "3.14",
+          "name": "System and Information Integrity",
+          "description": "CMMC Level 1/2 requirements in this family.",
+          "requirements": [
+            {
+              "id": "3-14-1",
+              "code": "3.14.1",
+              "name": "Identify, report, and correct system flaws in a timely manner.",
+              "description": "Identify, report, and correct system flaws in a timely manner.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.1"
+            },
+            {
+              "id": "3-14-2",
+              "code": "3.14.2",
+              "name": "Provide protection from malicious code at designated locations within organizational systems.",
+              "description": "Provide protection from malicious code at designated locations within organizational systems.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.2"
+            },
+            {
+              "id": "3-14-3",
+              "code": "3.14.3",
+              "name": "Monitor system security alerts and advisories and take action in response.",
+              "description": "Monitor system security alerts and advisories and take action in response.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.3"
+            },
+            {
+              "id": "3-14-4",
+              "code": "3.14.4",
+              "name": "Update malicious code protection mechanisms when new releases are available.",
+              "description": "Update malicious code protection mechanisms when new releases are available.",
+              "level": "1",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.4"
+            },
+            {
+              "id": "3-14-5",
+              "code": "3.14.5",
+              "name": "Perform periodic scans of organizational systems and real-time scans of files from external sources as files are downloaded, opened, or executed.",
+              "description": "Perform periodic scans of organizational systems and real-time scans of files from external sources as files are downloaded, opened, or executed.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.5"
+            },
+            {
+              "id": "3-14-6",
+              "code": "3.14.6",
+              "name": "Monitor organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks.",
+              "description": "Monitor organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.6"
+            },
+            {
+              "id": "3-14-7",
+              "code": "3.14.7",
+              "name": "Identify unauthorized use of organizational systems.",
+              "description": "Identify unauthorized use of organizational systems.",
+              "level": "2",
+              "verification": "Review CMMC assessment evidence for this requirement.",
+              "nist": "3.14.7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

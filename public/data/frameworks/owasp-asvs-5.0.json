@@ -1,0 +1,284 @@
+{
+  "id": "owasp-asvs-5.0",
+  "name": "OWASP ASVS 5.0",
+  "fullName": "OWASP Application Security Verification Standard 5.0",
+  "version": "5.0.0",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "ASVS 5.0 提供新一代应用安全验证基线，支持需求驱动的设计、开发与测试活动。",
+  "website": "https://owasp.org/",
+  "organization": "OWASP",
+  "releaseDate": "2025-05-30",
+  "lastUpdated": "2025-05-30",
+  "language": "zh",
+  "source": {
+    "type": "official-framework-release",
+    "primaryUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "owasp-asvs-5.0-cat-1",
+      "code": "ASVS5.GOV",
+      "name": "治理与架构",
+      "description": "安全治理与架构设计控制。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-1",
+          "code": "ASVS5.GOV.1",
+          "name": "需求治理",
+          "description": "需求定义与治理。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r1",
+              "code": "ASVS5-1",
+              "name": "建立可测试安全需求基线",
+              "description": "围绕建立可测试安全需求基线建立控制、验证与改进闭环。",
+              "level": "3",
+              "verification": "审查ASVS5-1对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r2",
+              "code": "ASVS5-2",
+              "name": "执行威胁建模与架构评审",
+              "description": "围绕执行威胁建模与架构评审建立控制、验证与改进闭环。",
+              "level": "2",
+              "verification": "审查ASVS5-2对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-2",
+          "code": "ASVS5.GOV.2",
+          "name": "威胁建模",
+          "description": "威胁建模与安全设计。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r3",
+              "code": "ASVS5-3",
+              "name": "实施强认证机制",
+              "description": "围绕实施强认证机制建立控制、验证与改进闭环。",
+              "level": "1",
+              "verification": "审查ASVS5-3对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-3",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r4",
+              "code": "ASVS5-4",
+              "name": "实施最小权限授权控制",
+              "description": "围绕实施最小权限授权控制建立控制、验证与改进闭环。",
+              "level": "3",
+              "verification": "审查ASVS5-4对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-4",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-asvs-5.0-cat-2",
+      "code": "ASVS5.IMPL",
+      "name": "实现与数据保护",
+      "description": "实现阶段控制和数据保护。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-3",
+          "code": "ASVS5.IMPL.1",
+          "name": "认证授权",
+          "description": "认证、会话和授权控制。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r5",
+              "code": "ASVS5-5",
+              "name": "实施会话安全控制",
+              "description": "围绕实施会话安全控制建立控制、验证与改进闭环。",
+              "level": "2",
+              "verification": "审查ASVS5-5对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-5",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r6",
+              "code": "ASVS5-6",
+              "name": "输入验证与输出编码",
+              "description": "围绕输入验证与输出编码建立控制、验证与改进闭环。",
+              "level": "1",
+              "verification": "审查ASVS5-6对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-6",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-4",
+          "code": "ASVS5.IMPL.2",
+          "name": "输入输出与数据",
+          "description": "输入输出处理与数据安全。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r7",
+              "code": "ASVS5-7",
+              "name": "数据分类与加密保护",
+              "description": "围绕数据分类与加密保护建立控制、验证与改进闭环。",
+              "level": "3",
+              "verification": "审查ASVS5-7对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-7",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r8",
+              "code": "ASVS5-8",
+              "name": "机密管理与密钥轮换",
+              "description": "围绕机密管理与密钥轮换建立控制、验证与改进闭环。",
+              "level": "2",
+              "verification": "审查ASVS5-8对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-8",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-asvs-5.0-cat-3",
+      "code": "ASVS5.TEST",
+      "name": "测试与运维保障",
+      "description": "验证测试与运行保障。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-5",
+          "code": "ASVS5.TEST.1",
+          "name": "安全测试",
+          "description": "静态动态与渗透验证。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r9",
+              "code": "ASVS5-9",
+              "name": "开展静态和动态安全测试",
+              "description": "围绕开展静态和动态安全测试建立控制、验证与改进闭环。",
+              "level": "1",
+              "verification": "审查ASVS5-9对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-9",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r10",
+              "code": "ASVS5-10",
+              "name": "建立漏洞修复SLA与验证",
+              "description": "围绕建立漏洞修复SLA与验证建立控制、验证与改进闭环。",
+              "level": "3",
+              "verification": "审查ASVS5-10对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-10",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-6",
+          "code": "ASVS5.TEST.2",
+          "name": "部署运维",
+          "description": "部署、监控与响应。",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r11",
+              "code": "ASVS5-11",
+              "name": "部署基线与日志监控",
+              "description": "围绕部署基线与日志监控建立控制、验证与改进闭环。",
+              "level": "2",
+              "verification": "审查ASVS5-11对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-11",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r12",
+              "code": "ASVS5-12",
+              "name": "安全事件响应与演练",
+              "description": "围绕安全事件响应与演练建立控制、验证与改进闭环。",
+              "level": "1",
+              "verification": "审查ASVS5-12对应证据、测试和整改记录",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-12",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "应用开发团队与安全测试团队",
+                "scenario": "应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

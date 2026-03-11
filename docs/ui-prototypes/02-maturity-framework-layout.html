@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype 02 - Maturity Framework</title>
+  <style>
+    :root {
+      --bg: #f4f7fc; --panel: #fff; --line: #d9e1ec; --text: #1a2433; --muted: #5c6f88; --accent: #0f6cbd; --soft: #eaf3ff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
+    .app { height: 100vh; display: grid; grid-template-columns: 320px 1fr; }
+    .sidebar { border-right: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; }
+    .head { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    .brand { font-size: 14px; font-weight: 700; }
+    .switch { margin-top: 10px; width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; }
+    .menu, .tree { padding: 12px; border-bottom: 1px solid var(--line); }
+    .section-title { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .menu a { display: block; text-decoration: none; color: #2f425d; font-size: 13px; padding: 7px 9px; border-radius: 8px; margin-bottom: 4px; border: 1px solid transparent; }
+    .menu a.active { background: var(--soft); color: var(--accent); border-color: #bfd6f5; font-weight: 600; }
+    .tree { flex: 1; overflow: auto; }
+    .node { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 6px; background: #fff; cursor: pointer; }
+    .node small { color: var(--muted); display: block; }
+    .node.active { border-color: #9ec2ef; background: var(--soft); }
+
+    .main { min-width: 0; display: flex; flex-direction: column; }
+    .topbar { border-bottom: 1px solid var(--line); padding: 14px 20px; background: linear-gradient(90deg, #fff, #f2f8ff, #fff); }
+    .crumb { color: var(--muted); font-size: 12px; }
+    .title { margin-top: 6px; font-size: 22px; font-weight: 700; }
+    .content { padding: 18px 20px; overflow: auto; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+    .qcode { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; color: var(--muted); }
+    .qname { margin-top: 6px; font-size: 20px; font-weight: 700; }
+    .qdesc { margin-top: 10px; font-size: 14px; line-height: 1.6; }
+    .scale { display: grid; grid-template-columns: repeat(4, minmax(120px,1fr)); gap: 8px; margin-top: 14px; }
+    .level { border: 1px solid #cfe0f3; border-radius: 10px; padding: 10px; background: #f8fbff; font-size: 13px; }
+    .level b { display: block; margin-bottom: 4px; }
+    @media (max-width: 1024px) { .app { grid-template-columns: 1fr; } .sidebar { height: 44vh; } .scale { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="head">
+        <div class="brand">Ciso-Assistant</div>
+        <select class="switch"><option>OWASP SAMM 2.0</option><option>BSIMM 15</option><option>DSOMM</option></select>
+      </div>
+      <div class="menu">
+        <div class="section-title">Menu</div>
+        <a class="active" href="#">Structure</a>
+        <a href="#">Assessment</a>
+        <a href="#">Mappings</a>
+        <a href="#">Description</a>
+        <a href="#">Report</a>
+      </div>
+      <div class="tree" id="tree"></div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="crumb" id="crumb">Governance / Strategy & Metrics / Stream A</div>
+        <div class="title">成熟度末级问题</div>
+      </div>
+      <div class="content">
+        <section class="card">
+          <div class="qcode" id="qcode">G-SM-A-2</div>
+          <div class="qname" id="qname">Do you have a strategic plan for application security and use it to make decisions?</div>
+          <div class="qdesc" id="qdesc">The organization defines and uses a formal AppSec strategy to prioritize initiatives and drive security decisions.</div>
+          <div class="scale" id="scale"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        code: 'G-SM-A-2',
+        path: 'Governance / Strategy & Metrics / Stream A',
+        name: 'Do you have a strategic plan for application security and use it to make decisions?',
+        desc: 'The organization defines and uses a formal AppSec strategy to prioritize initiatives and drive security decisions.',
+        levels: [
+          ['L1', 'Ad-hoc plan, weak adoption'],
+          ['L2', 'Documented plan for key teams'],
+          ['L3', 'Org-wide planning and periodic review'],
+          ['L4', 'Adaptive planning driven by metrics']
+        ]
+      },
+      {
+        code: 'I-SB-A-3',
+        path: 'Implementation / Secure Build / Stream A',
+        name: 'Do you enforce automated security checks in your build processes?',
+        desc: 'Build pipelines include automated checks and quality gates for security defects and policy violations.',
+        levels: [
+          ['L1', 'Manual checks only'],
+          ['L2', 'Partial pipeline checks'],
+          ['L3', 'Mandatory checks for all critical repos'],
+          ['L4', 'Policy-as-code with measurable reduction trend']
+        ]
+      },
+      {
+        code: 'O-IM-A-2',
+        path: 'Operations / Incident Management / Stream A',
+        name: 'Do you follow a documented process for incident detection?',
+        desc: 'Incident detection has a repeatable workflow with escalation, ownership, and evidence capture requirements.',
+        levels: [
+          ['L1', 'Unstructured response'],
+          ['L2', 'Basic documented process'],
+          ['L3', 'Regular drills and SLA tracking'],
+          ['L4', 'Continuous tuning with lessons learned']
+        ]
+      }
+    ];
+
+    const tree = document.getElementById('tree');
+    const qcode = document.getElementById('qcode');
+    const qname = document.getElementById('qname');
+    const qdesc = document.getElementById('qdesc');
+    const scale = document.getElementById('scale');
+    const crumb = document.getElementById('crumb');
+
+    function render(active) {
+      tree.innerHTML = '<div class="section-title">Practices / Stream Questions</div>';
+      questions.forEach((q) => {
+        const item = document.createElement('div');
+        item.className = 'node' + (q.code === active ? ' active' : '');
+        item.innerHTML = `<small>${q.path}</small><strong>${q.code}</strong><div style="margin-top:4px;font-size:13px;">${q.name}</div>`;
+        item.onclick = () => render(q.code);
+        tree.appendChild(item);
+      });
+
+      const selected = questions.find((q) => q.code === active) || questions[0];
+      qcode.textContent = selected.code;
+      qname.textContent = selected.name;
+      qdesc.textContent = selected.desc;
+      crumb.textContent = selected.path;
+      scale.innerHTML = selected.levels
+        .map(([l, t]) => `<div class="level"><b>${l}</b><span>${t}</span></div>`)
+        .join('');
+    }
+
+    render(questions[0].code);
+  </script>
+</body>
+</html>

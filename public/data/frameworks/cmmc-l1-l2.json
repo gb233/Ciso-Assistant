@@ -1,0 +1,1257 @@
+{
+  "id": "cmmc-l1-l2",
+  "name": "CMMC",
+  "fullName": "网络安全成熟度模型认证（一级和二级）",
+  "version": "2.0",
+  "type": "maturity-model",
+  "domain": "defense",
+  "description": "CMMC 1级和2级内容摘自官方NIST SP 800-171r2控制声明，其中1级子集标记与CMMC 2.0基础范围一致。",
+  "website": "https://dodcio.defense.gov/CMMC/Documentation/",
+  "organization": "国防部首席信息官 / 美国国家标准与技术研究院",
+  "releaseDate": "2021-11-01",
+  "lastUpdated": "2026-02-26",
+  "language": "zh",
+  "source": {
+    "type": "official-machine-readable-derivative",
+    "primaryUrl": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf",
+    "programUrl": "https://dodcio.defense.gov/CMMC/Documentation/"
+  },
+  "stats": {
+    "totalRequirements": 110,
+    "totalCategories": 14,
+    "totalSubcategories": 14,
+    "level1": 17,
+    "level2": 93,
+    "level3": 0
+  },
+  "categories": [
+    {
+      "id": "access-control",
+      "code": "3.1",
+      "name": "访问控制",
+      "description": "CMMC 要求与 NIST 800-171r2 访问控制类别的对应映射。",
+      "requirements": 22,
+      "subcategories": [
+        {
+          "id": "access-control-requirements",
+          "code": "3.1",
+          "name": "访问控制",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-1-1",
+              "code": "3.1.1",
+              "name": "将系统访问限制在授权用户、代表授权用户操作的进程以及设备（包括其他系统）范围内。",
+              "description": "将系统访问限制在授权用户、代表授权用户操作的进程以及设备（包括其他系统）范围内。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.1"
+            },
+            {
+              "id": "3-1-2",
+              "code": "3.1.2",
+              "name": "将系统访问限制在授权用户允许执行的交易类型和功能范围内。",
+              "description": "将系统访问限制在授权用户允许执行的交易类型和功能范围内。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.2"
+            },
+            {
+              "id": "3-1-3",
+              "code": "3.1.3",
+              "name": "根据批准的授权控制受控未分类信息（CUI）的流动。",
+              "description": "根据批准的授权控制受控未分类信息（CUI）的流动。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.3"
+            },
+            {
+              "id": "3-1-4",
+              "code": "3.1.4",
+              "name": "将个人职责分开，以降低在没有勾结情况下发生恶意行为的风险。",
+              "description": "将个人职责分开，以降低在没有勾结情况下发生恶意行为的风险。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.4"
+            },
+            {
+              "id": "3-1-5",
+              "code": "3.1.5",
+              "name": "采用最小权限原则，包括针对特定的安全功能和特权账户。",
+              "description": "采用最小权限原则，包括针对特定的安全功能和特权账户。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.5"
+            },
+            {
+              "id": "3-1-6",
+              "code": "3.1.6",
+              "name": "在访问非安全功能时使用非特权账户或角色。",
+              "description": "在访问非安全功能时使用非特权账户或角色。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.6"
+            },
+            {
+              "id": "3-1-7",
+              "code": "3.1.7",
+              "name": "防止非特权用户执行特权功能，并在审计日志中记录此类功能的执行情况。",
+              "description": "防止非特权用户执行特权功能，并在审计日志中记录此类功能的执行情况。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.7"
+            },
+            {
+              "id": "3-1-8",
+              "code": "3.1.8",
+              "name": "限制登录失败的尝试次数。",
+              "description": "限制登录失败的尝试次数。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.8"
+            },
+            {
+              "id": "3-1-9",
+              "code": "3.1.9",
+              "name": "提供符合适用CUI规则的隐私和安全通知。",
+              "description": "提供符合适用CUI规则的隐私和安全通知。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.9"
+            },
+            {
+              "id": "3-1-10",
+              "code": "3.1.10",
+              "name": "使用会话锁和隐藏显示模式，以防止在一段时间不活动后访问和查看数据。",
+              "description": "使用会话锁和隐藏显示模式，以防止在一段时间不活动后访问和查看数据。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.10"
+            },
+            {
+              "id": "3-1-11",
+              "code": "3.1.11",
+              "name": "在满足特定条件后（自动）终止用户会话。",
+              "description": "在满足特定条件后（自动）终止用户会话。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.11"
+            },
+            {
+              "id": "3-1-12",
+              "code": "3.1.12",
+              "name": "监控和控制远程访问会话。",
+              "description": "监控和控制远程访问会话。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.12"
+            },
+            {
+              "id": "3-1-13",
+              "code": "3.1.13",
+              "name": "使用加密机制来保护远程访问会话的机密性。",
+              "description": "使用加密机制来保护远程访问会话的机密性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.13"
+            },
+            {
+              "id": "3-1-14",
+              "code": "3.1.14",
+              "name": "通过受管理的访问控制点进行远程访问路由。",
+              "description": "通过受管理的访问控制点进行远程访问路由。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.14"
+            },
+            {
+              "id": "3-1-15",
+              "code": "3.1.15",
+              "name": "授权远程执行特权命令和远程访问安全相关信息。",
+              "description": "授权远程执行特权命令和远程访问安全相关信息。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.15"
+            },
+            {
+              "id": "3-1-16",
+              "code": "3.1.16",
+              "name": "在允许此类连接之前，请授权无线访问。",
+              "description": "在允许此类连接之前，请授权无线访问。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.16"
+            },
+            {
+              "id": "3-1-17",
+              "code": "3.1.17",
+              "name": "使用身份验证和加密保护无线访问。",
+              "description": "使用身份验证和加密保护无线访问。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.17"
+            },
+            {
+              "id": "3-1-18",
+              "code": "3.1.18",
+              "name": "控制移动设备的连接。",
+              "description": "控制移动设备的连接。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.18"
+            },
+            {
+              "id": "3-1-19",
+              "code": "3.1.19",
+              "name": "在移动设备和移动计算平台上加密受控未分类信息（CUI）。",
+              "description": "在移动设备和移动计算平台上加密受控未分类信息（CUI）。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.19"
+            },
+            {
+              "id": "3-1-20",
+              "code": "3.1.20",
+              "name": "验证并控制/限制与外部系统的连接和使用。",
+              "description": "验证并控制/限制与外部系统的连接和使用。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.20"
+            },
+            {
+              "id": "3-1-21",
+              "code": "3.1.21",
+              "name": "限制在外部系统上使用便携式存储设备。",
+              "description": "限制在外部系统上使用便携式存储设备。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.21"
+            },
+            {
+              "id": "3-1-22",
+              "code": "3.1.22",
+              "name": "控制在公开可访问系统上发布或处理的CUI。",
+              "description": "控制在公开可访问系统上发布或处理的CUI。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.1.22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "awareness-and-training",
+      "code": "3.2",
+      "name": "意识与培训",
+      "description": "CMMC 要求映射到 NIST 800-171r2 的意识与培训类别。",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "awareness-and-training-requirements",
+          "code": "3.2",
+          "name": "意识与培训",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-2-1",
+              "code": "3.2.1",
+              "name": "确保组织系统的管理者、系统管理员和用户了解其活动相关的安全风险，以及与这些系统安全相关的适用政策、标准和程序。",
+              "description": "确保组织系统的管理者、系统管理员和用户了解其活动相关的安全风险，以及与这些系统安全相关的适用政策、标准和程序。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.2.1"
+            },
+            {
+              "id": "3-2-2",
+              "code": "3.2.2",
+              "name": "确保人员接受培训，以执行其分配的信息安全相关职责和责任。",
+              "description": "确保人员接受培训，以执行其分配的信息安全相关职责和责任。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.2.2"
+            },
+            {
+              "id": "3-2-3",
+              "code": "3.2.3",
+              "name": "提供安全意识培训，教导识别和报告潜在的内部威胁迹象。",
+              "description": "提供安全意识培训，教导识别和报告潜在的内部威胁迹象。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.2.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audit-and-accountability",
+      "code": "3.3",
+      "name": "审计与问责",
+      "description": "CMMC 要求映射到 NIST 800-171r2 的审计和问责家族。",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "audit-and-accountability-requirements",
+          "code": "3.3",
+          "name": "审计与问责",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-3-1",
+              "code": "3.3.1",
+              "name": "创建并保留系统审计日志和记录，范围足以支持对非法或未经授权的系统活动进行监控、分析、调查和报告。",
+              "description": "创建并保留系统审计日志和记录，范围足以支持对非法或未经授权的系统活动进行监控、分析、调查和报告。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.1"
+            },
+            {
+              "id": "3-3-2",
+              "code": "3.3.2",
+              "name": "确保可以唯一地追踪系统中每个用户的操作，以便对他们的行为追究责任。",
+              "description": "确保可以唯一地追踪系统中每个用户的操作，以便对他们的行为追究责任。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.2"
+            },
+            {
+              "id": "3-3-3",
+              "code": "3.3.3",
+              "name": "查看并更新已记录的事件。",
+              "description": "查看并更新已记录的事件。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.3"
+            },
+            {
+              "id": "3-3-4",
+              "code": "3.3.4",
+              "name": "在审计日志处理失败时发出警报。",
+              "description": "在审计日志处理失败时发出警报。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.4"
+            },
+            {
+              "id": "3-3-5",
+              "code": "3.3.5",
+              "name": "将审计记录的审查、分析和报告流程与对非法、未经授权、可疑或异常活动迹象的调查和响应相关联。",
+              "description": "将审计记录的审查、分析和报告流程与对非法、未经授权、可疑或异常活动迹象的调查和响应相关联。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.5"
+            },
+            {
+              "id": "3-3-6",
+              "code": "3.3.6",
+              "name": "提供审计记录减少和报告生成，以支持按需分析和报告。",
+              "description": "提供审计记录减少和报告生成，以支持按需分析和报告。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.6"
+            },
+            {
+              "id": "3-3-7",
+              "code": "3.3.7",
+              "name": "提供一种系统功能，将内部系统时钟与权威来源进行比较和同步，以生成审计记录的时间戳。",
+              "description": "提供一种系统功能，将内部系统时钟与权威来源进行比较和同步，以生成审计记录的时间戳。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.7"
+            },
+            {
+              "id": "3-3-8",
+              "code": "3.3.8",
+              "name": "保护审计信息和审计记录工具，防止未经授权的访问、修改和删除。",
+              "description": "保护审计信息和审计记录工具，防止未经授权的访问、修改和删除。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.8"
+            },
+            {
+              "id": "3-3-9",
+              "code": "3.3.9",
+              "name": "将审计日志功能的管理权限限制在部分特权用户范围内。",
+              "description": "将审计日志功能的管理权限限制在部分特权用户范围内。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.3.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "configuration-management",
+      "code": "3.4",
+      "name": "配置管理",
+      "description": "CMMC 要求与 NIST 800-171r2 配置管理类别的对应关系。",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "configuration-management-requirements",
+          "code": "3.4",
+          "name": "配置管理",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-4-1",
+              "code": "3.4.1",
+              "name": "在各自的系统开发生命周期中，建立并维护组织系统（包括硬件、软件、固件和文档）的基线配置和清单。",
+              "description": "在各自的系统开发生命周期中，建立并维护组织系统（包括硬件、软件、固件和文档）的基线配置和清单。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.1"
+            },
+            {
+              "id": "3-4-2",
+              "code": "3.4.2",
+              "name": "为组织系统中使用的信息技术产品建立并执行安全配置设置。",
+              "description": "为组织系统中使用的信息技术产品建立并执行安全配置设置。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.2"
+            },
+            {
+              "id": "3-4-3",
+              "code": "3.4.3",
+              "name": "跟踪、审查、批准或拒绝，并记录对组织系统的更改。",
+              "description": "跟踪、审查、批准或拒绝，并记录对组织系统的更改。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.3"
+            },
+            {
+              "id": "3-4-4",
+              "code": "3.4.4",
+              "name": "在实施之前分析变更的安全影响。",
+              "description": "在实施之前分析变更的安全影响。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.4"
+            },
+            {
+              "id": "3-4-5",
+              "code": "3.4.5",
+              "name": "定义、记录、批准并执行与组织系统变更相关的物理和逻辑访问限制。",
+              "description": "定义、记录、批准并执行与组织系统变更相关的物理和逻辑访问限制。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.5"
+            },
+            {
+              "id": "3-4-6",
+              "code": "3.4.6",
+              "name": "通过配置组织系统仅提供必要功能，遵循最小功能原则。",
+              "description": "通过配置组织系统仅提供必要功能，遵循最小功能原则。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.6"
+            },
+            {
+              "id": "3-4-7",
+              "code": "3.4.7",
+              "name": "限制、禁用或阻止非必要程序、功能、端口、协议和服务的使用。",
+              "description": "限制、禁用或阻止非必要程序、功能、端口、协议和服务的使用。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.7"
+            },
+            {
+              "id": "3-4-8",
+              "code": "3.4.8",
+              "name": "应用按例外拒绝（黑名单）策略以防止使用未经授权的软件，或应用全拒绝、按例外允许（白名单）策略以允许执行经过授权的软件。",
+              "description": "应用按例外拒绝（黑名单）策略以防止使用未经授权的软件，或应用全拒绝、按例外允许（白名单）策略以允许执行经过授权的软件。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.8"
+            },
+            {
+              "id": "3-4-9",
+              "code": "3.4.9",
+              "name": "控制和监控用户安装的软件。",
+              "description": "控制和监控用户安装的软件。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.4.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identification-and-authentication",
+      "code": "3.5",
+      "name": "身份识别与认证",
+      "description": "CMMC 要求映射到 NIST 800-171r2 的身份识别与认证类别。",
+      "requirements": 11,
+      "subcategories": [
+        {
+          "id": "identification-and-authentication-requirements",
+          "code": "3.5",
+          "name": "身份识别与认证",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-5-1",
+              "code": "3.5.1",
+              "name": "识别系统用户、代表用户操作的进程以及设备。",
+              "description": "识别系统用户、代表用户操作的进程以及设备。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.1"
+            },
+            {
+              "id": "3-5-2",
+              "code": "3.5.2",
+              "name": "对用户、进程或设备的身份进行认证（或验证），作为允许访问组织系统的前提条件。",
+              "description": "对用户、进程或设备的身份进行认证（或验证），作为允许访问组织系统的前提条件。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.2"
+            },
+            {
+              "id": "3-5-3",
+              "code": "3.5.3",
+              "name": "对特权账户的本地和网络访问以及非特权账户的网络访问使用多因素身份验证。",
+              "description": "对特权账户的本地和网络访问以及非特权账户的网络访问使用多因素身份验证。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.3"
+            },
+            {
+              "id": "3-5-4",
+              "code": "3.5.4",
+              "name": "对特权账户和非特权账户的网络访问使用防重放认证机制。",
+              "description": "对特权账户和非特权账户的网络访问使用防重放认证机制。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.4"
+            },
+            {
+              "id": "3-5-5",
+              "code": "3.5.5",
+              "name": "防止在规定期限内重复使用标识符。",
+              "description": "防止在规定期限内重复使用标识符。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.5"
+            },
+            {
+              "id": "3-5-6",
+              "code": "3.5.6",
+              "name": "在定义的非活动期后禁用标识符。",
+              "description": "在定义的非活动期后禁用标识符。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.6"
+            },
+            {
+              "id": "3-5-7",
+              "code": "3.5.7",
+              "name": "在创建新密码时，强制执行最低密码复杂度并更改字符。",
+              "description": "在创建新密码时，强制执行最低密码复杂度并更改字符。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.7"
+            },
+            {
+              "id": "3-5-8",
+              "code": "3.5.8",
+              "name": "禁止在指定的次数内重复使用密码。",
+              "description": "禁止在指定的次数内重复使用密码。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.8"
+            },
+            {
+              "id": "3-5-9",
+              "code": "3.5.9",
+              "name": "允许在系统登录时使用临时密码，并立即更改为永久密码。",
+              "description": "允许在系统登录时使用临时密码，并立即更改为永久密码。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.9"
+            },
+            {
+              "id": "3-5-10",
+              "code": "3.5.10",
+              "name": "仅存储和传输经过加密保护的密码。",
+              "description": "仅存储和传输经过加密保护的密码。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.10"
+            },
+            {
+              "id": "3-5-11",
+              "code": "3.5.11",
+              "name": "认证信息的模糊反馈。",
+              "description": "认证信息的模糊反馈。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.5.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incident-response",
+      "code": "3.6",
+      "name": "事件响应",
+      "description": "CMMC 要求与 NIST 800-171r2 事件响应类别的对应关系。",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "incident-response-requirements",
+          "code": "3.6",
+          "name": "事件响应",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-6-1",
+              "code": "3.6.1",
+              "name": "为组织系统建立一个操作性事件处理能力，包括准备、检测、分析、遏制、恢复和用户响应活动。",
+              "description": "为组织系统建立一个操作性事件处理能力，包括准备、检测、分析、遏制、恢复和用户响应活动。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.6.1"
+            },
+            {
+              "id": "3-6-2",
+              "code": "3.6.2",
+              "name": "跟踪、记录并向组织内外的指定官员和/或主管部门报告事件。",
+              "description": "跟踪、记录并向组织内外的指定官员和/或主管部门报告事件。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.6.2"
+            },
+            {
+              "id": "3-6-3",
+              "code": "3.6.3",
+              "name": "测试组织的事件响应能力。",
+              "description": "测试组织的事件响应能力。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.6.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maintenance",
+      "code": "3.7",
+      "name": "Maintenance",
+      "description": "CMMC 要求与 NIST 800-171r2 维护类别的对应关系。",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "maintenance-requirements",
+          "code": "3.7",
+          "name": "Maintenance",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-7-1",
+              "code": "3.7.1",
+              "name": "对组织系统进行维护。",
+              "description": "对组织系统进行维护。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.1"
+            },
+            {
+              "id": "3-7-2",
+              "code": "3.7.2",
+              "name": "对用于进行系统维护的工具、技术、机制和人员提供控制措施。",
+              "description": "对用于进行系统维护的工具、技术、机制和人员提供控制措施。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.2"
+            },
+            {
+              "id": "3-7-3",
+              "code": "3.7.3",
+              "name": "确保送往外部维护的设备已清除任何受控非公开信息（CUI）。",
+              "description": "确保送往外部维护的设备已清除任何受控非公开信息（CUI）。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.3"
+            },
+            {
+              "id": "3-7-4",
+              "code": "3.7.4",
+              "name": "在将媒体用于组织系统之前，检查包含诊断和测试程序的媒体是否含有恶意代码。",
+              "description": "在将媒体用于组织系统之前，检查包含诊断和测试程序的媒体是否含有恶意代码。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.4"
+            },
+            {
+              "id": "3-7-5",
+              "code": "3.7.5",
+              "name": "要求通过外部网络连接建立非本地维护会话时使用多因素身份验证，并在非本地维护完成后终止此类连接。",
+              "description": "要求通过外部网络连接建立非本地维护会话时使用多因素身份验证，并在非本地维护完成后终止此类连接。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.5"
+            },
+            {
+              "id": "3-7-6",
+              "code": "3.7.6",
+              "name": "监督没有所需访问权限的维护人员的维护活动。",
+              "description": "监督没有所需访问权限的维护人员的维护活动。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.7.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media-protection",
+      "code": "3.8",
+      "name": "媒体保护",
+      "description": "CMMC 要求与 NIST 800-171r2 媒体保护系列对应映射。",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "media-protection-requirements",
+          "code": "3.8",
+          "name": "媒体保护",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-8-1",
+              "code": "3.8.1",
+              "name": "保护 (i.",
+              "description": "保护 (i.",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.1"
+            },
+            {
+              "id": "3-8-2",
+              "code": "3.8.2",
+              "name": "将系统媒介上的受控未分类信息（CUI）的访问限制在授权用户范围内。",
+              "description": "将系统媒介上的受控未分类信息（CUI）的访问限制在授权用户范围内。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.2"
+            },
+            {
+              "id": "3-8-3",
+              "code": "3.8.3",
+              "name": "在处置或释放以供再使用之前，清理或销毁包含受控未分类信息（CUI）的系统媒介。",
+              "description": "在处置或释放以供再使用之前，清理或销毁包含受控未分类信息（CUI）的系统媒介。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.3"
+            },
+            {
+              "id": "3-8-4",
+              "code": "3.8.4",
+              "name": "在媒体上标注必要的受控未分类信息（CUI）标记和分发限制。",
+              "description": "在媒体上标注必要的受控未分类信息（CUI）标记和分发限制。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.4"
+            },
+            {
+              "id": "3-8-5",
+              "code": "3.8.5",
+              "name": "控制对包含受控未分类信息 (CUI) 的媒体的访问，并在媒体运送到受控区域之外时保持责任追踪。",
+              "description": "控制对包含受控未分类信息 (CUI) 的媒体的访问，并在媒体运送到受控区域之外时保持责任追踪。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.5"
+            },
+            {
+              "id": "3-8-6",
+              "code": "3.8.6",
+              "name": "在传输过程中，为存储在数字介质上的受控未分类信息 (CUI) 实施加密机制以保护其机密性，除非采用其他物理保护措施进行保护。",
+              "description": "在传输过程中，为存储在数字介质上的受控未分类信息 (CUI) 实施加密机制以保护其机密性，除非采用其他物理保护措施进行保护。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.6"
+            },
+            {
+              "id": "3-8-7",
+              "code": "3.8.7",
+              "name": "控制系统组件上可移动媒体的使用。",
+              "description": "控制系统组件上可移动媒体的使用。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.7"
+            },
+            {
+              "id": "3-8-8",
+              "code": "3.8.8",
+              "name": "当便携式存储设备无法识别所有者时，禁止使用该设备。",
+              "description": "当便携式存储设备无法识别所有者时，禁止使用该设备。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.8"
+            },
+            {
+              "id": "3-8-9",
+              "code": "3.8.9",
+              "name": "保护存储位置备份的受控未分类信息（CUI）机密性。",
+              "description": "保护存储位置备份的受控未分类信息（CUI）机密性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.8.9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personnel-security",
+      "code": "3.9",
+      "name": "人员安全",
+      "description": "CMMC 要求与 NIST 800-171r2 人员安全类别的对应关系。",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "personnel-security-requirements",
+          "code": "3.9",
+          "name": "人员安全",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-9-1",
+              "code": "3.9.1",
+              "name": "在授权访问包含受控未分类信息（CUI）的组织系统之前，对个人进行筛查。",
+              "description": "在授权访问包含受控未分类信息（CUI）的组织系统之前，对个人进行筛查。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.9.1"
+            },
+            {
+              "id": "3-9-2",
+              "code": "3.9.2",
+              "name": "确保在人员调动（如离职和调岗）期间及之后，包含受控未分类信息（CUI）的组织系统得到保护。",
+              "description": "确保在人员调动（如离职和调岗）期间及之后，包含受控未分类信息（CUI）的组织系统得到保护。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.9.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical-protection",
+      "code": "3.10",
+      "name": "物理防护",
+      "description": "CMMC 要求与 NIST 800-171r2 物理保护系列对应。",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "physical-protection-requirements",
+          "code": "3.10",
+          "name": "物理防护",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-10-1",
+              "code": "3.10.1",
+              "name": "限制未经授权的人员访问组织的系统、设备及其操作环境，仅允许授权人员访问。",
+              "description": "限制未经授权的人员访问组织的系统、设备及其操作环境，仅允许授权人员访问。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.1"
+            },
+            {
+              "id": "3-10-2",
+              "code": "3.10.2",
+              "name": "保护和监控组织系统的物理设施及支持基础设施。",
+              "description": "保护和监控组织系统的物理设施及支持基础设施。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.2"
+            },
+            {
+              "id": "3-10-3",
+              "code": "3.10.3",
+              "name": "护送访客并监督访客活动。",
+              "description": "护送访客并监督访客活动。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.3"
+            },
+            {
+              "id": "3-10-4",
+              "code": "3.10.4",
+              "name": "维护物理访问的审计日志。",
+              "description": "维护物理访问的审计日志。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.4"
+            },
+            {
+              "id": "3-10-5",
+              "code": "3.10.5",
+              "name": "控制和管理物理访问设备。",
+              "description": "控制和管理物理访问设备。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.5"
+            },
+            {
+              "id": "3-10-6",
+              "code": "3.10.6",
+              "name": "在备用工作场所执行对受控未分类信息（CUI）的保护措施。",
+              "description": "在备用工作场所执行对受控未分类信息（CUI）的保护措施。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.10.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "risk-assessment",
+      "code": "3.11",
+      "name": "风险评估",
+      "description": "CMMC 要求与 NIST 800-171r2 风险评估系列对应映射。",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "risk-assessment-requirements",
+          "code": "3.11",
+          "name": "风险评估",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-11-1",
+              "code": "3.11.1",
+              "name": "定期评估由组织系统的运行及与之相关的机密未分类信息（CUI）的处理、存储或传输所导致的，对组织运营（包括任务、职能、形象或声誉）、组织资产和个人的风险。",
+              "description": "定期评估由组织系统的运行及与之相关的机密未分类信息（CUI）的处理、存储或传输所导致的，对组织运营（包括任务、职能、形象或声誉）、组织资产和个人的风险。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.11.1"
+            },
+            {
+              "id": "3-11-2",
+              "code": "3.11.2",
+              "name": "定期扫描组织系统和应用程序中的漏洞，并在发现影响这些系统和应用程序的新漏洞时进行扫描。",
+              "description": "定期扫描组织系统和应用程序中的漏洞，并在发现影响这些系统和应用程序的新漏洞时进行扫描。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.11.2"
+            },
+            {
+              "id": "3-11-3",
+              "code": "3.11.3",
+              "name": "根据风险评估修复漏洞。",
+              "description": "根据风险评估修复漏洞。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.11.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-assessment",
+      "code": "3.12",
+      "name": "安全评估",
+      "description": "CMMC 要求与 NIST 800-171r2 安全评估系列对应映射。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "security-assessment-requirements",
+          "code": "3.12",
+          "name": "安全评估",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-12-1",
+              "code": "3.12.1",
+              "name": "定期评估组织系统中的安全控制措施，以确定这些控制措施在实际应用中是否有效。",
+              "description": "定期评估组织系统中的安全控制措施，以确定这些控制措施在实际应用中是否有效。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.12.1"
+            },
+            {
+              "id": "3-12-2",
+              "code": "3.12.2",
+              "name": "制定并实施行动计划，以纠正缺陷并减少或消除组织系统中的脆弱性。",
+              "description": "制定并实施行动计划，以纠正缺陷并减少或消除组织系统中的脆弱性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.12.2"
+            },
+            {
+              "id": "3-12-3",
+              "code": "3.12.3",
+              "name": "持续监控安全控制措施，以确保这些控制措施的持续有效性。",
+              "description": "持续监控安全控制措施，以确保这些控制措施的持续有效性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.12.3"
+            },
+            {
+              "id": "3-12-4",
+              "code": "3.12.4",
+              "name": "制定、记录并定期更新系统安全计划，描述系统边界、系统运行环境、安全要求的实现方式，以及与其他系统的关系或连接。",
+              "description": "制定、记录并定期更新系统安全计划，描述系统边界、系统运行环境、安全要求的实现方式，以及与其他系统的关系或连接。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.12.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-and-communications-protection",
+      "code": "3.13",
+      "name": "系统与通信保护",
+      "description": "CMMC 要求映射到 NIST 800-171r2 系统和通信保护类别。",
+      "requirements": 16,
+      "subcategories": [
+        {
+          "id": "system-and-communications-protection-requirements",
+          "code": "3.13",
+          "name": "系统与通信保护",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-13-1",
+              "code": "3.13.1",
+              "name": "监控、控制和保护通信（i.",
+              "description": "监控、控制和保护通信（i.",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.1"
+            },
+            {
+              "id": "3-13-2",
+              "code": "3.13.2",
+              "name": "采用建筑设计、软件开发技术和系统工程原理，在组织系统中促进有效的信息安全。",
+              "description": "采用建筑设计、软件开发技术和系统工程原理，在组织系统中促进有效的信息安全。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.2"
+            },
+            {
+              "id": "3-13-3",
+              "code": "3.13.3",
+              "name": "将用户功能与系统管理功能分开。",
+              "description": "将用户功能与系统管理功能分开。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.3"
+            },
+            {
+              "id": "3-13-4",
+              "code": "3.13.4",
+              "name": "防止通过共享系统资源的未授权和无意的信息传输。",
+              "description": "防止通过共享系统资源的未授权和无意的信息传输。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.4"
+            },
+            {
+              "id": "3-13-5",
+              "code": "3.13.5",
+              "name": "为公开可访问的系统组件实现子网，这些组件与内部网络在物理上或逻辑上是分离的。",
+              "description": "为公开可访问的系统组件实现子网，这些组件与内部网络在物理上或逻辑上是分离的。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.5"
+            },
+            {
+              "id": "3-13-6",
+              "code": "3.13.6",
+              "name": "默认拒绝网络通信流量，并允许例外的网络通信流量（即",
+              "description": "默认拒绝网络通信流量，并允许例外的网络通信流量（即",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.6"
+            },
+            {
+              "id": "3-13-7",
+              "code": "3.13.7",
+              "name": "防止远程设备同时与组织系统建立非远程连接，并通过其他连接与外部网络中的资源进行通信。",
+              "description": "防止远程设备同时与组织系统建立非远程连接，并通过其他连接与外部网络中的资源进行通信。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.7"
+            },
+            {
+              "id": "3-13-8",
+              "code": "3.13.8",
+              "name": "实施加密机制以防止在传输过程中未经授权的CUI泄露，除非已通过其他物理保护措施进行保护。",
+              "description": "实施加密机制以防止在传输过程中未经授权的CUI泄露，除非已通过其他物理保护措施进行保护。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.8"
+            },
+            {
+              "id": "3-13-9",
+              "code": "3.13.9",
+              "name": "在会话结束或达到定义的不活动时间后，终止与通信会话相关的网络连接。",
+              "description": "在会话结束或达到定义的不活动时间后，终止与通信会话相关的网络连接。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.9"
+            },
+            {
+              "id": "3-13-10",
+              "code": "3.13.10",
+              "name": "为组织系统中使用的加密技术建立和管理加密密钥。",
+              "description": "为组织系统中使用的加密技术建立和管理加密密钥。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.10"
+            },
+            {
+              "id": "3-13-11",
+              "code": "3.13.11",
+              "name": "在用于保护受控未分类信息（CUI）机密性时，使用经 FIPS 验证的加密技术。",
+              "description": "在用于保护受控未分类信息（CUI）机密性时，使用经 FIPS 验证的加密技术。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.11"
+            },
+            {
+              "id": "3-13-12",
+              "code": "3.13.12",
+              "name": "禁止远程启动协作计算设备，并向在设备旁的用户显示设备使用状态。",
+              "description": "禁止远程启动协作计算设备，并向在设备旁的用户显示设备使用状态。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.12"
+            },
+            {
+              "id": "3-13-13",
+              "code": "3.13.13",
+              "name": "控制和监控移动代码的使用。",
+              "description": "控制和监控移动代码的使用。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.13"
+            },
+            {
+              "id": "3-13-14",
+              "code": "3.13.14",
+              "name": "控制和监控互联网语音协议（VoIP）技术的使用。",
+              "description": "控制和监控互联网语音协议（VoIP）技术的使用。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.14"
+            },
+            {
+              "id": "3-13-15",
+              "code": "3.13.15",
+              "name": "保护通信会话的真实性。",
+              "description": "保护通信会话的真实性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.15"
+            },
+            {
+              "id": "3-13-16",
+              "code": "3.13.16",
+              "name": "保护静止状态下的受控未分类信息 (CUI) 的机密性。",
+              "description": "保护静止状态下的受控未分类信息 (CUI) 的机密性。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.13.16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-and-information-integrity",
+      "code": "3.14",
+      "name": "系统与信息完整性",
+      "description": "CMMC 要求映射到 NIST 800-171r2 系统和信息完整性类别。",
+      "requirements": 7,
+      "subcategories": [
+        {
+          "id": "system-and-information-integrity-requirements",
+          "code": "3.14",
+          "name": "系统与信息完整性",
+          "description": "此系列中的 CMMC 1/2 级要求。",
+          "requirements": [
+            {
+              "id": "3-14-1",
+              "code": "3.14.1",
+              "name": "及时识别、报告并纠正系统缺陷。",
+              "description": "及时识别、报告并纠正系统缺陷。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.1"
+            },
+            {
+              "id": "3-14-2",
+              "code": "3.14.2",
+              "name": "在组织系统的指定位置提供对恶意代码的防护。",
+              "description": "在组织系统的指定位置提供对恶意代码的防护。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.2"
+            },
+            {
+              "id": "3-14-3",
+              "code": "3.14.3",
+              "name": "监控系统安全警报和通告，并采取相应措施。",
+              "description": "监控系统安全警报和通告，并采取相应措施。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.3"
+            },
+            {
+              "id": "3-14-4",
+              "code": "3.14.4",
+              "name": "在有新版本发布时更新恶意代码防护机制。",
+              "description": "在有新版本发布时更新恶意代码防护机制。",
+              "level": "1",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.4"
+            },
+            {
+              "id": "3-14-5",
+              "code": "3.14.5",
+              "name": "对组织系统进行定期扫描，并在从外部来源下载、打开或执行文件时进行实时扫描。",
+              "description": "对组织系统进行定期扫描，并在从外部来源下载、打开或执行文件时进行实时扫描。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.5"
+            },
+            {
+              "id": "3-14-6",
+              "code": "3.14.6",
+              "name": "监控组织系统，包括进出通信流量，以检测攻击及潜在攻击的迹象。",
+              "description": "监控组织系统，包括进出通信流量，以检测攻击及潜在攻击的迹象。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.6"
+            },
+            {
+              "id": "3-14-7",
+              "code": "3.14.7",
+              "name": "识别组织系统的未经授权使用。",
+              "description": "识别组织系统的未经授权使用。",
+              "level": "2",
+              "verification": "审核此要求的 CMMC 评估证据。",
+              "nist": "3.14.7"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

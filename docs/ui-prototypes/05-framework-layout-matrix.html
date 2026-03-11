@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype 05 - Framework Layout Matrix</title>
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --panel: #fff;
+      --line: #d9e1ec;
+      --text: #1a2433;
+      --muted: #5c6f88;
+      --accent: #0f6cbd;
+      --soft: #eaf3ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at 10% 0%, #edf6ff, var(--bg));
+    }
+    .wrap {
+      max-width: 1300px;
+      margin: 30px auto;
+      padding: 0 16px 30px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .sub {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .toolbar {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: 220px 220px 1fr;
+      gap: 10px;
+    }
+    select, input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 10px;
+      background: #fff;
+      font-size: 13px;
+    }
+    .cards {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .card .label {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .card .value {
+      margin-top: 4px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e3859;
+    }
+    .table-wrap {
+      margin-top: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    thead {
+      background: #f8fbff;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    th {
+      color: #27486f;
+      font-size: 12px;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    td small { color: var(--muted); }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      border-radius: 999px;
+      border: 1px solid #c9d8ea;
+      background: #f5f9ff;
+      color: #2f425d;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+    .badge.control { border-color: #bad6f8; background: #eaf4ff; color: #1e4f87; }
+    .badge.maturity { border-color: #bde7d1; background: #e9f8ef; color: #215b3d; }
+    .badge.regulation { border-color: #f0d3ab; background: #fff5e8; color: #7b4a14; }
+    .legend {
+      margin-top: 14px;
+      padding: 12px;
+      background: #fff;
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    @media (max-width: 1000px) {
+      .toolbar { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      table { table-layout: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>框架展示模式矩阵（基于当前仓库框架清单）</h1>
+    <div class="sub">
+      目标：不再一刀切。按框架类型分配展示模式，保持左侧常驻导航，右侧只展示末级内容。<br />
+      规则：`maturity -> 成熟度布局`，`regulation/compliance -> 法规义务布局`，其余 `control/standard -> 控制项布局`。
+    </div>
+
+    <div class="toolbar">
+      <select id="layoutFilter">
+        <option value="all">全部展示模式</option>
+        <option value="control">控制项布局</option>
+        <option value="maturity">成熟度布局</option>
+        <option value="regulation">法规义务布局</option>
+      </select>
+      <select id="regionFilter">
+        <option value="all">全部区域</option>
+        <option value="global">global</option>
+        <option value="us">us</option>
+        <option value="eu">eu</option>
+        <option value="cn">cn</option>
+      </select>
+      <input id="search" placeholder="搜索框架 id / 名称，例如 samm / nist / mlps..." />
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="label">总框架数</div>
+        <div class="value" id="totalCount">0</div>
+      </div>
+      <div class="card">
+        <div class="label">当前筛选结果</div>
+        <div class="value" id="filteredCount">0</div>
+      </div>
+      <div class="card">
+        <div class="label">建议改造顺序</div>
+        <div class="value" style="font-size:16px;line-height:1.5;">
+          控制项页先统一，再分批适配成熟度和法规义务页
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 130px;">Framework ID</th>
+            <th style="width: 220px;">Name</th>
+            <th style="width: 95px;">Type</th>
+            <th style="width: 95px;">Region</th>
+            <th style="width: 120px;">Requirements</th>
+            <th style="width: 140px;">Recommended Layout</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="legend">
+      注意：这里是“展示层模式映射”，不是删除数据。<br />
+      你提出的核心点已经固化为原则：同一层级展示“标准结构页”和“特殊结构页”，不把特殊页塞到更深层造成循环嵌套。
+    </div>
+  </div>
+
+  <script>
+    const frameworks = [
+      { id: "owasp-asvs", name: "OWASP ASVS", type: "standard", region: "global", requirements: 286 },
+      { id: "owasp-samm", name: "OWASP SAMM", type: "maturity", region: "global", requirements: 48 },
+      { id: "nist-ssdf", name: "NIST SSDF", type: "standard", region: "us", requirements: 42 },
+      { id: "nist-csf-2.0", name: "NIST CSF 2.0", type: "standard", region: "us", requirements: 26 },
+      { id: "nist-800-53", name: "NIST SP 800-53", type: "control", region: "us", requirements: 993 },
+      { id: "nist-800-34", name: "NIST SP 800-34", type: "standard", region: "us", requirements: 29 },
+      { id: "nist-800-171", name: "NIST SP 800-171", type: "control", region: "us", requirements: 97 },
+      { id: "cis-csc-v8", name: "CIS Controls v8.1", type: "control", region: "global", requirements: 153 },
+      { id: "cyberfundamentals-20", name: "CCB CyberFundamentals 2.0", type: "maturity", region: "eu", requirements: 71 },
+      { id: "dsomm", name: "DSOMM", type: "maturity", region: "global", requirements: 378 },
+      { id: "bsimm-15", name: "BSIMM15", type: "maturity", region: "global", requirements: 128 },
+      { id: "nis2", name: "NIS 2", type: "compliance", region: "eu", requirements: 43 },
+      { id: "aima", name: "AIMA", type: "maturity", region: "global", requirements: 150 },
+      { id: "cmmc-l1-l2", name: "CMMC L1-L2", type: "compliance", region: "us", requirements: 110 },
+      { id: "iso27001-2022", name: "ISO 27001:2022 + Amd1:2024", type: "standard", region: "global", requirements: 52 },
+      { id: "iso-27002-2022", name: "ISO 27002:2022", type: "control", region: "global", requirements: 52 },
+      { id: "iec-62443-4-1", name: "IEC 62443-4-1", type: "standard", region: "global", requirements: 50 },
+      { id: "secure-controls-framework", name: "SCF", type: "control", region: "global", requirements: 1239 },
+      { id: "cloud-controls-matrix", name: "CCM v4.0", type: "control", region: "global", requirements: 261 },
+      { id: "mlps-2.0", name: "MLPS 2.0", type: "compliance", region: "cn", requirements: 192 },
+      { id: "guomi-sm", name: "SM Algorithms", type: "standard", region: "cn", requirements: 31 },
+      { id: "cn-cybersecurity-law", name: "Cybersecurity Law", type: "regulation", region: "cn", requirements: 18 },
+      { id: "cn-data-security-law", name: "Data Security Law", type: "regulation", region: "cn", requirements: 18 },
+      { id: "cn-personal-information-protection-law", name: "Personal Information Protection Law", type: "regulation", region: "cn", requirements: 18 },
+      { id: "nist-800-161", name: "NIST SP 800-161", type: "standard", region: "us", requirements: 88 },
+      { id: "pci-dss", name: "PCI DSS", type: "compliance", region: "global", requirements: 18 },
+      { id: "cn-network-data-security-regulation", name: "Network Data Security Regulation", type: "regulation", region: "cn", requirements: 12 },
+      { id: "cn-cross-border-data-flow-provisions", name: "Cross-Border Data Flow Provisions", type: "regulation", region: "cn", requirements: 12 },
+      { id: "cn-pi-compliance-audit-measures", name: "PI Compliance Audit Measures", type: "regulation", region: "cn", requirements: 12 },
+      { id: "eu-dora", name: "DORA", type: "regulation", region: "eu", requirements: 12 },
+      { id: "eu-ai-act", name: "EU AI Act", type: "regulation", region: "eu", requirements: 12 },
+      { id: "eu-cyber-resilience-act", name: "Cyber Resilience Act", type: "regulation", region: "eu", requirements: 12 },
+      { id: "owasp-api-top10-2023", name: "OWASP API Top 10:2023", type: "standard", region: "global", requirements: 10 },
+      { id: "owasp-masvs-2.1", name: "OWASP MASVS 2.1", type: "standard", region: "global", requirements: 12 },
+      { id: "owasp-asvs-5.0", name: "OWASP ASVS 5.0", type: "standard", region: "global", requirements: 12 }
+    ];
+
+    const rows = document.getElementById("rows");
+    const totalCount = document.getElementById("totalCount");
+    const filteredCount = document.getElementById("filteredCount");
+    const layoutFilter = document.getElementById("layoutFilter");
+    const regionFilter = document.getElementById("regionFilter");
+    const search = document.getElementById("search");
+
+    function getLayout(type) {
+      if (type === "maturity") return "maturity";
+      if (type === "regulation" || type === "compliance") return "regulation";
+      return "control";
+    }
+
+    function getLayoutLabel(layout) {
+      if (layout === "maturity") return "成熟度布局";
+      if (layout === "regulation") return "法规义务布局";
+      return "控制项布局";
+    }
+
+    function getReason(layout) {
+      if (layout === "maturity") return "核心是等级量表和实践成熟度，不应混入控制项的逐条审计写法。";
+      if (layout === "regulation") return "核心是法条义务与适用条件，应展示条款叶子和落实状态。";
+      return "核心是控制项结构树，适合左树右详情的标准控制项展示。";
+    }
+
+    function badge(layout) {
+      const label = getLayoutLabel(layout);
+      return '<span class="badge ' + layout + '">' + label + "</span>";
+    }
+
+    function render() {
+      const query = search.value.trim().toLowerCase();
+      const lf = layoutFilter.value;
+      const rf = regionFilter.value;
+
+      let list = frameworks.map((f) => ({ ...f, layout: getLayout(f.type) }));
+      if (lf !== "all") list = list.filter((x) => x.layout === lf);
+      if (rf !== "all") list = list.filter((x) => x.region === rf);
+      if (query) {
+        list = list.filter((x) => {
+          return x.id.toLowerCase().includes(query) || x.name.toLowerCase().includes(query);
+        });
+      }
+
+      rows.innerHTML = list.map((x) => {
+        return (
+          "<tr>" +
+            "<td><strong>" + x.id + "</strong></td>" +
+            "<td>" + x.name + "</td>" +
+            "<td><span class=\"badge\">" + x.type + "</span></td>" +
+            "<td><small>" + x.region + "</small></td>" +
+            "<td>" + x.requirements + "</td>" +
+            "<td>" + badge(x.layout) + "</td>" +
+            "<td>" + getReason(x.layout) + "</td>" +
+          "</tr>"
+        );
+      }).join("");
+
+      totalCount.textContent = frameworks.length;
+      filteredCount.textContent = list.length;
+    }
+
+    layoutFilter.addEventListener("change", render);
+    regionFilter.addEventListener("change", render);
+    search.addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

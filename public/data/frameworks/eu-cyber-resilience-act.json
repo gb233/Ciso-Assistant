@@ -1,0 +1,284 @@
+{
+  "id": "eu-cyber-resilience-act",
+  "name": "欧盟网络弹性法案",
+  "fullName": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+  "version": "2024/2847",
+  "type": "regulation",
+  "domain": "product-security",
+  "description": "欧盟CRA对具有数字要素产品设定全生命周期网络安全要求和漏洞处理义务。",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "欧盟",
+  "releaseDate": "2024-12-10",
+  "lastUpdated": "2027-12-11",
+  "language": "zh",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-cyber-resilience-act-cat-1",
+      "code": "CRA.SEC",
+      "name": "安全设计与开发",
+      "description": "安全默认和生命周期设计要求。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-1",
+          "code": "CRA.SEC.1",
+          "name": "产品安全基线",
+          "description": "建立产品安全基线。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r1",
+              "code": "CRA-13",
+              "name": "产品满足基本网络安全要求",
+              "description": "产品满足基本网络安全要求并持续验证有效性。",
+              "level": "3",
+              "verification": "审查产品满足基本网络安全要求相关文档与测试结果",
+              "sourceRef": "CRA 第13条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r2",
+              "code": "CRA-14",
+              "name": "默认安全配置与最小攻击面",
+              "description": "默认安全配置与最小攻击面并持续验证有效性。",
+              "level": "2",
+              "verification": "审查默认安全配置与最小攻击面相关文档与测试结果",
+              "sourceRef": "CRA 第14条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-2",
+          "code": "CRA.SEC.2",
+          "name": "供应链与更新",
+          "description": "供应链与更新机制。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r3",
+              "code": "CRA-15",
+              "name": "设计阶段纳入安全开发流程",
+              "description": "设计阶段纳入安全开发流程并持续验证有效性。",
+              "level": "1",
+              "verification": "审查设计阶段纳入安全开发流程相关文档与测试结果",
+              "sourceRef": "CRA 第15条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r4",
+              "code": "CRA-16",
+              "name": "保障产品更新机制安全可用",
+              "description": "保障产品更新机制安全可用并持续验证有效性。",
+              "level": "3",
+              "verification": "审查保障产品更新机制安全可用相关文档与测试结果",
+              "sourceRef": "CRA 第16条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-cyber-resilience-act-cat-2",
+      "code": "CRA.VUL",
+      "name": "漏洞管理与通报",
+      "description": "漏洞处理、披露和通报义务。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-3",
+          "code": "CRA.VUL.1",
+          "name": "漏洞处理",
+          "description": "漏洞识别、修复和披露。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r5",
+              "code": "CRA-17",
+              "name": "建立漏洞处理流程",
+              "description": "建立漏洞处理流程并持续验证有效性。",
+              "level": "2",
+              "verification": "审查建立漏洞处理流程相关文档与测试结果",
+              "sourceRef": "CRA 第17条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r6",
+              "code": "CRA-18",
+              "name": "通报被利用漏洞与重大事件",
+              "description": "通报被利用漏洞与重大事件并持续验证有效性。",
+              "level": "1",
+              "verification": "审查通报被利用漏洞与重大事件相关文档与测试结果",
+              "sourceRef": "CRA 第18条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-4",
+          "code": "CRA.VUL.2",
+          "name": "事件通报",
+          "description": "重大事件和漏洞通报。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r7",
+              "code": "CRA-19",
+              "name": "保存技术文档和合规记录",
+              "description": "保存技术文档和合规记录并持续验证有效性。",
+              "level": "3",
+              "verification": "审查保存技术文档和合规记录相关文档与测试结果",
+              "sourceRef": "CRA 第19条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r8",
+              "code": "CRA-20",
+              "name": "执行合格评定程序",
+              "description": "执行合格评定程序并持续验证有效性。",
+              "level": "2",
+              "verification": "审查执行合格评定程序相关文档与测试结果",
+              "sourceRef": "CRA 第20条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-cyber-resilience-act-cat-3",
+      "code": "CRA.CONF",
+      "name": "合格评定与市场监督",
+      "description": "合格评定、文档和市场监管协作。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-5",
+          "code": "CRA.CONF.1",
+          "name": "合格评定",
+          "description": "开展合格评定与技术文档管理。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r9",
+              "code": "CRA-21",
+              "name": "提供符合性声明和标识",
+              "description": "提供符合性声明和标识并持续验证有效性。",
+              "level": "1",
+              "verification": "审查提供符合性声明和标识相关文档与测试结果",
+              "sourceRef": "CRA 第21条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r10",
+              "code": "CRA-22",
+              "name": "建立上市后监测机制",
+              "description": "建立上市后监测机制并持续验证有效性。",
+              "level": "3",
+              "verification": "审查建立上市后监测机制相关文档与测试结果",
+              "sourceRef": "CRA 第22条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-6",
+          "code": "CRA.CONF.2",
+          "name": "市场监督",
+          "description": "配合市场监督与召回。",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r11",
+              "code": "CRA-23",
+              "name": "配合市场监管调查与纠正措施",
+              "description": "配合市场监管调查与纠正措施并持续验证有效性。",
+              "level": "2",
+              "verification": "审查配合市场监管调查与纠正措施相关文档与测试结果",
+              "sourceRef": "CRA 第23条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r12",
+              "code": "CRA-24",
+              "name": "发现不合规时实施召回整改",
+              "description": "发现不合规时实施召回整改并持续验证有效性。",
+              "level": "1",
+              "verification": "审查发现不合规时实施召回整改相关文档与测试结果",
+              "sourceRef": "CRA 第24条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "制造商、进口商、分销商",
+                "scenario": "数字产品网络安全合规",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

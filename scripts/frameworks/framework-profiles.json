@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-03-10T10:45:27.398Z",
+  "sourceFiles": {
+    "zhIndex": "public/data/frameworks/index.json",
+    "enIndex": "public/data/frameworks/index-en.json",
+    "gateProfiles": "scripts/frameworks/gate-profiles.json"
+  },
+  "profiles": {
+    "aima": {
+      "frameworkType": "maturity",
+      "region": "global",
+      "profileId": "maturity-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "bsimm-15": {
+      "frameworkType": "maturity",
+      "region": "global",
+      "profileId": "maturity-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "cis-csc-v8": {
+      "frameworkType": "control",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "cloud-controls-matrix": {
+      "frameworkType": "control",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "cmmc-l1-l2": {
+      "frameworkType": "compliance",
+      "region": "us",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "cn-cybersecurity-law": {
+      "frameworkType": "regulation",
+      "region": "cn",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "cn-data-security-law": {
+      "frameworkType": "regulation",
+      "region": "cn",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "cn-personal-information-protection-law": {
+      "frameworkType": "regulation",
+      "region": "cn",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "cyberfundamentals-20": {
+      "frameworkType": "maturity",
+      "region": "eu",
+      "profileId": "maturity-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "dsomm": {
+      "frameworkType": "maturity",
+      "region": "global",
+      "profileId": "maturity-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "eu-ai-act": {
+      "frameworkType": "regulation",
+      "region": "eu",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "eu-cyber-resilience-act": {
+      "frameworkType": "regulation",
+      "region": "eu",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "eu-dora": {
+      "frameworkType": "regulation",
+      "region": "eu",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "eu-gdpr": {
+      "frameworkType": "regulation",
+      "region": "eu",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "iec-62443-4-1": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "iso-27002-2022": {
+      "frameworkType": "control",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "iso27001-2022": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "mlps-2.0": {
+      "frameworkType": "compliance",
+      "region": "cn",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": "Keep bronze until canonical zh source and count consistency are fixed."
+    },
+    "nis2": {
+      "frameworkType": "compliance",
+      "region": "eu",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "nist-800-161": {
+      "frameworkType": "standard",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "nist-800-171": {
+      "frameworkType": "control",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "nist-800-34": {
+      "frameworkType": "standard",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "nist-800-53": {
+      "frameworkType": "control",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "nist-csf-2.0": {
+      "frameworkType": "standard",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "nist-ssdf": {
+      "frameworkType": "standard",
+      "region": "us",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "owasp-api-top10-2023": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "owasp-asvs": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "owasp-asvs-5.0": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "owasp-masvs-2.1": {
+      "frameworkType": "standard",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "owasp-samm": {
+      "frameworkType": "maturity",
+      "region": "global",
+      "profileId": "maturity-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    },
+    "pci-dss": {
+      "frameworkType": "compliance",
+      "region": "global",
+      "profileId": "regulatory-obligation",
+      "enforcedTier": "bronze",
+      "recommendedTier": "silver",
+      "notes": ""
+    },
+    "secure-controls-framework": {
+      "frameworkType": "control",
+      "region": "global",
+      "profileId": "control-baseline",
+      "enforcedTier": "bronze",
+      "recommendedTier": "bronze",
+      "notes": ""
+    }
+  }
+}

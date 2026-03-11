@@ -1,0 +1,278 @@
+{
+  "frameworks": {
+    "owasp-asvs": {
+      "expectedRequirements": 286,
+      "expectedCategories": 14,
+      "expectedSubcategories": 71,
+      "source": "OWASP ASVS v4.0.3 Official JSON Release",
+      "sourceUrl": "https://github.com/OWASP/ASVS/releases/download/v4.0.3_release/OWASP.Application.Security.Verification.Standard.4.0.3-en.json",
+      "canonicalLanguage": "en",
+      "sourceVersion": "4.0.3 (2021-10-28)"
+    },
+    "owasp-samm": {
+      "expectedRequirements": 96,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/samm",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 5,
+      "expectedSubcategories": 15
+    },
+    "nist-ssdf": {
+      "expectedRequirements": 42,
+      "expectedCategories": 4,
+      "expectedSubcategories": 19,
+      "source": "NIST SP 800-218 SSDF Table Workbook",
+      "sourceUrl": "https://csrc.nist.gov/files/pubs/sp/800/218/final/docs/nist.sp.800-218.ssdf-table.xlsx",
+      "canonicalLanguage": "en",
+      "sourceVersion": "SP 800-218 v1.1 (2022-02-03)"
+    },
+    "nist-csf-2.0": {
+      "expectedRequirements": 106,
+      "expectedControls": 106,
+      "expectedRubrics": 0,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/nist-csf-20",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 6,
+      "expectedSubcategories": 22
+    },
+    "nist-800-53": {
+      "expectedRequirements": 1986,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/nist-800-53-v5",
+      "canonicalLanguage": "en",
+      "sourceVersion": "NIST SP 800-53 Rev.5.2.0",
+      "expectedCategories": 20,
+      "expectedSubcategories": 993
+    },
+    "nist-800-34": {
+      "expectedRequirements": 58,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/nist-800-34",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 6,
+      "expectedSubcategories": 29
+    },
+    "nist-800-171": {
+      "expectedRequirements": 194,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/nist-800-171-rev-3",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 17,
+      "expectedSubcategories": 97
+    },
+    "cis-csc-v8": {
+      "expectedRequirements": 306,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/cis-critical-security-controls",
+      "canonicalLanguage": "en",
+      "sourceVersion": "CIS Controls v8.1",
+      "expectedCategories": 18,
+      "expectedSubcategories": 153
+    },
+    "cyberfundamentals-20": {
+      "expectedRequirements": 142,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/cybersecurity-fundamentals-20",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 6,
+      "expectedSubcategories": 22
+    },
+    "dsomm": {
+      "expectedRequirements": 378,
+      "expectedControls": 189,
+      "expectedRubrics": 189,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/dsomm",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 5,
+      "expectedSubcategories": 19
+    },
+    "bsimm-15": {
+      "expectedRequirements": 256,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/bsimm-15",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 4,
+      "expectedSubcategories": 12
+    },
+    "nis2": {
+      "expectedRequirements": 86,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/nis2",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 6,
+      "expectedSubcategories": 18
+    },
+    "aima": {
+      "expectedRequirements": 150,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/aima",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 8,
+      "expectedSubcategories": 24
+    },
+    "cmmc-l1-l2": {
+      "expectedRequirements": 110,
+      "expectedCategories": 14,
+      "expectedSubcategories": 14,
+      "source": "NIST SP 800-171r2 official PDF (CMMC L1/L2 mapped extraction)",
+      "sourceUrl": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf",
+      "canonicalLanguage": "en",
+      "sourceVersion": "NIST SP 800-171 Rev.2 + CMMC 2.0 L1 subset mapping"
+    },
+    "iso27001-2022": {
+      "expectedRequirements": 93,
+      "source": "ISO/IEC 27001:2022 official standard (ISO webstore listing)",
+      "sourceUrl": "https://www.iso.org/standard/82875.html",
+      "canonicalLanguage": "en",
+      "sourceVersion": "ISO/IEC 27001:2022 + Amd1:2024"
+    },
+    "iso-27002-2022": {
+      "expectedRequirements": 93,
+      "source": "ISO/IEC 27002:2022 official standard (ISO webstore listing)",
+      "sourceUrl": "https://www.iso.org/standard/75652.html",
+      "canonicalLanguage": "en",
+      "sourceVersion": "ISO/IEC 27002:2022"
+    },
+    "iec-62443-4-1": {
+      "expectedRequirements": 52,
+      "source": "IEC 62443-4-1 official standard (IEC webstore listing)",
+      "sourceUrl": "https://webstore.iec.ch/en/publication/33615",
+      "canonicalLanguage": "en",
+      "sourceVersion": "IEC 62443-4-1:2018"
+    },
+    "secure-controls-framework": {
+      "expectedRequirements": 2478,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/secure-controls-framework",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 33,
+      "expectedSubcategories": 1239
+    },
+    "cloud-controls-matrix": {
+      "expectedRequirements": 522,
+      "source": "Sammy Public Browse Snapshot",
+      "sourceUrl": "https://sammy.codific.com/browse/cloud-controls-matrix",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Sammy snapshot 2026-02-26",
+      "expectedCategories": 17,
+      "expectedSubcategories": 197
+    },
+    "mlps-2.0": {
+      "expectedRequirements": 345,
+      "source": "China National Standard platform entry for MLPS baseline standard",
+      "sourceUrl": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=BAFB89DC49BEE2D55D9F8F3B9A17B67A",
+      "canonicalLanguage": "zh",
+      "sourceVersion": "GB/T 22239-2019"
+    },
+    "cn-cybersecurity-law": {
+      "expectedRequirements": 81,
+      "expectedCategories": 7,
+      "expectedSubcategories": 7,
+      "source": "Official law PDF (Cybersecurity Law amended in 2025)",
+      "sourceUrl": "https://www.ssf.gov.cn/portal/rootfiles/2026/02/27/1773947155578281-1773947155587379.pdf",
+      "canonicalLanguage": "zh",
+      "sourceVersion": "Adopted 2016-11-07; amended 2025-10-28; effective 2026-01-01"
+    },
+    "cn-data-security-law": {
+      "expectedRequirements": 55,
+      "expectedCategories": 7,
+      "expectedSubcategories": 7,
+      "source": "Official reposted full text PDF (Data Security Law of the PRC)",
+      "sourceUrl": "https://fgw.sh.gov.cn/cmsres/b5/b5670659844e4e849fe538a3ba845d72/a62449d5a12ac0467a3d71457d45f13f.pdf",
+      "canonicalLanguage": "zh",
+      "sourceVersion": "Adopted 2021-06-10; effective 2021-09-01"
+    },
+    "cn-personal-information-protection-law": {
+      "expectedRequirements": 74,
+      "expectedCategories": 8,
+      "expectedSubcategories": 8,
+      "source": "Official law PDF (Personal Information Protection Law of the PRC)",
+      "sourceUrl": "https://www.ssf.gov.cn/portal/rootimages/uploadimg/1641708111970375/1641708111970375.pdf",
+      "canonicalLanguage": "zh",
+      "sourceVersion": "Adopted 2021-08-20; effective 2021-11-01"
+    },
+    "nist-800-161": {
+      "expectedRequirements": 88,
+      "expectedCategories": 7,
+      "expectedSubcategories": 7,
+      "source": "NIST SP 800-161 Rev.1 Update 1 Table 26 workbook (official XLSX)",
+      "sourceUrl": "https://csrc.nist.gov/files/pubs/sp/800/161/r1/upd1/final/docs/sp800-161r1-table26.xlsx",
+      "canonicalLanguage": "en",
+      "sourceVersion": "NIST SP 800-161 Rev.1 Update 1 Table 26 (2024-11-01)"
+    },
+    "pci-dss": {
+      "expectedRequirements": 18,
+      "source": "PCI SSC official document library (PCI DSS v4.0.1 listing/download endpoint)",
+      "sourceUrl": "https://www.pcisecuritystandards.org/document_library/",
+      "canonicalLanguage": "en",
+      "sourceVersion": "PCI DSS v4.0.1"
+    },
+    "eu-dora": {
+      "expectedRequirements": 12,
+      "source": "European Union official publication",
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Entered into force 2023-01-16; applies from 2025-01-17"
+    },
+    "eu-ai-act": {
+      "expectedRequirements": 12,
+      "source": "European Union official publication",
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Entered into force 2024-08-01; phased application"
+    },
+    "eu-cyber-resilience-act": {
+      "expectedRequirements": 12,
+      "source": "European Union official publication",
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Entered into force 2024-12-10; main obligations apply from 2027-12-11"
+    },
+    "owasp-api-top10-2023": {
+      "expectedRequirements": 10,
+      "source": "OWASP Foundation official publication",
+      "sourceUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+      "canonicalLanguage": "en",
+      "sourceVersion": "OWASP API Security Top 10 (2023 edition)"
+    },
+    "owasp-masvs-2.1": {
+      "expectedRequirements": 12,
+      "source": "OWASP Foundation official publication",
+      "sourceUrl": "https://github.com/OWASP/owasp-masvs/releases/tag/v2.1.0",
+      "canonicalLanguage": "en",
+      "sourceVersion": "MASVS v2.1.0"
+    },
+    "owasp-asvs-5.0": {
+      "expectedRequirements": 12,
+      "source": "OWASP Foundation official publication",
+      "sourceUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0",
+      "canonicalLanguage": "en",
+      "sourceVersion": "OWASP ASVS v5.0.0"
+    },
+    "eu-gdpr": {
+      "expectedRequirements": 99,
+      "expectedCategories": 11,
+      "expectedSubcategories": 11,
+      "source": "EUR-Lex consolidated GDPR text",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02016R0679-20160504",
+      "statusUrl": "https://commission.europa.eu/law/law-topic/data-protection/legal-framework-eu-data-protection_en",
+      "canonicalLanguage": "en",
+      "sourceVersion": "Regulation (EU) 2016/679; applicable from 2018-05-25"
+    }
+  },
+  "meta": {
+    "notes": "canonicalLanguage: cn frameworks default zh; others default en. Fill source/sourceUrl/sourceVersion with official references."
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "id": "eu-cyber-resilience-act",
+  "name": "Cyber Resilience Act",
+  "fullName": "Regulation (EU) 2024/2847 Cyber Resilience Act",
+  "version": "2024/2847",
+  "type": "regulation",
+  "domain": "product-security",
+  "description": "EU CRA establishes cybersecurity requirements and vulnerability handling obligations for products with digital elements across the lifecycle.",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "European Union",
+  "releaseDate": "2024-12-10",
+  "lastUpdated": "2027-12-11",
+  "language": "en",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-cyber-resilience-act-cat-1",
+      "code": "CRA.SEC",
+      "name": "Secure Design and Development",
+      "description": "Secure-by-default and lifecycle development obligations.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-1",
+          "code": "CRA.SEC.1",
+          "name": "Product Security Baseline",
+          "description": "Define product security baseline controls.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r1",
+              "code": "CRA-13",
+              "name": "Meet essential cybersecurity requirements for products",
+              "description": "Meet essential cybersecurity requirements for products and continuously validate control effectiveness.",
+              "level": "3",
+              "verification": "Review documentation and test evidence for meet essential cybersecurity requirements for products",
+              "sourceRef": "CRA Art.13",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r2",
+              "code": "CRA-14",
+              "name": "Apply secure defaults and reduce attack surface",
+              "description": "Apply secure defaults and reduce attack surface and continuously validate control effectiveness.",
+              "level": "2",
+              "verification": "Review documentation and test evidence for apply secure defaults and reduce attack surface",
+              "sourceRef": "CRA Art.14",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-2",
+          "code": "CRA.SEC.2",
+          "name": "Supply Chain and Updates",
+          "description": "Manage supply chain and secure updates.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r3",
+              "code": "CRA-15",
+              "name": "Integrate secure development lifecycle controls",
+              "description": "Integrate secure development lifecycle controls and continuously validate control effectiveness.",
+              "level": "1",
+              "verification": "Review documentation and test evidence for integrate secure development lifecycle controls",
+              "sourceRef": "CRA Art.15",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r4",
+              "code": "CRA-16",
+              "name": "Provide secure and timely update mechanisms",
+              "description": "Provide secure and timely update mechanisms and continuously validate control effectiveness.",
+              "level": "3",
+              "verification": "Review documentation and test evidence for provide secure and timely update mechanisms",
+              "sourceRef": "CRA Art.16",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-cyber-resilience-act-cat-2",
+      "code": "CRA.VUL",
+      "name": "Vulnerability Management and Disclosure",
+      "description": "Handle vulnerabilities and mandatory notifications.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-3",
+          "code": "CRA.VUL.1",
+          "name": "Vulnerability Handling",
+          "description": "Identify, remediate, and disclose vulnerabilities.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r5",
+              "code": "CRA-17",
+              "name": "Maintain coordinated vulnerability handling process",
+              "description": "Maintain coordinated vulnerability handling process and continuously validate control effectiveness.",
+              "level": "2",
+              "verification": "Review documentation and test evidence for maintain coordinated vulnerability handling process",
+              "sourceRef": "CRA Art.17",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r6",
+              "code": "CRA-18",
+              "name": "Notify actively exploited vulnerabilities and incidents",
+              "description": "Notify actively exploited vulnerabilities and incidents and continuously validate control effectiveness.",
+              "level": "1",
+              "verification": "Review documentation and test evidence for notify actively exploited vulnerabilities and incidents",
+              "sourceRef": "CRA Art.18",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-4",
+          "code": "CRA.VUL.2",
+          "name": "Incident Notification",
+          "description": "Notify significant incidents and exploited vulnerabilities.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r7",
+              "code": "CRA-19",
+              "name": "Maintain technical documentation and compliance records",
+              "description": "Maintain technical documentation and compliance records and continuously validate control effectiveness.",
+              "level": "3",
+              "verification": "Review documentation and test evidence for maintain technical documentation and compliance records",
+              "sourceRef": "CRA Art.19",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r8",
+              "code": "CRA-20",
+              "name": "Execute conformity assessment procedures",
+              "description": "Execute conformity assessment procedures and continuously validate control effectiveness.",
+              "level": "2",
+              "verification": "Review documentation and test evidence for execute conformity assessment procedures",
+              "sourceRef": "CRA Art.20",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-cyber-resilience-act-cat-3",
+      "code": "CRA.CONF",
+      "name": "Conformity and Market Oversight",
+      "description": "Conformity assessment, documentation, and market surveillance duties.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-cyber-resilience-act-sub-5",
+          "code": "CRA.CONF.1",
+          "name": "Conformity Assessment",
+          "description": "Perform conformity assessment and maintain technical documentation.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r9",
+              "code": "CRA-21",
+              "name": "Provide declaration of conformity and markings",
+              "description": "Provide declaration of conformity and markings and continuously validate control effectiveness.",
+              "level": "1",
+              "verification": "Review documentation and test evidence for provide declaration of conformity and markings",
+              "sourceRef": "CRA Art.21",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r10",
+              "code": "CRA-22",
+              "name": "Operate post-market monitoring controls",
+              "description": "Operate post-market monitoring controls and continuously validate control effectiveness.",
+              "level": "3",
+              "verification": "Review documentation and test evidence for operate post-market monitoring controls",
+              "sourceRef": "CRA Art.22",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-cyber-resilience-act-sub-6",
+          "code": "CRA.CONF.2",
+          "name": "Market Surveillance",
+          "description": "Support market surveillance and corrective measures.",
+          "requirements": [
+            {
+              "id": "eu-cyber-resilience-act-r11",
+              "code": "CRA-23",
+              "name": "Cooperate with market surveillance actions",
+              "description": "Cooperate with market surveillance actions and continuously validate control effectiveness.",
+              "level": "2",
+              "verification": "Review documentation and test evidence for cooperate with market surveillance actions",
+              "sourceRef": "CRA Art.23",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-cyber-resilience-act-r12",
+              "code": "CRA-24",
+              "name": "Implement corrective actions and recalls for non-compliance",
+              "description": "Implement corrective actions and recalls for non-compliance and continuously validate control effectiveness.",
+              "level": "1",
+              "verification": "Review documentation and test evidence for implement corrective actions and recalls for non-compliance",
+              "sourceRef": "CRA Art.24",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Manufacturers, importers, and distributors",
+                "scenario": "Cybersecurity compliance for products with digital elements",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

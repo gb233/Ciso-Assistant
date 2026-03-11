@@ -1,0 +1,284 @@
+{
+  "id": "owasp-masvs-2.1",
+  "name": "OWASP MASVS 2.1",
+  "fullName": "OWASP Mobile Application Security Verification Standard 2.1",
+  "version": "2.1",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "MASVS 2.1 提供移动应用安全验证要求，覆盖架构、数据、通信、认证、代码质量和运行环境防护。",
+  "website": "https://owasp.org/",
+  "organization": "OWASP",
+  "releaseDate": "2025-01-18",
+  "lastUpdated": "2025-01-18",
+  "language": "zh",
+  "source": {
+    "type": "official-framework-release",
+    "primaryUrl": "https://github.com/OWASP/owasp-masvs/releases/tag/v2.1.0",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "owasp-masvs-2.1-cat-1",
+      "code": "MASVS.ARCH",
+      "name": "架构与数据保护",
+      "description": "安全架构、数据存储与隐私保护。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-1",
+          "code": "MASVS.ARCH.1",
+          "name": "安全架构",
+          "description": "安全架构与威胁建模。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r1",
+              "code": "MASVS-ARCH-1",
+              "name": "建立移动应用威胁建模",
+              "description": "围绕建立移动应用威胁建模建立可测量控制。",
+              "level": "3",
+              "verification": "审查MASVS-ARCH-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-ARCH-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r2",
+              "code": "MASVS-ARCH-2",
+              "name": "分离敏感组件与最小权限设计",
+              "description": "围绕分离敏感组件与最小权限设计建立可测量控制。",
+              "level": "2",
+              "verification": "审查MASVS-ARCH-2测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-ARCH-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-2",
+          "code": "MASVS.ARCH.2",
+          "name": "数据与隐私",
+          "description": "数据保护与隐私控制。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r3",
+              "code": "MASVS-STORAGE-1",
+              "name": "安全存储敏感数据",
+              "description": "围绕安全存储敏感数据建立可测量控制。",
+              "level": "1",
+              "verification": "审查MASVS-STORAGE-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-STORAGE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r4",
+              "code": "MASVS-PRIVACY-1",
+              "name": "实施数据最小化与隐私控制",
+              "description": "围绕实施数据最小化与隐私控制建立可测量控制。",
+              "level": "3",
+              "verification": "审查MASVS-PRIVACY-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-PRIVACY-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-masvs-2.1-cat-2",
+      "code": "MASVS.AUTH",
+      "name": "认证与网络通信",
+      "description": "身份验证、会话和网络安全。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-3",
+          "code": "MASVS.AUTH.1",
+          "name": "认证授权",
+          "description": "身份认证与授权控制。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r5",
+              "code": "MASVS-AUTH-1",
+              "name": "实施强认证与会话管理",
+              "description": "围绕实施强认证与会话管理建立可测量控制。",
+              "level": "2",
+              "verification": "审查MASVS-AUTH-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-AUTH-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r6",
+              "code": "MASVS-AUTH-2",
+              "name": "防止认证绕过与暴力破解",
+              "description": "围绕防止认证绕过与暴力破解建立可测量控制。",
+              "level": "1",
+              "verification": "审查MASVS-AUTH-2测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-AUTH-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-4",
+          "code": "MASVS.AUTH.2",
+          "name": "网络与加密",
+          "description": "通信与密码学控制。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r7",
+              "code": "MASVS-NETWORK-1",
+              "name": "强制安全传输与证书验证",
+              "description": "围绕强制安全传输与证书验证建立可测量控制。",
+              "level": "3",
+              "verification": "审查MASVS-NETWORK-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-NETWORK-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r8",
+              "code": "MASVS-CRYPTO-1",
+              "name": "使用安全密码算法与密钥管理",
+              "description": "围绕使用安全密码算法与密钥管理建立可测量控制。",
+              "level": "2",
+              "verification": "审查MASVS-CRYPTO-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CRYPTO-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-masvs-2.1-cat-3",
+      "code": "MASVS.RES",
+      "name": "代码质量与运行时韧性",
+      "description": "代码安全和反篡改、运行时防护。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-masvs-2.1-sub-5",
+          "code": "MASVS.RES.1",
+          "name": "代码与构建",
+          "description": "代码质量与构建安全。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r9",
+              "code": "MASVS-CODE-1",
+              "name": "执行静态和动态安全测试",
+              "description": "围绕执行静态和动态安全测试建立可测量控制。",
+              "level": "1",
+              "verification": "审查MASVS-CODE-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CODE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r10",
+              "code": "MASVS-CODE-2",
+              "name": "保护构建与发布流水线完整性",
+              "description": "围绕保护构建与发布流水线完整性建立可测量控制。",
+              "level": "3",
+              "verification": "审查MASVS-CODE-2测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-CODE-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-masvs-2.1-sub-6",
+          "code": "MASVS.RES.2",
+          "name": "运行时防护",
+          "description": "运行时检测与防护。",
+          "requirements": [
+            {
+              "id": "owasp-masvs-2.1-r11",
+              "code": "MASVS-RESILIENCE-1",
+              "name": "实现反调试与反篡改控制",
+              "description": "围绕实现反调试与反篡改控制建立可测量控制。",
+              "level": "2",
+              "verification": "审查MASVS-RESILIENCE-1测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-RESILIENCE-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-masvs-2.1-r12",
+              "code": "MASVS-RESILIENCE-2",
+              "name": "检测运行时完整性异常",
+              "description": "围绕检测运行时完整性异常建立可测量控制。",
+              "level": "1",
+              "verification": "审查MASVS-RESILIENCE-2测试用例、报告与修复记录",
+              "sourceRef": "OWASP MASVS 2.1 MASVS-RESILIENCE-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "移动应用开发和安全测试团队",
+                "scenario": "移动应用安全验证",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

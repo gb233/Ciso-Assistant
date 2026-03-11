@@ -1,0 +1,247 @@
+{
+  "id": "pci-dss",
+  "name": "PCI DSS",
+  "fullName": "Payment Card Industry Data Security Standard v4.0.1",
+  "version": "4.0.1",
+  "type": "compliance",
+  "domain": "payment-security",
+  "description": "PCI DSS is the payment card data security standard designed to protect cardholder data and reduce risk across payment environments.",
+  "website": "https://www.pcisecuritystandards.org/standards/pci-dss/",
+  "organization": "PCI Security Standards Council",
+  "releaseDate": "2022-03-01",
+  "lastUpdated": "2024-03-31",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 18,
+    "level1": 6,
+    "level2": 6,
+    "level3": 6,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "build-maintain",
+      "code": "PCI.BM",
+      "name": "Secure Network and Systems",
+      "description": "Build and maintain secure network and system configurations.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "bm-network",
+          "code": "BM.NET",
+          "name": "Network Boundary Protection",
+          "description": "Protect cardholder data environments with network controls.",
+          "requirements": [
+            {
+              "id": "bm-net-1",
+              "code": "REQ-1.1",
+              "name": "Boundary control configuration",
+              "description": "Configure and maintain boundary controls to restrict unauthorized traffic.",
+              "level": "1",
+              "verification": "Review firewall/ACL rules and change records"
+            },
+            {
+              "id": "bm-net-2",
+              "code": "REQ-1.2",
+              "name": "Segmentation and isolation",
+              "description": "Isolate the cardholder data environment from other network zones.",
+              "level": "2",
+              "verification": "Review segmentation design and connectivity test results"
+            },
+            {
+              "id": "bm-net-3",
+              "code": "REQ-1.3",
+              "name": "Traffic rule reviews",
+              "description": "Review inbound/outbound rules periodically and remove stale entries.",
+              "level": "3",
+              "verification": "Review rule review cadence and baseline"
+            }
+          ]
+        },
+        {
+          "id": "bm-hardening",
+          "code": "BM.HARD",
+          "name": "System Hardening",
+          "description": "Remove insecure defaults and harden systems.",
+          "requirements": [
+            {
+              "id": "bm-hard-1",
+              "code": "REQ-2.1",
+              "name": "Default setting cleanup",
+              "description": "Change default passwords/settings and remove unnecessary services.",
+              "level": "1",
+              "verification": "Review hardening baseline and validation checks"
+            },
+            {
+              "id": "bm-hard-2",
+              "code": "REQ-2.2",
+              "name": "Security baselines",
+              "description": "Define and enforce hardened baselines for hosts and containers.",
+              "level": "2",
+              "verification": "Review baseline policy and automation results"
+            },
+            {
+              "id": "bm-hard-3",
+              "code": "REQ-2.3",
+              "name": "Continuous compliance monitoring",
+              "description": "Continuously detect baseline drift and trigger remediation.",
+              "level": "3",
+              "verification": "Review compliance alerts and remediation tickets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protect-data",
+      "code": "PCI.PD",
+      "name": "Protect Cardholder Data",
+      "description": "Protect cardholder data at rest and in transit.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "pd-storage",
+          "code": "PD.STO",
+          "name": "Data at Rest Protection",
+          "description": "Apply strong controls for stored cardholder data.",
+          "requirements": [
+            {
+              "id": "pd-sto-1",
+              "code": "REQ-3.1",
+              "name": "Data minimization",
+              "description": "Retain only the minimum cardholder data necessary for business purposes.",
+              "level": "1",
+              "verification": "Review data retention policy and purge logs"
+            },
+            {
+              "id": "pd-sto-2",
+              "code": "REQ-3.2",
+              "name": "Encryption and masking",
+              "description": "Use strong encryption, truncation, or masking for sensitive data fields.",
+              "level": "2",
+              "verification": "Review key management and sample datasets"
+            },
+            {
+              "id": "pd-sto-3",
+              "code": "REQ-3.3",
+              "name": "Key lifecycle management",
+              "description": "Manage keys through secure generation, storage, rotation, and retirement.",
+              "level": "3",
+              "verification": "Review KMS settings and rotation evidence"
+            }
+          ]
+        },
+        {
+          "id": "pd-transit",
+          "code": "PD.TRN",
+          "name": "Data in Transit Protection",
+          "description": "Protect sensitive data over open/public networks.",
+          "requirements": [
+            {
+              "id": "pd-trn-1",
+              "code": "REQ-4.1",
+              "name": "Secure transport protocols",
+              "description": "Use strong cryptographic protocols for transmission security.",
+              "level": "1",
+              "verification": "Review TLS configurations and certificate health"
+            },
+            {
+              "id": "pd-trn-2",
+              "code": "REQ-4.2",
+              "name": "Disable weak protocols",
+              "description": "Disable weak protocols and deprecated cipher suites.",
+              "level": "2",
+              "verification": "Review scan findings and remediation records"
+            },
+            {
+              "id": "pd-trn-3",
+              "code": "REQ-4.3",
+              "name": "End-to-end protection",
+              "description": "Implement end-to-end encryption or equivalent controls in critical payment paths.",
+              "level": "3",
+              "verification": "Review architecture and validation evidence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitor-test",
+      "code": "PCI.MT",
+      "name": "Monitor and Test",
+      "description": "Continuously monitor access and validate security controls.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "mt-logging",
+          "code": "MT.LOG",
+          "name": "Logging and Monitoring",
+          "description": "Log and review critical security events.",
+          "requirements": [
+            {
+              "id": "mt-log-1",
+              "code": "REQ-10.1",
+              "name": "Comprehensive logging",
+              "description": "Capture logs for critical systems and access events.",
+              "level": "1",
+              "verification": "Review log policy and sample records"
+            },
+            {
+              "id": "mt-log-2",
+              "code": "REQ-10.2",
+              "name": "Centralized monitoring",
+              "description": "Aggregate logs and alert on suspicious behaviors.",
+              "level": "2",
+              "verification": "Review SIEM rules and alert handling"
+            },
+            {
+              "id": "mt-log-3",
+              "code": "REQ-10.3",
+              "name": "Log integrity protection",
+              "description": "Protect logs from tampering and preserve forensic chain-of-custody.",
+              "level": "3",
+              "verification": "Review integrity controls and archival policy"
+            }
+          ]
+        },
+        {
+          "id": "mt-testing",
+          "code": "MT.TST",
+          "name": "Vulnerability and Security Testing",
+          "description": "Use scanning, penetration testing, and remediation workflows.",
+          "requirements": [
+            {
+              "id": "mt-tst-1",
+              "code": "REQ-11.1",
+              "name": "Periodic vulnerability scanning",
+              "description": "Run internal and external vulnerability scans on a defined schedule.",
+              "level": "1",
+              "verification": "Review scan plans and reports"
+            },
+            {
+              "id": "mt-tst-2",
+              "code": "REQ-11.2",
+              "name": "Penetration testing",
+              "description": "Perform recurring penetration tests and validate fixes.",
+              "level": "2",
+              "verification": "Review penetration test reports and retest results"
+            },
+            {
+              "id": "mt-tst-3",
+              "code": "REQ-11.3",
+              "name": "Continuous control validation",
+              "description": "Continuously validate the effectiveness of critical security controls.",
+              "level": "3",
+              "verification": "Review control validation dashboards and findings"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-framework-publication",
+    "primaryUrl": "https://www.pcisecuritystandards.org/document_library/"
+  }
+}

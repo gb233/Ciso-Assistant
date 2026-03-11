@@ -1,0 +1,117 @@
+{
+  "frameworkId": "iso-27002-2022",
+  "checkedAt": "2026-02-28T12:50:54.412Z",
+  "mode": "report",
+  "checks": [
+    {
+      "label": "index-zh metadata exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "index-en metadata exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "framework profile assignment exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "profile rule exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "framework type matches profile allowed types",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": "control,standard",
+      "actual": "control"
+    },
+    {
+      "label": "official baseline exists",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical framework file is readable",
+      "pass": true,
+      "severity": "error",
+      "details": "public/data/frameworks/iso-27002-2022-en.json",
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical framework file JSON parse",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical requirement ids are unique",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "canonical requirement codes are unique",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": null,
+      "actual": null
+    },
+    {
+      "label": "index requirement count equals canonical requirement count",
+      "pass": true,
+      "severity": "error",
+      "details": null,
+      "expected": 52,
+      "actual": 52
+    },
+    {
+      "label": "requirement-v2 schema exists",
+      "pass": true,
+      "severity": "error",
+      "details": "docs/schemas/requirement-v2.schema.json",
+      "expected": null,
+      "actual": null
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "pass": true,
+    "profileId": "control-baseline",
+    "enforcedTier": "bronze"
+  },
+  "metrics": {
+    "categories": 4,
+    "subcategories": 11,
+    "requirements": 52,
+    "duplicateIds": [],
+    "duplicateCodes": []
+  }
+}

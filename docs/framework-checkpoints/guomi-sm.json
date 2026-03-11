@@ -1,0 +1,256 @@
+{
+  "frameworkId": "guomi-sm",
+  "frameworkName": "SM Algorithms",
+  "checkedAt": "2026-02-28T07:56:55.881Z",
+  "baseline": {
+    "canonicalLanguage": "zh",
+    "source": "China National Standard platform entry for Guomi algorithm standard",
+    "sourceUrl": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=7803DE42D3BC5E80B0C3E5D8E873D56A",
+    "sourceVersion": "GB/T 32907-2016 (SM4)",
+    "expectedRequirements": 45,
+    "expectedCategories": null,
+    "expectedSubcategories": null
+  },
+  "canonical": {
+    "language": "zh",
+    "path": "public/data/frameworks/guomi-sm.json"
+  },
+  "translation": {
+    "language": "en",
+    "path": "public/data/frameworks/guomi-sm-en.json"
+  },
+  "stages": {
+    "preflight": {
+      "name": "preflight",
+      "pass": true,
+      "skipped": false,
+      "skipReason": null,
+      "checks": [
+        {
+          "label": "index-en metadata exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "index-zh metadata exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "official baseline exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "canonical language resolvable",
+          "pass": true,
+          "severity": "error",
+          "details": "Resolved canonical language: zh",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "expectedRequirements present",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "source label configured",
+          "pass": true,
+          "severity": "warning",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "source URL configured and valid",
+          "pass": true,
+          "severity": "warning",
+          "details": null,
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "pull": {
+      "name": "pull",
+      "pass": true,
+      "skipped": false,
+      "skipReason": null,
+      "checks": [
+        {
+          "label": "canonical source file is readable",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "canonical source JSON parse",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "canonical file id matches framework id",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": "guomi-sm",
+          "actual": "guomi-sm"
+        },
+        {
+          "label": "canonical file language matches expected language",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": "zh",
+          "actual": "zh"
+        },
+        {
+          "label": "canonical hierarchy has requirements",
+          "pass": true,
+          "severity": "error",
+          "details": "requirements=31",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "categories": 4,
+        "subcategories": 11,
+        "requirements": 31
+      }
+    },
+    "postPullValidation": {
+      "name": "postPullValidation",
+      "pass": false,
+      "skipped": false,
+      "skipReason": null,
+      "checks": [
+        {
+          "label": "actual requirements matches baseline expectedRequirements",
+          "pass": false,
+          "severity": "error",
+          "details": null,
+          "expected": 45,
+          "actual": 31
+        },
+        {
+          "label": "canonical file stats.totalRequirements matches actual requirements",
+          "pass": false,
+          "severity": "error",
+          "details": null,
+          "expected": 45,
+          "actual": 31
+        },
+        {
+          "label": "canonical index requirements matches actual requirements",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": 31,
+          "actual": 31
+        },
+        {
+          "label": "category.requirements declarations are consistent",
+          "pass": false,
+          "severity": "error",
+          "details": "mismatchCount=4",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "requirement ids are unique",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "requirement codes are unique",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "errors": [
+        "actual requirements matches baseline expectedRequirements (expected=45, actual=31)",
+        "canonical file stats.totalRequirements matches actual requirements (expected=45, actual=31)",
+        "mismatchCount=4"
+      ],
+      "warnings": [],
+      "metrics": {
+        "categories": 4,
+        "subcategories": 11,
+        "requirements": 31,
+        "categoryDeclaredMismatchCount": 4,
+        "duplicateRequirementIds": 0,
+        "duplicateRequirementCodes": 0
+      },
+      "categoryMismatchDetails": [
+        {
+          "categoryId": "sm2",
+          "categoryCode": "SM2",
+          "declared": 12,
+          "actual": 10
+        },
+        {
+          "categoryId": "sm3",
+          "categoryCode": "SM3",
+          "declared": 8,
+          "actual": 6
+        },
+        {
+          "categoryId": "sm4",
+          "categoryCode": "SM4",
+          "declared": 15,
+          "actual": 10
+        },
+        {
+          "categoryId": "sm9",
+          "categoryCode": "SM9",
+          "declared": 10,
+          "actual": 5
+        }
+      ]
+    },
+    "translationReadiness": {
+      "name": "translationReadiness",
+      "pass": null,
+      "skipped": true,
+      "skipReason": "Skipped because postPullValidation failed",
+      "checks": [],
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "summary": {
+    "pass": false,
+    "failedStage": "postPullValidation",
+    "errorCount": 3,
+    "warningCount": 0
+  }
+}

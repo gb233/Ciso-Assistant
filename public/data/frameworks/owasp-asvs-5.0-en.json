@@ -1,0 +1,284 @@
+{
+  "id": "owasp-asvs-5.0",
+  "name": "OWASP ASVS 5.0",
+  "fullName": "OWASP Application Security Verification Standard 5.0",
+  "version": "5.0.0",
+  "type": "standard",
+  "domain": "application-security",
+  "description": "ASVS 5.0 provides an updated application security verification baseline for requirement-driven design, development, and testing.",
+  "website": "https://owasp.org/",
+  "organization": "OWASP Foundation",
+  "releaseDate": "2025-05-30",
+  "lastUpdated": "2025-05-30",
+  "language": "en",
+  "source": {
+    "type": "official-framework-release",
+    "primaryUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0",
+    "programUrl": "https://owasp.org/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "owasp-asvs-5.0-cat-1",
+      "code": "ASVS5.GOV",
+      "name": "Governance and Architecture",
+      "description": "Security governance and architecture controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-1",
+          "code": "ASVS5.GOV.1",
+          "name": "Requirement Governance",
+          "description": "Security requirement definition and governance.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r1",
+              "code": "ASVS5-1",
+              "name": "Define testable security requirement baseline",
+              "description": "Establish controls, verification, and remediation loop for define testable security requirement baseline.",
+              "level": "3",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-1",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-1",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r2",
+              "code": "ASVS5-2",
+              "name": "Conduct threat modeling and architecture review",
+              "description": "Establish controls, verification, and remediation loop for conduct threat modeling and architecture review.",
+              "level": "2",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-2",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-2",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-2",
+          "code": "ASVS5.GOV.2",
+          "name": "Threat Modeling",
+          "description": "Threat modeling and secure design.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r3",
+              "code": "ASVS5-3",
+              "name": "Implement strong authentication controls",
+              "description": "Establish controls, verification, and remediation loop for implement strong authentication controls.",
+              "level": "1",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-3",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-3",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r4",
+              "code": "ASVS5-4",
+              "name": "Implement least-privilege authorization controls",
+              "description": "Establish controls, verification, and remediation loop for implement least-privilege authorization controls.",
+              "level": "3",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-4",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-4",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-asvs-5.0-cat-2",
+      "code": "ASVS5.IMPL",
+      "name": "Implementation and Data Protection",
+      "description": "Implementation-stage controls and data protection.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-3",
+          "code": "ASVS5.IMPL.1",
+          "name": "Auth and Access",
+          "description": "Authentication, session, and authorization controls.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r5",
+              "code": "ASVS5-5",
+              "name": "Apply robust session management controls",
+              "description": "Establish controls, verification, and remediation loop for apply robust session management controls.",
+              "level": "2",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-5",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-5",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r6",
+              "code": "ASVS5-6",
+              "name": "Enforce input validation and output encoding",
+              "description": "Establish controls, verification, and remediation loop for enforce input validation and output encoding.",
+              "level": "1",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-6",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-6",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-4",
+          "code": "ASVS5.IMPL.2",
+          "name": "Input/Output and Data",
+          "description": "Input/output handling and data security controls.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r7",
+              "code": "ASVS5-7",
+              "name": "Apply data classification and encryption controls",
+              "description": "Establish controls, verification, and remediation loop for apply data classification and encryption controls.",
+              "level": "3",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-7",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-7",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r8",
+              "code": "ASVS5-8",
+              "name": "Implement secret management and key rotation",
+              "description": "Establish controls, verification, and remediation loop for implement secret management and key rotation.",
+              "level": "2",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-8",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-8",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owasp-asvs-5.0-cat-3",
+      "code": "ASVS5.TEST",
+      "name": "Testing and Operational Assurance",
+      "description": "Verification testing and operational safeguards.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "owasp-asvs-5.0-sub-5",
+          "code": "ASVS5.TEST.1",
+          "name": "Security Testing",
+          "description": "SAST/DAST and penetration verification.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r9",
+              "code": "ASVS5-9",
+              "name": "Execute static and dynamic security testing",
+              "description": "Establish controls, verification, and remediation loop for execute static and dynamic security testing.",
+              "level": "1",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-9",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-9",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r10",
+              "code": "ASVS5-10",
+              "name": "Enforce vulnerability remediation SLA and verification",
+              "description": "Establish controls, verification, and remediation loop for enforce vulnerability remediation sla and verification.",
+              "level": "3",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-10",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-10",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "owasp-asvs-5.0-sub-6",
+          "code": "ASVS5.TEST.2",
+          "name": "Deployment and Operations",
+          "description": "Deployment hardening, monitoring, and response.",
+          "requirements": [
+            {
+              "id": "owasp-asvs-5.0-r11",
+              "code": "ASVS5-11",
+              "name": "Maintain secure deployment baseline and logging",
+              "description": "Establish controls, verification, and remediation loop for maintain secure deployment baseline and logging.",
+              "level": "2",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-11",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-11",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            },
+            {
+              "id": "owasp-asvs-5.0-r12",
+              "code": "ASVS5-12",
+              "name": "Run security incident response and exercises",
+              "description": "Establish controls, verification, and remediation loop for run security incident response and exercises.",
+              "level": "1",
+              "verification": "Review evidence, testing, and remediation records for ASVS5-12",
+              "sourceRef": "OWASP ASVS 5.0 ASVS5-12",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Application development and security testing teams",
+                "scenario": "Application security verification",
+                "region": "GLOBAL"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

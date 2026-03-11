@@ -1,0 +1,284 @@
+{
+  "id": "eu-ai-act",
+  "name": "欧盟人工智能法案",
+  "fullName": "Regulation (EU) 2024/1689 Artificial Intelligence Act",
+  "version": "2024/1689",
+  "type": "regulation",
+  "domain": "ai-governance",
+  "description": "欧盟AI法案采用风险分级监管，规范禁止类AI、高风险AI、通用AI模型和透明义务。",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "欧盟",
+  "releaseDate": "2024-08-01",
+  "lastUpdated": "2025-02-02",
+  "language": "zh",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-ai-act-cat-1",
+      "code": "AIACT.RISK",
+      "name": "风险分级与禁止行为",
+      "description": "建立风险分级并禁止特定实践。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-1",
+          "code": "AIACT.RISK.1",
+          "name": "风险识别",
+          "description": "识别AI系统风险类别。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r1",
+              "code": "AIA-5",
+              "name": "禁止高风险操纵与社会评分行为",
+              "description": "禁止高风险操纵与社会评分行为并保留可审计证据。",
+              "level": "3",
+              "verification": "审查禁止高风险操纵与社会评分行为执行证据",
+              "sourceRef": "AI Act 第5条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r2",
+              "code": "AIA-6",
+              "name": "建立高风险AI系统分类机制",
+              "description": "建立高风险AI系统分类机制并保留可审计证据。",
+              "level": "2",
+              "verification": "审查建立高风险AI系统分类机制执行证据",
+              "sourceRef": "AI Act 第6条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-2",
+          "code": "AIACT.RISK.2",
+          "name": "禁止行为控制",
+          "description": "阻断禁止类AI实践。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r3",
+              "code": "AIA-9",
+              "name": "建立高风险AI风险管理体系",
+              "description": "建立高风险AI风险管理体系并保留可审计证据。",
+              "level": "1",
+              "verification": "审查建立高风险AI风险管理体系执行证据",
+              "sourceRef": "AI Act 第9条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r4",
+              "code": "AIA-10",
+              "name": "治理训练验证测试数据集",
+              "description": "治理训练验证测试数据集并保留可审计证据。",
+              "level": "3",
+              "verification": "审查治理训练验证测试数据集执行证据",
+              "sourceRef": "AI Act 第10条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act-cat-2",
+      "code": "AIACT.HR",
+      "name": "高风险AI控制",
+      "description": "落实高风险AI系统全生命周期控制。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-3",
+          "code": "AIACT.HR.1",
+          "name": "高风险治理",
+          "description": "高风险系统治理要求。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r5",
+              "code": "AIA-11",
+              "name": "形成技术文档与可追溯记录",
+              "description": "形成技术文档与可追溯记录并保留可审计证据。",
+              "level": "2",
+              "verification": "审查形成技术文档与可追溯记录执行证据",
+              "sourceRef": "AI Act 第11条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r6",
+              "code": "AIA-12",
+              "name": "记录事件日志并可追踪",
+              "description": "记录事件日志并可追踪并保留可审计证据。",
+              "level": "1",
+              "verification": "审查记录事件日志并可追踪执行证据",
+              "sourceRef": "AI Act 第12条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-4",
+          "code": "AIACT.HR.2",
+          "name": "评估与监测",
+          "description": "符合性评估和持续监测。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r7",
+              "code": "AIA-13",
+              "name": "向使用者提供透明说明",
+              "description": "向使用者提供透明说明并保留可审计证据。",
+              "level": "3",
+              "verification": "审查向使用者提供透明说明执行证据",
+              "sourceRef": "AI Act 第13条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r8",
+              "code": "AIA-14",
+              "name": "实施人工监督机制",
+              "description": "实施人工监督机制并保留可审计证据。",
+              "level": "2",
+              "verification": "审查实施人工监督机制执行证据",
+              "sourceRef": "AI Act 第14条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act-cat-3",
+      "code": "AIACT.GPAI",
+      "name": "通用模型与透明义务",
+      "description": "落实GPAI和透明披露要求。",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-5",
+          "code": "AIACT.GPAI.1",
+          "name": "GPAI义务",
+          "description": "通用模型合规义务。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r9",
+              "code": "AIA-15",
+              "name": "满足准确性、鲁棒性与网络安全要求",
+              "description": "满足准确性、鲁棒性与网络安全要求并保留可审计证据。",
+              "level": "1",
+              "verification": "审查满足准确性、鲁棒性与网络安全要求执行证据",
+              "sourceRef": "AI Act 第15条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r10",
+              "code": "AIA-26",
+              "name": "部署者履行使用与监测义务",
+              "description": "部署者履行使用与监测义务并保留可审计证据。",
+              "level": "3",
+              "verification": "审查部署者履行使用与监测义务执行证据",
+              "sourceRef": "AI Act 第26条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-6",
+          "code": "AIACT.GPAI.2",
+          "name": "透明披露",
+          "description": "与用户和监管透明披露。",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r11",
+              "code": "AIA-52",
+              "name": "落实通用AI模型透明义务",
+              "description": "落实通用AI模型透明义务并保留可审计证据。",
+              "level": "2",
+              "verification": "审查落实通用AI模型透明义务执行证据",
+              "sourceRef": "AI Act 第52条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r12",
+              "code": "AIA-55",
+              "name": "系统性风险模型额外义务",
+              "description": "系统性风险模型额外义务并保留可审计证据。",
+              "level": "1",
+              "verification": "审查系统性风险模型额外义务执行证据",
+              "sourceRef": "AI Act 第55条",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI系统提供者、部署者、进口商和分销商",
+                "scenario": "AI合规治理",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

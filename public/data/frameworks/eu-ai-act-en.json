@@ -1,0 +1,284 @@
+{
+  "id": "eu-ai-act",
+  "name": "EU AI Act",
+  "fullName": "Regulation (EU) 2024/1689 Artificial Intelligence Act",
+  "version": "2024/1689",
+  "type": "regulation",
+  "domain": "ai-governance",
+  "description": "EU AI Act establishes risk-based obligations for prohibited AI practices, high-risk AI systems, general-purpose AI models, and transparency controls.",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "European Union",
+  "releaseDate": "2024-08-01",
+  "lastUpdated": "2025-02-02",
+  "language": "en",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-ai-act-cat-1",
+      "code": "AIACT.RISK",
+      "name": "Risk Classification and Prohibited Practices",
+      "description": "Implement risk classification and prohibition controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-1",
+          "code": "AIACT.RISK.1",
+          "name": "Risk Identification",
+          "description": "Identify AI system risk categories.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r1",
+              "code": "AIA-5",
+              "name": "Prohibit manipulative and social scoring AI practices",
+              "description": "Prohibit manipulative and social scoring AI practices with auditable governance and evidence artifacts.",
+              "level": "3",
+              "verification": "Review implementation evidence for prohibit manipulative and social scoring ai practices",
+              "sourceRef": "AI Act Art.5",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r2",
+              "code": "AIA-6",
+              "name": "Classify high-risk AI systems",
+              "description": "Classify high-risk AI systems with auditable governance and evidence artifacts.",
+              "level": "2",
+              "verification": "Review implementation evidence for classify high-risk ai systems",
+              "sourceRef": "AI Act Art.6",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-2",
+          "code": "AIACT.RISK.2",
+          "name": "Prohibited Practice Controls",
+          "description": "Prevent prohibited AI practices.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r3",
+              "code": "AIA-9",
+              "name": "Maintain risk management system for high-risk AI",
+              "description": "Maintain risk management system for high-risk AI with auditable governance and evidence artifacts.",
+              "level": "1",
+              "verification": "Review implementation evidence for maintain risk management system for high-risk ai",
+              "sourceRef": "AI Act Art.9",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r4",
+              "code": "AIA-10",
+              "name": "Govern training, validation, and test datasets",
+              "description": "Govern training, validation, and test datasets with auditable governance and evidence artifacts.",
+              "level": "3",
+              "verification": "Review implementation evidence for govern training, validation, and test datasets",
+              "sourceRef": "AI Act Art.10",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act-cat-2",
+      "code": "AIACT.HR",
+      "name": "High-Risk AI Controls",
+      "description": "Apply lifecycle controls for high-risk AI systems.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-3",
+          "code": "AIACT.HR.1",
+          "name": "High-Risk Governance",
+          "description": "Meet high-risk governance obligations.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r5",
+              "code": "AIA-11",
+              "name": "Maintain technical documentation and logs",
+              "description": "Maintain technical documentation and logs with auditable governance and evidence artifacts.",
+              "level": "2",
+              "verification": "Review implementation evidence for maintain technical documentation and logs",
+              "sourceRef": "AI Act Art.11",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r6",
+              "code": "AIA-12",
+              "name": "Enable logging and traceability",
+              "description": "Enable logging and traceability with auditable governance and evidence artifacts.",
+              "level": "1",
+              "verification": "Review implementation evidence for enable logging and traceability",
+              "sourceRef": "AI Act Art.12",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-4",
+          "code": "AIACT.HR.2",
+          "name": "Assessment and Monitoring",
+          "description": "Run conformity assessment and ongoing monitoring.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r7",
+              "code": "AIA-13",
+              "name": "Provide transparency and instructions to users",
+              "description": "Provide transparency and instructions to users with auditable governance and evidence artifacts.",
+              "level": "3",
+              "verification": "Review implementation evidence for provide transparency and instructions to users",
+              "sourceRef": "AI Act Art.13",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r8",
+              "code": "AIA-14",
+              "name": "Implement human oversight controls",
+              "description": "Implement human oversight controls with auditable governance and evidence artifacts.",
+              "level": "2",
+              "verification": "Review implementation evidence for implement human oversight controls",
+              "sourceRef": "AI Act Art.14",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act-cat-3",
+      "code": "AIACT.GPAI",
+      "name": "GPAI and Transparency Duties",
+      "description": "Implement obligations for GPAI models and transparency disclosures.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-ai-act-sub-5",
+          "code": "AIACT.GPAI.1",
+          "name": "GPAI Obligations",
+          "description": "Meet GPAI model obligations.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r9",
+              "code": "AIA-15",
+              "name": "Meet accuracy, robustness, and cybersecurity requirements",
+              "description": "Meet accuracy, robustness, and cybersecurity requirements with auditable governance and evidence artifacts.",
+              "level": "1",
+              "verification": "Review implementation evidence for meet accuracy, robustness, and cybersecurity requirements",
+              "sourceRef": "AI Act Art.15",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r10",
+              "code": "AIA-26",
+              "name": "Deployers fulfill use and monitoring obligations",
+              "description": "Deployers fulfill use and monitoring obligations with auditable governance and evidence artifacts.",
+              "level": "3",
+              "verification": "Review implementation evidence for deployers fulfill use and monitoring obligations",
+              "sourceRef": "AI Act Art.26",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-ai-act-sub-6",
+          "code": "AIACT.GPAI.2",
+          "name": "Transparency Disclosures",
+          "description": "Provide user and regulator transparency.",
+          "requirements": [
+            {
+              "id": "eu-ai-act-r11",
+              "code": "AIA-52",
+              "name": "Meet transparency obligations for GPAI models",
+              "description": "Meet transparency obligations for GPAI models with auditable governance and evidence artifacts.",
+              "level": "2",
+              "verification": "Review implementation evidence for meet transparency obligations for gpai models",
+              "sourceRef": "AI Act Art.52",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-ai-act-r12",
+              "code": "AIA-55",
+              "name": "Apply additional duties for GPAI with systemic risk",
+              "description": "Apply additional duties for GPAI with systemic risk with auditable governance and evidence artifacts.",
+              "level": "1",
+              "verification": "Review implementation evidence for apply additional duties for gpai with systemic risk",
+              "sourceRef": "AI Act Art.55",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "AI providers, deployers, importers, and distributors",
+                "scenario": "AI governance compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

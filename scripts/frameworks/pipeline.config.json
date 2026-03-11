@@ -1,0 +1,31 @@
+{
+  "defaultSourceLang": "en",
+  "sourceLangOverrides": {
+    "mlps-2.0": "zh",
+    "cn-cybersecurity-law": "zh",
+    "cn-data-security-law": "zh",
+    "cn-personal-information-protection-law": "zh"
+  },
+  "translation": {
+    "concurrency": 4,
+    "requestTimeoutMs": 15000,
+    "maxRetries": 5,
+    "retryBackoffMs": 800,
+    "chunkSize": 420
+  },
+  "skipKeys": [
+    "id",
+    "code",
+    "cwe",
+    "nist",
+    "version",
+    "type",
+    "domain",
+    "region",
+    "website",
+    "releaseDate",
+    "lastUpdated",
+    "language",
+    "path"
+  ]
+}

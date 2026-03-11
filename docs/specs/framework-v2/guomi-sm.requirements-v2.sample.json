@@ -1,0 +1,129 @@
+[
+  {
+    "id": "guomi-sm2-keygen",
+    "code": "SM2-KEY-01",
+    "name": "SM2密钥生成与管理",
+    "description": "应按国密体系要求实施SM2密钥生成、存储与轮换管理。",
+    "instrumentKinds": [
+      "standard"
+    ],
+    "semantics": [
+      "control"
+    ],
+    "source": {
+      "sourceRef": "SM2/SM9 related national cryptography requirements",
+      "version": "2012-2025",
+      "date": "2016-08-29",
+      "captureMethod": "official-html",
+      "accessConstraint": "anti-bot",
+      "provenance": {
+        "value": "Consolidated from Guomi algorithm baseline extracts",
+        "status": "inferred",
+        "basis": "Algorithm framework control compilation"
+      }
+    },
+    "profile": {
+      "id": "control-baseline",
+      "targetTier": "silver"
+    },
+    "extension": {
+      "control": {
+        "implementationGuidance": {
+          "value": "Use HSM-backed key lifecycle controls and enforce dual-control for high-value keys.",
+          "status": "inferred",
+          "basis": "Cryptography implementation baseline"
+        },
+        "verificationMethod": {
+          "value": [
+            "hsm-config-review",
+            "key-rotation-audit"
+          ],
+          "status": "inferred",
+          "basis": "Crypto control assurance checklist"
+        },
+        "evidenceExamples": [
+          {
+            "type": "config",
+            "description": "HSM key policy and algorithm whitelist"
+          },
+          {
+            "type": "log",
+            "description": "Key generation and rotation audit logs"
+          }
+        ]
+      },
+      "mapping": {
+        "edges": [
+          {
+            "targetFrameworkId": "iso-27002-2022",
+            "targetRequirementId": "8.24",
+            "relationshipType": "partial-overlap",
+            "confidence": 0.72,
+            "rationale": "Both emphasize secure use and management of cryptographic controls"
+          }
+        ]
+      }
+    },
+    "audit": {
+      "lastReviewedAt": "2026-02-28T00:00:00Z",
+      "reviewedBy": "framework-team",
+      "notes": "Pilot record for V2 migration"
+    }
+  },
+  {
+    "id": "guomi-sm4-data-encryption",
+    "code": "SM4-DATA-01",
+    "name": "SM4数据加密控制",
+    "description": "应在适用场景下采用SM4算法实现数据机密性保护。",
+    "instrumentKinds": [
+      "standard"
+    ],
+    "semantics": [
+      "control",
+      "evidence"
+    ],
+    "source": {
+      "sourceRef": "GB/T 32907-2016 (SM4)",
+      "version": "GB/T 32907-2016",
+      "date": "2016-08-29",
+      "captureMethod": "official-html",
+      "accessConstraint": "anti-bot",
+      "provenance": {
+        "value": "SM4 baseline control extraction",
+        "status": "exact",
+        "basis": "Standard reference mapping"
+      }
+    },
+    "profile": {
+      "id": "control-baseline",
+      "targetTier": "silver"
+    },
+    "extension": {
+      "control": {
+        "verificationMethod": {
+          "value": [
+            "config-review",
+            "crypto-implementation-test"
+          ],
+          "status": "inferred",
+          "basis": "Security test baseline"
+        },
+        "evidenceExamples": [
+          {
+            "type": "config",
+            "description": "Service-side cipher suite configuration enforcing SM4"
+          },
+          {
+            "type": "test-report",
+            "description": "Cryptography compliance test report"
+          }
+        ]
+      }
+    },
+    "audit": {
+      "lastReviewedAt": "2026-02-28T00:00:00Z",
+      "reviewedBy": "framework-team",
+      "notes": "Pilot record for V2 migration"
+    }
+  }
+]

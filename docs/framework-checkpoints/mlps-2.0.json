@@ -1,0 +1,134 @@
+{
+  "frameworkId": "mlps-2.0",
+  "frameworkName": "MLPS 2.0",
+  "checkedAt": "2026-02-28T07:56:55.881Z",
+  "baseline": {
+    "canonicalLanguage": "zh",
+    "source": "China National Standard platform entry for MLPS baseline standard",
+    "sourceUrl": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=BAFB89DC49BEE2D55D9F8F3B9A17B67A",
+    "sourceVersion": "GB/T 22239-2019",
+    "expectedRequirements": 345,
+    "expectedCategories": null,
+    "expectedSubcategories": null
+  },
+  "canonical": {
+    "language": "zh",
+    "path": "public/data/frameworks/mlps-2.0.json"
+  },
+  "translation": {
+    "language": "en",
+    "path": "public/data/frameworks/mlps-2.0-en.json"
+  },
+  "stages": {
+    "preflight": {
+      "name": "preflight",
+      "pass": true,
+      "skipped": false,
+      "skipReason": null,
+      "checks": [
+        {
+          "label": "index-en metadata exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "index-zh metadata exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "official baseline exists",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "canonical language resolvable",
+          "pass": true,
+          "severity": "error",
+          "details": "Resolved canonical language: zh",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "expectedRequirements present",
+          "pass": true,
+          "severity": "error",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "source label configured",
+          "pass": true,
+          "severity": "warning",
+          "details": null,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "source URL configured and valid",
+          "pass": true,
+          "severity": "warning",
+          "details": null,
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    "pull": {
+      "name": "pull",
+      "pass": false,
+      "skipped": false,
+      "skipReason": null,
+      "checks": [
+        {
+          "label": "canonical source file is readable",
+          "pass": false,
+          "severity": "error",
+          "details": "File not readable: public/data/frameworks/mlps-2.0.json",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "errors": [
+        "File not readable: public/data/frameworks/mlps-2.0.json"
+      ],
+      "warnings": []
+    },
+    "postPullValidation": {
+      "name": "postPullValidation",
+      "pass": null,
+      "skipped": true,
+      "skipReason": "Skipped because pull stage failed",
+      "checks": [],
+      "errors": [],
+      "warnings": []
+    },
+    "translationReadiness": {
+      "name": "translationReadiness",
+      "pass": null,
+      "skipped": true,
+      "skipReason": "Skipped because pull stage failed",
+      "checks": [],
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "summary": {
+    "pass": false,
+    "failedStage": "pull",
+    "errorCount": 1,
+    "warningCount": 0
+  }
+}

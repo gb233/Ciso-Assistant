@@ -1,0 +1,3078 @@
+{
+  "id": "mlps-2.0",
+  "name": "Level Protection 2.0",
+  "fullName": "Basic Requirements for Cybersecurity Classified Protection GB/T 22239-2019",
+  "version": "2.0",
+  "type": "compliance",
+  "domain": "cybersecurity",
+  "description": "The core standard of China's cybersecurity classified protection system stipulates the security protection requirements for information systems with different protection levels. Classified Protection 2.0 achieves full coverage of traditional information systems, cloud computing platforms, mobile internet, the Internet of Things, and industrial control systems.",
+  "website": "http://www.cac.gov.cn/",
+  "organization": "State Administration for Market Regulation, Standardization Administration of China",
+  "releaseDate": "2019-05-10",
+  "lastUpdated": "2019-12-01",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 345,
+    "level1": 11,
+    "level2": 298,
+    "level3": 36,
+    "level4": 345,
+    "totalCategories": 10,
+    "totalSubcategories": 68
+  },
+  "categories": [
+    {
+      "id": "security-physical",
+      "code": "S1",
+      "name": "Secure physical environment",
+      "description": "Ensure the security of the physical operating environment of the information system, including the location of the machine room, physical access control, protection against theft and damage, lightning protection, fire prevention, water and moisture prevention, temperature and humidity control, power supply, and electromagnetic protection.",
+      "requirements": 50,
+      "subcategories": [
+        {
+          "id": "physical-location",
+          "code": "S1.1",
+          "name": "Physical Location Selection",
+          "description": "Requirements for the physical location selection of computer rooms and office premises",
+          "requirements": [
+            {
+              "id": "s1-1-1",
+              "code": "S1.1.1",
+              "name": "Computer room location",
+              "description": "The computer room and office space should be located in buildings with earthquake, wind, and rain resistance capabilities, avoiding the top floors, basements, or areas below water equipment.",
+              "level": "2"
+            },
+            {
+              "id": "s1-1-2",
+              "code": "S1.1.2",
+              "name": "Site load-bearing",
+              "description": "The machine room location should avoid being set on the upper floors or basement of a building, as well as below or next to water-using equipment.",
+              "level": "3"
+            },
+            {
+              "id": "s1-1-3",
+              "code": "S1.1.3",
+              "name": "Physical Location Selection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S1.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-1-4",
+              "code": "S1.1.4",
+              "name": "Physical Location Selection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-1-5",
+              "code": "S1.1.5",
+              "name": "Physical Location Selection Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "physical-access",
+          "code": "S1.2",
+          "name": "Physical access control",
+          "description": "Physical access control measures for the computer room entrances and exits",
+          "requirements": [
+            {
+              "id": "s1-2-1",
+              "code": "S1.2.1",
+              "name": "Access Control",
+              "description": "The entrance and exit of the computer room should be staffed by dedicated personnel or equipped with an electronic access control system to control, identify, and record the personnel entering.",
+              "level": "2"
+            },
+            {
+              "id": "s1-2-2",
+              "code": "S1.2.2",
+              "name": "Partition Management",
+              "description": "Visitors who need to enter the computer room should go through an application and approval process, and their activity areas should be restricted and monitored.",
+              "level": "2"
+            },
+            {
+              "id": "s1-2-3",
+              "code": "S1.2.3",
+              "name": "Multi-factor authentication",
+              "description": "Critical areas should be equipped with a second electronic access control system to control, identify, and record the personnel entering.",
+              "level": "3"
+            },
+            {
+              "id": "s1-2-4",
+              "code": "S1.2.4",
+              "name": "Physical access control Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-2-5",
+              "code": "S1.2.5",
+              "name": "Physical access control Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-2-6",
+              "code": "S1.2.6",
+              "name": "Physical access control Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S1.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "theft-protection",
+          "code": "S1.3",
+          "name": "Theft prevention and vandalism prevention",
+          "description": "Measures to prevent equipment, media, etc. from being stolen or damaged",
+          "requirements": [
+            {
+              "id": "s1-3-1",
+              "code": "S1.3.1",
+              "name": "Device mounting",
+              "description": "The equipment or main components should be secured, and clear, difficult-to-remove markings should be set.",
+              "level": "1"
+            },
+            {
+              "id": "s1-3-2",
+              "code": "S1.3.2",
+              "name": "Communication Cable Protection",
+              "description": "Communication cables should be laid in concealed locations, and can be laid underground or in ducts.",
+              "level": "2"
+            },
+            {
+              "id": "s1-3-3",
+              "code": "S1.3.3",
+              "name": "Media Management",
+              "description": "A security alarm system for the computer room should be installed, or a video monitoring system with dedicated personnel should be set up.",
+              "level": "2"
+            },
+            {
+              "id": "s1-3-4",
+              "code": "S1.3.4",
+              "name": "Video surveillance",
+              "description": "Implement a monitoring and alarm system in the computer room to monitor all entrances, exits, and main work areas.",
+              "level": "3"
+            },
+            {
+              "id": "s1-3-5",
+              "code": "S1.3.5",
+              "name": "Theft prevention and vandalism prevention Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-3-6",
+              "code": "S1.3.6",
+              "name": "Theft prevention and vandalism prevention Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S1.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-3-7",
+              "code": "S1.3.7",
+              "name": "Theft prevention and vandalism prevention Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S1.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "lightning-protection",
+          "code": "S1.4",
+          "name": "Lightning protection",
+          "description": "Lightning protection measures",
+          "requirements": [
+            {
+              "id": "s1-4-1",
+              "code": "S1.4.1",
+              "name": "Grounding protection",
+              "description": "Various cabinets, facilities, and equipment should be safely grounded through the grounding system.",
+              "level": "2"
+            },
+            {
+              "id": "s1-4-2",
+              "code": "S1.4.2",
+              "name": "Lightning protection device",
+              "description": "Measures should be taken to prevent induced lightning, such as installing lightning protection devices or overvoltage protection devices.",
+              "level": "2"
+            },
+            {
+              "id": "s1-4-3",
+              "code": "S1.4.3",
+              "name": "Lightning protection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S1.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-4-4",
+              "code": "S1.4.4",
+              "name": "Lightning protection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-4-5",
+              "code": "S1.4.5",
+              "name": "Lightning protection Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "fire-protection",
+          "code": "S1.5",
+          "name": "Fire prevention",
+          "description": "Fire prevention measures and firefighting requirements",
+          "requirements": [
+            {
+              "id": "s1-5-1",
+              "code": "S1.5.1",
+              "name": "Firefighting equipment",
+              "description": "An automatic fire protection system should be installed, capable of automatically detecting fires, automatically alerting, and automatically extinguishing them.",
+              "level": "2"
+            },
+            {
+              "id": "s1-5-2",
+              "code": "S1.5.2",
+              "name": "Material Fire Resistance",
+              "description": "The machine room and related workrooms and auxiliary rooms should be constructed using building materials with a fire-resistance rating.",
+              "level": "2"
+            },
+            {
+              "id": "s1-5-3",
+              "code": "S1.5.3",
+              "name": "Zoned firewall",
+              "description": "Manage the division of areas in the computer room, and apply fire isolation between areas.",
+              "level": "3"
+            },
+            {
+              "id": "s1-5-4",
+              "code": "S1.5.4",
+              "name": "Fire prevention Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-5-5",
+              "code": "S1.5.5",
+              "name": "Fire prevention Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-5-6",
+              "code": "S1.5.6",
+              "name": "Fire prevention Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S1.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "water-protection",
+          "code": "S1.6",
+          "name": "Waterproof and moisture-proof",
+          "description": "Waterproof and moisture-proof measures",
+          "requirements": [
+            {
+              "id": "s1-6-1",
+              "code": "S1.6.1",
+              "name": "Leakproof",
+              "description": "Measures should be taken to prevent rainwater from seeping through the computer room windows, roof, and walls.",
+              "level": "2"
+            },
+            {
+              "id": "s1-6-2",
+              "code": "S1.6.2",
+              "name": "Flood Detection",
+              "description": "Measures should be taken to prevent condensation of water vapor in the computer room and the transfer and infiltration of underground water.",
+              "level": "2"
+            },
+            {
+              "id": "s1-6-3",
+              "code": "S1.6.3",
+              "name": "Water Leakage Detection",
+              "description": "Water-sensitive detectors or components should be installed, and the machine room should undergo waterproof testing and alarms.",
+              "level": "3"
+            },
+            {
+              "id": "s1-6-4",
+              "code": "S1.6.4",
+              "name": "Waterproof and moisture-proof Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-6-5",
+              "code": "S1.6.5",
+              "name": "Waterproof and moisture-proof Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-6-6",
+              "code": "S1.6.6",
+              "name": "Waterproof and moisture-proof Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S1.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "temperature-control",
+          "code": "S1.7",
+          "name": "Temperature and Humidity Control",
+          "description": "Requirements for temperature and humidity control in the computer room",
+          "requirements": [
+            {
+              "id": "s1-7-1",
+              "code": "S1.7.1",
+              "name": "Temperature and humidity control",
+              "description": "Automatic temperature and humidity control facilities should be installed to keep the changes in the computer room's temperature and humidity within the range allowed for equipment operation.",
+              "level": "2"
+            },
+            {
+              "id": "s1-7-2",
+              "code": "S1.7.2",
+              "name": "Temperature and Humidity Control Supplemental Control 2",
+              "description": "Supplemental implementation requirement under S1.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-7-3",
+              "code": "S1.7.3",
+              "name": "Temperature and Humidity Control Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S1.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-7-4",
+              "code": "S1.7.4",
+              "name": "Temperature and Humidity Control Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "power-supply",
+          "code": "S1.8",
+          "name": "Power supply",
+          "description": "Electric power supply guarantee measures",
+          "requirements": [
+            {
+              "id": "s1-8-1",
+              "code": "S1.8.1",
+              "name": "Stable power supply",
+              "description": "Voltage stabilizers and overvoltage protection devices should be installed on the power supply lines in the computer room.",
+              "level": "2"
+            },
+            {
+              "id": "s1-8-2",
+              "code": "S1.8.2",
+              "name": "UPS Power Supply",
+              "description": "Short-term backup power supply should be provided to at least meet the normal operational requirements of the equipment in case of power outage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-8-3",
+              "code": "S1.8.3",
+              "name": "Redundant power supply",
+              "description": "Redundant or parallel power cable lines should be set up to supply electricity to the computer system, and a backup power supply system should be established.",
+              "level": "3"
+            },
+            {
+              "id": "s1-8-4",
+              "code": "S1.8.4",
+              "name": "Power supply Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-8-5",
+              "code": "S1.8.5",
+              "name": "Power supply Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-8-6",
+              "code": "S1.8.6",
+              "name": "Power supply Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S1.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "emagnetic-protection",
+          "code": "S1.9",
+          "name": "Electromagnetic protection",
+          "description": "Electromagnetic protection measures",
+          "requirements": [
+            {
+              "id": "s1-9-1",
+              "code": "S1.9.1",
+              "name": "Power cord protection",
+              "description": "Power cables and communication cables should be laid separately to avoid mutual interference.",
+              "level": "2"
+            },
+            {
+              "id": "s1-9-2",
+              "code": "S1.9.2",
+              "name": "Electromagnetic shielding",
+              "description": "Implement electromagnetic shielding in key areas",
+              "level": "3"
+            },
+            {
+              "id": "s1-9-3",
+              "code": "S1.9.3",
+              "name": "Electromagnetic protection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S1.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-9-4",
+              "code": "S1.9.4",
+              "name": "Electromagnetic protection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S1.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s1-9-5",
+              "code": "S1.9.5",
+              "name": "Electromagnetic protection Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S1.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-communication",
+      "code": "S2",
+      "name": "Secure communication network",
+      "description": "Ensure the security of network architecture, communication transmission, and trusted verification, including requirements for network architecture, communication transmission, and trusted verification",
+      "requirements": 17,
+      "subcategories": [
+        {
+          "id": "network-architecture",
+          "code": "S2.1",
+          "name": "Network architecture",
+          "description": "Network Architecture Security Design Requirements",
+          "requirements": [
+            {
+              "id": "s2-1-1",
+              "code": "S2.1.1",
+              "name": "Network Segmentation",
+              "description": "Single points of failure should be avoided, key network devices should be deployed redundantly, and network bandwidth should meet the needs of business peak periods.",
+              "level": "2"
+            },
+            {
+              "id": "s2-1-2",
+              "code": "S2.1.2",
+              "name": "Regional Division",
+              "description": "Different network zones should be divided based on business functions, importance, and other factors, and addresses should be assigned to each network zone according to the principles of convenient management and control.",
+              "level": "2"
+            },
+            {
+              "id": "s2-1-3",
+              "code": "S2.1.3",
+              "name": "Border protection",
+              "description": "Single points of failure should be avoided, key network equipment should be deployed redundantly, and communication lines should be deployed redundantly.",
+              "level": "3"
+            },
+            {
+              "id": "s2-1-4",
+              "code": "S2.1.4",
+              "name": "Network Isolation",
+              "description": "Single points of failure should be avoided, key network devices should be deployed redundantly, and network bandwidth should meet the needs of business peak periods.",
+              "level": "3"
+            },
+            {
+              "id": "s2-1-5",
+              "code": "S2.1.5",
+              "name": "Network architecture Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S2.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-1-6",
+              "code": "S2.1.6",
+              "name": "Network architecture Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S2.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-1-7",
+              "code": "S2.1.7",
+              "name": "Network architecture Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S2.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "communication-transmission",
+          "code": "S2.2",
+          "name": "Communication transmission",
+          "description": "Communication Transmission Security Assurance Requirements",
+          "requirements": [
+            {
+              "id": "s2-2-1",
+              "code": "S2.2.1",
+              "name": "Transmission integrity",
+              "description": "Checksum technology or cryptography should be used to ensure the integrity of data during communication.",
+              "level": "2"
+            },
+            {
+              "id": "s2-2-2",
+              "code": "S2.2.2",
+              "name": "Transmission confidentiality",
+              "description": "Cryptography should be used to ensure the confidentiality of sensitive information fields or the entire message during communication.",
+              "level": "2"
+            },
+            {
+              "id": "s2-2-3",
+              "code": "S2.2.3",
+              "name": "Trusted Channel",
+              "description": "Verification or authentication of both parties in the communication should be conducted based on cryptographic technology before the communication.",
+              "level": "3"
+            },
+            {
+              "id": "s2-2-4",
+              "code": "S2.2.4",
+              "name": "Communication transmission Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S2.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-2-5",
+              "code": "S2.2.5",
+              "name": "Communication transmission Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S2.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-2-6",
+              "code": "S2.2.6",
+              "name": "Communication transmission Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S2.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "trusted-verification",
+          "code": "S2.3",
+          "name": "Trusted Verification",
+          "description": "Trusted verification requirements based on a root of trust",
+          "requirements": [
+            {
+              "id": "s2-3-1",
+              "code": "S2.3.1",
+              "name": "Device Trusted Boot",
+              "description": "It is possible to perform trusted verification of the system bootloader, system programs, important configuration parameters, and communication applications of communication devices based on a trusted root.",
+              "level": "3"
+            },
+            {
+              "id": "s2-3-2",
+              "code": "S2.3.2",
+              "name": "Trusted Verification Supplemental Control 2",
+              "description": "Supplemental implementation requirement under S2.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-3-3",
+              "code": "S2.3.3",
+              "name": "Trusted Verification Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S2.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s2-3-4",
+              "code": "S2.3.4",
+              "name": "Trusted Verification Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S2.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-boundary",
+      "code": "S3",
+      "name": "Safe zone boundary",
+      "description": "Ensure network boundary security, including requirements such as boundary protection, access control, intrusion prevention, malware prevention, security auditing, and trusted verification",
+      "requirements": 36,
+      "subcategories": [
+        {
+          "id": "boundary-protection",
+          "code": "S3.1",
+          "name": "Border protection",
+          "description": "Network Boundary Protection Requirements",
+          "requirements": [
+            {
+              "id": "s3-1-1",
+              "code": "S3.1.1",
+              "name": "Network boundary",
+              "description": "It should ensure that cross-boundary access and data flows communicate through the controlled interfaces provided by boundary devices.",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-2",
+              "code": "S3.1.2",
+              "name": "Internal boundary",
+              "description": "Should be able to inspect or restrict unauthorized devices from connecting to the internal network without permission",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-3",
+              "code": "S3.1.3",
+              "name": "Violation External Link Detection",
+              "description": "Should be able to inspect or restrict internal users' unauthorized connections to external networks",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-4",
+              "code": "S3.1.4",
+              "name": "Wireless Network Management",
+              "description": "The use of wireless networks should be restricted to ensure that wireless networks access the internal network through controlled boundary devices.",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-5",
+              "code": "S3.1.5",
+              "name": "Border protection Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S3.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-6",
+              "code": "S3.1.6",
+              "name": "Border protection Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S3.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-1-7",
+              "code": "S3.1.7",
+              "name": "Border protection Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S3.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "code": "S3.2",
+          "name": "Access Control",
+          "description": "Network Boundary Access Control Requirements",
+          "requirements": [
+            {
+              "id": "s3-2-1",
+              "code": "S3.2.1",
+              "name": "Default Deny",
+              "description": "Access control rules should be set at network boundaries or important network nodes according to the access control policy. By default, controlled interfaces deny all communication except for allowed communication.",
+              "level": "2"
+            },
+            {
+              "id": "s3-2-2",
+              "code": "S3.2.2",
+              "name": "Strategy Optimization",
+              "description": "Redundant or invalid access control rules should be deleted, access control lists should be optimized, and the number of access control rules should be minimized.",
+              "level": "2"
+            },
+            {
+              "id": "s3-2-3",
+              "code": "S3.2.3",
+              "name": "Source Address Verification",
+              "description": "Check the source address, destination address, source port, destination port, and protocol to allow/deny packets in and out",
+              "level": "2"
+            },
+            {
+              "id": "s3-2-4",
+              "code": "S3.2.4",
+              "name": "Application layer control",
+              "description": "Data exchange should be carried out at the network boundary through methods such as communication protocol conversion or communication protocol isolation.",
+              "level": "3"
+            },
+            {
+              "id": "s3-2-5",
+              "code": "S3.2.5",
+              "name": "Access Control Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S3.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-2-6",
+              "code": "S3.2.6",
+              "name": "Access Control Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S3.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-2-7",
+              "code": "S3.2.7",
+              "name": "Access Control Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S3.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "intrusion-prevention",
+          "code": "S3.3",
+          "name": "Intrusion Prevention",
+          "description": "Network Intrusion Prevention Requirements",
+          "requirements": [
+            {
+              "id": "s3-3-1",
+              "code": "S3.3.1",
+              "name": "Attack Detection",
+              "description": "Network attacks initiated from external sources should be detected, prevented, or restricted at key network nodes.",
+              "level": "2"
+            },
+            {
+              "id": "s3-3-2",
+              "code": "S3.3.2",
+              "name": "Anomaly Detection",
+              "description": "When an attack is detected, record the attack source IP, attack type, attack target, and attack time. In the event of a serious intrusion, an alarm should be provided.",
+              "level": "2"
+            },
+            {
+              "id": "s3-3-3",
+              "code": "S3.3.3",
+              "name": "APT Protection",
+              "description": "Technical measures should be taken to analyze network behavior in order to achieve analysis of network attacks, especially new types of network attack behavior.",
+              "level": "3"
+            },
+            {
+              "id": "s3-3-4",
+              "code": "S3.3.4",
+              "name": "East-West traffic detection",
+              "description": "Network attacks originating from the inside should be detected, prevented, or restricted at key network nodes.",
+              "level": "3"
+            },
+            {
+              "id": "s3-3-5",
+              "code": "S3.3.5",
+              "name": "Intrusion Prevention Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S3.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-3-6",
+              "code": "S3.3.6",
+              "name": "Intrusion Prevention Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S3.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-3-7",
+              "code": "S3.3.7",
+              "name": "Intrusion Prevention Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S3.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "malware-protection",
+          "code": "S3.4",
+          "name": "Malicious Code Prevention",
+          "description": "Malicious Code Prevention Requirements",
+          "requirements": [
+            {
+              "id": "s3-4-1",
+              "code": "S3.4.1",
+              "name": "Malicious Code Detection",
+              "description": "Malicious code should be detected and removed at key network nodes, and the upgrade and update of the malicious code protection mechanism should be maintained.",
+              "level": "2"
+            },
+            {
+              "id": "s3-4-2",
+              "code": "S3.4.2",
+              "name": "Spam protection",
+              "description": "Spam should be detected and protected against at key network nodes, and the upgrade and update of the spam protection mechanism should be maintained.",
+              "level": "2"
+            },
+            {
+              "id": "s3-4-3",
+              "code": "S3.4.3",
+              "name": "Malicious Code Prevention Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S3.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-4-4",
+              "code": "S3.4.4",
+              "name": "Malicious Code Prevention Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S3.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-4-5",
+              "code": "S3.4.5",
+              "name": "Malicious Code Prevention Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S3.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "security-audit",
+          "code": "S3.5",
+          "name": "Security Audit",
+          "description": "Network Security Audit Requirements",
+          "requirements": [
+            {
+              "id": "s3-5-1",
+              "code": "S3.5.1",
+              "name": "Audit Scope",
+              "description": "Security audits should be conducted at network boundaries and important network nodes, covering every user, and auditing important user behaviors and significant security events.",
+              "level": "2"
+            },
+            {
+              "id": "s3-5-2",
+              "code": "S3.5.2",
+              "name": "Audit records",
+              "description": "Audit records should include the date and time of the event, the user, the type of event, whether the event was successful, and other audit-related information.",
+              "level": "2"
+            },
+            {
+              "id": "s3-5-3",
+              "code": "S3.5.3",
+              "name": "Audit protection",
+              "description": "Protect audit records, back them up regularly, and avoid unexpected deletion, modification, or overwriting.",
+              "level": "2"
+            },
+            {
+              "id": "s3-5-4",
+              "code": "S3.5.4",
+              "name": "Audit Analysis",
+              "description": "Analyze audit records to identify suspicious behavior and violations",
+              "level": "3"
+            },
+            {
+              "id": "s3-5-5",
+              "code": "S3.5.5",
+              "name": "Security Audit Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S3.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-5-6",
+              "code": "S3.5.6",
+              "name": "Security Audit Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S3.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-5-7",
+              "code": "S3.5.7",
+              "name": "Security Audit Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S3.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "boundary-trusted",
+          "code": "S3.6",
+          "name": "Trusted Verification",
+          "description": "Trusted Verification Requirements for Border Devices",
+          "requirements": [
+            {
+              "id": "s3-6-1",
+              "code": "S3.6.1",
+              "name": "Boundary Trusted Verification",
+              "description": "It can perform trusted verification of boundary devices' system boot programs, system programs, important configuration parameters, and boundary protection applications based on a trusted root.",
+              "level": "3"
+            },
+            {
+              "id": "s3-6-2",
+              "code": "S3.6.2",
+              "name": "Trusted Verification Supplemental Control 2",
+              "description": "Supplemental implementation requirement under S3.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s3-6-3",
+              "code": "S3.6.3",
+              "name": "Trusted Verification Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S3.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-computing",
+      "code": "S4",
+      "name": "Secure computing environment",
+      "description": "Ensure the security of the computing environment, including requirements for identity authentication, access control, security auditing, intrusion prevention, malware prevention, data integrity, data confidentiality, data backup and recovery, residual information protection, and personal information protection.",
+      "requirements": 53,
+      "subcategories": [
+        {
+          "id": "identity-authentication",
+          "code": "S4.1",
+          "name": "Identity verification",
+          "description": "User Identity Authentication Requirements",
+          "requirements": [
+            {
+              "id": "s4-1-1",
+              "code": "S4.1.1",
+              "name": "User ID",
+              "description": "Identify and authenticate logged-in users; the identity identifier must be unique, and the authentication information must meet complexity requirements and be changed regularly.",
+              "level": "1"
+            },
+            {
+              "id": "s4-1-2",
+              "code": "S4.1.2",
+              "name": "Login Failure Handling",
+              "description": "It should have login failure handling functions, and should configure and enable measures such as ending sessions, limiting the number of illegal login attempts, and automatically logging out when the login connection times out.",
+              "level": "1"
+            },
+            {
+              "id": "s4-1-3",
+              "code": "S4.1.3",
+              "name": "Remote Management Security",
+              "description": "When performing remote management, necessary measures should be taken to prevent authentication information from being intercepted during network transmission.",
+              "level": "2"
+            },
+            {
+              "id": "s4-1-4",
+              "code": "S4.1.4",
+              "name": "Two-factor authentication",
+              "description": "Two or more combined authentication techniques, such as passphrases, password technology, and biometric technology, should be used to verify the user's identity, and at least one of these authentication techniques should be implemented using password technology.",
+              "level": "3"
+            },
+            {
+              "id": "s4-1-5",
+              "code": "S4.1.5",
+              "name": "Identity verification Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S4.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-1-6",
+              "code": "S4.1.6",
+              "name": "Identity verification Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S4.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "computing-access-control",
+          "code": "S4.2",
+          "name": "Access Control",
+          "description": "Computing Environment Access Control Requirements",
+          "requirements": [
+            {
+              "id": "s4-2-1",
+              "code": "S4.2.1",
+              "name": "Separation of duties",
+              "description": "Allocate accounts and permissions to logged-in users, separating the management user permissions from the regular user permissions",
+              "level": "1"
+            },
+            {
+              "id": "s4-2-2",
+              "code": "S4.2.2",
+              "name": "Default Account Management",
+              "description": "Default accounts should be renamed or deleted, and the default passwords of default accounts should be changed.",
+              "level": "1"
+            },
+            {
+              "id": "s4-2-3",
+              "code": "S4.2.3",
+              "name": "Permission Revocation",
+              "description": "Redundant or expired accounts should be deleted or deactivated in a timely manner to avoid the existence of shared accounts.",
+              "level": "1"
+            },
+            {
+              "id": "s4-2-4",
+              "code": "S4.2.4",
+              "name": "Minimum Privilege",
+              "description": "The minimum permissions required for managing users should be granted, achieving the separation of privileges for managing users.",
+              "level": "2"
+            },
+            {
+              "id": "s4-2-5",
+              "code": "S4.2.5",
+              "name": "Sensitive label",
+              "description": "Access control policies should be configured by the authorized subject, and the access control policies stipulate the rules for the subject's access to the object.",
+              "level": "3"
+            },
+            {
+              "id": "s4-2-6",
+              "code": "S4.2.6",
+              "name": "Mandatory Access Control",
+              "description": "The scope of access control should include the subjects and objects related to resource access and the operations between them.",
+              "level": "3"
+            },
+            {
+              "id": "s4-2-7",
+              "code": "S4.2.7",
+              "name": "Access Control Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S4.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-2-8",
+              "code": "S4.2.8",
+              "name": "Access Control Supplemental Control 8",
+              "description": "Supplemental implementation requirement under S4.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "computing-security-audit",
+          "code": "S4.3",
+          "name": "Security Audit",
+          "description": "Computing Environment Security Audit Requirements",
+          "requirements": [
+            {
+              "id": "s4-3-1",
+              "code": "S4.3.1",
+              "name": "Audit function",
+              "description": "The security audit function should be enabled, covering every user, and auditing important user actions and significant security events.",
+              "level": "2"
+            },
+            {
+              "id": "s4-3-2",
+              "code": "S4.3.2",
+              "name": "Audit Content",
+              "description": "Audit records should include the date and time of the event, the user, the type of event, whether the event was successful, and other audit-related information.",
+              "level": "2"
+            },
+            {
+              "id": "s4-3-3",
+              "code": "S4.3.3",
+              "name": "Audit Storage",
+              "description": "Protect audit records, back them up regularly, and avoid unexpected deletion, modification, or overwriting.",
+              "level": "2"
+            },
+            {
+              "id": "s4-3-4",
+              "code": "S4.3.4",
+              "name": "Centralized auditing",
+              "description": "Protect the audit process to prevent unauthorized interruptions",
+              "level": "3"
+            },
+            {
+              "id": "s4-3-5",
+              "code": "S4.3.5",
+              "name": "Security Audit Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S4.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-3-6",
+              "code": "S4.3.6",
+              "name": "Security Audit Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S4.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "computing-intrusion",
+          "code": "S4.4",
+          "name": "Intrusion Prevention",
+          "description": "Requirements for Computer Environment Intrusion Prevention",
+          "requirements": [
+            {
+              "id": "s4-4-1",
+              "code": "S4.4.1",
+              "name": "Minimal Installation",
+              "description": "The principle of minimal installation should be followed, installing only the necessary components and applications.",
+              "level": "1"
+            },
+            {
+              "id": "s4-4-2",
+              "code": "S4.4.2",
+              "name": "Turn off default sharing",
+              "description": "Unnecessary system services, default shares, and high-risk ports should be disabled",
+              "level": "1"
+            },
+            {
+              "id": "s4-4-3",
+              "code": "S4.4.3",
+              "name": "Peripheral Control",
+              "description": "Restrictions should be applied to management terminals accessed through the network by setting terminal access methods or network address ranges.",
+              "level": "2"
+            },
+            {
+              "id": "s4-4-4",
+              "code": "S4.4.4",
+              "name": "Vulnerability Management",
+              "description": "Should be able to identify possible existing known vulnerabilities and promptly patch them after thorough testing and evaluation",
+              "level": "2"
+            },
+            {
+              "id": "s4-4-5",
+              "code": "S4.4.5",
+              "name": "Host Intrusion Detection",
+              "description": "It should be able to detect intrusion behaviors on critical nodes and provide alarms in the event of serious intrusion incidents.",
+              "level": "3"
+            },
+            {
+              "id": "s4-4-6",
+              "code": "S4.4.6",
+              "name": "Intrusion Prevention Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S4.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-4-7",
+              "code": "S4.4.7",
+              "name": "Intrusion Prevention Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S4.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "computing-malware",
+          "code": "S4.5",
+          "name": "Malicious Code Prevention",
+          "description": "Requirements for Preventing Malicious Code in Computing Environments",
+          "requirements": [
+            {
+              "id": "s4-5-1",
+              "code": "S4.5.1",
+              "name": "Antivirus software",
+              "description": "Anti-malware software should be installed or software with equivalent functions should be configured, and the anti-malware database should be regularly upgraded and updated.",
+              "level": "1"
+            },
+            {
+              "id": "s4-5-2",
+              "code": "S4.5.2",
+              "name": "Host firewall",
+              "description": "The host anti-malware product should have a malware database different from that of the network anti-malware product.",
+              "level": "2"
+            },
+            {
+              "id": "s4-5-3",
+              "code": "S4.5.3",
+              "name": "Application whitelist",
+              "description": "Should support detecting and removing malware across multiple platforms and support detecting and removing malware in virtualized environments",
+              "level": "3"
+            },
+            {
+              "id": "s4-5-4",
+              "code": "S4.5.4",
+              "name": "Malicious Code Prevention Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-5-5",
+              "code": "S4.5.5",
+              "name": "Malicious Code Prevention Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S4.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "data-integrity",
+          "code": "S4.6",
+          "name": "Data integrity",
+          "description": "Data Integrity Protection Requirements",
+          "requirements": [
+            {
+              "id": "s4-6-1",
+              "code": "S4.6.1",
+              "name": "Integrity Check",
+              "description": "Checksum technology or cryptographic technology should be used to ensure the integrity of important data during transmission, including but not limited to authentication data, important business data, important audit data, important configuration data, important video data, and important personal information.",
+              "level": "2"
+            },
+            {
+              "id": "s4-6-2",
+              "code": "S4.6.2",
+              "name": "Storage integrity",
+              "description": "Checksum or cryptographic techniques should be used to ensure the integrity of important data during storage, including but not limited to authentication data, important business data, important audit data, important configuration data, important video data, and important personal information.",
+              "level": "2"
+            },
+            {
+              "id": "s4-6-3",
+              "code": "S4.6.3",
+              "name": "Data integrity Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S4.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-6-4",
+              "code": "S4.6.4",
+              "name": "Data integrity Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "data-confidentiality",
+          "code": "S4.7",
+          "name": "Data Confidentiality",
+          "description": "Data confidentiality protection requirements",
+          "requirements": [
+            {
+              "id": "s4-7-1",
+              "code": "S4.7.1",
+              "name": "Transmission Encryption",
+              "description": "Cryptographic technology should be used to ensure the confidentiality of important data during transmission, including but not limited to authentication data, important business data, and important personal information.",
+              "level": "2"
+            },
+            {
+              "id": "s4-7-2",
+              "code": "S4.7.2",
+              "name": "Storage Encryption",
+              "description": "Cryptographic technology should be used to ensure the confidentiality of important data during the storage process, including but not limited to authentication data, important business data, and important personal information.",
+              "level": "2"
+            },
+            {
+              "id": "s4-7-3",
+              "code": "S4.7.3",
+              "name": "Data Confidentiality Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S4.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-7-4",
+              "code": "S4.7.4",
+              "name": "Data Confidentiality Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "data-backup",
+          "code": "S4.8",
+          "name": "Data Backup and Recovery",
+          "description": "Data Backup and Recovery Requirements",
+          "requirements": [
+            {
+              "id": "s4-8-1",
+              "code": "S4.8.1",
+              "name": "Local Backup",
+              "description": "Local data backup and recovery functions for important data should be provided",
+              "level": "1"
+            },
+            {
+              "id": "s4-8-2",
+              "code": "S4.8.2",
+              "name": "Offsite backup",
+              "description": "A remote real-time backup function should be provided, using the communication network to back up important data to the backup site in real-time.",
+              "level": "3"
+            },
+            {
+              "id": "s4-8-3",
+              "code": "S4.8.3",
+              "name": "Business High Availability",
+              "description": "Hot redundancy should be provided for important data processing systems to ensure high system availability.",
+              "level": "3"
+            },
+            {
+              "id": "s4-8-4",
+              "code": "S4.8.4",
+              "name": "Data Backup and Recovery Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-8-5",
+              "code": "S4.8.5",
+              "name": "Data Backup and Recovery Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S4.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "residual-info",
+          "code": "S4.9",
+          "name": "Residual Information Protection",
+          "description": "Residual Information Protection Requirements",
+          "requirements": [
+            {
+              "id": "s4-9-1",
+              "code": "S4.9.1",
+              "name": "Memory Cleanup",
+              "description": "It should be ensured that the storage space containing identification information is completely cleared before being released or reallocated.",
+              "level": "3"
+            },
+            {
+              "id": "s4-9-2",
+              "code": "S4.9.2",
+              "name": "Storage cleanup",
+              "description": "It should be ensured that storage spaces containing sensitive data are completely cleared before being released or reallocated.",
+              "level": "3"
+            },
+            {
+              "id": "s4-9-3",
+              "code": "S4.9.3",
+              "name": "Residual Information Protection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S4.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-9-4",
+              "code": "S4.9.4",
+              "name": "Residual Information Protection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "personal-info",
+          "code": "S4.10",
+          "name": "Personal Information Protection",
+          "description": "Personal Information Protection Requirements",
+          "requirements": [
+            {
+              "id": "s4-10-1",
+              "code": "S4.10.1",
+              "name": "Minimum necessary",
+              "description": "Only collect and retain user personal information that is necessary for business purposes",
+              "level": "2"
+            },
+            {
+              "id": "s4-10-2",
+              "code": "S4.10.2",
+              "name": "Authorization Consent",
+              "description": "Unauthorized access and illegal use of users' personal information should be prohibited",
+              "level": "2"
+            },
+            {
+              "id": "s4-10-3",
+              "code": "S4.10.3",
+              "name": "Personal Information Protection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S4.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s4-10-4",
+              "code": "S4.10.4",
+              "name": "Personal Information Protection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S4.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-management-center",
+      "code": "S5",
+      "name": "Safety Management Center",
+      "description": "Ensure the system management, audit management, security management, and centralized control requirements of the Security Management Center",
+      "requirements": 20,
+      "subcategories": [
+        {
+          "id": "system-management",
+          "code": "S5.1",
+          "name": "System Management",
+          "description": "System Management Requirements",
+          "requirements": [
+            {
+              "id": "s5-1-1",
+              "code": "S5.1.1",
+              "name": "System Administrator",
+              "description": "The system administrator should be authenticated, and only allowed to perform system management operations through specific commands or operation interfaces.",
+              "level": "2"
+            },
+            {
+              "id": "s5-1-2",
+              "code": "S5.1.2",
+              "name": "Management Audit",
+              "description": "Audit the actions of system administrators, and the audit records include operation time, operation type, operation content, etc.",
+              "level": "2"
+            },
+            {
+              "id": "s5-1-3",
+              "code": "S5.1.3",
+              "name": "System Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S5.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s5-1-4",
+              "code": "S5.1.4",
+              "name": "System Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S5.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "audit-management",
+          "code": "S5.2",
+          "name": "Audit Management",
+          "description": "Audit Management Requirements",
+          "requirements": [
+            {
+              "id": "s5-2-1",
+              "code": "S5.2.1",
+              "name": "Audit Administrator",
+              "description": "Identity verification should be carried out for audit administrators, and they should only be allowed to perform security audit operations through specific commands or operational interfaces.",
+              "level": "2"
+            },
+            {
+              "id": "s5-2-2",
+              "code": "S5.2.2",
+              "name": "Audit Independence",
+              "description": "Audit records should only be accessible and manageable by audit administrators to ensure the independence of the audit records.",
+              "level": "2"
+            },
+            {
+              "id": "s5-2-3",
+              "code": "S5.2.3",
+              "name": "Audit Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S5.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s5-2-4",
+              "code": "S5.2.4",
+              "name": "Audit Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S5.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "security-admin",
+          "code": "S5.3",
+          "name": "Safety Management",
+          "description": "Safety Management Requirements",
+          "requirements": [
+            {
+              "id": "s5-3-1",
+              "code": "S5.3.1",
+              "name": "Security Administrator",
+              "description": "Identity authentication should be conducted for security administrators, allowing them to perform security management operations only through specific commands or operation interfaces.",
+              "level": "2"
+            },
+            {
+              "id": "s5-3-2",
+              "code": "S5.3.2",
+              "name": "Separation of duties",
+              "description": "Administrator roles should be assigned to achieve separation of privileges among system administrators, audit administrators, and security administrators.",
+              "level": "2"
+            },
+            {
+              "id": "s5-3-3",
+              "code": "S5.3.3",
+              "name": "Safety Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S5.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s5-3-4",
+              "code": "S5.3.4",
+              "name": "Safety Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S5.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "centralized-control",
+          "code": "S5.4",
+          "name": "Centralized control",
+          "description": "Centralized Management Requirements for Safety Equipment",
+          "requirements": [
+            {
+              "id": "s5-4-1",
+              "code": "S5.4.1",
+              "name": "Centralized equipment management",
+              "description": "Specific management areas should be delineated to manage the security devices or security components distributed across the network.",
+              "level": "2"
+            },
+            {
+              "id": "s5-4-2",
+              "code": "S5.4.2",
+              "name": "Unified Strategy Management",
+              "description": "It should be able to establish a secure information transmission path and manage security devices or security components in the network.",
+              "level": "2"
+            },
+            {
+              "id": "s5-4-3",
+              "code": "S5.4.3",
+              "name": "Centralized log collection",
+              "description": "Centralized monitoring of the operational status and audit data of network links, security devices, network devices, and servers",
+              "level": "2"
+            },
+            {
+              "id": "s5-4-4",
+              "code": "S5.4.4",
+              "name": "Centralized Alarm Management",
+              "description": "Collect, summarize, and centrally analyze audit data dispersed across various devices, and ensure that the retention period of audit records complies with legal and regulatory requirements.",
+              "level": "2"
+            },
+            {
+              "id": "s5-4-5",
+              "code": "S5.4.5",
+              "name": "Security Situation Awareness",
+              "description": "Centralized management of security-related matters such as security policies, malicious code, and patch upgrades",
+              "level": "3"
+            },
+            {
+              "id": "s5-4-6",
+              "code": "S5.4.6",
+              "name": "SOAR Integration",
+              "description": "Should be able to identify, alert, and analyze various security incidents occurring in the network",
+              "level": "3"
+            },
+            {
+              "id": "s5-4-7",
+              "code": "S5.4.7",
+              "name": "Centralized control Supplemental Control 7",
+              "description": "Supplemental implementation requirement under S5.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s5-4-8",
+              "code": "S5.4.8",
+              "name": "Centralized control Supplemental Control 8",
+              "description": "Supplemental implementation requirement under S5.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-management-system",
+      "code": "S6",
+      "name": "Safety Management System",
+      "description": "Ensure the formulation, issuance, review, and revision of safety management systems and other requirements",
+      "requirements": 12,
+      "subcategories": [
+        {
+          "id": "security-policy",
+          "code": "S6.1",
+          "name": "Security Policy",
+          "description": "Requirements for Formulating Security Policies",
+          "requirements": [
+            {
+              "id": "s6-1-1",
+              "code": "S6.1.1",
+              "name": "Overall Policy",
+              "description": "Overall guidelines and security policies for cybersecurity work should be formulated, clarifying the overall objectives, scope, principles, and security framework of the institution's security work.",
+              "level": "2"
+            },
+            {
+              "id": "s6-1-2",
+              "code": "S6.1.2",
+              "name": "Strategy refinement",
+              "description": "Establish safety management systems to address various management aspects in safety management activities",
+              "level": "2"
+            },
+            {
+              "id": "s6-1-3",
+              "code": "S6.1.3",
+              "name": "Security Policy Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S6.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s6-1-4",
+              "code": "S6.1.4",
+              "name": "Security Policy Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S6.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "policy-development",
+          "code": "S6.2",
+          "name": "Formulate and publish",
+          "description": "Requirements for the Formulation and Issuance of Safety Management Systems",
+          "requirements": [
+            {
+              "id": "s6-2-1",
+              "code": "S6.2.1",
+              "name": "System formulation",
+              "description": "A dedicated department or personnel should be designated or authorized to be responsible for the formulation of safety management systems.",
+              "level": "2"
+            },
+            {
+              "id": "s6-2-2",
+              "code": "S6.2.2",
+              "name": "Approval and Release",
+              "description": "The safety management system should be issued in a formal and effective manner and be subject to version control.",
+              "level": "2"
+            },
+            {
+              "id": "s6-2-3",
+              "code": "S6.2.3",
+              "name": "Formulate and publish Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S6.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s6-2-4",
+              "code": "S6.2.4",
+              "name": "Formulate and publish Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S6.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "policy-review",
+          "code": "S6.3",
+          "name": "Review and revise",
+          "description": "Requirements for Review and Revision of Safety Management System",
+          "requirements": [
+            {
+              "id": "s6-3-1",
+              "code": "S6.3.1",
+              "name": "Regular review",
+              "description": "The rationality and applicability of the safety management system should be regularly demonstrated and reviewed, and safety management systems that are deficient or need improvement should be revised.",
+              "level": "2"
+            },
+            {
+              "id": "s6-3-2",
+              "code": "S6.3.2",
+              "name": "Dynamic revision",
+              "description": "The safety management system should be reviewed and revised in the event of major changes or major safety incidents.",
+              "level": "2"
+            },
+            {
+              "id": "s6-3-3",
+              "code": "S6.3.3",
+              "name": "Review and revise Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S6.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s6-3-4",
+              "code": "S6.3.4",
+              "name": "Review and revise Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S6.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-organization",
+      "code": "S7",
+      "name": "Safety Management Organization",
+      "description": "Ensure the requirements for the safety management organization's position setup, personnel allocation, authorization approval, communication and cooperation, and audit inspection.",
+      "requirements": 20,
+      "subcategories": [
+        {
+          "id": "position-setting",
+          "code": "S7.1",
+          "name": "Job Position Setup",
+          "description": "Requirements for the Establishment of Safety Management Positions",
+          "requirements": [
+            {
+              "id": "s7-1-1",
+              "code": "S7.1.1",
+              "name": "Organizational Structure",
+              "description": "A committee or leadership group should be established to guide and manage cybersecurity work, with its top leader being the unit's responsible leader or someone authorized by them.",
+              "level": "2"
+            },
+            {
+              "id": "s7-1-2",
+              "code": "S7.1.2",
+              "name": "Job Responsibilities Definition",
+              "description": "A functional department for cybersecurity management should be established, positions for a security supervisor and heads of various aspects of security management should be set up, and the responsibilities of each person in charge should be defined.",
+              "level": "2"
+            },
+            {
+              "id": "s7-1-3",
+              "code": "S7.1.3",
+              "name": "Job Position Setup Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S7.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s7-1-4",
+              "code": "S7.1.4",
+              "name": "Job Position Setup Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S7.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "personnel-allocation",
+          "code": "S7.2",
+          "name": "Staffing",
+          "description": "Requirements for the Allocation of Safety Management Personnel",
+          "requirements": [
+            {
+              "id": "s7-2-1",
+              "code": "S7.2.1",
+              "name": "Number of personnel",
+              "description": "A certain number of system administrators, audit administrators, and security administrators should be assigned.",
+              "level": "2"
+            },
+            {
+              "id": "s7-2-2",
+              "code": "S7.2.2",
+              "name": "Full-time position",
+              "description": "A dedicated safety administrator should be appointed and cannot hold concurrent positions.",
+              "level": "2"
+            },
+            {
+              "id": "s7-2-3",
+              "code": "S7.2.3",
+              "name": "Staffing Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S7.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s7-2-4",
+              "code": "S7.2.4",
+              "name": "Staffing Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S7.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "authorization-approval",
+          "code": "S7.3",
+          "name": "Authorization and Approval",
+          "description": "Safety Authorization and Approval Requirements",
+          "requirements": [
+            {
+              "id": "s7-3-1",
+              "code": "S7.3.1",
+              "name": "Approval process",
+              "description": "Authorization and approval matters, approval departments, and approvers should be clarified according to the responsibilities of each department and position.",
+              "level": "2"
+            },
+            {
+              "id": "s7-3-2",
+              "code": "S7.3.2",
+              "name": "Approval Record",
+              "description": "Approval procedures should be established for system changes, important operations, physical access, and system access, and the approval process should be carried out in accordance with the approval procedures. A hierarchical approval system should be established for important activities.",
+              "level": "2"
+            },
+            {
+              "id": "s7-3-3",
+              "code": "S7.3.3",
+              "name": "Authorization and Approval Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S7.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s7-3-4",
+              "code": "S7.3.4",
+              "name": "Authorization and Approval Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S7.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "communication-cooperation",
+          "code": "S7.4",
+          "name": "Communication and collaboration",
+          "description": "Safety communication and cooperation requirements",
+          "requirements": [
+            {
+              "id": "s7-4-1",
+              "code": "S7.4.1",
+              "name": "Internal communication",
+              "description": "Cooperation and communication should be strengthened among various managers, internal organizational units, and cybersecurity management departments, and regular coordination meetings should be held to collaboratively address cybersecurity issues.",
+              "level": "2"
+            },
+            {
+              "id": "s7-4-2",
+              "code": "S7.4.2",
+              "name": "External Cooperation",
+              "description": "Cooperation and communication with cybersecurity functional departments, various suppliers, industry experts, and security organizations should be strengthened",
+              "level": "2"
+            },
+            {
+              "id": "s7-4-3",
+              "code": "S7.4.3",
+              "name": "Communication and collaboration Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S7.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s7-4-4",
+              "code": "S7.4.4",
+              "name": "Communication and collaboration Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S7.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "audit-inspection",
+          "code": "S7.5",
+          "name": "Review and inspection",
+          "description": "Safety audit and inspection requirements",
+          "requirements": [
+            {
+              "id": "s7-5-1",
+              "code": "S7.5.1",
+              "name": "Security Check",
+              "description": "Regular routine safety inspections should be carried out, including checks on daily system operation, system vulnerabilities, and data backups.",
+              "level": "2"
+            },
+            {
+              "id": "s7-5-2",
+              "code": "S7.5.2",
+              "name": "Comprehensive inspection",
+              "description": "Comprehensive safety inspections should be conducted regularly, including checking the effectiveness of existing safety technical measures, the consistency of safety configurations and safety policies, and the implementation of safety management systems.",
+              "level": "2"
+            },
+            {
+              "id": "s7-5-3",
+              "code": "S7.5.3",
+              "name": "Review and inspection Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S7.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s7-5-4",
+              "code": "S7.5.4",
+              "name": "Review and inspection Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S7.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-personnel",
+      "code": "S8",
+      "name": "Safety Management Personnel",
+      "description": "Ensure requirements for the recruitment, departure, assessment, awareness, and training of safety management personnel",
+      "requirements": 19,
+      "subcategories": [
+        {
+          "id": "personnel-recruitment",
+          "code": "S8.1",
+          "name": "Personnel recruitment",
+          "description": "Requirements for Hiring Safety Management Personnel",
+          "requirements": [
+            {
+              "id": "s8-1-1",
+              "code": "S8.1.1",
+              "name": "Background check",
+              "description": "A specific department or personnel should be designated or authorized to be responsible for personnel recruitment.",
+              "level": "2"
+            },
+            {
+              "id": "s8-1-2",
+              "code": "S8.1.2",
+              "name": "Confidentiality Agreement",
+              "description": "Conduct a review of the identity, background, professional qualifications, and credentials of the hired personnel, and assess their technical skills.",
+              "level": "2"
+            },
+            {
+              "id": "s8-1-3",
+              "code": "S8.1.3",
+              "name": "Employment Requirements",
+              "description": "A confidentiality agreement should be signed to clarify security responsibilities and security obligations.",
+              "level": "2"
+            },
+            {
+              "id": "s8-1-4",
+              "code": "S8.1.4",
+              "name": "Personnel recruitment Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S8.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s8-1-5",
+              "code": "S8.1.5",
+              "name": "Personnel recruitment Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S8.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "personnel-departure",
+          "code": "S8.2",
+          "name": "Staff off duty",
+          "description": "Requirements for Safety Management Personnel to Leave Their Posts",
+          "requirements": [
+            {
+              "id": "s8-2-1",
+              "code": "S8.2.1",
+              "name": "Resignation procedures",
+              "description": "All access permissions of personnel who leave their posts should be promptly terminated, and various identification cards, keys, badges, and any hardware and software equipment provided by the organization should be retrieved.",
+              "level": "2"
+            },
+            {
+              "id": "s8-2-2",
+              "code": "S8.2.2",
+              "name": "Permission Revocation",
+              "description": "Strict transfer procedures should be handled, and one can only leave after pledging to maintain confidentiality after the transfer.",
+              "level": "2"
+            },
+            {
+              "id": "s8-2-3",
+              "code": "S8.2.3",
+              "name": "Staff off duty Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S8.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s8-2-4",
+              "code": "S8.2.4",
+              "name": "Staff off duty Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S8.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "personnel-assessment",
+          "code": "S8.3",
+          "name": "Safety awareness education and training",
+          "description": "Safety Awareness Education and Training Requirements",
+          "requirements": [
+            {
+              "id": "s8-3-1",
+              "code": "S8.3.1",
+              "name": "Training Program",
+              "description": "Conduct safety awareness education and job skills training for all types of personnel, and inform them of the relevant safety responsibilities and disciplinary measures.",
+              "level": "2"
+            },
+            {
+              "id": "s8-3-2",
+              "code": "S8.3.2",
+              "name": "Training content",
+              "description": "Different training plans should be developed for different positions, providing training on basic safety knowledge, job operation procedures, and so on.",
+              "level": "2"
+            },
+            {
+              "id": "s8-3-3",
+              "code": "S8.3.3",
+              "name": "Training Assessment",
+              "description": "Personnel in different positions should be regularly assessed for their skills to ensure they have mastered the necessary safety knowledge and skills.",
+              "level": "2"
+            },
+            {
+              "id": "s8-3-4",
+              "code": "S8.3.4",
+              "name": "Safety awareness education and training Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S8.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s8-3-5",
+              "code": "S8.3.5",
+              "name": "Safety awareness education and training Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S8.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "external-personnel",
+          "code": "S8.4",
+          "name": "External Personnel Access Management",
+          "description": "External Personnel Access Management Requirements",
+          "requirements": [
+            {
+              "id": "s8-4-1",
+              "code": "S8.4.1",
+              "name": "Access Approval",
+              "description": "A written application should be submitted before external personnel physically access controlled areas. After approval, they must be accompanied by a designated person at all times and registered for record.",
+              "level": "2"
+            },
+            {
+              "id": "s8-4-2",
+              "code": "S8.4.2",
+              "name": "Access supervision",
+              "description": "A written application should be submitted before external personnel access the controlled network system. After approval, a designated person will create an account, assign permissions, and register the record.",
+              "level": "2"
+            },
+            {
+              "id": "s8-4-3",
+              "code": "S8.4.3",
+              "name": "Access Terminated",
+              "description": "After external personnel leave, all their access permissions should be promptly revoked.",
+              "level": "2"
+            },
+            {
+              "id": "s8-4-4",
+              "code": "S8.4.4",
+              "name": "External Personnel Access Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S8.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s8-4-5",
+              "code": "S8.4.5",
+              "name": "External Personnel Access Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S8.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-construction",
+      "code": "S9",
+      "name": "Safety Construction Management",
+      "description": "Requirements for ensuring the level classification of security construction management, security scheme design, product procurement and usage, self-developed software, outsourced software development, project implementation, testing and acceptance, system delivery, security level evaluation, and service provider management",
+      "requirements": 49,
+      "subcategories": [
+        {
+          "id": "classification",
+          "code": "S9.1",
+          "name": "Rating and Filing",
+          "description": "Information System Classification and Filing Requirements",
+          "requirements": [
+            {
+              "id": "s9-1-1",
+              "code": "S9.1.1",
+              "name": "System Rating",
+              "description": "The security protection level of the protected object and the methods and reasons for determining the level should be specified in writing.",
+              "level": "2"
+            },
+            {
+              "id": "s9-1-2",
+              "code": "S9.1.2",
+              "name": "Level Filing",
+              "description": "Relevant departments and safety technology experts should be organized to demonstrate and review the rationality and correctness of the classification results.",
+              "level": "2"
+            },
+            {
+              "id": "s9-1-3",
+              "code": "S9.1.3",
+              "name": "Level Adjustment",
+              "description": "It should be ensured that the grading results are approved by the relevant departments and filed in accordance with the relevant requirements.",
+              "level": "2"
+            },
+            {
+              "id": "s9-1-4",
+              "code": "S9.1.4",
+              "name": "Rating and Filing Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-1-5",
+              "code": "S9.1.5",
+              "name": "Rating and Filing Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "security-design",
+          "code": "S9.2",
+          "name": "Security plan design",
+          "description": "Safety Plan Design Requirements",
+          "requirements": [
+            {
+              "id": "s9-2-1",
+              "code": "S9.2.1",
+              "name": "Overall design",
+              "description": "Basic safety measures should be selected according to the safety protection level, and safety measures should be supplemented and adjusted based on the results of risk analysis.",
+              "level": "2"
+            },
+            {
+              "id": "s9-2-2",
+              "code": "S9.2.2",
+              "name": "Detailed Design",
+              "description": "Security overall planning and security scheme design should be carried out based on the security protection level of the protected objects and their relationship with objects of other protection levels.",
+              "level": "2"
+            },
+            {
+              "id": "s9-2-3",
+              "code": "S9.2.3",
+              "name": "Design Review",
+              "description": "Relevant departments and safety experts should be organized to demonstrate and review the rationality and correctness of the overall safety plan and its supporting documents.",
+              "level": "2"
+            },
+            {
+              "id": "s9-2-4",
+              "code": "S9.2.4",
+              "name": "Security plan design Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-2-5",
+              "code": "S9.2.5",
+              "name": "Security plan design Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "product-procurement",
+          "code": "S9.3",
+          "name": "Product procurement and usage",
+          "description": "Safety Product Procurement and Usage Requirements",
+          "requirements": [
+            {
+              "id": "s9-3-1",
+              "code": "S9.3.1",
+              "name": "Compliant Product",
+              "description": "It should be ensured that the procurement and use of cybersecurity products comply with the relevant national regulations.",
+              "level": "2"
+            },
+            {
+              "id": "s9-3-2",
+              "code": "S9.3.2",
+              "name": "Password products",
+              "description": "It should be ensured that the procurement and use of cryptographic products and services comply with the requirements of the national cryptography management authorities.",
+              "level": "2"
+            },
+            {
+              "id": "s9-3-3",
+              "code": "S9.3.3",
+              "name": "Supply chain security",
+              "description": "Product selection testing should be conducted in advance to determine the range of candidate products, and the list of candidate products should be regularly reviewed and updated.",
+              "level": "3"
+            },
+            {
+              "id": "s9-3-4",
+              "code": "S9.3.4",
+              "name": "Product procurement and usage Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-3-5",
+              "code": "S9.3.5",
+              "name": "Product procurement and usage Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "self-development",
+          "code": "S9.4",
+          "name": "Self-developed software",
+          "description": "Independent Software Development Security Requirements",
+          "requirements": [
+            {
+              "id": "s9-4-1",
+              "code": "S9.4.1",
+              "name": "Development environment",
+              "description": "The development environment should be physically separated from the actual operating environment, and test data and test results should be controlled.",
+              "level": "2"
+            },
+            {
+              "id": "s9-4-2",
+              "code": "S9.4.2",
+              "name": "Secure Coding",
+              "description": "Software development management regulations should be formulated, clearly specifying the control methods for the development process and the code of conduct for personnel.",
+              "level": "2"
+            },
+            {
+              "id": "s9-4-3",
+              "code": "S9.4.3",
+              "name": "Code audit",
+              "description": "Coding safety standards should be established, requiring developers to write code in accordance with the standards.",
+              "level": "2"
+            },
+            {
+              "id": "s9-4-4",
+              "code": "S9.4.4",
+              "name": "Version Control",
+              "description": "Should have relevant software design documentation and user guides, and control the use of the documentation",
+              "level": "2"
+            },
+            {
+              "id": "s9-4-5",
+              "code": "S9.4.5",
+              "name": "Self-developed software Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-4-6",
+              "code": "S9.4.6",
+              "name": "Self-developed software Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S9.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "outsourced-development",
+          "code": "S9.5",
+          "name": "Outsourced Software Development",
+          "description": "Security Requirements for Outsourced Software Development",
+          "requirements": [
+            {
+              "id": "s9-5-1",
+              "code": "S9.5.1",
+              "name": "Safety requirements",
+              "description": "Possible malicious code in the software should be detected before delivery.",
+              "level": "2"
+            },
+            {
+              "id": "s9-5-2",
+              "code": "S9.5.2",
+              "name": "Acceptance testing",
+              "description": "It should be ensured that the development unit provides software design documents and user guides.",
+              "level": "2"
+            },
+            {
+              "id": "s9-5-3",
+              "code": "S9.5.3",
+              "name": "Intellectual Property",
+              "description": "It should be ensured that the development unit provides the software source code and reviews the software for possible backdoors or malicious functions.",
+              "level": "3"
+            },
+            {
+              "id": "s9-5-4",
+              "code": "S9.5.4",
+              "name": "Outsourced Software Development Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-5-5",
+              "code": "S9.5.5",
+              "name": "Outsourced Software Development Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "project-implementation",
+          "code": "S9.6",
+          "name": "Project Implementation",
+          "description": "Safety Requirements for Project Implementation",
+          "requirements": [
+            {
+              "id": "s9-6-1",
+              "code": "S9.6.1",
+              "name": "Implementation Plan",
+              "description": "A dedicated department or personnel should be designated or authorized to be responsible for managing the engineering implementation process.",
+              "level": "2"
+            },
+            {
+              "id": "s9-6-2",
+              "code": "S9.6.2",
+              "name": "Process supervision",
+              "description": "A safety engineering implementation plan should be formulated to control the implementation process, and engineering supervision should be carried out at important stages of the project implementation.",
+              "level": "2"
+            },
+            {
+              "id": "s9-6-3",
+              "code": "S9.6.3",
+              "name": "Project Implementation Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S9.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-6-4",
+              "code": "S9.6.4",
+              "name": "Project Implementation Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "test-acceptance",
+          "code": "S9.7",
+          "name": "Test Acceptance",
+          "description": "Test Acceptance Safety Requirements",
+          "requirements": [
+            {
+              "id": "s9-7-1",
+              "code": "S9.7.1",
+              "name": "Test Plan",
+              "description": "A test acceptance plan should be formulated, and the test acceptance should be carried out according to the test acceptance plan, forming a test acceptance report.",
+              "level": "2"
+            },
+            {
+              "id": "s9-7-2",
+              "code": "S9.7.2",
+              "name": "Security testing",
+              "description": "Security testing should be carried out before going online, and a security test report should be issued. The security test report should include content related to password application security testing.",
+              "level": "2"
+            },
+            {
+              "id": "s9-7-3",
+              "code": "S9.7.3",
+              "name": "Acceptance Approval",
+              "description": "A designated or authorized specialized department should be responsible for test acceptance management, and complete the test acceptance in accordance with the requirements of management regulations.",
+              "level": "2"
+            },
+            {
+              "id": "s9-7-4",
+              "code": "S9.7.4",
+              "name": "Test Acceptance Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-7-5",
+              "code": "S9.7.5",
+              "name": "Test Acceptance Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "system-delivery",
+          "code": "S9.8",
+          "name": "System delivery",
+          "description": "System Delivery Security Requirements",
+          "requirements": [
+            {
+              "id": "s9-8-1",
+              "code": "S9.8.1",
+              "name": "Delivery List",
+              "description": "A delivery checklist should be prepared, and the handed-over equipment, software, and documents should be checked against the delivery checklist.",
+              "level": "2"
+            },
+            {
+              "id": "s9-8-2",
+              "code": "S9.8.2",
+              "name": "Training",
+              "description": "Provide corresponding skills training to the technical personnel responsible for operation and maintenance",
+              "level": "2"
+            },
+            {
+              "id": "s9-8-3",
+              "code": "S9.8.3",
+              "name": "Document Handover",
+              "description": "Construction process documentation and operation and maintenance documentation should be provided",
+              "level": "2"
+            },
+            {
+              "id": "s9-8-4",
+              "code": "S9.8.4",
+              "name": "System delivery Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-8-5",
+              "code": "S9.8.5",
+              "name": "System delivery Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "level-assessment",
+          "code": "S9.9",
+          "name": "Level Assessment",
+          "description": "Level Assessment Requirements",
+          "requirements": [
+            {
+              "id": "s9-9-1",
+              "code": "S9.9.1",
+              "name": "First assessment",
+              "description": "Regular level assessments should be conducted, and timely rectification should be made when it is found that the requirements of the corresponding level protection standards are not met.",
+              "level": "2"
+            },
+            {
+              "id": "s9-9-2",
+              "code": "S9.9.2",
+              "name": "Regular evaluation",
+              "description": "Information systems at level three and above should undergo a security classification assessment at least once a year, and level four information systems should undergo a security classification assessment at least once every six months.",
+              "level": "2"
+            },
+            {
+              "id": "s9-9-3",
+              "code": "S9.9.3",
+              "name": "Level Assessment Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S9.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-9-4",
+              "code": "S9.9.4",
+              "name": "Level Assessment Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "service-provider",
+          "code": "S9.10",
+          "name": "Service Provider Management",
+          "description": "Service Provider Management Requirements",
+          "requirements": [
+            {
+              "id": "s9-10-1",
+              "code": "S9.10.1",
+              "name": "Supplier Selection",
+              "description": "It should be ensured that the selection of service providers complies with the relevant national regulations.",
+              "level": "2"
+            },
+            {
+              "id": "s9-10-2",
+              "code": "S9.10.2",
+              "name": "Service Agreement",
+              "description": "Relevant agreements should be signed with the selected service providers, clarifying the cybersecurity-related obligations that all parties in the service supply chain need to fulfill.",
+              "level": "2"
+            },
+            {
+              "id": "s9-10-3",
+              "code": "S9.10.3",
+              "name": "Supervisory Review",
+              "description": "The services provided by service providers should be regularly monitored, reviewed, and audited, and any changes to the service content should be controlled.",
+              "level": "2"
+            },
+            {
+              "id": "s9-10-4",
+              "code": "S9.10.4",
+              "name": "Service Provider Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S9.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s9-10-5",
+              "code": "S9.10.5",
+              "name": "Service Provider Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S9.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-operations",
+      "code": "S10",
+      "name": "Security Operations and Maintenance Management",
+      "description": "Ensure the requirements for safe operation and maintenance management, including environment management, asset management, media management, equipment maintenance management, vulnerability and risk management, network and system security management, malware prevention management, configuration management, password management, change management, backup and recovery management, security incident handling, emergency plan management, and outsourced operation and maintenance management.",
+      "requirements": 69,
+      "subcategories": [
+        {
+          "id": "environment-management",
+          "code": "S10.1",
+          "name": "Environmental Management",
+          "description": "Data Center Environment Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-1-1",
+              "code": "S10.1.1",
+              "name": "Server Room Location Selection",
+              "description": "A dedicated department or personnel should be designated to regularly maintain and manage the power supply and distribution, air conditioning, temperature and humidity control, and other facilities of the computer room.",
+              "level": "2"
+            },
+            {
+              "id": "s10-1-2",
+              "code": "S10.1.2",
+              "name": "Server Room Access",
+              "description": "A designated department or personnel should be responsible for the security of the computer room, manage access to the computer room, and regularly inspect safety facilities such as closed-circuit monitoring, access control, fire protection, and alarm systems.",
+              "level": "2"
+            },
+            {
+              "id": "s10-1-3",
+              "code": "S10.1.3",
+              "name": "Computer room environment",
+              "description": "A data center security management system should be established, specifying the management of physical access, the bringing in and out of items, and environmental safety.",
+              "level": "2"
+            },
+            {
+              "id": "s10-1-4",
+              "code": "S10.1.4",
+              "name": "Environmental Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-1-5",
+              "code": "S10.1.5",
+              "name": "Environmental Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.1 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "asset-management",
+          "code": "S10.2",
+          "name": "Asset Management",
+          "description": "Asset Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-2-1",
+              "code": "S10.2.1",
+              "name": "Asset Inventory",
+              "description": "An inventory of assets related to the protected object should be prepared and maintained, including details such as the responsible department, importance level, and location.",
+              "level": "2"
+            },
+            {
+              "id": "s10-2-2",
+              "code": "S10.2.2",
+              "name": "Asset Identification",
+              "description": "Assets should be identified and managed according to their importance, and corresponding management measures should be selected based on the value of the assets.",
+              "level": "2"
+            },
+            {
+              "id": "s10-2-3",
+              "code": "S10.2.3",
+              "name": "Asset Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S10.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-2-4",
+              "code": "S10.2.4",
+              "name": "Asset Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.2 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "media-management",
+          "code": "S10.3",
+          "name": "Media Management",
+          "description": "Media Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-3-1",
+              "code": "S10.3.1",
+              "name": "Medium Classification",
+              "description": "It should be ensured that media is stored in a secure environment, that all types of media are controlled and protected, that dedicated personnel manage the storage environment, and that regular inventories are conducted based on the catalog list of archived media.",
+              "level": "2"
+            },
+            {
+              "id": "s10-3-2",
+              "code": "S10.3.2",
+              "name": "Media transmission",
+              "description": "Control the selection, packaging, delivery, and other situations of personnel during the physical transmission of media, and register and record the archiving and querying of the media.",
+              "level": "2"
+            },
+            {
+              "id": "s10-3-3",
+              "code": "S10.3.3",
+              "name": "Media destruction",
+              "description": "Strict management should be applied to the use of storage media, sending out for maintenance, and destruction. Storage media containing important data leaving the work environment should have their contents encrypted and be monitored. Media sent out for maintenance or destruction should have sensitive data cleared first.",
+              "level": "2"
+            },
+            {
+              "id": "s10-3-4",
+              "code": "S10.3.4",
+              "name": "Media Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-3-5",
+              "code": "S10.3.5",
+              "name": "Media Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.3 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "device-maintenance",
+          "code": "S10.4",
+          "name": "Equipment Maintenance Management",
+          "description": "Equipment Maintenance Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-4-1",
+              "code": "S10.4.1",
+              "name": "Maintenance plan",
+              "description": "A dedicated department or personnel should be assigned to regularly maintain and manage various equipment (including backup and redundant equipment), lines, etc.",
+              "level": "2"
+            },
+            {
+              "id": "s10-4-2",
+              "code": "S10.4.2",
+              "name": "Maintenance Approval",
+              "description": "A management system for supporting facilities, as well as hardware and software maintenance, should be established to effectively manage their upkeep, including clearly defining the responsibilities of maintenance personnel, approving repairs and services, and supervising and controlling the maintenance process.",
+              "level": "2"
+            },
+            {
+              "id": "s10-4-3",
+              "code": "S10.4.3",
+              "name": "Offboarding Management",
+              "description": "Information processing equipment, if it needs to be taken out of the computer room or office, should be approved and can only be taken out after ensuring it is in a controlled state.",
+              "level": "2"
+            },
+            {
+              "id": "s10-4-4",
+              "code": "S10.4.4",
+              "name": "Equipment Maintenance Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-4-5",
+              "code": "S10.4.5",
+              "name": "Equipment Maintenance Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.4 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "vulnerability-risk",
+          "code": "S10.5",
+          "name": "Vulnerability and Risk Management",
+          "description": "Vulnerability and Risk Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-5-1",
+              "code": "S10.5.1",
+              "name": "Vulnerability discovery",
+              "description": "Necessary measures should be taken to identify security vulnerabilities and hazards, and the discovered security vulnerabilities and hazards should be promptly patched or repaired after assessing the possible impact.",
+              "level": "2"
+            },
+            {
+              "id": "s10-5-2",
+              "code": "S10.5.2",
+              "name": "Regular evaluation",
+              "description": "Regular security assessments should be conducted, security assessment reports should be produced, and measures should be taken to address the identified security issues.",
+              "level": "2"
+            },
+            {
+              "id": "s10-5-3",
+              "code": "S10.5.3",
+              "name": "Risk Disposal",
+              "description": "A ledger for vulnerabilities and risk management should be established to track and manage vulnerabilities and risks, ensuring timely remediation.",
+              "level": "3"
+            },
+            {
+              "id": "s10-5-4",
+              "code": "S10.5.4",
+              "name": "Vulnerability and Risk Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-5-5",
+              "code": "S10.5.5",
+              "name": "Vulnerability and Risk Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.5 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "network-system-security",
+          "code": "S10.6",
+          "name": "Network and System Security Management",
+          "description": "Network and System Security Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-6-1",
+              "code": "S10.6.1",
+              "name": "Network Segmentation",
+              "description": "Different administrator roles should be assigned for network and system operation and maintenance management, to avoid a single administrator role having all permissions.",
+              "level": "2"
+            },
+            {
+              "id": "s10-6-2",
+              "code": "S10.6.2",
+              "name": "Remote management",
+              "description": "A dedicated department or personnel should be designated for account management to control account applications, creation, deletion, and other related activities.",
+              "level": "2"
+            },
+            {
+              "id": "s10-6-3",
+              "code": "S10.6.3",
+              "name": "Log Audit",
+              "description": "A network and system security management system should be established, with regulations on security policies, account management, configuration management, log management, daily operations, updates and patching, and password update cycles.",
+              "level": "2"
+            },
+            {
+              "id": "s10-6-4",
+              "code": "S10.6.4",
+              "name": "Clock synchronization",
+              "description": "Important equipment's configuration and operation manuals should be developed, and the equipment should be safely configured and optimally configured according to the manuals.",
+              "level": "2"
+            },
+            {
+              "id": "s10-6-5",
+              "code": "S10.6.5",
+              "name": "Network and System Security Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-6-6",
+              "code": "S10.6.6",
+              "name": "Network and System Security Management Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S10.6 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "malware-management",
+          "code": "S10.7",
+          "name": "Malicious Code Prevention Management",
+          "description": "Malicious Code Prevention and Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-7-1",
+              "code": "S10.7.1",
+              "name": "Antivirus strategy",
+              "description": "Awareness of malicious code should be raised for all users, and external computers or storage devices should be checked for malicious code before being connected to the system.",
+              "level": "1"
+            },
+            {
+              "id": "s10-7-2",
+              "code": "S10.7.2",
+              "name": "Virus database update",
+              "description": "The effectiveness of technical measures for preventing malicious code attacks should be regularly verified.",
+              "level": "2"
+            },
+            {
+              "id": "s10-7-3",
+              "code": "S10.7.3",
+              "name": "Unified antivirus",
+              "description": "Malicious code should be detected and removed at network boundaries and core network nodes, and the upgrade and update of protection mechanisms should be maintained.",
+              "level": "2"
+            },
+            {
+              "id": "s10-7-4",
+              "code": "S10.7.4",
+              "name": "Malicious Code Prevention Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-7-5",
+              "code": "S10.7.5",
+              "name": "Malicious Code Prevention Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.7 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "configuration-management",
+          "code": "S10.8",
+          "name": "Configuration Management",
+          "description": "Configuration Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-8-1",
+              "code": "S10.8.1",
+              "name": "Baseline Configuration",
+              "description": "The basic configuration information of the system should be recorded and preserved, including the network topology, the software components installed on each device, the versions and patch information of the software components, and the configuration parameters of each device or software component.",
+              "level": "2"
+            },
+            {
+              "id": "s10-8-2",
+              "code": "S10.8.2",
+              "name": "Configuration Change",
+              "description": "Basic configuration information changes should be included in the scope of changes, control over configuration information changes should be implemented, and the basic configuration information database should be updated promptly.",
+              "level": "2"
+            },
+            {
+              "id": "s10-8-3",
+              "code": "S10.8.3",
+              "name": "Configuration Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S10.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-8-4",
+              "code": "S10.8.4",
+              "name": "Configuration Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.8 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "password-management",
+          "code": "S10.9",
+          "name": "Password Management",
+          "description": "Password Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-9-1",
+              "code": "S10.9.1",
+              "name": "Password usage",
+              "description": "Cryptography-related national standards and industry standards should be followed, and cryptographic technologies and products that meet the requirements of the national cryptography administration authorities should be used.",
+              "level": "2"
+            },
+            {
+              "id": "s10-9-2",
+              "code": "S10.9.2",
+              "name": "Key Management",
+              "description": "A key management system should be established to manage the entire lifecycle of keys, including their generation, distribution, storage, use, updating, archiving, revocation, backup, recovery, and destruction.",
+              "level": "3"
+            },
+            {
+              "id": "s10-9-3",
+              "code": "S10.9.3",
+              "name": "Password Management Supplemental Control 3",
+              "description": "Supplemental implementation requirement under S10.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-9-4",
+              "code": "S10.9.4",
+              "name": "Password Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.9 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "change-management",
+          "code": "S10.10",
+          "name": "Change Management",
+          "description": "Change Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-10-1",
+              "code": "S10.10.1",
+              "name": "Change Approval",
+              "description": "The change requirements should be clarified, and a change plan should be developed based on the change requirements before making changes. The change plan can only be implemented after review and approval.",
+              "level": "2"
+            },
+            {
+              "id": "s10-10-2",
+              "code": "S10.10.2",
+              "name": "Change Test",
+              "description": "A declaration and approval control procedure for changes should be established, control all changes according to the procedure, and record the implementation process of changes.",
+              "level": "2"
+            },
+            {
+              "id": "s10-10-3",
+              "code": "S10.10.3",
+              "name": "Change rollback",
+              "description": "Procedures should be established to suspend changes and recover from failed changes, clearly defining process control methods and personnel responsibilities, and conducting drills of the recovery process when necessary.",
+              "level": "3"
+            },
+            {
+              "id": "s10-10-4",
+              "code": "S10.10.4",
+              "name": "Change Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-10-5",
+              "code": "S10.10.5",
+              "name": "Change Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.10 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "backup-recovery",
+          "code": "S10.11",
+          "name": "Backup and Recovery Management",
+          "description": "Backup and Recovery Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-11-1",
+              "code": "S10.11.1",
+              "name": "Backup Strategy",
+              "description": "It is necessary to identify important business information, system data, and software systems that need to be backed up regularly, and to formulate backup and recovery strategies. Backup and recovery strategies should be regularly drilled.",
+              "level": "2"
+            },
+            {
+              "id": "s10-11-2",
+              "code": "S10.11.2",
+              "name": "Offsite backup",
+              "description": "Offline backups of important business data and applications, as well as related technical documentation, should be provided to enable recovery in case of data or system loss or damage.",
+              "level": "3"
+            },
+            {
+              "id": "s10-11-3",
+              "code": "S10.11.3",
+              "name": "Recovery Drill",
+              "description": "Recovery strategies should be regularly tested to ensure their effectiveness.",
+              "level": "3"
+            },
+            {
+              "id": "s10-11-4",
+              "code": "S10.11.4",
+              "name": "Backup and Recovery Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.11 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-11-5",
+              "code": "S10.11.5",
+              "name": "Backup and Recovery Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.11 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "incident-handling",
+          "code": "S10.12",
+          "name": "Security Incident Handling",
+          "description": "Security Incident Handling Requirements",
+          "requirements": [
+            {
+              "id": "s10-12-1",
+              "code": "S10.12.1",
+              "name": "Incident Report",
+              "description": "Any discovered security weaknesses and suspicious incidents should be promptly reported to the security management department.",
+              "level": "2"
+            },
+            {
+              "id": "s10-12-2",
+              "code": "S10.12.2",
+              "name": "Event Classification",
+              "description": "A management system for reporting and handling security incidents should be established, clarifying the reporting, handling, and response processes for different security incidents.",
+              "level": "2"
+            },
+            {
+              "id": "s10-12-3",
+              "code": "S10.12.3",
+              "name": "Event Analysis",
+              "description": "During the process of reporting and responding to security incidents, the causes of the incidents should be analyzed and identified, evidence should be collected, the handling process should be recorded, and lessons learned should be summarized.",
+              "level": "2"
+            },
+            {
+              "id": "s10-12-4",
+              "code": "S10.12.4",
+              "name": "Event tracing",
+              "description": "Different handling procedures and reporting procedures should be used for security incidents that cause system interruptions and cause information leaks.",
+              "level": "3"
+            },
+            {
+              "id": "s10-12-5",
+              "code": "S10.12.5",
+              "name": "Security Incident Handling Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.12 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-12-6",
+              "code": "S10.12.6",
+              "name": "Security Incident Handling Supplemental Control 6",
+              "description": "Supplemental implementation requirement under S10.12 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "emergency-plan",
+          "code": "S10.13",
+          "name": "Emergency Plan Management",
+          "description": "Emergency Plan Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-13-1",
+              "code": "S10.13.1",
+              "name": "Plan Formulation",
+              "description": "A unified emergency response plan framework should be established, including the conditions for activating the plan, the composition of the emergency organization, the assurance of emergency resources, and post-event education and training.",
+              "level": "2"
+            },
+            {
+              "id": "s10-13-2",
+              "code": "S10.13.2",
+              "name": "Contingency plan drill",
+              "description": "Emergency plans for important events should be formulated, including emergency handling procedures, system recovery procedures, and other contents. Personnel related to the system should be regularly trained on the emergency plan, and emergency plan drills should be conducted regularly.",
+              "level": "2"
+            },
+            {
+              "id": "s10-13-3",
+              "code": "S10.13.3",
+              "name": "Plan Update",
+              "description": "Existing emergency plans should be regularly re-evaluated and revised for improvement.",
+              "level": "2"
+            },
+            {
+              "id": "s10-13-4",
+              "code": "S10.13.4",
+              "name": "Emergency Plan Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.13 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-13-5",
+              "code": "S10.13.5",
+              "name": "Emergency Plan Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.13 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "id": "outsourced-ops",
+          "code": "S10.14",
+          "name": "Outsourced Operations and Maintenance Management",
+          "description": "Outsourced Operations and Maintenance Management Requirements",
+          "requirements": [
+            {
+              "id": "s10-14-1",
+              "code": "S10.14.1",
+              "name": "Outsourcing Vendor Selection",
+              "description": "It should be ensured that the selection of outsourced operation and maintenance service providers complies with national regulations.",
+              "level": "2"
+            },
+            {
+              "id": "s10-14-2",
+              "code": "S10.14.2",
+              "name": "Outsourcing Agreement",
+              "description": "A relevant agreement should be signed with the selected outsourced operation and maintenance service provider, clearly specifying the scope of outsourced operation and maintenance and the work content.",
+              "level": "2"
+            },
+            {
+              "id": "s10-14-3",
+              "code": "S10.14.3",
+              "name": "Outsourcing supervision",
+              "description": "It should be ensured that the selected outsourced operation and maintenance service provider has the capability to carry out security operation and maintenance work in accordance with classified protection requirements in both technology and management, and these capability requirements should be clearly specified in the signed agreement.",
+              "level": "2"
+            },
+            {
+              "id": "s10-14-4",
+              "code": "S10.14.4",
+              "name": "Outsourced Operations and Maintenance Management Supplemental Control 4",
+              "description": "Supplemental implementation requirement under S10.14 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            },
+            {
+              "id": "s10-14-5",
+              "code": "S10.14.5",
+              "name": "Outsourced Operations and Maintenance Management Supplemental Control 5",
+              "description": "Supplemental implementation requirement under S10.14 to complete GB/T 22239-2019 control mapping coverage.",
+              "level": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-standard-catalog",
+    "primaryUrl": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=BAFB89DC49BEE2D55D9F8F3B9A17B67A"
+  }
+}

@@ -1,0 +1,976 @@
+{
+  "id": "cn-data-security-law",
+  "name": "Data Security Law",
+  "fullName": "Data Security Law of the People's Republic of China",
+  "version": "2021",
+  "type": "regulation",
+  "domain": "data-governance",
+  "description": "Article-level full-text framework of the PRC Data Security Law, covering Articles 1-55 for auditable data governance and security obligations.",
+  "website": "https://www.npc.gov.cn/",
+  "organization": "Standing Committee of the National People's Congress",
+  "releaseDate": "2021-06-10",
+  "lastUpdated": "2021-09-01",
+  "language": "en",
+  "source": {
+    "type": "official-law-text",
+    "primaryUrl": "https://fgw.sh.gov.cn/cmsres/b5/b5670659844e4e849fe538a3ba845d72/a62449d5a12ac0467a3d71457d45f13f.pdf",
+    "programUrl": "https://www.npc.gov.cn/",
+    "coverageMode": "article-level",
+    "officialArticleCount": 55,
+    "lastVerifiedAt": "2026-03-10"
+  },
+  "stats": {
+    "totalRequirements": 55,
+    "level1": 5,
+    "level2": 28,
+    "level3": 22,
+    "totalCategories": 7,
+    "totalSubcategories": 7
+  },
+  "categories": [
+    {
+      "id": "dsl-ch-01",
+      "code": "DSL-ART.CH01",
+      "name": "Chapter 1",
+      "description": "Full-text obligations from Chapter 1 of Data Security Law.",
+      "requirements": 12,
+      "subcategories": [
+        {
+          "id": "dsl-ch-01-articles",
+          "code": "DSL-ART.CH01.ART",
+          "name": "Chapter 1 Articles",
+          "description": "Article-level obligations from Chapter 1.",
+          "requirements": [
+            {
+              "id": "dsl-art-001",
+              "code": "DSL-ART-001",
+              "name": "Article 1",
+              "description": "为了规范数据处理活动，保障数据安全，促进 数据开发利用，保护个人、组织的合法权益，维护国家主 权、安全和发展利益，制定本法。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 1",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-002",
+              "code": "DSL-ART-002",
+              "name": "Article 2",
+              "description": "在中华人民共和国境内开展数据处理活动及其 安全监管，适用本法。 在中华人民共和国境外开展数据处理活动，损害中华人 民共和国国家安全、公共利益或者公民、组织合法权益的， 依法追究法律责任。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 2",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-003",
+              "code": "DSL-ART-003",
+              "name": "Article 3",
+              "description": "本法所称数据，是指任何以电子或者其他方式 对信息的记录。 数据处理，包括数据的收集、存储、使用、加工、传 输、提供、公开等。 数据安全，是指通过采取必要措施，确保数据处于有效 保护和合法利用的状态，以及具备保障持续安全状态的能 力。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 3",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-004",
+              "code": "DSL-ART-004",
+              "name": "Article 4",
+              "description": "维护数据安全，应当坚持总体国家安全观，建 立健全数据安全治理体系，提高数据安全保障能力。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 4",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-005",
+              "code": "DSL-ART-005",
+              "name": "Article 5",
+              "description": "中央国家安全领导机构负责国家数据安全工作 的决策和议事协调，研究制定、指导实施国家数据安全战略 和有关重大方针政策，统筹协调国家数据安全的重大事项和 重要工作，建立国家数据安全工作协调机制。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 5",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-006",
+              "code": "DSL-ART-006",
+              "name": "Article 6",
+              "description": "各地区、各部门对本地区、本部门工作中收集 和产生的数据及数据安全负责。 工业、电信、交通、金融、自然资源、卫生健康、教 育、科技等主管部门承担本行业、本领域数据安全监管职 责。 公安机关、国家安全机关等依照本法和有关法律、行政 法规的规定，在各自职责范围内承担数据安全监管职责。 国家网信部门依照本法和有关法律、行政法规的规定， 负责统筹协调网络数据安全和相关监管工作。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 6",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-007",
+              "code": "DSL-ART-007",
+              "name": "Article 7",
+              "description": "国家保护个人、组织与数据有关的权益，鼓励 数据依法合理有效利用，保障数据依法有序自由流动，促进 以数据为关键要素的数字经济发展。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 7",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-008",
+              "code": "DSL-ART-008",
+              "name": "Article 8",
+              "description": "开展数据处理活动，应当遵守法律、法规，尊 重社会公德和伦理，遵守商业道德和职业道德，诚实守信， 履行数据安全保护义务，承担社会责任，不得危害国家安 全、公共利益，不得损害个人、组织的合法权益。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 8",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-009",
+              "code": "DSL-ART-009",
+              "name": "Article 9",
+              "description": "国家支持开展数据安全知识宣传普及，提高全 社会的数据安全保护意识和水平，推动有关部门、行业组 织、科研机构、企业、个人等共同参与数据安全保护工作， 形成全社会共同维护数据安全和促进发展的良好环境。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 9",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-010",
+              "code": "DSL-ART-010",
+              "name": "Article 10",
+              "description": "相关行业组织按照章程，依法制定数据安全行 为规范和团体标准，加强行业自律，指导会员加强数据安全 保护，提高数据安全保护水平，促进行业健康发展。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 10",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-011",
+              "code": "DSL-ART-011",
+              "name": "Article 11",
+              "description": "国家积极开展数据安全治理、数据开发利用 等领域的国际交流与合作，参与数据安全相关国际规则和标 准的制定，促进数据跨境安全、自由流动。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 11",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-012",
+              "code": "DSL-ART-012",
+              "name": "Article 12",
+              "description": "任何个人、组织都有权对违反本法规定的行 为向有关主管部门投诉、举报。收到投诉、举报的部门应当 及时依法处理。 有关主管部门应当对投诉、举报人的相关信息予以保 密，保护投诉、举报人的合法权益。 第二章 数据安全与发展",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 12",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-02",
+      "code": "DSL-ART.CH02",
+      "name": "Chapter 2",
+      "description": "Full-text obligations from Chapter 2 of Data Security Law.",
+      "requirements": 8,
+      "subcategories": [
+        {
+          "id": "dsl-ch-02-articles",
+          "code": "DSL-ART.CH02.ART",
+          "name": "Chapter 2 Articles",
+          "description": "Article-level obligations from Chapter 2.",
+          "requirements": [
+            {
+              "id": "dsl-art-013",
+              "code": "DSL-ART-013",
+              "name": "Article 13",
+              "description": "国家统筹发展和安全，坚持以数据开发利用 和产业发展促进数据安全，以数据安全保障数据开发利用和 产业发展。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 13",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-014",
+              "code": "DSL-ART-014",
+              "name": "Article 14",
+              "description": "国家实施大数据战略，推进数据基础设施建 设，鼓励和支持数据在各行业、各领域的创新应用。 省级以上人民政府应当将数字经济发展纳入本级国民经 济和社会发展规划，并根据需要制定数字经济发展规划。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 14",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-015",
+              "code": "DSL-ART-015",
+              "name": "Article 15",
+              "description": "国家支持开发利用数据提升公共服务的智能 化水平。提供智能化公共服务，应当充分考虑老年人、残疾 人的需求，避免对老年人、残疾人的日常生活造成障碍。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 15",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-016",
+              "code": "DSL-ART-016",
+              "name": "Article 16",
+              "description": "国家支持数据开发利用和数据安全技术研 究，鼓励数据开发利用和数据安全等领域的技术推广和商业 创新，培育、发展数据开发利用和数据安全产品、产业体 系。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 16",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-017",
+              "code": "DSL-ART-017",
+              "name": "Article 17",
+              "description": "国家推进数据开发利用技术和数据安全标准 体系建设。国务院标准化行政主管部门和国务院有关部门根 据各自的职责，组织制定并适时修订有关数据开发利用技 术、产品和数据安全相关标准。国家支持企业、社会团体和 教育、科研机构等参与标准制定。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 17",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-018",
+              "code": "DSL-ART-018",
+              "name": "Article 18",
+              "description": "国家促进数据安全检测评估、认证等服务的 发展，支持数据安全检测评估、认证等专业机构依法开展服 务活动。 国家支持有关部门、行业组织、企业、教育和科研机 构、有关专业机构等在数据安全风险评估、防范、处置等方 面开展协作。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 18",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-019",
+              "code": "DSL-ART-019",
+              "name": "Article 19",
+              "description": "国家建立健全数据交易管理制度，规范数据 交易行为，培育数据交易市场。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 19",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-020",
+              "code": "DSL-ART-020",
+              "name": "Article 20",
+              "description": "国家支持教育、科研机构和企业等开展数据 开发利用技术和数据安全相关教育和培训，采取多种方式培 养数据开发利用技术和数据安全专业人才，促进人才交流。 第三章 数据安全制度",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 20",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-03",
+      "code": "DSL-ART.CH03",
+      "name": "Chapter 3",
+      "description": "Full-text obligations from Chapter 3 of Data Security Law.",
+      "requirements": 6,
+      "subcategories": [
+        {
+          "id": "dsl-ch-03-articles",
+          "code": "DSL-ART.CH03.ART",
+          "name": "Chapter 3 Articles",
+          "description": "Article-level obligations from Chapter 3.",
+          "requirements": [
+            {
+              "id": "dsl-art-021",
+              "code": "DSL-ART-021",
+              "name": "Article 21",
+              "description": "国家建立数据分类分级保护制度，根据数 据在经济社会发展中的重要程度，以及一旦遭到篡改、破 坏、泄露或者非法获取、非法利用，对国家安全、公共利益 或者个人、组织合法权益造成的危害程度，对数据实行分类 分级保护。国家数据安全工作协调机制统筹协调有关部门制 定重要数据目录，加强对重要数据的保护。 关系国家安全、国民经济命脉、重要民生、重大公共利 益等数据属于国家核心数据，实行更加严格的管理制度。 各地区、各部门应当按照数据分类分级保护制度，确定 本地区、本部门以及相关行业、领域的重要数据具体目录， 对列入目录的数据进行重点保护。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 21",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-022",
+              "code": "DSL-ART-022",
+              "name": "Article 22",
+              "description": "国家建立集中统一、高效权威的数据安全 风险评估、报告、信息共享、监测预警机制。国家数据安全 工作协调机制统筹协调有关部门加强数据安全风险信息的获 取、分析、研判、预警工作。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 22",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-023",
+              "code": "DSL-ART-023",
+              "name": "Article 23",
+              "description": "国家建立数据安全应急处置机制。发生数 据安全事件，有关主管部门应当依法启动应急预案，采取相 应的应急处置措施，防止危害扩大，消除安全隐患，并及时 向社会发布与公众有关的警示信息。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 23",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-024",
+              "code": "DSL-ART-024",
+              "name": "Article 24",
+              "description": "国家建立数据安全审查制度，对影响或者 可能影响国家安全的数据处理活动进行国家安全审查。 依法作出的安全审查决定为最终决定。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 24",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-025",
+              "code": "DSL-ART-025",
+              "name": "Article 25",
+              "description": "国家对与维护国家安全和利益、履行国际 义务相关的属于管制物项的数据依法实施出口管制。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 25",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-026",
+              "code": "DSL-ART-026",
+              "name": "Article 26",
+              "description": "任何国家或者地区在与数据和数据开发利 用技术等有关的投资、贸易等方面对中华人民共和国采取歧 视性的禁止、限制或者其他类似措施的，中华人民共和国可 以根据实际情况对该国家或者地区对等采取措施。 第四章 数据安全保护义务",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 26",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-04",
+      "code": "DSL-ART.CH04",
+      "name": "Chapter 4",
+      "description": "Full-text obligations from Chapter 4 of Data Security Law.",
+      "requirements": 10,
+      "subcategories": [
+        {
+          "id": "dsl-ch-04-articles",
+          "code": "DSL-ART.CH04.ART",
+          "name": "Chapter 4 Articles",
+          "description": "Article-level obligations from Chapter 4.",
+          "requirements": [
+            {
+              "id": "dsl-art-027",
+              "code": "DSL-ART-027",
+              "name": "Article 27",
+              "description": "开展数据处理活动应当依照法律、法规的 规定，建立健全全流程数据安全管理制度，组织开展数据安 全教育培训，采取相应的技术措施和其他必要措施，保障数 据安全。利用互联网等信息网络开展数据处理活动，应当在 网络安全等级保护制度的基础上，履行上述数据安全保护义 务。 重要数据的处理者应当明确数据安全负责人和管理机 构，落实数据安全保护责任。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 27",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-028",
+              "code": "DSL-ART-028",
+              "name": "Article 28",
+              "description": "开展数据处理活动以及研究开发数据新技 术，应当有利于促进经济社会发展，增进人民福祉，符合社 会公德和伦理。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 28",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-029",
+              "code": "DSL-ART-029",
+              "name": "Article 29",
+              "description": "开展数据处理活动应当加强风险监测，发 现数据安全缺陷、漏洞等风险时，应当立即采取补救措施； 发生数据安全事件时，应当立即采取处置措施，按照规定及 时告知用户并向有关主管部门报告。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 29",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-030",
+              "code": "DSL-ART-030",
+              "name": "Article 30",
+              "description": "重要数据的处理者应当按照规定对其数据处 理活动定期开展风险评估，并向有关主管部门报送风险评估 报告。 风险评估报告应当包括处理的重要数据的种类、数量， 开展数据处理活动的情况，面临的数据安全风险及其应对措 施等。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 30",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-031",
+              "code": "DSL-ART-031",
+              "name": "Article 31",
+              "description": "关键信息基础设施的运营者在中华人民共 和国境内运营中收集和产生的重要数据的出境安全管理，适 用《中华人民共和国网络安全法》的规定；其他数据处理者 在中华人民共和国境内运营中收集和产生的重要数据的出境 安全管理办法，由国家网信部门会同国务院有关部门制定。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 31",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-032",
+              "code": "DSL-ART-032",
+              "name": "Article 32",
+              "description": "任何组织、个人收集数据，应当采取合 法、正当的方式，不得窃取或者以其他非法方式获取数据。 法律、行政法规对收集、使用数据的目的、范围有规定 的，应当在法律、行政法规规定的目的和范围内收集、使用 数据。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 32",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-033",
+              "code": "DSL-ART-033",
+              "name": "Article 33",
+              "description": "从事数据交易中介服务的机构提供服务， 应当要求数据提供方说明数据来源，审核交易双方的身份， 并留存审核、交易记录。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 33",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-034",
+              "code": "DSL-ART-034",
+              "name": "Article 34",
+              "description": "法律、行政法规规定提供数据处理相关服 务应当取得行政许可的，服务提供者应当依法取得许可。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 34",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-035",
+              "code": "DSL-ART-035",
+              "name": "Article 35",
+              "description": "公安机关、国家安全机关因依法维护国家 安全或者侦查犯罪的需要调取数据，应当按照国家有关规 定，经过严格的批准手续，依法进行，有关组织、个人应当 予以配合。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 35",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-036",
+              "code": "DSL-ART-036",
+              "name": "Article 36",
+              "description": "中华人民共和国主管机关根据有关法律和 中华人民共和国缔结或者参加的国际条约、协定，或者按照 平等互惠原则，处理外国司法或者执法机构关于提供数据的 请求。非经中华人民共和国主管机关批准，境内的组织、个 人不得向外国司法或者执法机构提供存储于中华人民共和国 境内的数据。 第五章 政务数据安全与开放",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 36",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-05",
+      "code": "DSL-ART.CH05",
+      "name": "Chapter 5",
+      "description": "Full-text obligations from Chapter 5 of Data Security Law.",
+      "requirements": 7,
+      "subcategories": [
+        {
+          "id": "dsl-ch-05-articles",
+          "code": "DSL-ART.CH05.ART",
+          "name": "Chapter 5 Articles",
+          "description": "Article-level obligations from Chapter 5.",
+          "requirements": [
+            {
+              "id": "dsl-art-037",
+              "code": "DSL-ART-037",
+              "name": "Article 37",
+              "description": "国家大力推进电子政务建设，提高政务数 据的科学性、准确性、时效性，提升运用数据服务经济社会 发展的能力。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 37",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-038",
+              "code": "DSL-ART-038",
+              "name": "Article 38",
+              "description": "国家机关为履行法定职责的需要收集、使 用数据，应当在其履行法定职责的范围内依照法律、行政法 规规定的条件和程序进行；对在履行职责中知悉的个人隐 私、个人信息、商业秘密、保密商务信息等数据应当依法予 以保密，不得泄露或者非法向他人提供。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 38",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-039",
+              "code": "DSL-ART-039",
+              "name": "Article 39",
+              "description": "国家机关应当依照法律、行政法规的规 定，建立健全数据安全管理制度，落实数据安全保护责任， 保障政务数据安全。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 39",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-040",
+              "code": "DSL-ART-040",
+              "name": "Article 40",
+              "description": "国家机关委托他人建设、维护电子政务系 统，存储、加工政务数据，应当经过严格的批准程序，并应 当监督受托方履行相应的数据安全保护义务。受托方应当依 照法律、法规的规定和合同约定履行数据安全保护义务，不 得擅自留存、使用、泄露或者向他人提供政务数据。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 40",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-041",
+              "code": "DSL-ART-041",
+              "name": "Article 41",
+              "description": "国家机关应当遵循公正、公平、便民的原 则，按照规定及时、准确地公开政务数据。依法不予公开的 除外。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 41",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-042",
+              "code": "DSL-ART-042",
+              "name": "Article 42",
+              "description": "国家制定政务数据开放目录，构建统一规 范、互联互通、安全可控的政务数据开放平台，推动政务数 据开放利用。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 42",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-043",
+              "code": "DSL-ART-043",
+              "name": "Article 43",
+              "description": "法律、法规授权的具有管理公共事务职能 的组织为履行法定职责开展数据处理活动，适用本章规定。 第六章 法律责任",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 43",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-06",
+      "code": "DSL-ART.CH06",
+      "name": "Chapter 6",
+      "description": "Full-text obligations from Chapter 6 of Data Security Law.",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "dsl-ch-06-articles",
+          "code": "DSL-ART.CH06.ART",
+          "name": "Chapter 6 Articles",
+          "description": "Article-level obligations from Chapter 6.",
+          "requirements": [
+            {
+              "id": "dsl-art-044",
+              "code": "DSL-ART-044",
+              "name": "Article 44",
+              "description": "有关主管部门在履行数据安全监管职责 中，发现数据处理活动存在较大安全风险的，可以按照规定 的权限和程序对有关组织、个人进行约谈，并要求有关组 织、个人采取措施进行整改，消除隐患。",
+              "level": "1",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 44",
+              "obligationStrength": "MAY",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-045",
+              "code": "DSL-ART-045",
+              "name": "Article 45",
+              "description": "开展数据处理活动的组织、个人不履行本 法第二十七条、第二十九条、第三十条规定的数据安全保护 义务的，由有关主管部门责令改正，给予警告，可以并处五 万元以上五十万元以下罚款，对直接负责的主管人员和其他 直接责任人员可以处一万元以上十万元以下罚款；拒不改正 或者造成大量数据泄露等严重后果的，处五十万元以上二百 万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销 相关业务许可证或者吊销营业执照，对直接负责的主管人员 和其他直接责任人员处五万元以上二十万元以下罚款。 违反国家核心数据管理制度，危害国家主权、安全和发 展利益的，由有关主管部门处二百万元以上一千万元以下罚 款，并根据情况责令暂停相关业务、停业整顿、吊销相关业 务许可证或者吊销营业执照；构成犯罪的，依法追究刑事责 任。",
+              "level": "1",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 45",
+              "obligationStrength": "MAY",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-046",
+              "code": "DSL-ART-046",
+              "name": "Article 46",
+              "description": "违反本法第三十一条规定，向境外提供重 要数据的，由有关主管部门责令改正，给予警告，可以并处 十万元以上一百万元以下罚款，对直接负责的主管人员和其 他直接责任人员可以处一万元以上十万元以下罚款；情节严 重的，处一百万元以上一千万元以下罚款，并可以责令暂停 相关业务、停业整顿、吊销相关业务许可证或者吊销营业执 照，对直接负责的主管人员和其他直接责任人员处十万元以 上一百万元以下罚款。",
+              "level": "1",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 46",
+              "obligationStrength": "MAY",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-047",
+              "code": "DSL-ART-047",
+              "name": "Article 47",
+              "description": "从事数据交易中介服务的机构未履行本法 第三十三条规定的义务的，由有关主管部门责令改正，没收 违法所得，处违法所得一倍以上十倍以下罚款，没有违法所 得或者违法所得不足十万元的，处十万元以上一百万元以下 罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务 许可证或者吊销营业执照；对直接负责的主管人员和其他直 接责任人员处一万元以上十万元以下罚款。",
+              "level": "1",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 47",
+              "obligationStrength": "MAY",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-048",
+              "code": "DSL-ART-048",
+              "name": "Article 48",
+              "description": "违反本法第三十五条规定，拒不配合数据 调取的，由有关主管部门责令改正，给予警告，并处五万元 以上五十万元以下罚款，对直接负责的主管人员和其他直接 责任人员处一万元以上十万元以下罚款。 违反本法第三十六条规定，未经主管机关批准向外国司 法或者执法机构提供数据的，由有关主管部门给予警告，可 以并处十万元以上一百万元以下罚款，对直接负责的主管人 员和其他直接责任人员可以处一万元以上十万元以下罚款； 造成严重后果的，处一百万元以上五百万元以下罚款，并可 以责令暂停相关业务、停业整顿、吊销相关业务许可证或者 吊销营业执照，对直接负责的主管人员和其他直接责任人员 处五万元以上五十万元以下罚款。",
+              "level": "1",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 48",
+              "obligationStrength": "MAY",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-049",
+              "code": "DSL-ART-049",
+              "name": "Article 49",
+              "description": "国家机关不履行本法规定的数据安全保护 义务的，对直接负责的主管人员和其他直接责任人员依法给 予处分。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 49",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-050",
+              "code": "DSL-ART-050",
+              "name": "Article 50",
+              "description": "履行数据安全监管职责的国家工作人员玩忽 职守、滥用职权、徇私舞弊的，依法给予处分。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 50",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-051",
+              "code": "DSL-ART-051",
+              "name": "Article 51",
+              "description": "窃取或者以其他非法方式获取数据，开展 数据处理活动排除、限制竞争，或者损害个人、组织合法权 益的，依照有关法律、行政法规的规定处罚。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 51",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-052",
+              "code": "DSL-ART-052",
+              "name": "Article 52",
+              "description": "违反本法规定，给他人造成损害的，依法 承担民事责任。 违反本法规定，构成违反治安管理行为的，依法给予治 安管理处罚；构成犯罪的，依法追究刑事责任。 第七章 附 则",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 52",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsl-ch-07",
+      "code": "DSL-ART.CH07",
+      "name": "Chapter 7",
+      "description": "Full-text obligations from Chapter 7 of Data Security Law.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "dsl-ch-07-articles",
+          "code": "DSL-ART.CH07.ART",
+          "name": "Chapter 7 Articles",
+          "description": "Article-level obligations from Chapter 7.",
+          "requirements": [
+            {
+              "id": "dsl-art-053",
+              "code": "DSL-ART-053",
+              "name": "Article 53",
+              "description": "开展涉及国家秘密的数据处理活动，适用 《中华人民共和国保守国家秘密法》等法律、行政法规的规 定。 在统计、档案工作中开展数据处理活动，开展涉及个人 信息的数据处理活动，还应当遵守有关法律、行政法规的规 定。",
+              "level": "3",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 53",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-054",
+              "code": "DSL-ART-054",
+              "name": "Article 54",
+              "description": "军事数据安全保护的办法，由中央军事委 员会依据本法另行制定。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 54",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            },
+            {
+              "id": "dsl-art-055",
+              "code": "DSL-ART-055",
+              "name": "Article 55",
+              "description": "本法自2021年9 月1 日起施行。",
+              "level": "2",
+              "verification": "Verify data governance policies, classification records, and audit trails.",
+              "sourceRef": "Data Security Law of the PRC, Article 55",
+              "obligationStrength": "SHOULD",
+              "applicability": {
+                "subject": "Data handlers",
+                "scenario": "Legal obligation implementation",
+                "region": "CN"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

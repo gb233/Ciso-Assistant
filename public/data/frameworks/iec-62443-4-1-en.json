@@ -1,0 +1,571 @@
+{
+  "id": "iec-62443-4-1",
+  "name": "IEC 62443-4-1",
+  "fullName": "IEC 62443-4-1: Secure Product Development Lifecycle Requirements",
+  "version": "1.0",
+  "type": "standard",
+  "domain": "cybersecurity",
+  "description": "IEC 62443-4-1 is part of the industrial automation and control systems (IACS) security standards series and specifies the requirements for the security product development lifecycle. It provides a comprehensive set of requirements for the secure development of industrial control system products, covering the entire lifecycle from concept to decommissioning.",
+  "website": "https://webstore.iec.ch/publication/66912",
+  "organization": "IEC",
+  "releaseDate": "2018-01-01",
+  "lastUpdated": "2023-01-01",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 52,
+    "maturity1": 18,
+    "maturity2": 18,
+    "maturity3": 16,
+    "totalCategories": 4,
+    "totalSubcategories": 11,
+    "level1": 11,
+    "level2": 29,
+    "level3": 12
+  },
+  "categories": [
+    {
+      "id": "sdlc-management",
+      "code": "SM",
+      "name": "SDLC Management",
+      "description": "Managing the Security Product Development Lifecycle",
+      "requirements": 16,
+      "subcategories": [
+        {
+          "id": "sm-policy",
+          "code": "SM.1",
+          "name": "Security Development Policy",
+          "description": "Establish policies and processes for secure development",
+          "requirements": [
+            {
+              "id": "sm-1-1",
+              "code": "SM-1.1",
+              "name": "Security Development Policy",
+              "description": "Establish and maintain formal policies for secure product development.",
+              "level": "1",
+              "verification": "Review secure development policy documents"
+            },
+            {
+              "id": "sm-1-2",
+              "code": "SM-1.2",
+              "name": "Safety process definition",
+              "description": "Define the processes and procedures for developing safe products.",
+              "level": "1",
+              "verification": "Review Process Document"
+            },
+            {
+              "id": "sm-1-3",
+              "code": "SM-1.3",
+              "name": "Role Responsibilities",
+              "description": "Clarify the responsibilities of each role in secure development.",
+              "level": "1",
+              "verification": "Review the RACI matrix"
+            },
+            {
+              "id": "sm-1-4",
+              "code": "SM-1.4",
+              "name": "Resource allocation",
+              "description": "Allocate necessary resources for safe development.",
+              "level": "2",
+              "verification": "Review resource allocation"
+            },
+            {
+              "id": "sm-1-5",
+              "code": "SM-1.5",
+              "name": "Continuous Improvement",
+              "description": "Establish a continuous improvement mechanism for the secure development process.",
+              "level": "2",
+              "verification": "Review and Improvement Records"
+            },
+            {
+              "id": "sm-1-6",
+              "code": "SM-1.6",
+              "name": "Compliance Monitoring",
+              "description": "Monitor the compliance of the security development process.",
+              "level": "3",
+              "verification": "Review Compliance Monitoring Report"
+            }
+          ]
+        },
+        {
+          "id": "sm-training",
+          "code": "SM.2",
+          "name": "Personnel capability",
+          "description": "Ensure personnel have the ability to develop safely",
+          "requirements": [
+            {
+              "id": "sm-2-1",
+              "code": "SM-2.1",
+              "name": "Safety Training",
+              "description": "Provide security training for developers.",
+              "level": "1",
+              "verification": "Review Training Records"
+            },
+            {
+              "id": "sm-2-2",
+              "code": "SM-2.2",
+              "name": "Capability Assessment",
+              "description": "Assess personnel's capability for safe development.",
+              "level": "2",
+              "verification": "Assessment of Review Capability"
+            },
+            {
+              "id": "sm-2-3",
+              "code": "SM-2.3",
+              "name": "Professional Certification",
+              "description": "Encourage obtaining safety-related professional certifications.",
+              "level": "2",
+              "verification": "Review and certify records"
+            },
+            {
+              "id": "sm-2-4",
+              "code": "SM-2.4",
+              "name": "Continuous learning",
+              "description": "Establish a continuous safety learning mechanism.",
+              "level": "3",
+              "verification": "Review study records"
+            },
+            {
+              "id": "sm-2-5",
+              "code": "SM-2.5",
+              "name": "Knowledge Management",
+              "description": "Manage the secure development knowledge base.",
+              "level": "3",
+              "verification": "Review knowledge base"
+            }
+          ]
+        },
+        {
+          "id": "sm-planning",
+          "code": "SM.3",
+          "name": "Development Planning",
+          "description": "Plan safe development activities",
+          "requirements": [
+            {
+              "id": "sm-3-1",
+              "code": "SM-3.1",
+              "name": "Security Requirements Planning",
+              "description": "Incorporate safety requirements into product planning.",
+              "level": "1",
+              "verification": "Review product planning documents"
+            },
+            {
+              "id": "sm-3-2",
+              "code": "SM-3.2",
+              "name": "Safety milestone",
+              "description": "Set security milestones in the development plan.",
+              "level": "2",
+              "verification": "Review the development plan"
+            },
+            {
+              "id": "sm-3-3",
+              "code": "SM-3.3",
+              "name": "Risk Assessment",
+              "description": "Assess the safety risks of product development.",
+              "level": "2",
+              "verification": "Review risk assessment"
+            },
+            {
+              "id": "sm-3-4",
+              "code": "SM-3.4",
+              "name": "Security Budget",
+              "description": "Allocate a budget for safety activities.",
+              "level": "2",
+              "verification": "Review budget allocation"
+            },
+            {
+              "id": "sm-3-5",
+              "code": "SM-3.5",
+              "name": "Supplier Safety",
+              "description": "Assess and manage supplier security.",
+              "level": "3",
+              "verification": "Review Supplier Evaluation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-requirements",
+      "code": "SR",
+      "name": "Safety requirements",
+      "description": "Define and manage product safety requirements",
+      "requirements": 14,
+      "subcategories": [
+        {
+          "id": "sr-identification",
+          "code": "SR.1",
+          "name": "Needs Identification",
+          "description": "Identify product safety requirements",
+          "requirements": [
+            {
+              "id": "sr-1-1",
+              "code": "SR-1.1",
+              "name": "Threat Analysis",
+              "description": "Conduct a product threat analysis.",
+              "level": "1",
+              "verification": "Review threat analysis document"
+            },
+            {
+              "id": "sr-1-2",
+              "code": "SR-1.2",
+              "name": "Use Case Definition",
+              "description": "Define product safety use cases.",
+              "level": "1",
+              "verification": "Review Use Case Document"
+            },
+            {
+              "id": "sr-1-3",
+              "code": "SR-1.3",
+              "name": "Security Objectives",
+              "description": "Define product safety objectives.",
+              "level": "1",
+              "verification": "Review security objectives"
+            },
+            {
+              "id": "sr-1-4",
+              "code": "SR-1.4",
+              "name": "Compliance requirements",
+              "description": "Identify applicable safety and compliance requirements.",
+              "level": "2",
+              "verification": "Checklist of Compliance Review Requirements"
+            },
+            {
+              "id": "sr-1-5",
+              "code": "SR-1.5",
+              "name": "Security baseline",
+              "description": "Establish a product safety baseline.",
+              "level": "2",
+              "verification": "Review security baseline"
+            }
+          ]
+        },
+        {
+          "id": "sr-specification",
+          "code": "SR.2",
+          "name": "Requirements Specification",
+          "description": "Standardize product safety requirements",
+          "requirements": [
+            {
+              "id": "sr-2-1",
+              "code": "SR-2.1",
+              "name": "Requirements Document",
+              "description": "Document product safety requirements.",
+              "level": "1",
+              "verification": "Review requirements document"
+            },
+            {
+              "id": "sr-2-2",
+              "code": "SR-2.2",
+              "name": "Requirement Traceability",
+              "description": "Establish a safety requirements traceability matrix.",
+              "level": "2",
+              "verification": "Review Traceability Matrix"
+            },
+            {
+              "id": "sr-2-3",
+              "code": "SR-2.3",
+              "name": "Requirement Verification",
+              "description": "Verify the completeness and consistency of security requirements.",
+              "level": "2",
+              "verification": "Review and verification records"
+            },
+            {
+              "id": "sr-2-4",
+              "code": "SR-2.4",
+              "name": "Requirement change",
+              "description": "Manage security requirement changes.",
+              "level": "2",
+              "verification": "Review Change Management"
+            },
+            {
+              "id": "sr-2-5",
+              "code": "SR-2.5",
+              "name": "Requirement Priority",
+              "description": "Determine the priority of security requirements.",
+              "level": "3",
+              "verification": "Review Priority Analysis"
+            }
+          ]
+        },
+        {
+          "id": "sr-validation",
+          "code": "SR.3",
+          "name": "Requirement Verification",
+          "description": "Verify the implementation of security requirements",
+          "requirements": [
+            {
+              "id": "sr-3-1",
+              "code": "SR-3.1",
+              "name": "Design Review",
+              "description": "Review the safety design to ensure it meets the requirements.",
+              "level": "2",
+              "verification": "Review design review"
+            },
+            {
+              "id": "sr-3-2",
+              "code": "SR-3.2",
+              "name": "Test coverage",
+              "description": "Ensure coverage of safety requirements testing.",
+              "level": "2",
+              "verification": "Review Test Coverage"
+            },
+            {
+              "id": "sr-3-3",
+              "code": "SR-3.3",
+              "name": "Acceptance Criteria",
+              "description": "Define safety acceptance standards.",
+              "level": "2",
+              "verification": "Review and Acceptance Standards"
+            },
+            {
+              "id": "sr-3-4",
+              "code": "SR-3.4",
+              "name": "Demand loop",
+              "description": "Ensure the closed-loop verification of safety requirements.",
+              "level": "3",
+              "verification": "Review closed-loop verification"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secure-design",
+      "code": "SD",
+      "name": "Safety Design",
+      "description": "Implement safe product design",
+      "requirements": 12,
+      "subcategories": [
+        {
+          "id": "sd-architecture",
+          "code": "SD.1",
+          "name": "Security Architecture",
+          "description": "Design product safety architecture",
+          "requirements": [
+            {
+              "id": "sd-1-1",
+              "code": "SD-1.1",
+              "name": "Architectural Design",
+              "description": "Design a secure product architecture.",
+              "level": "1",
+              "verification": "Review the architecture design"
+            },
+            {
+              "id": "sd-1-2",
+              "code": "SD-1.2",
+              "name": "Safety Zone",
+              "description": "Implement a secure partition design.",
+              "level": "2",
+              "verification": "Review zoning design"
+            },
+            {
+              "id": "sd-1-3",
+              "code": "SD-1.3",
+              "name": "Trust boundary",
+              "description": "Define the product trust boundary.",
+              "level": "2",
+              "verification": "Review trust boundaries"
+            },
+            {
+              "id": "sd-1-4",
+              "code": "SD-1.4",
+              "name": "Defense in Depth",
+              "description": "Implement defense-in-depth design.",
+              "level": "3",
+              "verification": "Review defense in depth"
+            }
+          ]
+        },
+        {
+          "id": "sd-patterns",
+          "code": "SD.2",
+          "name": "Security Design Patterns",
+          "description": "Application Security Design Patterns",
+          "requirements": [
+            {
+              "id": "sd-2-1",
+              "code": "SD-2.1",
+              "name": "Design Pattern Library",
+              "description": "Establish a library of security design patterns.",
+              "level": "2",
+              "verification": "Review Mode Library"
+            },
+            {
+              "id": "sd-2-2",
+              "code": "SD-2.2",
+              "name": "Mode Application",
+              "description": "Apply secure design patterns.",
+              "level": "2",
+              "verification": "Review Mode Application"
+            },
+            {
+              "id": "sd-2-3",
+              "code": "SD-2.3",
+              "name": "Anti-pattern recognition",
+              "description": "Identify and avoid security anti-patterns.",
+              "level": "3",
+              "verification": "Review anti-pattern recognition"
+            },
+            {
+              "id": "sd-2-4",
+              "code": "SD-2.4",
+              "name": "Architecture Review",
+              "description": "Conduct a security architecture review.",
+              "level": "3",
+              "verification": "Review of architectural assessment"
+            }
+          ]
+        },
+        {
+          "id": "sd-crypto",
+          "code": "SD.3",
+          "name": "Password Design",
+          "description": "Design cryptographic protection mechanisms",
+          "requirements": [
+            {
+              "id": "sd-3-1",
+              "code": "SD-3.1",
+              "name": "Encryption Design",
+              "description": "Design a data encryption mechanism.",
+              "level": "2",
+              "verification": "Review encryption design"
+            },
+            {
+              "id": "sd-3-2",
+              "code": "SD-3.2",
+              "name": "Key Design",
+              "description": "Design a key management scheme.",
+              "level": "2",
+              "verification": "Review key design"
+            },
+            {
+              "id": "sd-3-3",
+              "code": "SD-3.3",
+              "name": "Certification Design",
+              "description": "Design a certification mechanism.",
+              "level": "2",
+              "verification": "Review and Certification Design"
+            },
+            {
+              "id": "sd-3-4",
+              "code": "SD-3.4",
+              "name": "Protocol Design",
+              "description": "Design a secure communication protocol.",
+              "level": "3",
+              "verification": "Review Agreement Design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secure-implementation",
+      "code": "SI",
+      "name": "Safe implementation",
+      "description": "Safely implement product features",
+      "requirements": 10,
+      "subcategories": [
+        {
+          "id": "si-coding",
+          "code": "SI.1",
+          "name": "Secure Coding",
+          "description": "Implement secure coding practices",
+          "requirements": [
+            {
+              "id": "si-1-1",
+              "code": "SI-1.1",
+              "name": "Encoding standard",
+              "description": "Follow safe coding standards.",
+              "level": "1",
+              "verification": "Review coding standards"
+            },
+            {
+              "id": "si-1-2",
+              "code": "SI-1.2",
+              "name": "Static analysis",
+              "description": "Use static analysis tools.",
+              "level": "2",
+              "verification": "Review Static Analysis"
+            },
+            {
+              "id": "si-1-3",
+              "code": "SI-1.3",
+              "name": "Code Review",
+              "description": "Conduct a security code review.",
+              "level": "2",
+              "verification": "Review code review"
+            },
+            {
+              "id": "si-1-4",
+              "code": "SI-1.4",
+              "name": "Vulnerability Fix",
+              "description": "Fix code security vulnerabilities.",
+              "level": "2",
+              "verification": "Review and fix vulnerabilities"
+            }
+          ]
+        },
+        {
+          "id": "si-build",
+          "code": "SI.2",
+          "name": "Safe construction",
+          "description": "Build products safely",
+          "requirements": [
+            {
+              "id": "si-2-1",
+              "code": "SI-2.1",
+              "name": "Build environment",
+              "description": "Protect the construction environment's safety.",
+              "level": "2",
+              "verification": "Review the build environment"
+            },
+            {
+              "id": "si-2-2",
+              "code": "SI-2.2",
+              "name": "Dependency Management",
+              "description": "Manage the security of third-party dependencies.",
+              "level": "2",
+              "verification": "Review dependency management"
+            },
+            {
+              "id": "si-2-3",
+              "code": "SI-2.3",
+              "name": "Build verification",
+              "description": "Verify the integrity of the build artifacts.",
+              "level": "3",
+              "verification": "Review and verify construction"
+            },
+            {
+              "id": "si-2-4",
+              "code": "SI-2.4",
+              "name": "Signed release",
+              "description": "Sign the released products.",
+              "level": "3",
+              "verification": "Review and publish signature"
+            },
+            {
+              "id": "si-2-5",
+              "code": "SI-2.5",
+              "name": "Build integrity verification",
+              "description": "Perform integrity checks on build artifacts and retain records for auditability.",
+              "level": "2",
+              "verification": "Review build artifact integrity check records"
+            },
+            {
+              "id": "si-2-6",
+              "code": "SI-2.6",
+              "name": "Build traceability",
+              "description": "Ensure the build process, toolchain versions, and released artifacts are traceable.",
+              "level": "2",
+              "verification": "Review build pipeline traceability records"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-standard-catalog",
+    "primaryUrl": "https://webstore.iec.ch/en/publication/33615"
+  }
+}

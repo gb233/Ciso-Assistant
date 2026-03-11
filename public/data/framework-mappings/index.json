@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-03-02",
+  "mappings": [
+    {
+      "sourceId": "owasp-samm",
+      "targetId": "nist-ssdf",
+      "mappedControls": 13,
+      "sourceCoverage": 27.1,
+      "targetCoverage": 54.8,
+      "confidence": 0.8775,
+      "status": "verified",
+      "updatedAt": "2026-03-02",
+      "notes": "Subset imported from OWASP official NIST SSDF mapping and constrained by locally available framework snapshots."
+    }
+  ]
+}

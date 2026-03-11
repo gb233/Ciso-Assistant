@@ -1,0 +1,1039 @@
+{
+  "id": "nis2",
+  "name": "NIS 2",
+  "fullName": "Network and Information Security Directive 2",
+  "version": "2023",
+  "type": "compliance",
+  "domain": "cybersecurity",
+  "description": "EU Network and Information Security Directive, strengthening cybersecurity requirements across the European Union.",
+  "website": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+  "organization": "European Union",
+  "releaseDate": "2022-12-14",
+  "lastUpdated": "2026-02-26",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 43,
+    "totalCategories": 6,
+    "totalSubcategories": 18,
+    "level1": 43,
+    "level2": 0,
+    "level3": 0,
+    "totalRubrics": 43
+  },
+  "categories": [
+    {
+      "id": "detect",
+      "code": "DETECT",
+      "name": "Detect",
+      "description": "Detect requirements.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "continuous-monitoring",
+          "code": "CONTINUOUS_MONITORING",
+          "name": "Continuous Monitoring",
+          "description": "Networks and network services are monitored to identify potentially adverse events.\n\nProcessing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.",
+          "requirements": [
+            {
+              "id": "de-cm-01-6838",
+              "code": "DE.CM-01",
+              "name": "Networks and network services are monitored to identify potentially adverse events.",
+              "description": "Networks and network services are monitored to identify potentially adverse events.\n\nProcessing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.\n\nCriteria: 1. For at least the relevant information systems and networks, technical tools are present, updated, maintained, and properly configured to promptly detect significant incidents. | 2. The expected service levels (SL) of the services and activities of the NIS entity are defined and documented also for the purpose of promptly detecting significant incidents. | 3. In compliance with the policies outlined in measure GV.PO-01, procedures related to points 1 and 2 are adopted and documented. | 4. For at least the relevant information systems and networks, tools for analyzing and filtering incoming traffic flow (including email) are used. | 5. For at least the relevant information systems and networks, for the purposes outlined in point 1, remote accesses, perimeter system activities (such as routers and firewalls), significant administrative events, as well as successful or failed accesses to network resources, terminal stations, and applications are monitored to detect cybersecurity events. | 6. For at least the relevant information systems and networks, for the purposes outlined in point 1, qualitative-quantitative parameters are defined, monitored, and documented to detect unauthorized accesses or abuses of granted privileges. | 7. In compliance with the policies outlined in measure GV.PO-01, procedures related to points 4, 5, and 6 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "de-cm-09-6839",
+              "code": "DE.CM-09",
+              "name": "Processing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.",
+              "description": "Networks and network services are monitored to identify potentially adverse events.\n\nProcessing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.\n\nCriteria: 1. Subject to justified and documented regulatory or technical reasons, endpoint protection systems for detecting malicious code are present, updated, maintained, and properly configured. | 2. In compliance with the policies referred to in measure GV.PO-01, procedures related to point 1 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "de-cm-6838-6838",
+              "code": "DE.CM.6838",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Networks and network services are monitored to identify potentially adverse events.\n\nProcessing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "DE.CM-01"
+            },
+            {
+              "id": "de-cm-6839-6839",
+              "code": "DE.CM.6839",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Networks and network services are monitored to identify potentially adverse events.\n\nProcessing hardware and software, runtime environments, and their data are monitored to identify potentially adverse events.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "DE.CM-09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "govern",
+      "code": "GOVERN",
+      "name": "Govern",
+      "description": "Govern requirements.",
+      "requirements": 11,
+      "subcategories": [
+        {
+          "id": "organizational-context",
+          "code": "ORGANIZATIONAL_CONTEXT",
+          "name": "Organizational Context",
+          "description": "The objectives, capabilities, and critical services on which stakeholders depend or expect from the organization are understood.",
+          "requirements": [
+            {
+              "id": "gv-oc-04-6801",
+              "code": "GV.OC-04",
+              "name": "The objectives, capabilities, and critical services on which stakeholders depend or expect from the organization are understood.",
+              "description": "The objectives, capabilities, and critical services on which stakeholders depend or expect from the organization are understood.\n\nCriteria: 1. An up-to-date list of relevant information and network systems is maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "gv-oc-6801-6801",
+              "code": "GV.OC.6801",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The objectives, capabilities, and critical services on which stakeholders depend or expect from the organization are understood.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.OC-04"
+            }
+          ]
+        },
+        {
+          "id": "policies-processes-and-procedures",
+          "code": "POLICIES_PROCESSES_AND_PROCEDURES",
+          "name": "Policies, Processes, and Procedures",
+          "description": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.\n\nThe policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.",
+          "requirements": [
+            {
+              "id": "gv-po-01-6805",
+              "code": "GV.PO-01",
+              "name": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.",
+              "description": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.\n\nThe policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.\n\nCriteria: 1. Cybersecurity policies are adopted and documented for at least the following areas: a) risk management; b) roles and responsibilities; c) reliability of human resources; | d) compliance and security audit; e) management of cybersecurity risks in the supply chain; f) asset management; g) vulnerability management; h) operational continuity, disaster recovery, and crisis management; i) management of authentication, digital identities, and access control; j) physical security; k) staff training and awareness; l) data security; m) development, configuration, maintenance, and decommissioning of information and network systems; n) protection of networks and communications; o) security event monitoring; p) incident response and recovery. | 2. For the areas mentioned in point 1, policies are included at least in relation to the requirements indicated in table 1 in the appendix to this annex. | 3. The policies referred to in point 1 are approved by the administrative and directive bodies.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-po-02-6806",
+              "code": "GV.PO-02",
+              "name": "The policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.",
+              "description": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.\n\nThe policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.\n\nCriteria: 1. The policies referred to in measure GV.PO-01 are periodically reviewed and, if appropriate, updated at least annually, as well as whenever there are changes in the regulatory context concerning cybersecurity, significant incidents, organizational changes, or shifts in threat exposure and related risks. | 2. For the review mentioned in point 1, compliance of the policies referred to in measure GV.PO-01 with cybersecurity regulations is verified at least. | 3. An updated register containing the results of the review mentioned in point 1 is maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "gv-po-6805-6805",
+              "code": "GV.PO.6805",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.\n\nThe policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.PO-01"
+            },
+            {
+              "id": "gv-po-6806-6806",
+              "code": "GV.PO.6806",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The policy for managing cybersecurity risk is established based on the organizational context, cybersecurity strategy, and priorities, and is communicated and enforced.\n\nThe policy for managing cybersecurity risk is reviewed, updated, communicated, and implemented to reflect changes in requirements, threats, technology, and the organization's mission.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.PO-02"
+            }
+          ]
+        },
+        {
+          "id": "risk-management-strategy",
+          "code": "RISK_MANAGEMENT_STRATEGY",
+          "name": "Risk Management Strategy",
+          "description": "The activities and outcomes of cybersecurity risk management are an integral part of the organization's risk management processes.",
+          "requirements": [
+            {
+              "id": "gv-rm-03-6802",
+              "code": "GV.RM-03",
+              "name": "The activities and outcomes of cybersecurity risk management are an integral part of the organization's risk management processes.",
+              "description": "The activities and outcomes of cybersecurity risk management are an integral part of the organization's risk management processes.\n\nCriteria: 1. Within the framework of the risk management processes of the NIS entity and in compliance with the policies outlined in measure GV.PO-01, a cybersecurity risk management plan is defined, implemented, updated, and documented to identify, analyze, evaluate, treat, and monitor risks.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "gv-rm-6802-6802",
+              "code": "GV.RM.6802",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The activities and outcomes of cybersecurity risk management are an integral part of the organization's risk management processes.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.RM-03"
+            }
+          ]
+        },
+        {
+          "id": "roles-responsibilities-and-authorities",
+          "code": "ROLES_RESPONSIBILITIES_AND_AUTHORITIES",
+          "name": "Roles, Responsibilities, and Authorities",
+          "description": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.\n\nCybersecurity is included in human resources practices.",
+          "requirements": [
+            {
+              "id": "gv-rr-02-6803",
+              "code": "GV.RR-02",
+              "name": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.",
+              "description": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.\n\nCybersecurity is included in human resources practices.\n\nCriteria: 1. The organization for information security is defined, approved by the administrative and directive bodies, and made known to the relevant departments of the NIS entity, with roles and responsibilities established. | 2. An updated list of personnel within the organization mentioned in point 1, having specific roles and responsibilities, is maintained and made known to the relevant departments of the NIS entity. | 3. Within the information security organization mentioned in point 1, the contact point and at least one substitute, as determined according to Article 7, paragraph 6 of the NIS decree, are included. | 4. The roles and responsibilities mentioned in point 1 are reviewed and, if appropriate, periodically updated, at least every two years, as well as whenever significant incidents, organizational changes, or shifts in threat exposure and related risks occur.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-rr-04-6804",
+              "code": "GV.RR-04",
+              "name": "Cybersecurity is included in human resources practices.",
+              "description": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.\n\nCybersecurity is included in human resources practices.\n\nCriteria: 1. For at least the relevant information and network systems, personnel authorized to access them are identified after assessing experience, capability, and reliability and must provide appropriate assurance of full compliance with regulations on cybersecurity. | 2. System administrators of the information and network systems are identified after assessing experience, capability, and reliability and must provide appropriate assurance of full compliance with regulations on cybersecurity. | 3. In accordance with the policies of measure GV.PO-01, procedures related to points 1 and 2 are adopted and documented. | 4. In agreement with the risk assessment results from measure ID.RA-05, any contractual obligations regarding cybersecurity that remain valid after the termination or modification of employment for NIS employees are defined (e.g., including confidentiality clauses). | 5. In accordance with the policies of measure GV.PO-01, procedures related to point 4 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "gv-rr-6803-6803",
+              "code": "GV.RR.6803",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.\n\nCybersecurity is included in human resources practices.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.RR-02"
+            },
+            {
+              "id": "gv-rr-6804-6804",
+              "code": "GV.RR.6804",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Roles, responsibilities, and related powers concerning the management of cybersecurity risk are established, communicated, understood, and enforced.\n\nCybersecurity is included in human resources practices.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.RR-04"
+            }
+          ]
+        },
+        {
+          "id": "supply-chain-risk-management",
+          "code": "SUPPLY_CHAIN_RISK_MANAGEMENT",
+          "name": "Supply Chain Risk Management",
+          "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+          "requirements": [
+            {
+              "id": "gv-sc-01-6807",
+              "code": "GV.SC-01",
+              "name": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.\n\nCriteria: 1. Regarding the procurement of supplies with potential impacts on the security of information and network systems, including through the use of central procurement tools as per Annex I.1, Article 1, paragraph 1, letter i), of Legislative Decree March 31, 2023, no. 36, the following are provided for: a) the involvement of the cybersecurity organization referred to in measure GV.RR-02 in the definition and execution of procurement processes starting from the identification and design phase of the supply; b) in accordance with the results of the risk assessment associated with the supply referred to in measure GV.SC-07, the definition of security requirements for the supply consistent with the security measures applied by the NIS entity to information and network systems. | 2. For the security requirements referred to in point 1, letter b), the following areas are considered, where applicable, at least: a) supplier reliability, taking into account at least their specific vulnerabilities, the overall quality of their products and cybersecurity practices, especially regarding the object of the supply, the ability to guarantee supply, assistance and maintenance over time, as well as, where applicable, the results of coordinated risk assessments for the security of critical supply chains conducted by the NIS Cooperation Group; b) roles and responsibilities within the supply; c) reliability of human resources; d) compliance and security audits; e) vulnerability management; f) business continuity and disaster recovery; g) management of authentication, digital identities, and access control; h) physical security; i) personnel training and awareness; j) data security; k) protection of networks and communications; l) monitoring of security events including accesses and activities carried out; m) incident management and reporting; n) secure code development and security by design and by default; o) routine and evolutionary maintenance including security updates; p) supply decommissioning including data return and deletion; q) subcontracting, sub-supply or related potential security requirements along the supply chain.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-sc-02-6808",
+              "code": "GV.SC-02",
+              "name": "Roles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.\n\nCriteria: 1. Within the framework of the cybersecurity organization outlined in measure GV.RR-02, any roles and responsibilities concerning cybersecurity assigned to third-party staff are defined and disclosed to the relevant sections of the NIS entity. | 2. The staff mentioned in point 1 with specific roles and responsibilities is included in the list referred to in point 2 of measure GV.RR-02.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-sc-04-6809",
+              "code": "GV.SC-04",
+              "name": "Suppliers are identified and prioritized based on criticality.",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.\n\nCriteria: 1. An updated inventory of suppliers is maintained, whose supplies have a potential impact on the security of information and network systems, which includes at least: a) the contact details of the supply representative; b) the type of supply.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-sc-05-6810",
+              "code": "GV.SC-05",
+              "name": "Requirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.\n\nCriteria: 1. Subject to justified and documented regulatory or technical reasons, the security requirements referred to in measure GV.SC-01, point 1, letter b) are included in requests for proposals, calls for tender, contracts, agreements and conventions related to supplies with potential impact on the security of information and network systems.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "gv-sc-07-6811",
+              "code": "GV.SC-07",
+              "name": "The risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.\n\nCriteria: 1. As part of the risk assessment referred to in measure ID.RA-05, the risk associated with supplies is assessed and documented. For this purpose, at least the following are evaluated: a) the supplier's level of access to the NIS entity's information and network systems; b) the supplier's access to intellectual property and data also based on their criticality; c) the impact of a severe supply interruption; d) the time and costs of recovery in case of service unavailability; e) the roles and responsibilities of the supplier in the governance of information and network systems. | 2. The compliance of supplies with the requirements of measure GV.SC-05 is periodically verified and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "gv-sc-6807-6807",
+              "code": "GV.SC.6807",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.SC-01"
+            },
+            {
+              "id": "gv-sc-6808-6808",
+              "code": "GV.SC.6808",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.SC-02"
+            },
+            {
+              "id": "gv-sc-6809-6809",
+              "code": "GV.SC.6809",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.SC-04"
+            },
+            {
+              "id": "gv-sc-6810-6810",
+              "code": "GV.SC.6810",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.SC-05"
+            },
+            {
+              "id": "gv-sc-6811-6811",
+              "code": "GV.SC.6811",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The program, strategy, objectives, policies, and processes for managing cybersecurity risks in the supply chain are established and accepted by the organization's stakeholders.\n\nRoles and responsibilities regarding cybersecurity for suppliers, clients, and partners are established, communicated, and coordinated internally and externally.\n\nSuppliers are identified and prioritized based on criticality.\n\nRequirements to address cybersecurity risks in the supply chain are established, prioritized and integrated into contracts and other types of agreements with suppliers and other relevant third parties.\n\nThe risks posed by a supplier, its products and services, and other third parties are understood, recorded, prioritized, evaluated, managed, and monitored throughout the relationship.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "GV.SC-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identify",
+      "code": "IDENTIFY",
+      "name": "Identify",
+      "description": "Identify requirements.",
+      "requirements": 10,
+      "subcategories": [
+        {
+          "id": "asset-management",
+          "code": "ASSET_MANAGEMENT",
+          "name": "Asset Management",
+          "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.",
+          "requirements": [
+            {
+              "id": "id-am-01-6812",
+              "code": "ID.AM-01",
+              "name": "Inventories of organization-managed hardware are maintained.",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.\n\nCriteria: 1. An updated inventory of physical equipment (hardware) that comprises information and network systems, including IT, IoT, OT, and mobile devices, approved by internal NIS actors, is maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-am-02-6813",
+              "code": "ID.AM-02",
+              "name": "Inventories of software, services, and systems managed by the organization are maintained.",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.\n\nCriteria: 1. An updated inventory of services, systems, and software applications that comprise the information and network systems is maintained, including commercial, open-source, and custom applications, also accessible via API, approved by internal NIS stakeholders.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-am-03-6814",
+              "code": "ID.AM-03",
+              "name": "Representations of network communications, internal and external network data flows authorized by the organization are maintained.",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.\n\nCriteria: 1. An updated inventory of network flows between the information and network systems of the NIS subject and the external environment, approved by internal NIS stakeholders, is maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-am-04-6815",
+              "code": "ID.AM-04",
+              "name": "Inventories of services provided by suppliers are maintained.",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.\n\nCriteria: 1. An updated inventory of IT services provided by suppliers, including cloud services, is maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "id-am-6812-6812",
+              "code": "ID.AM.6812",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.AM-01"
+            },
+            {
+              "id": "id-am-6813-6813",
+              "code": "ID.AM.6813",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.AM-02"
+            },
+            {
+              "id": "id-am-6814-6814",
+              "code": "ID.AM.6814",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.AM-03"
+            },
+            {
+              "id": "id-am-6815-6815",
+              "code": "ID.AM.6815",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Inventories of organization-managed hardware are maintained.\n\nInventories of software, services, and systems managed by the organization are maintained.\n\nRepresentations of network communications, internal and external network data flows authorized by the organization are maintained.\n\nInventories of services provided by suppliers are maintained.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.AM-04"
+            }
+          ]
+        },
+        {
+          "id": "improvement",
+          "code": "IMPROVEMENT",
+          "name": "Improvement",
+          "description": "Improvements are identified based on evaluations.\n\nIncident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.",
+          "requirements": [
+            {
+              "id": "id-im-01-6820",
+              "code": "ID.IM-01",
+              "name": "Improvements are identified based on evaluations.",
+              "description": "Improvements are identified based on evaluations.\n\nIncident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.\n\nCriteria: 1. In accordance with the results of the review referred to in point 1 of measure GV.PO-02, an adjustment plan is defined, implemented, documented, and approved by the administrative and executive bodies, identifying the necessary actions to ensure the implementation of security policies. | 2. The administrative and executive bodies are informed through specific periodic reports on the outcomes of the plans referred to in point 1. | 3. A plan is defined, implemented, updated, and documented for evaluating the effectiveness of risk management measures for cybersecurity, which includes an indication of the measures to be evaluated and the related evaluation methods. | 4. The administrative and executive bodies are informed through specific periodic reports on the evaluation plan's effectiveness referred to in point 3.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-im-04-6821",
+              "code": "ID.IM-04",
+              "name": "Incident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.",
+              "description": "Improvements are identified based on evaluations.\n\nIncident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.\n\nCriteria: 1. For at least the relevant information and network systems, an operational continuity plan is defined, implemented, updated, and documented, including at least: a) the objectives and scope of application; b) roles and responsibilities; c) main contacts and communication channels (internal and external); d) conditions for activation and deactivation of the plan; | e) necessary resources, including backups and redundancies. | 2. For at least the relevant information and network systems, a disaster recovery plan is defined, implemented, updated, and documented, including at least: a) the objectives and scope of application; b) roles and responsibilities; c) main contacts and communication channels (internal and external); d) conditions for activation and deactivation of the plan; e) necessary resources, including backups and redundancies; f) the order of recovery operations; g) recovery procedures for specific operations, including recovery objectives. | 3. For at least the relevant information and network systems, a crisis management plan is defined, implemented, updated, and documented, including at least: a) the roles and responsibilities of personnel and, where appropriate, suppliers, specifying role assignments in crisis situations, including specific procedures to follow; b) communication methods between parties and competent authorities. | 4. The plans referred to in points 1, 2, and 3 are approved by the administrative and management bodies. | 5. The plans referred to in points 1, 2, and 3 are reviewed and, where appropriate, periodically updated at least every two years, as well as whenever significant incidents occur or changes in threat exposure and related risks.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "id-im-6820-6820",
+              "code": "ID.IM.6820",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Improvements are identified based on evaluations.\n\nIncident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.IM-01"
+            },
+            {
+              "id": "id-im-6821-6821",
+              "code": "ID.IM.6821",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Improvements are identified based on evaluations.\n\nIncident response plans and other cybersecurity plans impacting operations are established, communicated, maintained, and improved.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.IM-04"
+            }
+          ]
+        },
+        {
+          "id": "risk-assessment",
+          "code": "RISK_ASSESSMENT",
+          "name": "Risk Assessment",
+          "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.",
+          "requirements": [
+            {
+              "id": "id-ra-01-6816",
+              "code": "ID.RA-01",
+              "name": "Vulnerabilities in assets are identified, confirmed, and recorded.",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.\n\nCriteria: 1. The information referred to in point 1 of measure ID.RA-08 is used to identify potential vulnerabilities in information and network systems. | 2. For at least the relevant information and network systems, in accordance with the vulnerability management plan under measure ID.RA-08, barring justified and documented normative or technical reasons, activities for identifying vulnerabilities, including at least vulnerability assessments and/or penetration tests, are carried out periodically and in any case before they are put into operation. | 3. The activities referred to in point 2 are documented through specific reports that contain at least: a) the general description of the activities carried out and their outcomes; b) the description of the detected vulnerabilities and their impact level on security.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-ra-05-6817",
+              "code": "ID.RA-05",
+              "name": "Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.\n\nCriteria: 1. In accordance with the cybersecurity risk management plan as outlined in measure GV.RM-03, the risk assessment posed to the security of information and network systems is executed and documented, also considering possible dependencies on third-party suppliers and partners, including at least: a) risk identification; b) risk analysis; c) risk evaluation. | 2. The risk assessment referred to in point 1 is performed at planned intervals and at least every two years, as well as whenever significant incidents occur, organizational changes take place, or there are shifts in threat exposure and related risks. | 3. The risk assessment referred to in point 1 is approved by the administrative and executive bodies. | 4. The risk assessment referred to in point 1 is conducted considering at least internal and external threats, unresolved vulnerabilities, and impacts resulting from potential incidents.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-ra-06-6818",
+              "code": "ID.RA-06",
+              "name": "Risk responses are chosen, prioritized, planned, monitored, and communicated.",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.\n\nCriteria: Risk responses are chosen, prioritized, planned, monitored, and communicated. | 1. A risk treatment plan is defined, documented, executed, and monitored, which includes at least: a) the treatment options and measures to be implemented for the treatment of each identified risk and their relative priorities; b) the competent bodies for implementing the risk treatment measures and the timelines for their implementation; c) the description and reasons that justify the acceptance of any residual risks after treatment. | 2. If, for justified and documented normative or technical reasons, the requirements in Table 2 in the appendix to this annex are not implemented, compensatory mitigation measures are adopted where applicable, and the plan referred to in point 1 includes the description of these measures and any residual risk. | 3. The plan referred to in point 1, including the acceptance of any residual risks, is approved by the administrative and directive bodies.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "id-ra-08-6819",
+              "code": "ID.RA-08",
+              "name": "Established processes for receiving, analyzing, and responding to vulnerability disclosures.",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.\n\nCriteria: 1. At least the communication channels of CSIRT Italy, as well as any sectoral CERT and Information Sharing and Analysis Centre (ISAC), are monitored to acquire, analyze, and respond to information about vulnerabilities. | 2. Vulnerabilities, including those identified according to measure ID.RA-01, are promptly resolved through security updates or mitigation measures, where available, or by accepting and documenting the risk in accordance with the cyber risk treatment plan referred to in measure ID.RA-06. | 3. A vulnerability management plan is defined, implemented, updated, and documented, which includes at least: a) the methods for identifying vulnerabilities as per measure ID.RA-01 and the planning of related activities; b) the methods for monitoring, receiving, analyzing, and responding to information about vulnerabilities; c) the procedures, roles, and responsibilities for carrying out the activities mentioned in points a) and b). | 4. The plan referred to in point 3 is approved by the administrative and managerial bodies. | 5. For the purposes mentioned in point 1, the channels of suppliers of software deemed critical are also monitored.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "id-ra-6816-6816",
+              "code": "ID.RA.6816",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.RA-01"
+            },
+            {
+              "id": "id-ra-6817-6817",
+              "code": "ID.RA.6817",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.RA-05"
+            },
+            {
+              "id": "id-ra-6818-6818",
+              "code": "ID.RA.6818",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.RA-06"
+            },
+            {
+              "id": "id-ra-6819-6819",
+              "code": "ID.RA.6819",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Vulnerabilities in assets are identified, confirmed, and recorded.\n\nThreats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and to inform the prioritization of risk response.\n\nRisk responses are chosen, prioritized, planned, monitored, and communicated.\n\nEstablished processes for receiving, analyzing, and responding to vulnerability disclosures.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "ID.RA-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protect",
+      "code": "PROTECT",
+      "name": "Protect",
+      "description": "Protect requirements.",
+      "requirements": 16,
+      "subcategories": [
+        {
+          "id": "awareness-and-training",
+          "code": "AWARENESS_AND_TRAINING",
+          "name": "Awareness and Training",
+          "description": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.\n\nIndividuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.",
+          "requirements": [
+            {
+              "id": "pr-at-01-6826",
+              "code": "PR.AT-01",
+              "name": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.",
+              "description": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.\n\nIndividuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.\n\nCriteria: 1. A training plan on staff cybersecurity, including administration and management bodies, is defined, implemented, updated, and documented, comprising at least: a) the planning of the training activities with an indication of the contents provided; b) any methods of verifying the acquisition of the contents. | 2. The training plan referred to in point 1 is approved by the administration and management bodies. | 3. An updated register is maintained, listing employees who received the training referred to in point 1, the relevant contents, and the list of verifications carried out where applicable.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-at-02-6827",
+              "code": "PR.AT-02",
+              "name": "Individuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.",
+              "description": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.\n\nIndividuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.\n\nCriteria: 1. The plan referred to in measure PR.AT-01 includes dedicated training for personnel with specialized roles, that is, those requiring a set of skills and competencies related to security, including system administrators, which includes at least: a) instructions on the safe configuration and operation of information and network systems; b) information on known cyber threats; c) instructions on behavior to adopt in case of events relevant to security. | 2. An updated register is maintained listing employees who have received the training referred to in point 1, the related content, and the list of checks performed where required.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "pr-at-6826-6826",
+              "code": "PR.AT.6826",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.\n\nIndividuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AT-01"
+            },
+            {
+              "id": "pr-at-6827-6827",
+              "code": "PR.AT.6827",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Staff are sensitized and trained to possess the knowledge and skills to carry out general tasks considering cybersecurity risks.\n\nIndividuals holding specialized roles are sensitized and trained to possess the knowledge and skills to perform relevant tasks, taking into account cybersecurity risks.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AT-02"
+            }
+          ]
+        },
+        {
+          "id": "data-security",
+          "code": "DATA_SECURITY",
+          "name": "Data Security",
+          "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.",
+          "requirements": [
+            {
+              "id": "pr-ds-01-6828",
+              "code": "PR.DS-01",
+              "name": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.\n\nCriteria: 1. For at least the relevant information and network systems and in accordance with the results of the risk assessment referred to in measure ID.RA-05, except for documented and justified regulatory or technical reasons, the data stored on portable devices, including laptops, smartphones, and tablets, and on removable media, are encrypted with state-of-the-art protocols and algorithms and considered secure. 2. Except for documented and justified regulatory or technical reasons, the auto execution of removable media is disabled, and they are scanned to detect malicious code before being used in information and network systems. | 3. In compliance with the policies referred to in measure GV.PO-01, procedures related to points 1 and 2 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ds-02-6829",
+              "code": "PR.DS-02",
+              "name": "Confidentiality, integrity, and availability of data in transit (data-in-transit) are protected.",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.\n\nCriteria: 1. For at least the relevant information and network systems, including those for voice, video, and text communication, and in accordance with the risk assessment outcomes as per measure ID.RA-05, barring justified and documented regulatory or technical reasons, protocols and encryption algorithms that are state-of-the-art and considered safe are used for data transmission to and from the external NIS entity. | 2. In compliance with the policies as per measure GV.PO-01, procedures are adopted and documented in relation to point 1.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ds-11-6830",
+              "code": "PR.DS-11",
+              "name": "Data backups are created, protected, maintained, and verified.",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.\n\nCriteria: 1. In accordance with the operational continuity and disaster recovery needs identified in the plans outlined in measure ID.IM-04, data and configuration backups are periodically performed, and for at least the relevant information and network systems, offline backup copies are also kept. | 2. In compliance with the policies outlined in measure GV.PO-01, procedures related to point 1 are adopted and documented. | 3. For at least the relevant information and network systems, the confidentiality and integrity of information contained in backups are ensured through adequate physical protection of the media or encryption. | 4. For at least the relevant information and network systems, the usability of backups is periodically verified through restoration tests. | 5. In compliance with the policies outlined in measure GV.PO-01, procedures related to points 3 and 4 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "pr-ds-6828-6828",
+              "code": "PR.DS.6828",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.DS-01"
+            },
+            {
+              "id": "pr-ds-6829-6829",
+              "code": "PR.DS.6829",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.DS-02"
+            },
+            {
+              "id": "pr-ds-6830-6830",
+              "code": "PR.DS.6830",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The confidentiality, integrity, and availability of data at rest (data-at-rest) are protected.\n\nConfidentiality, integrity, and availability of data in transit (data-in-transit) are protected.\n\nData backups are created, protected, maintained, and verified.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.DS-11"
+            }
+          ]
+        },
+        {
+          "id": "identity-management-authentication-and-access-control",
+          "code": "IDENTITY_MANAGEMENT_AUTHENTICATION_AND_ACCESS_CONTROL",
+          "name": "Identity Management, Authentication, and Access Control",
+          "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.",
+          "requirements": [
+            {
+              "id": "pr-aa-01-6822",
+              "code": "PR.AA-01",
+              "name": "The identities and credentials of users, services, and authorized hardware are managed by the organization.",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.\n\nCriteria: 1. All accounts, including those with administrative privileges and those used for remote access, are recorded, approved by internal NIS subject actors and, except for justified and documented technical reasons, in accordance with the results of the risk assessment referred to in measure ID.RA-05, are individual for users. | 2. The credentials (e.g., username and password) related to the accounts are strong and updated according to the results of the risk assessment in measure ID.RA-05. | 3. For at least the relevant information and network systems, accounts and their related authorizations are periodically verified, updating/revoking them in case of changes (e.g., staff transfer or termination). | 4. In compliance with the policies referred to in measure GV.PO-01, procedures are adopted and documented in relation to points 1, 2, and 3.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-aa-03-6823",
+              "code": "PR.AA-03",
+              "name": "Users, services, and hardware are authenticated.",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.\n\nCriteria: 1. The authentication methods for users to access information and network systems are commensurate with the risk. To this end, at least the following risks are assessed: a) user privileges; | b) the critical nature of information and network systems; c) the type of operations that users can perform on information and network systems. | 2. For at least the relevant information and network systems and in accordance with the results of the risk assessment referred to in measure ID.RA-05, multi-factor authentication methods are employed. | 3. In compliance with the policies referred to in measure GV.PO-01, procedures related to points 1 and 2 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-aa-05-6824",
+              "code": "PR.AA-05",
+              "name": "Permissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.\n\nCriteria: 1. Permissions are assigned to users in accordance with the principles of least privilege and separation of functions, also considering the need to know. | 2. There is a complete distinction between users with and without administrative privileges for system administrators, which must have different credentials. | 3. In compliance with the policies referred to in measure GV.PO-01, procedures related to points 1 and 2 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-aa-06-6825",
+              "code": "PR.AA-06",
+              "name": "Physical access to assets is managed, monitored, and enforced appropriately to the risk.",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.\n\nCriteria: 1. For at least relevant information and network systems, physical access is protected. | 2. In compliance with the policies referred to in measure GV.PO-01, procedures are adopted and documented in relation to point 1.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "pr-aa-6822-6822",
+              "code": "PR.AA.6822",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AA-01"
+            },
+            {
+              "id": "pr-aa-6823-6823",
+              "code": "PR.AA.6823",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AA-03"
+            },
+            {
+              "id": "pr-aa-6824-6824",
+              "code": "PR.AA.6824",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AA-05"
+            },
+            {
+              "id": "pr-aa-6825-6825",
+              "code": "PR.AA.6825",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The identities and credentials of users, services, and authorized hardware are managed by the organization.\n\nUsers, services, and hardware are authenticated.\n\nPermissions, rights, and access authorizations are defined in a policy, managed, enforced, reviewed, and incorporate the principles of least privilege and separation of duties.\n\nPhysical access to assets is managed, monitored, and enforced appropriately to the risk.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.AA-06"
+            }
+          ]
+        },
+        {
+          "id": "platform-security",
+          "code": "PLATFORM_SECURITY",
+          "name": "Platform Security",
+          "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+          "requirements": [
+            {
+              "id": "pr-ps-01-6831",
+              "code": "PR.PS-01",
+              "name": "Configuration management practices are established and applied.",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.\n\nCriteria: 1. For at least relevant information and network systems, their secure (hardened) reference configurations are defined and documented in an updated list. | 2. In compliance with the policies of measure GV.PO-01, procedures are adopted and documented in relation to point 1.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ps-02-6832",
+              "code": "PR.PS-02",
+              "name": "Software is maintained, replaced, and removed based on risk.",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.\n\nCriteria: 1. Except for justified and documented normative or technical reasons, only software, including operating systems, for which security updates are guaranteed is installed. | 2. Except for justified and documented normative or technical reasons, the latest security updates released by the manufacturer are installed without undue delay, in line with the vulnerability management plan referred to in measure ID.RA-08. | 3. In compliance with the policies referred to in measure GV.PO-01, procedures are adopted and documented in relation to points 1 and 2. | 4. Except for justified and documented normative or technical reasons and in accordance with the risk assessment outcomes referred to in measure ID.RA-05, the update of software deemed critical is verified in a test environment before actual deployment in an operational environment. | 5. In compliance with the policies referred to in measure GV.PO-01, procedures are adopted and documented in relation to point 4.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ps-03-6833",
+              "code": "PR.PS-03",
+              "name": "Hardware is maintained, replaced, and removed based on risk.",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.\n\nCriteria: 1. For at least the relevant information systems and networks, procedures are adopted and documented for the physical transfer and secure disposal of devices used for data storage. | 2. For at least the relevant information systems and networks, one or more logs of maintenance performed on hardware are kept.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ps-04-6834",
+              "code": "PR.PS-04",
+              "name": "Log records are generated and made available for continuous monitoring.",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.\n\nCriteria: 1. All remote accesses and those performed with accounts having administrative privileges are recorded. | 2. For at least relevant information and network systems, logs necessary for monitoring security events, including those related to accesses mentioned in point 1, are securely stored, and possibly centralized. | 3. In accordance with the risk assessment results of measure ID.RA-05, the retention timelines for the logs mentioned in point 2 are defined and documented. | 4. In compliance with the policies of measure GV.PO-01, procedures are adopted and documented concerning points 1 and 2.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ps-06-6835",
+              "code": "PR.PS-06",
+              "name": "Secure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.\n\nCriteria: 1. Secure code development practices are adopted and documented in software development.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "pr-ps-6831-6831",
+              "code": "PR.PS.6831",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.PS-01"
+            },
+            {
+              "id": "pr-ps-6832-6832",
+              "code": "PR.PS.6832",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.PS-02"
+            },
+            {
+              "id": "pr-ps-6833-6833",
+              "code": "PR.PS.6833",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.PS-03"
+            },
+            {
+              "id": "pr-ps-6834-6834",
+              "code": "PR.PS.6834",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.PS-04"
+            },
+            {
+              "id": "pr-ps-6835-6835",
+              "code": "PR.PS.6835",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Configuration management practices are established and applied.\n\nSoftware is maintained, replaced, and removed based on risk.\n\nHardware is maintained, replaced, and removed based on risk.\n\nLog records are generated and made available for continuous monitoring.\n\nSecure software development practices are integrated and their performance is monitored throughout the entire software lifecycle.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.PS-06"
+            }
+          ]
+        },
+        {
+          "id": "technology-infrastructure-resilience",
+          "code": "TECHNOLOGY_INFRASTRUCTURE_RESILIENCE",
+          "name": "Technology Infrastructure Resilience",
+          "description": "Networks and environments are protected from logical access and unauthorized use.\n\nMechanisms are implemented to meet resilience requirements in normal and adverse situations.",
+          "requirements": [
+            {
+              "id": "pr-ir-01-6836",
+              "code": "PR.IR-01",
+              "name": "Networks and environments are protected from logical access and unauthorized use.",
+              "description": "Networks and environments are protected from logical access and unauthorized use.\n\nMechanisms are implemented to meet resilience requirements in normal and adverse situations.\n\nCriteria: 1. For at least the relevant information and network systems, remote activities are defined and documented, and appropriate security measures for access are implemented. | 2. An updated list is maintained of the information and network systems that can be accessed remotely, including a description of the access modes. | 3. Perimeter systems, such as firewalls, are present, updated, maintained, and configured. | 4. In compliance with the policies outlined in measure GV.PO-01, procedures related to points 1, 2, and 3 are adopted and documented.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            },
+            {
+              "id": "pr-ir-03-6837",
+              "code": "PR.IR-03",
+              "name": "Mechanisms are implemented to meet resilience requirements in normal and adverse situations.",
+              "description": "Networks and environments are protected from logical access and unauthorized use.\n\nMechanisms are implemented to meet resilience requirements in normal and adverse situations.\n\nCriteria: 1. In accordance with the outcomes of the risk assessment outlined in measure ID.RA-05, protected emergency communication systems are used. | 2. In compliance with the policies outlined in measure GV.PO-01, procedures are adopted and documented in relation to point 1.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "pr-ir-6836-6836",
+              "code": "PR.IR.6836",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Networks and environments are protected from logical access and unauthorized use.\n\nMechanisms are implemented to meet resilience requirements in normal and adverse situations.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.IR-01"
+            },
+            {
+              "id": "pr-ir-6837-6837",
+              "code": "PR.IR.6837",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Networks and environments are protected from logical access and unauthorized use.\n\nMechanisms are implemented to meet resilience requirements in normal and adverse situations.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "PR.IR-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recover",
+      "code": "RECOVER",
+      "name": "Recover",
+      "description": "Recover requirements.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "incident-recovery-communication",
+          "code": "INCIDENT_RECOVERY_COMMUNICATION",
+          "name": "Incident Recovery Communication",
+          "description": "Restoration activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+          "requirements": [
+            {
+              "id": "rc-co-03-6843",
+              "code": "RC.CO-03",
+              "name": "Restoration activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+              "description": "Restoration activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.\n\nCriteria: 1. Procedures are adopted and documented to communicate to interested internal parties, including the competent divisions of the NIS entity, the restoration activities following an incident.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "rc-co-6843-6843",
+              "code": "RC.CO.6843",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Restoration activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RC.CO-03"
+            }
+          ]
+        },
+        {
+          "id": "incident-recovery-plan-execution",
+          "code": "INCIDENT_RECOVERY_PLAN_EXECUTION",
+          "name": "Incident Recovery Plan Execution",
+          "description": "The part of the incident response plan related to restoration is executed once initiated by the incident response process.",
+          "requirements": [
+            {
+              "id": "rc-rp-01-6842",
+              "code": "RC.RP-01",
+              "name": "The part of the incident response plan related to restoration is executed once initiated by the incident response process.",
+              "description": "The part of the incident response plan related to restoration is executed once initiated by the incident response process.\n\nCriteria: 1. As part of the incident management plan referred to in measure RS.MA-01, procedures are adopted and documented for restoration, focusing at least on restoring the normal operation of information systems and networks involved in cybersecurity incidents, including those mentioned in Article 25 of the NIS directive.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "rc-rp-6842-6842",
+              "code": "RC.RP.6842",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The part of the incident response plan related to restoration is executed once initiated by the incident response process.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RC.RP-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "respond",
+      "code": "RESPOND",
+      "name": "Respond",
+      "description": "Respond requirements.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "incident-management",
+          "code": "INCIDENT_MANAGEMENT",
+          "name": "Incident Management",
+          "description": "The incident response plan is executed in coordination with the relevant third parties once an incident is declared.",
+          "requirements": [
+            {
+              "id": "rs-ma-01-6840",
+              "code": "RS.MA-01",
+              "name": "The incident response plan is executed in coordination with the relevant third parties once an incident is declared.",
+              "description": "The incident response plan is executed in coordination with the relevant third parties once an incident is declared.\n\nCriteria: 1. A plan is defined, implemented, updated, and documented for managing cybersecurity incidents and notifying CSIRT Italy, in accordance with Article 25 of the NIS decree, which includes at least: a) the stages and procedures for managing and notifying incidents with an indication of the respective roles and responsibilities; b) the procedures for the preparation and transmission of reports as referred to in Article 25, paragraph 5, letters c), d), and e) of the NIS decree; c) the contact information for reporting incidents; d) the methods of internal communication, including regarding the involvement of administrative and executive bodies, and external communication; e) the reporting to be used for documenting the incident. | 2. The plan referred to in point 1 is approved by the administrative and executive bodies. | 3. The plan referred to in point 1 is reviewed and, if appropriate, updated periodically and at least every two years, as well as whenever significant incidents occur, incorporating the lessons learned, or changes in threat exposure and related risks.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "rs-ma-6840-6840",
+              "code": "RS.MA.6840",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "The incident response plan is executed in coordination with the relevant third parties once an incident is declared.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RS.MA-01"
+            }
+          ]
+        },
+        {
+          "id": "incident-response-reporting-and-communication",
+          "code": "INCIDENT_RESPONSE_REPORTING_AND_COMMUNICATION",
+          "name": "Incident Response Reporting and Communication",
+          "description": "Internal and external stakeholders are informed of incidents.",
+          "requirements": [
+            {
+              "id": "rs-co-02-6841",
+              "code": "RS.CO-02",
+              "name": "Internal and external stakeholders are informed of incidents.",
+              "description": "Internal and external stakeholders are informed of incidents.\n\nCriteria: 1. In accordance with the incident management plan referred to in measure RS.MA-01, procedures are documented and adopted to communicate without undue delay, if deemed appropriate and whenever possible, after consulting CSIRT Italy, or if requested by the National Cybersecurity Agency pursuant to Article 37, paragraph 3, letters g) and h) of the NIS decree: a) to recipients of their services, significant incidents that may adversely affect the provision of such services; b) to recipients of services who are potentially affected by a significant cyber threat, the corrective or mitigating measures or actions that such recipients can take in response to such a threat and the nature of such threat. | 2. Procedures are documented and adopted to inform the public about incidents that have occurred, if requested by the National Cybersecurity Agency pursuant to Article 37, paragraph 3, letter i) of the NIS decree.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "rs-co-6841-6841",
+              "code": "RS.CO.6841",
+              "name": "Requirement Covered Not Applicable - Not applicable No - The requirement(s) have not been meaningfully implemented. Partial - Not all requirement(s) have been meaningfully implemented. Yes - There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. Not Applicable No Partial Yes",
+              "description": "Internal and external stakeholders are informed of incidents.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RS.CO-02"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "sammy-browse-snapshot",
+    "url": "https://sammy.codific.com/browse/nis2",
+    "slug": "nis2",
+    "snapshotDate": "2026-02-26"
+  }
+}

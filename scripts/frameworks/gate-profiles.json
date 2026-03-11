@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "description": "Profile-specific quality gates. Avoid one-size-fits-all mandatory fields.",
+  "statusContract": {
+    "allowedStatuses": [
+      "exact",
+      "inferred",
+      "unknown",
+      "na"
+    ],
+    "rule": "All extension fields use {value, status, basis}. Missing value is acceptable only with status=unknown|na and non-empty basis."
+  },
+  "qualityTiers": {
+    "bronze": {
+      "goal": "Browsable and structurally reliable datasets",
+      "requiredChecks": [
+        "source.provenance.status exists",
+        "source.version exists",
+        "source.date exists",
+        "id/code uniqueness",
+        "hierarchy consistency"
+      ]
+    },
+    "silver": {
+      "goal": "Internal analysis quality",
+      "requiredChecks": [
+        "bronze checks",
+        "profile-required semantic fields populated with status",
+        "sourceRef or sourcePointer for >= 70% records"
+      ]
+    },
+    "gold": {
+      "goal": "Customer-facing and audit-ready quality",
+      "requiredChecks": [
+        "silver checks",
+        "sourceRef or sourcePointer for >= 95% records",
+        "mapping edges with confidence >= 0.75 require reviewer",
+        "semantic diff output available for this framework release"
+      ]
+    }
+  },
+  "profiles": {
+    "control-baseline": {
+      "appliesToFrameworkTypes": [
+        "control",
+        "standard"
+      ],
+      "requiredSemanticsAnyOf": [
+        "control"
+      ],
+      "requiredAtBronze": [
+        "core.source",
+        "core.instrumentKinds",
+        "core.semantics"
+      ],
+      "requiredAtSilver": [
+        "extension.control.verificationMethod",
+        "extension.control.evidenceExamples"
+      ],
+      "requiredAtGold": [
+        "extension.mapping.edges"
+      ]
+    },
+    "maturity-baseline": {
+      "appliesToFrameworkTypes": [
+        "maturity"
+      ],
+      "requiredSemanticsAnyOf": [
+        "maturity"
+      ],
+      "requiredAtBronze": [
+        "core.source",
+        "core.instrumentKinds",
+        "core.semantics"
+      ],
+      "requiredAtSilver": [
+        "extension.maturity.level",
+        "extension.maturity.intent"
+      ],
+      "requiredAtGold": [
+        "extension.mapping.edges"
+      ],
+      "explicitlyNotRequired": [
+        "extension.compliance.obligationStrength"
+      ]
+    },
+    "regulatory-obligation": {
+      "appliesToFrameworkTypes": [
+        "compliance",
+        "regulation"
+      ],
+      "requiredSemanticsAnyOf": [
+        "obligation"
+      ],
+      "requiredAtBronze": [
+        "core.source",
+        "core.instrumentKinds",
+        "core.semantics",
+        "extension.compliance.obligationStrength"
+      ],
+      "requiredAtSilver": [
+        "extension.compliance.applicability.subject",
+        "extension.compliance.applicability.scenario",
+        "extension.compliance.applicability.region"
+      ],
+      "requiredAtGold": [
+        "extension.compliance.penaltyImpact",
+        "extension.control.evidenceExamples"
+      ]
+    }
+  }
+}

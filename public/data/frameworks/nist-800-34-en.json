@@ -1,0 +1,897 @@
+{
+  "id": "nist-800-34",
+  "name": "NIST SP 800-34",
+  "fullName": "NIST Contingency Planning Guide for Federal Information Systems",
+  "version": "Rev 1",
+  "type": "standard",
+  "domain": "cybersecurity",
+  "description": "Contingency Planning Guide for Federal Information Systems, helping organizations develop, implement, and maintain effective contingency plans.",
+  "website": "https://csrc.nist.gov/publications/detail/sp/800-34/rev-1/final",
+  "organization": "NIST",
+  "releaseDate": "2010-05-01",
+  "lastUpdated": "2026-02-26",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 29,
+    "totalCategories": 6,
+    "totalSubcategories": 29,
+    "level1": 29,
+    "level2": 0,
+    "level3": 0,
+    "totalRubrics": 29
+  },
+  "categories": [
+    {
+      "id": "activation",
+      "code": "ACTIVATION",
+      "name": "Activation",
+      "description": "Activation requirements.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "activation-procedures",
+          "code": "ACTIVATION_PROCEDURES",
+          "name": "Activation Procedures",
+          "description": "The ISCP should be activated if one or more of the activation criteria for that system are met. If an activation criterion is met, the designated authority should activate the plan. Activation criteria for system outages or disruptions are unique for each organization and should be stated in the contingency planning policy.",
+          "requirements": [
+            {
+              "id": "ac-ap-879",
+              "code": "AC.AP",
+              "name": "Have you established a set of criteria for activating the plan?",
+              "description": "The ISCP should be activated if one or more of the activation criteria for that system are met. If an activation criterion is met, the designated authority should activate the plan. Activation criteria for system outages or disruptions are unique for each organization and should be stated in the contingency planning policy.\n\nCriteria: You have established the criteria for activating the plan | You have clearly defined the the role(s) that may activate the plan",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ac-ap-879-879",
+              "code": "AC.AP.879",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "The ISCP should be activated if one or more of the activation criteria for that system are met. If an activation criterion is met, the designated authority should activate the plan. Activation criteria for system outages or disruptions are unique for each organization and should be stated in the contingency planning policy.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AC.AP"
+            }
+          ]
+        },
+        {
+          "id": "notification-procedures",
+          "code": "NOTIFICATION_PROCEDURES",
+          "name": "Notification Procedures",
+          "description": "An outage or disruption may occur with or without prior notice. For example, advance notice is often given that a hurricane is predicted to affect an area or that a computer virus is expected on a certain date. However, there may be no notice of equipment failure or a criminal act. Notification procedures should be documented in the plan for both types of situation. The procedures should describe the methods used to notify recovery personnel during business and non business hours. Prompt notification is important for reducing the effects of a disruption on the system; in some cases, it may provide enough time to allow system personnel to shut down the system gracefully to avoid a hard crash. Following the outage or disruption, notification should be sent to the Outage Assessment Team so that it may determine the status of the situation and appropriate next steps.",
+          "requirements": [
+            {
+              "id": "ac-np-880",
+              "code": "AC.NP",
+              "name": "Have you documented the procedures for notification strategy and methods?",
+              "description": "An outage or disruption may occur with or without prior notice. For example, advance notice is often given that a hurricane is predicted to affect an area or that a computer virus is expected on a certain date. However, there may be no notice of equipment failure or a criminal act. Notification procedures should be documented in the plan for both types of situation. The procedures should describe the methods used to notify recovery personnel during business and non business hours. Prompt notification is important for reducing the effects of a disruption on the system; in some cases, it may provide enough time to allow system personnel to shut down the system gracefully to avoid a hard crash. Following the outage or disruption, notification should be sent to the Outage Assessment Team so that it may determine the status of the situation and appropriate next steps.\n\nCriteria: You have documented all notification procedures | You have described the notification methods during and outside business hours | The notification strategy also defines procedures to be followed in the event that specific personnel cannot be contacted",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ac-np-880-880",
+              "code": "AC.NP.880",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "An outage or disruption may occur with or without prior notice. For example, advance notice is often given that a hurricane is predicted to affect an area or that a computer virus is expected on a certain date. However, there may be no notice of equipment failure or a criminal act. Notification procedures should be documented in the plan for both types of situation. The procedures should describe the methods used to notify recovery personnel during business and non business hours. Prompt notification is important for reducing the effects of a disruption on the system; in some cases, it may provide enough time to allow system personnel to shut down the system gracefully to avoid a hard crash. Following the outage or disruption, notification should be sent to the Outage Assessment Team so that it may determine the status of the situation and appropriate next steps.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AC.NP"
+            }
+          ]
+        },
+        {
+          "id": "outage-assessment",
+          "code": "OUTAGE_ASSESSMENT",
+          "name": "Outage Assessment",
+          "description": "To determine how the ISCP will be implemented following a system disruption or outage, it is essential to assess the nature and extent of the disruption. The outage assessment should be completed as quickly as the given conditions permit, with personnel safety remaining the highest priority. When possible, the Outage Assessment Team is the first team notified of the disruption.",
+          "requirements": [
+            {
+              "id": "ac-oa-881",
+              "code": "AC.OA",
+              "name": "Have you defined outage assessment procedures?",
+              "description": "To determine how the ISCP will be implemented following a system disruption or outage, it is essential to assess the nature and extent of the disruption. The outage assessment should be completed as quickly as the given conditions permit, with personnel safety remaining the highest priority. When possible, the Outage Assessment Team is the first team notified of the disruption.\n\nCriteria: You have defined the outage assessment team | You have defined the criteria for assessing the disruption",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ac-oa-881-881",
+              "code": "AC.OA.881",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "To determine how the ISCP will be implemented following a system disruption or outage, it is essential to assess the nature and extent of the disruption. The outage assessment should be completed as quickly as the given conditions permit, with personnel safety remaining the highest priority. When possible, the Outage Assessment Team is the first team notified of the disruption.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AC.OA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appendices",
+      "code": "APPENDICES",
+      "name": "Appendices",
+      "description": "Appendices requirements.",
+      "requirements": 13,
+      "subcategories": [
+        {
+          "id": "alternate-processing",
+          "code": "ALTERNATE_PROCESSING",
+          "name": "Alternate Processing",
+          "description": "This section should identify any alternate manual or technical processing procedures available that allow the business unit to continue some processing of information that would normally be done by the affected system. Examples of alternate processes include manual forms processing, input into workstations to store data until it can be uploaded and processed, or queuing of data input.",
+          "requirements": [
+            {
+              "id": "ap-ap-893",
+              "code": "AP.AP",
+              "name": "Do you have any alternate manual or technical processing procedures in place?",
+              "description": "This section should identify any alternate manual or technical processing procedures available that allow the business unit to continue some processing of information that would normally be done by the affected system. Examples of alternate processes include manual forms processing, input into workstations to store data until it can be uploaded and processed, or queuing of data input.\n\nCriteria: You provide procedures for alternate manual or technical processing available that allow the business unit to continue some processing of information that would normally be done by the affected system.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-ap-893-893",
+              "code": "AP.AP.893",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "This section should identify any alternate manual or technical processing procedures available that allow the business unit to continue some processing of information that would normally be done by the affected system. Examples of alternate processes include manual forms processing, input into workstations to store data until it can be uploaded and processed, or queuing of data input.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.AP"
+            }
+          ]
+        },
+        {
+          "id": "alternate-storage",
+          "code": "ALTERNATE_STORAGE",
+          "name": "Alternate Storage",
+          "description": "This appendix provides information for alternate storage, alternate processing site, and alternate telecommunications for the system. Alternate Storage, Site, and Telecommunications information is required for moderate-impact systems, per NIST SP 800-53, Rev.3. Refer to NIST SP 800-53 Rev. 3, for details on control specifics.",
+          "requirements": [
+            {
+              "id": "ap-as-895",
+              "code": "AP.AS",
+              "name": "Do you list alternate storage, site and telecommunications",
+              "description": "This appendix provides information for alternate storage, alternate processing site, and alternate telecommunications for the system. Alternate Storage, Site, and Telecommunications information is required for moderate-impact systems, per NIST SP 800-53, Rev.3. Refer to NIST SP 800-53 Rev. 3, for details on control specifics.\n\nCriteria: You list and provide detailed information on alternate storage, processing and / or telecommunication facilities",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-as-895-895",
+              "code": "AP.AS.895",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "This appendix provides information for alternate storage, alternate processing site, and alternate telecommunications for the system. Alternate Storage, Site, and Telecommunications information is required for moderate-impact systems, per NIST SP 800-53, Rev.3. Refer to NIST SP 800-53 Rev. 3, for details on control specifics.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.AS"
+            }
+          ]
+        },
+        {
+          "id": "associated-documentation",
+          "code": "ASSOCIATED_DOCUMENTATION",
+          "name": "Associated Documentation",
+          "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. ISCPs for other systems that either interconnect or support the system should be identified in this appendix. The most current version of the ISCP, location of ISCP, and primary point of contact (such as the ISCP Coordinator) should be noted.",
+          "requirements": [
+            {
+              "id": "ap-ad-900",
+              "code": "AP.AD",
+              "name": "Are there supporting documents available and linked to this plan?",
+              "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. ISCPs for other systems that either interconnect or support the system should be identified in this appendix. The most current version of the ISCP, location of ISCP, and primary point of contact (such as the ISCP Coordinator) should be noted.\n\nCriteria: You keep reference architecture diagrams and any other relevant documents linked to the plan | You keep the detailed recovery procedures linked to the plan",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-ad-900-900",
+              "code": "AP.AD.900",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. ISCPs for other systems that either interconnect or support the system should be identified in this appendix. The most current version of the ISCP, location of ISCP, and primary point of contact (such as the ISCP Coordinator) should be noted.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.AD"
+            }
+          ]
+        },
+        {
+          "id": "business-impact-analysis",
+          "code": "BUSINESS_IMPACT_ANALYSIS",
+          "name": "Business Impact Analysis",
+          "description": "The Business Impact Analysis results should be included in this appendix. In addition to the overall RTO and RPO, it is beneficial to include the RTO of each individual application if they have different RTOs due to their criticality in the overall functioning of the application. See below for an example.",
+          "requirements": [
+            {
+              "id": "ap-bi-901",
+              "code": "AP.BI",
+              "name": "Have you included the results of the BIA as an appendix in the plan?",
+              "description": "The Business Impact Analysis results should be included in this appendix. In addition to the overall RTO and RPO, it is beneficial to include the RTO of each individual application if they have different RTOs due to their criticality in the overall functioning of the application. See below for an example.\n\nCriteria: You have included at least the RTO, RPO and MTD metrics from the BIA per component | You have included organizational impact consequences if the system is unavailable",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-bi-901-901",
+              "code": "AP.BI.901",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "The Business Impact Analysis results should be included in this appendix. In addition to the overall RTO and RPO, it is beneficial to include the RTO of each individual application if they have different RTOs due to their criticality in the overall functioning of the application. See below for an example.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.BI"
+            }
+          ]
+        },
+        {
+          "id": "detailed-recovery",
+          "code": "DETAILED_RECOVERY",
+          "name": "Detailed Recovery",
+          "description": "This appendix includes the detailed recovery procedures for the system, which may include items such as: Keystroke-level recovery steps. System installation instructions from tape, CD, or other media; Required configuration settings or changes; Recovery of data from tape and audit logs; and Other system recovery procedures, as appropriate. If the system relies totally on another group or system for its recovery and validation (such as a mainframe system), information provided should include contact information and locations of detailed recovery and validation procedures for that supporting system.",
+          "requirements": [
+            {
+              "id": "ap-dr-892",
+              "code": "AP.DR",
+              "name": "Do you have detailed recovery procedures in place?",
+              "description": "This appendix includes the detailed recovery procedures for the system, which may include items such as: Keystroke-level recovery steps. System installation instructions from tape, CD, or other media; Required configuration settings or changes; Recovery of data from tape and audit logs; and Other system recovery procedures, as appropriate. If the system relies totally on another group or system for its recovery and validation (such as a mainframe system), information provided should include contact information and locations of detailed recovery and validation procedures for that supporting system.\n\nCriteria: You provide keystroke-level recovery steps | You have system installation instructions from repositories / registries | You provide required configuration settings or changes | Recovery of data from backup locations is clearly described",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-dr-892-892",
+              "code": "AP.DR.892",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "This appendix includes the detailed recovery procedures for the system, which may include items such as: Keystroke-level recovery steps. System installation instructions from tape, CD, or other media; Required configuration settings or changes; Recovery of data from tape and audit logs; and Other system recovery procedures, as appropriate. If the system relies totally on another group or system for its recovery and validation (such as a mainframe system), information provided should include contact information and locations of detailed recovery and validation procedures for that supporting system.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.DR"
+            }
+          ]
+        },
+        {
+          "id": "diagrams",
+          "code": "DIAGRAMS",
+          "name": "Diagrams",
+          "description": "Include any system architecture, input/output, or other technical or logical diagrams that may be useful in recovering the system. Diagrams may also identify information about interconnection with other systems.",
+          "requirements": [
+            {
+              "id": "ap-di-896",
+              "code": "AP.DI",
+              "name": "Do you include all diagrams relevant to DRP?",
+              "description": "Include any system architecture, input/output, or other technical or logical diagrams that may be useful in recovering the system. Diagrams may also identify information about interconnection with other systems.\n\nCriteria: Provide any system architecture, input/output, or other technical or logical diagrams that may be useful in recovering the system | List diagrams that identify information about interconnections with other systems",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-di-896-896",
+              "code": "AP.DI.896",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Include any system architecture, input/output, or other technical or logical diagrams that may be useful in recovering the system. Diagrams may also identify information about interconnection with other systems.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.DI"
+            }
+          ]
+        },
+        {
+          "id": "document-change-page",
+          "code": "DOCUMENT_CHANGE_PAGE",
+          "name": "Document Change Page",
+          "description": "It is recommended that a dedicated page for tracking revisions be included in the disaster recovery plan. This will permit readers to see what was revised, who made the revision, and when it was revised. In addition, this will permit the solution team to understand how the disaster recovery plan was developed / updated as the solution was updated.",
+          "requirements": [
+            {
+              "id": "ap-dc-902",
+              "code": "AP.DC",
+              "name": "Do you keep track of document changes?",
+              "description": "It is recommended that a dedicated page for tracking revisions be included in the disaster recovery plan. This will permit readers to see what was revised, who made the revision, and when it was revised. In addition, this will permit the solution team to understand how the disaster recovery plan was developed / updated as the solution was updated.\n\nCriteria: Document changelog is readily available ideally within the plan itself",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-dc-902-902",
+              "code": "AP.DC.902",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "It is recommended that a dedicated page for tracking revisions be included in the disaster recovery plan. This will permit readers to see what was revised, who made the revision, and when it was revised. In addition, this will permit the solution team to understand how the disaster recovery plan was developed / updated as the solution was updated.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.DC"
+            }
+          ]
+        },
+        {
+          "id": "interconnections-table",
+          "code": "INTERCONNECTIONS_TABLE",
+          "name": "Interconnections Table",
+          "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. This appendix includes information on other systems that directly interconnect or exchange information with the system. Interconnection information should include the type of connection, information transferred, and contact person for that system. If the system does not have any direct interconnections, then this appendix may be removed, or the following statement may be used: The information system (with name) does not directly interconnect with any other systems.",
+          "requirements": [
+            {
+              "id": "ap-it-898",
+              "code": "AP.IT",
+              "name": "Do you provide interconnection information with other systems?",
+              "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. This appendix includes information on other systems that directly interconnect or exchange information with the system. Interconnection information should include the type of connection, information transferred, and contact person for that system. If the system does not have any direct interconnections, then this appendix may be removed, or the following statement may be used: The information system (with name) does not directly interconnect with any other systems.\n\nCriteria: You include information on other systems that directly interconnect or exchange information with the system | You provide detailed information on include the type of connection, information transferred, and contact person for that system",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-it-898-898",
+              "code": "AP.IT.898",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Information for this section should be available from the system’s System Security Plan (SSP) and can be copied from the SSP, or reference the applicable section in the SSP and attach the latest version of the SSP to this contingency plan. This appendix includes information on other systems that directly interconnect or exchange information with the system. Interconnection information should include the type of connection, information transferred, and contact person for that system. If the system does not have any direct interconnections, then this appendix may be removed, or the following statement may be used: The information system (with name) does not directly interconnect with any other systems.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.IT"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "code": "INVENTORY",
+          "name": "Inventory",
+          "description": "Inventory information should include type of server or hardware on which the system runs, processors and memory requirements, storage requirements, and any other pertinent details. The software inventory should identify the operating system (including service pack or version levels, and any other applications necessary to operate the system, such as database software).",
+          "requirements": [
+            {
+              "id": "ap-in-897",
+              "code": "AP.IN",
+              "name": "Do you provide hardware and software inventory?",
+              "description": "Inventory information should include type of server or hardware on which the system runs, processors and memory requirements, storage requirements, and any other pertinent details. The software inventory should identify the operating system (including service pack or version levels, and any other applications necessary to operate the system, such as database software).\n\nCriteria: You provide hardware inventory information including type of server or hardware on which the system runs, processors and memory requirements, storage requirements, and any other pertinent details | You provide software inventory details identifying the operating system including service pack or version levels, and any other applications necessary to operate the system, such as database software.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-in-897-897",
+              "code": "AP.IN.897",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Inventory information should include type of server or hardware on which the system runs, processors and memory requirements, storage requirements, and any other pertinent details. The software inventory should identify the operating system (including service pack or version levels, and any other applications necessary to operate the system, such as database software).",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.IN"
+            }
+          ]
+        },
+        {
+          "id": "personnel-contact-list",
+          "code": "PERSONNEL_CONTACT_LIST",
+          "name": "Personnel Contact List",
+          "description": "Provide contact information for each person with a role or responsibility for activation or implementation of the DRP, or coordination with the DRP. For each person listed, at least one office and one non-office contact number is recommended. Note: Information may contain personally identifiable information and should be protected.",
+          "requirements": [
+            {
+              "id": "ap-pc-890",
+              "code": "AP.PC",
+              "name": "Do you list personnel contact information?",
+              "description": "Provide contact information for each person with a role or responsibility for activation or implementation of the DRP, or coordination with the DRP. For each person listed, at least one office and one non-office contact number is recommended. Note: Information may contain personally identifiable information and should be protected.\n\nCriteria: You provide a contact list as a call tree of all personnel involved in the DRP | You have at least one office and one non-office contact number for each person listed",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-pc-890-890",
+              "code": "AP.PC.890",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Provide contact information for each person with a role or responsibility for activation or implementation of the DRP, or coordination with the DRP. For each person listed, at least one office and one non-office contact number is recommended. Note: Information may contain personally identifiable information and should be protected.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.PC"
+            }
+          ]
+        },
+        {
+          "id": "test-and-maintenance",
+          "code": "TEST_AND_MAINTENANCE",
+          "name": "Test and Maintenance",
+          "description": "All ISCPs should be reviewed and tested at the organization defined frequency (e.g. yearly) or whenever there is a significant change to the system. Provide information and a schedule for the testing of the system. For low-impact systems, a yearly tabletop exercise is sufficient. The tabletop exercise should include all ISCP points of contact, and be conducted by an outside or impartial observer. A formal test plan is developed prior to the tabletop, and an exercise and questions are developed to include key sections of the ISCP, including a walk-through of the following: Notification procedures; System recovery on an alternate platform from backup media; Internal and external connectivity; and Reconstitution procedures. Results of the test are documented in an After Action Report, and Lessons Learned are developed for updating information in the ISCP.",
+          "requirements": [
+            {
+              "id": "ap-tm-899",
+              "code": "AP.TM",
+              "name": "Do you have DRP testing and maintenance procedures in place?",
+              "description": "All ISCPs should be reviewed and tested at the organization defined frequency (e.g. yearly) or whenever there is a significant change to the system. Provide information and a schedule for the testing of the system. For low-impact systems, a yearly tabletop exercise is sufficient. The tabletop exercise should include all ISCP points of contact, and be conducted by an outside or impartial observer. A formal test plan is developed prior to the tabletop, and an exercise and questions are developed to include key sections of the ISCP, including a walk-through of the following: Notification procedures; System recovery on an alternate platform from backup media; Internal and external connectivity; and Reconstitution procedures. Results of the test are documented in an After Action Report, and Lessons Learned are developed for updating information in the ISCP.\n\nCriteria: You provide information and a schedule for the testing of the system | You review and test all DRPs at regular intervals (e.g., yearly) | You document the test results and improve the DRP",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-tm-899-899",
+              "code": "AP.TM.899",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "All ISCPs should be reviewed and tested at the organization defined frequency (e.g. yearly) or whenever there is a significant change to the system. Provide information and a schedule for the testing of the system. For low-impact systems, a yearly tabletop exercise is sufficient. The tabletop exercise should include all ISCP points of contact, and be conducted by an outside or impartial observer. A formal test plan is developed prior to the tabletop, and an exercise and questions are developed to include key sections of the ISCP, including a walk-through of the following: Notification procedures; System recovery on an alternate platform from backup media; Internal and external connectivity; and Reconstitution procedures. Results of the test are documented in an After Action Report, and Lessons Learned are developed for updating information in the ISCP.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.TM"
+            }
+          ]
+        },
+        {
+          "id": "validation-test-plan",
+          "code": "VALIDATION_TEST_PLAN",
+          "name": "Validation Test Plan",
+          "description": "This appendix includes system acceptance procedures that are performed after the system has been recovered and prior to putting the system into full operation and returned to users. The system validation test plan may include the regression or functionality testing conducted prior to implementation of a system upgrade or change.",
+          "requirements": [
+            {
+              "id": "ap-vp-894",
+              "code": "AP.VP",
+              "name": "Do you have a system validation test plan in place?",
+              "description": "This appendix includes system acceptance procedures that are performed after the system has been recovered and prior to putting the system into full operation and returned to users. The system validation test plan may include the regression or functionality testing conducted prior to implementation of a system upgrade or change.\n\nCriteria: You provide system acceptance procedures performed after the system has been recovered | The system validation test plan may include the regression or functionality testing conducted prior to implementation of a system upgrade or change",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-vp-894-894",
+              "code": "AP.VP.894",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "This appendix includes system acceptance procedures that are performed after the system has been recovered and prior to putting the system into full operation and returned to users. The system validation test plan may include the regression or functionality testing conducted prior to implementation of a system upgrade or change.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.VP"
+            }
+          ]
+        },
+        {
+          "id": "vendor-contact-list",
+          "code": "VENDOR_CONTACT_LIST",
+          "name": "Vendor Contact List",
+          "description": "Contact information for all key maintenance or support vendors should be included in this appendix. Contact information, such as emergency phone numbers, contact names, contract numbers, and contractual response and onsite times should be included.",
+          "requirements": [
+            {
+              "id": "ap-vc-891",
+              "code": "AP.VC",
+              "name": "Do you list vendor contact information?",
+              "description": "Contact information for all key maintenance or support vendors should be included in this appendix. Contact information, such as emergency phone numbers, contact names, contract numbers, and contractual response and onsite times should be included.\n\nCriteria: You provide a contact list for all key maintenance or support vendors | The list includes emergency phone numbers, contact names, contract numbers and contractual response and onsite times",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "ap-vc-891-891",
+              "code": "AP.VC.891",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Contact information for all key maintenance or support vendors should be included in this appendix. Contact information, such as emergency phone numbers, contact names, contract numbers, and contractual response and onsite times should be included.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "AP.VC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concept-of-operations",
+      "code": "CONCEPT_OF_OPERATIONS",
+      "name": "Concept Of Operations",
+      "description": "Concept Of Operations requirements.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "overview-of-three-phases",
+          "code": "OVERVIEW_OF_THREE_PHASES",
+          "name": "Overview of Three Phases",
+          "description": "A high-level overview of each phase should be included in the plan informing the recovery team of the purpose of each phase.",
+          "requirements": [
+            {
+              "id": "co-tp-877",
+              "code": "CO.TP",
+              "name": "Do you describe activation, recovery and the validation phases in the plan?",
+              "description": "A high-level overview of each phase should be included in the plan informing the recovery team of the purpose of each phase.\n\nCriteria: The plan describes the activation phase | The plan describes the recovery phase | The plan describes the validation phase",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "co-tp-877-877",
+              "code": "CO.TP.877",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "A high-level overview of each phase should be included in the plan informing the recovery team of the purpose of each phase.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "CO.TP"
+            }
+          ]
+        },
+        {
+          "id": "roles-and-responsibilities",
+          "code": "ROLES_AND_RESPONSIBILITIES",
+          "name": "Roles and Responsibilities",
+          "description": "The roles and responsibilities section presents the overall structure of contingency teams, including the hierarchy and coordination mechanisms and requirements among the teams. The section also provides an overview of team member roles and responsibilities in a contingency situation. Teams and team members should be designated for specific response and recovery roles during contingency plan activation.",
+          "requirements": [
+            {
+              "id": "co-rr-878",
+              "code": "CO.RR",
+              "name": "Do you provide an overall structure of the team(s) including the hierarchy and the coordination and requirements amongst the team(s)?",
+              "description": "The roles and responsibilities section presents the overall structure of contingency teams, including the hierarchy and coordination mechanisms and requirements among the teams. The section also provides an overview of team member roles and responsibilities in a contingency situation. Teams and team members should be designated for specific response and recovery roles during contingency plan activation.\n\nCriteria: You have described each team and role responsible for executing or supporting system recovery and validation | You have included responsibilities for each team/role and coordination with other team(s) as applicable",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "co-rr-878-878",
+              "code": "CO.RR.878",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "The roles and responsibilities section presents the overall structure of contingency teams, including the hierarchy and coordination mechanisms and requirements among the teams. The section also provides an overview of team member roles and responsibilities in a contingency situation. Teams and team members should be designated for specific response and recovery roles during contingency plan activation.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "CO.RR"
+            }
+          ]
+        },
+        {
+          "id": "system-description",
+          "code": "SYSTEM_DESCRIPTION",
+          "name": "System Description",
+          "description": "The description should include the information system architecture, location(s), and any other important technical considerations. An input/output (I/O) diagram and system architecture diagram, including security devices (e.g., firewalls, internal and external connections) are useful. The content for the system description can usually be taken from the System Security Plan.",
+          "requirements": [
+            {
+              "id": "co-sd-876",
+              "code": "CO.SD",
+              "name": "Is there a general description of the information system addressed by the plan?",
+              "description": "The description should include the information system architecture, location(s), and any other important technical considerations. An input/output (I/O) diagram and system architecture diagram, including security devices (e.g., firewalls, internal and external connections) are useful. The content for the system description can usually be taken from the System Security Plan.\n\nCriteria: You have provided a general description of the system architecture and functionality | You have indicated the operating environment, physical location, general location of users, and partnerships with external organizations/systems | The plan includes information regarding any other technical considerations that are important for recovery purposes",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "co-sd-876-876",
+              "code": "CO.SD.876",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "The description should include the information system architecture, location(s), and any other important technical considerations. An input/output (I/O) diagram and system architecture diagram, including security devices (e.g., firewalls, internal and external connections) are useful. The content for the system description can usually be taken from the System Security Plan.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "CO.SD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "code": "RECOVERY",
+      "name": "Recovery",
+      "description": "Recovery requirements.",
+      "requirements": 3,
+      "subcategories": [
+        {
+          "id": "recovery-activities",
+          "code": "RECOVERY_ACTIVITIES",
+          "name": "Recovery Activities",
+          "description": "A high-level overview of the recovery strategy should be included permitting the Disaster Recovery Coordinator or other appointed individual to understand the tasks to be undertaken for recovery. The sequence of activities should reflect the system’s MTD to avoid significant impacts to related systems. Procedures should be written in a stepwise, sequential format so system components may be restored in a logical manner.",
+          "requirements": [
+            {
+              "id": "re-ra-882",
+              "code": "RE.RA",
+              "name": "Do you provide a high-level sequence of recovery activities?",
+              "description": "A high-level overview of the recovery strategy should be included permitting the Disaster Recovery Coordinator or other appointed individual to understand the tasks to be undertaken for recovery. The sequence of activities should reflect the system’s MTD to avoid significant impacts to related systems. Procedures should be written in a stepwise, sequential format so system components may be restored in a logical manner.\n\nCriteria: The sequence of recovery events reflects on the system's Maximum Tolerable Downtime identified in the BIA | You have included escalation steps and instructions to coordinate with other teams | You have designated procedures for appropriate team(s) to coordinate shipment of equipment, data and vital records at an alternate site if necessary",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "re-ra-882-882",
+              "code": "RE.RA.882",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "A high-level overview of the recovery strategy should be included permitting the Disaster Recovery Coordinator or other appointed individual to understand the tasks to be undertaken for recovery. The sequence of activities should reflect the system’s MTD to avoid significant impacts to related systems. Procedures should be written in a stepwise, sequential format so system components may be restored in a logical manner.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RE.RA"
+            }
+          ]
+        },
+        {
+          "id": "recovery-escalation",
+          "code": "RECOVERY_ESCALATION",
+          "name": "Recovery Escalation",
+          "description": "As identified as part of the BIA, system components, infrastructure, and associated facilities are critical components supporting daily mission/business processes. The systems, applications, and infrastructure that connect users to these are subject to events causing service interruptions and outages. Including an escalation and notification component within the Recovery Phase helps to ensure that overall, a repeatable, structured, consistent, and measurable recovery process is followed. Effective escalation and notification procedures should define and describe the events, thresholds, or other types of triggers that are necessary for additional action. Actions would include additional notifications for more recovery staff, messages and status updates to leadership, and notices for additional resources. Procedures should be included to establish a clear set of events, actions and results, and should be documented for teams or individuals as appropriate.",
+          "requirements": [
+            {
+              "id": "re-re-884",
+              "code": "RE.RE",
+              "name": "Have you included escalation and notification procedures describing the events, thresholds, or other types of triggers necessary for additional action?",
+              "description": "As identified as part of the BIA, system components, infrastructure, and associated facilities are critical components supporting daily mission/business processes. The systems, applications, and infrastructure that connect users to these are subject to events causing service interruptions and outages. Including an escalation and notification component within the Recovery Phase helps to ensure that overall, a repeatable, structured, consistent, and measurable recovery process is followed. Effective escalation and notification procedures should define and describe the events, thresholds, or other types of triggers that are necessary for additional action. Actions would include additional notifications for more recovery staff, messages and status updates to leadership, and notices for additional resources. Procedures should be included to establish a clear set of events, actions and results, and should be documented for teams or individuals as appropriate.\n\nCriteria: The plan provides appropriate procedures for escalation notices during recovery efforts | The plan identifies the team(s) or person(s) responsible for each escalation/awareness procedure",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "re-re-884-884",
+              "code": "RE.RE.884",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "As identified as part of the BIA, system components, infrastructure, and associated facilities are critical components supporting daily mission/business processes. The systems, applications, and infrastructure that connect users to these are subject to events causing service interruptions and outages. Including an escalation and notification component within the Recovery Phase helps to ensure that overall, a repeatable, structured, consistent, and measurable recovery process is followed. Effective escalation and notification procedures should define and describe the events, thresholds, or other types of triggers that are necessary for additional action. Actions would include additional notifications for more recovery staff, messages and status updates to leadership, and notices for additional resources. Procedures should be included to establish a clear set of events, actions and results, and should be documented for teams or individuals as appropriate.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RE.RE"
+            }
+          ]
+        },
+        {
+          "id": "recovery-procedures",
+          "code": "RECOVERY_PROCEDURES",
+          "name": "Recovery Procedures",
+          "description": "To facilitate Recovery Phase operations, the ISCP should provide detailed procedures to restore the information system or components to a known state. Recovery procedures should be written in a straightforward, step-by-step style. To prevent difficulty or confusion in an emergency, no procedural steps should be assumed or omitted. A checklist format is useful for documenting the sequential recovery procedures and for troubleshooting problems if the system cannot be recovered properly.",
+          "requirements": [
+            {
+              "id": "re-rp-883",
+              "code": "RE.RP",
+              "name": "Do you provide detailed procedures to restore the information system or components to a known state?",
+              "description": "To facilitate Recovery Phase operations, the ISCP should provide detailed procedures to restore the information system or components to a known state. Recovery procedures should be written in a straightforward, step-by-step style. To prevent difficulty or confusion in an emergency, no procedural steps should be assumed or omitted. A checklist format is useful for documenting the sequential recovery procedures and for troubleshooting problems if the system cannot be recovered properly.\n\nCriteria: A straightforward step-by-step guide with checklists is available for the recovery procedures | You have identified the team(s) or person(s) responsible for each procedure",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "re-rp-883-883",
+              "code": "RE.RP.883",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "To facilitate Recovery Phase operations, the ISCP should provide detailed procedures to restore the information system or components to a known state. Recovery procedures should be written in a straightforward, step-by-step style. To prevent difficulty or confusion in an emergency, no procedural steps should be assumed or omitted. A checklist format is useful for documenting the sequential recovery procedures and for troubleshooting problems if the system cannot be recovered properly.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "RE.RP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supporting-information",
+      "code": "SUPPORTING_INFORMATION",
+      "name": "Supporting Information",
+      "description": "Supporting Information requirements.",
+      "requirements": 2,
+      "subcategories": [
+        {
+          "id": "assumptions",
+          "code": "ASSUMPTIONS",
+          "name": "Assumptions",
+          "description": "This section includes the list of assumptions that were used in developing the ISCP as well as a list of situations that are not applicable",
+          "requirements": [
+            {
+              "id": "si-as-875",
+              "code": "SI.AS",
+              "name": "Have you listed the assumptions used in developing the plan?",
+              "description": "This section includes the list of assumptions that were used in developing the ISCP as well as a list of situations that are not applicable\n\nCriteria: You have listed all essential assumptions | You have included a list of situations that are not applicable",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "si-as-875-875",
+              "code": "SI.AS.875",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "This section includes the list of assumptions that were used in developing the ISCP as well as a list of situations that are not applicable",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "SI.AS"
+            }
+          ]
+        },
+        {
+          "id": "purpose-and-scope",
+          "code": "PURPOSE_AND_SCOPE",
+          "name": "Purpose and Scope",
+          "description": "The scope identifies the FIPS 199 impact level and associated recovery time objectives (RTO) as well as the alternate site and data storage capabilities (as applicable).",
+          "requirements": [
+            {
+              "id": "si-ps-874",
+              "code": "SI.PS",
+              "name": "Have you defined a clear purpose and scope?",
+              "description": "The scope identifies the FIPS 199 impact level and associated recovery time objectives (RTO) as well as the alternate site and data storage capabilities (as applicable).\n\nCriteria: You have developed a plan easily accessible to all stakeholders | The plan has identified Maximum Tolerable Downtime, Recovery Time Objectives and Recovery Point Objectives | You have clearly stated the reasons for developing the plan and its objectives",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "si-ps-874-874",
+              "code": "SI.PS.874",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "The scope identifies the FIPS 199 impact level and associated recovery time objectives (RTO) as well as the alternate site and data storage capabilities (as applicable).",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "SI.PS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "code": "VALIDATION",
+      "name": "Validation",
+      "description": "Validation requirements.",
+      "requirements": 5,
+      "subcategories": [
+        {
+          "id": "data-testing",
+          "code": "DATA_TESTING",
+          "name": "Data Testing",
+          "description": "Validation data testing is the process of testing and validating data to ensure that data files or databases have been recovered completely at the permanent location.",
+          "requirements": [
+            {
+              "id": "va-dt-885",
+              "code": "VA.DT",
+              "name": "Have you provided procedures for testing and validation of data to ensure that data is correct?",
+              "description": "Validation data testing is the process of testing and validating data to ensure that data files or databases have been recovered completely at the permanent location.\n\nCriteria: You provide procedures for testing and validation to ensure that data files or databases have been recovered completely at the permanent location | You have identified the team(s) or person(s) responsible for each procedure",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "va-dt-885-885",
+              "code": "VA.DT.885",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Validation data testing is the process of testing and validating data to ensure that data files or databases have been recovered completely at the permanent location.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "VA.DT"
+            }
+          ]
+        },
+        {
+          "id": "event-documentation",
+          "code": "EVENT_DOCUMENTATION",
+          "name": "Event Documentation",
+          "description": "It is important that all recovery events be well-documented, including actions taken and problems encountered during the recovery and reconstitution effort, and lessons learned for inclusion and update to this ISCP. It is the responsibility of each ISCP team or person to document their actions during the recovery and reconstitution effort, and to provide that documentation to the ISCP Coordinator.",
+          "requirements": [
+            {
+              "id": "va-ed-889",
+              "code": "VA.ED",
+              "name": "Do you provide detailed event documentation procedures?",
+              "description": "It is important that all recovery events be well-documented, including actions taken and problems encountered during the recovery and reconstitution effort, and lessons learned for inclusion and update to this ISCP. It is the responsibility of each ISCP team or person to document their actions during the recovery and reconstitution effort, and to provide that documentation to the ISCP Coordinator.\n\nCriteria: The plan provides description of details about the types of information each DRP team member is required to provide or collect for updating the DRP with lessons learned | Event documentation procedures detail responsibilities for development, collection, approval, and maintenance",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "va-ed-889-889",
+              "code": "VA.ED.889",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "It is important that all recovery events be well-documented, including actions taken and problems encountered during the recovery and reconstitution effort, and lessons learned for inclusion and update to this ISCP. It is the responsibility of each ISCP team or person to document their actions during the recovery and reconstitution effort, and to provide that documentation to the ISCP Coordinator.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "VA.ED"
+            }
+          ]
+        },
+        {
+          "id": "functionality-testing",
+          "code": "FUNCTIONALITY_TESTING",
+          "name": "Functionality Testing",
+          "description": "Validation functionality testing is the process of verifying that functionality has been tested, and the system is ready to return to normal operations.",
+          "requirements": [
+            {
+              "id": "va-ft-886",
+              "code": "VA.FT",
+              "name": "Have you provided testing and validation procedures to ensure that the system is operating correctly?",
+              "description": "Validation functionality testing is the process of verifying that functionality has been tested, and the system is ready to return to normal operations.\n\nCriteria: The plan provides procedures to make sure that system's functionality has been tested and the system is ready to return to normal operations | The plan identifies the team(s) or person(s) responsible for each procedure",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "va-ft-886-886",
+              "code": "VA.FT.886",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Validation functionality testing is the process of verifying that functionality has been tested, and the system is ready to return to normal operations.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "VA.FT"
+            }
+          ]
+        },
+        {
+          "id": "recovery-declaration",
+          "code": "RECOVERY_DECLARATION",
+          "name": "Recovery Declaration",
+          "description": "Upon successfully completing testing and validation, the system owner will formally declare recovery efforts complete, and that information system is in normal operations. The information system's business and technical POCs will be notified of the declaration by the ISCP Coordinator.",
+          "requirements": [
+            {
+              "id": "va-rd-888",
+              "code": "VA.RD",
+              "name": "Do you provide recovery declaration and notification procedures to formally declare recovery efforts complete?",
+              "description": "Upon successfully completing testing and validation, the system owner will formally declare recovery efforts complete, and that information system is in normal operations. The information system's business and technical POCs will be notified of the declaration by the ISCP Coordinator.\n\nCriteria: The plan provides guidelines as to how to notify appropriate stakeholders to return to normal operations | The plan provides a checklist for dismantling any temporary recovery locations, restocking supplies, returning documentation, and readying the system for another event | The plan provides a checklist for restarting backups",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "va-rd-888-888",
+              "code": "VA.RD.888",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Upon successfully completing testing and validation, the system owner will formally declare recovery efforts complete, and that information system is in normal operations. The information system's business and technical POCs will be notified of the declaration by the ISCP Coordinator.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "VA.RD"
+            }
+          ]
+        },
+        {
+          "id": "security-testing",
+          "code": "SECURITY_TESTING",
+          "name": "Security Testing",
+          "description": "Validation security testing is the process of verifying that security processes and controls are in place protecting the information systems after they have been recovered.",
+          "requirements": [
+            {
+              "id": "va-st-887",
+              "code": "VA.ST",
+              "name": "Do you provide procedures to ensure security processes and controls are in place?",
+              "description": "Validation security testing is the process of verifying that security processes and controls are in place protecting the information systems after they have been recovered.\n\nCriteria: The plan provides procedures to make sure that security systems and controls are operating correctly | The plan identifies the team(s) or person(s) responsible for each procedure",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses."
+            }
+          ],
+          "rubrics": [
+            {
+              "id": "va-st-887-887",
+              "code": "VA.ST.887",
+              "name": "CMMI Maturity Level Not Applicable - Not applicable Level 1: Initial - Unpredictable and reactive. Work gets completed but is often delayed and over budget. Level 2: Managed - Managed on the project level. Projects are planned, performed, measured, and controlled. Level 3: Defined - Proactive, rather than reactive. Organization-wide standards provide guidance across projects, programs, and portfolios. Level 4: Quantitatively Managed - Measured and controlled. Organization is data-driven with quantitative performance improvement objectives that are predictable and align to meet the needs of internal and external stakeholders. Level 5: Optimized - Stable and flexible. Organization is focused on continuous improvement and is built to pivot and respond to opportunity and change. The organization’s stability provides a platform for agility and innovation. Not applicable Level 1: Initial Level 2: Managed Level 3: Defined Level 4: Quantitatively Managed Level 5: Optimized",
+              "description": "Validation security testing is the process of verifying that security processes and controls are in place protecting the information systems after they have been recovered.",
+              "level": "1",
+              "verification": "Review requirement evidence and assessment responses.",
+              "questionType": "rubric",
+              "parentControlCode": "VA.ST"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "sammy-browse-snapshot",
+    "url": "https://sammy.codific.com/browse/nist-800-34",
+    "slug": "nist-800-34",
+    "snapshotDate": "2026-02-26"
+  }
+}

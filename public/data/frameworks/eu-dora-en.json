@@ -1,0 +1,284 @@
+{
+  "id": "eu-dora",
+  "name": "DORA",
+  "fullName": "Regulation (EU) 2022/2554 Digital Operational Resilience Act",
+  "version": "2022/2554",
+  "type": "regulation",
+  "domain": "financial-cybersecurity",
+  "description": "EU regulation establishing harmonized ICT risk management, incident reporting, resilience testing, and third-party risk controls for financial entities.",
+  "website": "https://eur-lex.europa.eu/",
+  "organization": "European Union",
+  "releaseDate": "2022-12-14",
+  "lastUpdated": "2025-01-17",
+  "language": "en",
+  "source": {
+    "type": "official-regulation-text",
+    "primaryUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+    "programUrl": "https://eur-lex.europa.eu/"
+  },
+  "stats": {
+    "totalRequirements": 12,
+    "level1": 4,
+    "level2": 4,
+    "level3": 4,
+    "totalCategories": 3,
+    "totalSubcategories": 6
+  },
+  "categories": [
+    {
+      "id": "eu-dora-cat-1",
+      "code": "DORA.GOV",
+      "name": "ICT Governance and Risk Management",
+      "description": "Establish governance and ICT risk management controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-1",
+          "code": "DORA.GOV.1",
+          "name": "Governance Accountability",
+          "description": "Define management accountability.",
+          "requirements": [
+            {
+              "id": "eu-dora-r1",
+              "code": "DORA-5",
+              "name": "Establish ICT risk management framework",
+              "description": "Establish ICT risk management framework with auditable evidence and governance artifacts.",
+              "level": "3",
+              "verification": "Review policies and execution records for establish ict risk management framework",
+              "sourceRef": "DORA Art.5",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r2",
+              "code": "DORA-6",
+              "name": "Management body accountable for ICT risk",
+              "description": "Management body accountable for ICT risk with auditable evidence and governance artifacts.",
+              "level": "2",
+              "verification": "Review policies and execution records for management body accountable for ict risk",
+              "sourceRef": "DORA Art.6",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-2",
+          "code": "DORA.GOV.2",
+          "name": "Risk Process",
+          "description": "Implement risk assessment and control process.",
+          "requirements": [
+            {
+              "id": "eu-dora-r3",
+              "code": "DORA-7",
+              "name": "Define ICT strategy and policies",
+              "description": "Define ICT strategy and policies with auditable evidence and governance artifacts.",
+              "level": "1",
+              "verification": "Review policies and execution records for define ict strategy and policies",
+              "sourceRef": "DORA Art.7",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r4",
+              "code": "DORA-8",
+              "name": "Implement identification and protection controls",
+              "description": "Implement identification and protection controls with auditable evidence and governance artifacts.",
+              "level": "3",
+              "verification": "Review policies and execution records for implement identification and protection controls",
+              "sourceRef": "DORA Art.8",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-dora-cat-2",
+      "code": "DORA.OPS",
+      "name": "Incident, Testing and Recovery",
+      "description": "Implement incident handling, resilience testing, and recovery controls.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-3",
+          "code": "DORA.OPS.1",
+          "name": "Incident Reporting",
+          "description": "Identify, classify, and report incidents.",
+          "requirements": [
+            {
+              "id": "eu-dora-r5",
+              "code": "DORA-17",
+              "name": "Establish ICT incident management process",
+              "description": "Establish ICT incident management process with auditable evidence and governance artifacts.",
+              "level": "2",
+              "verification": "Review policies and execution records for establish ict incident management process",
+              "sourceRef": "DORA Art.17",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r6",
+              "code": "DORA-19",
+              "name": "Classify and report major incidents",
+              "description": "Classify and report major incidents with auditable evidence and governance artifacts.",
+              "level": "1",
+              "verification": "Review policies and execution records for classify and report major incidents",
+              "sourceRef": "DORA Art.19",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-4",
+          "code": "DORA.OPS.2",
+          "name": "Resilience Testing",
+          "description": "Conduct testing, backup, and recovery.",
+          "requirements": [
+            {
+              "id": "eu-dora-r7",
+              "code": "DORA-24",
+              "name": "Perform digital operational resilience testing",
+              "description": "Perform digital operational resilience testing with auditable evidence and governance artifacts.",
+              "level": "3",
+              "verification": "Review policies and execution records for perform digital operational resilience testing",
+              "sourceRef": "DORA Art.24",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r8",
+              "code": "DORA-25",
+              "name": "Threat-led penetration testing where applicable",
+              "description": "Threat-led penetration testing where applicable with auditable evidence and governance artifacts.",
+              "level": "2",
+              "verification": "Review policies and execution records for threat-led penetration testing where applicable",
+              "sourceRef": "DORA Art.25",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-dora-cat-3",
+      "code": "DORA.TPR",
+      "name": "Third-Party Risk and Oversight",
+      "description": "Control ICT third-party risk and comply with oversight obligations.",
+      "requirements": 4,
+      "subcategories": [
+        {
+          "id": "eu-dora-sub-5",
+          "code": "DORA.TPR.1",
+          "name": "Third-Party Management",
+          "description": "Manage contracts and ongoing monitoring.",
+          "requirements": [
+            {
+              "id": "eu-dora-r9",
+              "code": "DORA-28",
+              "name": "Maintain ICT third-party risk framework",
+              "description": "Maintain ICT third-party risk framework with auditable evidence and governance artifacts.",
+              "level": "1",
+              "verification": "Review policies and execution records for maintain ict third-party risk framework",
+              "sourceRef": "DORA Art.28",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r10",
+              "code": "DORA-30",
+              "name": "Manage mandatory contractual clauses for ICT providers",
+              "description": "Manage mandatory contractual clauses for ICT providers with auditable evidence and governance artifacts.",
+              "level": "3",
+              "verification": "Review policies and execution records for manage mandatory contractual clauses for ict providers",
+              "sourceRef": "DORA Art.30",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        },
+        {
+          "id": "eu-dora-sub-6",
+          "code": "DORA.TPR.2",
+          "name": "Regulatory Cooperation",
+          "description": "Support supervision and mandatory reporting.",
+          "requirements": [
+            {
+              "id": "eu-dora-r11",
+              "code": "DORA-31",
+              "name": "Support oversight for critical ICT providers",
+              "description": "Support oversight for critical ICT providers with auditable evidence and governance artifacts.",
+              "level": "2",
+              "verification": "Review policies and execution records for support oversight for critical ict providers",
+              "sourceRef": "DORA Art.31",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            },
+            {
+              "id": "eu-dora-r12",
+              "code": "DORA-45",
+              "name": "Participate in compliant threat information sharing",
+              "description": "Participate in compliant threat information sharing with auditable evidence and governance artifacts.",
+              "level": "1",
+              "verification": "Review policies and execution records for participate in compliant threat information sharing",
+              "sourceRef": "DORA Art.45",
+              "obligationStrength": "MUST",
+              "applicability": {
+                "subject": "Financial entities and critical ICT third-party providers",
+                "scenario": "Financial ICT resilience compliance",
+                "region": "EU"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

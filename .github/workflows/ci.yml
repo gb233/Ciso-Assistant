@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+      - 'vk/**'
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint (if configured)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ls .eslintrc* eslint.config.* >/dev/null 2>&1; then
+            npm run lint
+          else
+            echo "Skip lint: no ESLint config found"
+          fi
+
+      - name: Verify framework data quality
+        run: npm run frameworks:verify-data-quality
+
+      - name: Verify presentation gate
+        if: always()
+        run: npm run frameworks:verify-presentation-gate
+
+      - name: Build
+        run: npm run build

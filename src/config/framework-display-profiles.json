@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "defaultModeByType": {
+    "control": "default",
+    "standard": "default",
+    "maturity": "sammy",
+    "maturity-model": "sammy",
+    "regulation": "regulation",
+    "compliance": "regulation"
+  },
+  "frameworkModes": {
+    "owasp-asvs": "default",
+    "owasp-samm": "sammy",
+    "nist-ssdf": "default",
+    "nist-csf-2.0": "default",
+    "nist-800-53": "default",
+    "nist-800-34": "default",
+    "nist-800-171": "default",
+    "cis-csc-v8": "default",
+    "cyberfundamentals-20": "sammy",
+    "dsomm": "sammy",
+    "bsimm-15": "sammy",
+    "nis2": "default",
+    "aima": "default",
+    "cmmc-l1-l2": "default",
+    "iso27001-2022": "default",
+    "iso-27002-2022": "default",
+    "iec-62443-4-1": "default",
+    "secure-controls-framework": "default",
+    "cloud-controls-matrix": "default",
+    "mlps-2.0": "default",
+    "cn-cybersecurity-law": "regulation",
+    "cn-data-security-law": "regulation",
+    "cn-personal-information-protection-law": "regulation",
+    "nist-800-161": "default",
+    "pci-dss": "default",
+    "eu-dora": "regulation",
+    "eu-ai-act": "regulation",
+    "eu-cyber-resilience-act": "regulation",
+    "owasp-api-top10-2023": "default",
+    "owasp-masvs-2.1": "default",
+    "owasp-asvs-5.0": "default",
+    "eu-gdpr": "regulation"
+  },
+  "validation": {
+    "sammy": {
+      "requireRubrics": true,
+      "fallbackMode": "default"
+    },
+    "regulation": {
+      "minSourceRefCoverage": 0.95,
+      "minObligationCoverage": 0.95,
+      "fallbackMode": "default"
+    }
+  }
+}

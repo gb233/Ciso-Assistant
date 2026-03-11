@@ -1,0 +1,291 @@
+{
+  "checkedAt": "2026-02-28T12:50:54.520Z",
+  "mode": "report",
+  "frameworkOnly": null,
+  "total": 35,
+  "passed": 35,
+  "failed": 0,
+  "reportDir": "docs/framework-checkpoints/profile-gate",
+  "results": [
+    {
+      "frameworkId": "aima",
+      "pass": true,
+      "profileId": "maturity-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "bsimm-15",
+      "pass": true,
+      "profileId": "maturity-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cis-csc-v8",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cloud-controls-matrix",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cmmc-l1-l2",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-cross-border-data-flow-provisions",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-cybersecurity-law",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-data-security-law",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-network-data-security-regulation",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-personal-information-protection-law",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cn-pi-compliance-audit-measures",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "cyberfundamentals-20",
+      "pass": true,
+      "profileId": "maturity-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "dsomm",
+      "pass": true,
+      "profileId": "maturity-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "eu-ai-act",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "eu-cyber-resilience-act",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "eu-dora",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "guomi-sm",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "iec-62443-4-1",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "iso-27002-2022",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "iso27001-2022",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "mlps-2.0",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nis2",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-800-161",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-800-171",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-800-34",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-800-53",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-csf-2.0",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "nist-ssdf",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "owasp-api-top10-2023",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "owasp-asvs",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "owasp-asvs-5.0",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "owasp-masvs-2.1",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "owasp-samm",
+      "pass": true,
+      "profileId": "maturity-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "pci-dss",
+      "pass": true,
+      "profileId": "regulatory-obligation",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "frameworkId": "secure-controls-framework",
+      "pass": true,
+      "profileId": "control-baseline",
+      "tier": "bronze",
+      "errors": 0,
+      "warnings": 0
+    }
+  ]
+}

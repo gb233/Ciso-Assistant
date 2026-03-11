@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Generic build/cache outputs
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python artifacts (scripts/frameworks)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated reports / caches
+test-results/
+playwright-report/
+scripts/frameworks/.translation-cache.json
+
+# Local tool artifacts
+.vibe-images/
+
+# Local snapshots / design drafts (not for source control)
+demo/
+snapshot_owasp.json

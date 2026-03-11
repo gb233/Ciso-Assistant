@@ -1,0 +1,1065 @@
+{
+  "id": "iso27001-2022",
+  "name": "ISO 27001:2022 + Amd1:2024",
+  "fullName": "信息安全、网络安全和隐私保护管理体系要求（含2024修订）",
+  "version": "2022+Amd1:2024",
+  "type": "standard",
+  "domain": "cybersecurity",
+  "description": "ISO/IEC 27001:2022是信息安全管理体系(ISMS)的国际标准，为组织建立、实施、维护和持续改进信息安全管理提供要求。2022版本更新了控制结构，采用ISO定义的安全控制组织方式，包含93个控制项。",
+  "website": "https://www.iso.org/standard/27001",
+  "organization": "ISO/IEC",
+  "releaseDate": "2022-10-25",
+  "lastUpdated": "2022-10-25",
+  "language": "zh",
+  "stats": {
+    "totalRequirements": 93,
+    "organizational": 37,
+    "people": 8,
+    "physical": 14,
+    "technological": 34,
+    "totalCategories": 4,
+    "totalSubcategories": 20,
+    "level1": 93,
+    "level2": 0,
+    "level3": 0
+  },
+  "categories": [
+    {
+      "id": "organizational",
+      "code": "ORG",
+      "name": "组织类控制",
+      "description": "涵盖治理、运营、供应商与合规的组织层面控制。",
+      "requirements": 37,
+      "subcategories": [
+        {
+          "id": "org-governance",
+          "code": "ORG.1",
+          "name": "治理与方针",
+          "description": "包含 5.1 至 5.5 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-1",
+              "code": "5.1",
+              "name": "信息安全方针",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.1（信息安全方针）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-2",
+              "code": "5.2",
+              "name": "信息安全角色与职责",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.2（信息安全角色与职责）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-3",
+              "code": "5.3",
+              "name": "职责分离",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.3（职责分离）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-4",
+              "code": "5.4",
+              "name": "管理层职责",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.4（管理层职责）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-5",
+              "code": "5.5",
+              "name": "与主管机构联系",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.5（与主管机构联系）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-risk",
+          "code": "ORG.2",
+          "name": "风险与资产治理",
+          "description": "包含 5.6 至 5.10 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-6",
+              "code": "5.6",
+              "name": "与专业组织联系",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.6（与专业组织联系）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-7",
+              "code": "5.7",
+              "name": "威胁情报",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.7（威胁情报）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-8",
+              "code": "5.8",
+              "name": "项目管理中的信息安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.8（项目管理中的信息安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-9",
+              "code": "5.9",
+              "name": "信息及其他相关资产清单",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.9（信息及其他相关资产清单）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-10",
+              "code": "5.10",
+              "name": "信息及其他相关资产的可接受使用",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.10（信息及其他相关资产的可接受使用）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-operations",
+          "code": "ORG.3",
+          "name": "运营信息控制",
+          "description": "包含 5.11 至 5.15 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-11",
+              "code": "5.11",
+              "name": "资产归还",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.11（资产归还）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-12",
+              "code": "5.12",
+              "name": "信息分类",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.12（信息分类）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-13",
+              "code": "5.13",
+              "name": "信息标记",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.13（信息标记）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-14",
+              "code": "5.14",
+              "name": "信息传输",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.14（信息传输）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-15",
+              "code": "5.15",
+              "name": "访问控制",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.15（访问控制）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-identity-access",
+          "code": "ORG.4",
+          "name": "身份与访问治理",
+          "description": "包含 5.16 至 5.18 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-16",
+              "code": "5.16",
+              "name": "身份管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.16（身份管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-17",
+              "code": "5.17",
+              "name": "身份验证信息",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.17（身份验证信息）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-18",
+              "code": "5.18",
+              "name": "访问权限",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.18（访问权限）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-supplier",
+          "code": "ORG.5",
+          "name": "供应商安全治理",
+          "description": "包含 5.19 至 5.22 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-19",
+              "code": "5.19",
+              "name": "供应商关系中的信息安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.19（供应商关系中的信息安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-20",
+              "code": "5.20",
+              "name": "在供应商协议中落实信息安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.20（在供应商协议中落实信息安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-21",
+              "code": "5.21",
+              "name": "ICT 供应链中的信息安全管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.21（ICT 供应链中的信息安全管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-22",
+              "code": "5.22",
+              "name": "供应商服务的信息安全监控、评审与变更管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.22（供应商服务的信息安全监控、评审与变更管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-cloud-incident",
+          "code": "ORG.6",
+          "name": "云与事件控制",
+          "description": "包含 5.23 至 5.28 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-23",
+              "code": "5.23",
+              "name": "云服务使用中的信息安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.23（云服务使用中的信息安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-24",
+              "code": "5.24",
+              "name": "信息安全事件管理策划与准备",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.24（信息安全事件管理策划与准备）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-25",
+              "code": "5.25",
+              "name": "信息安全事件评估与决策",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.25（信息安全事件评估与决策）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-26",
+              "code": "5.26",
+              "name": "信息安全事件响应",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.26（信息安全事件响应）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-27",
+              "code": "5.27",
+              "name": "从信息安全事件中学习",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.27（从信息安全事件中学习）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-28",
+              "code": "5.28",
+              "name": "证据收集",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.28（证据收集）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-resilience-compliance",
+          "code": "ORG.7",
+          "name": "韧性与符合性控制",
+          "description": "包含 5.29 至 5.33 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-29",
+              "code": "5.29",
+              "name": "中断期间的信息安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.29（中断期间的信息安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-30",
+              "code": "5.30",
+              "name": "ICT 业务连续性准备",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.30（ICT 业务连续性准备）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-31",
+              "code": "5.31",
+              "name": "法律、法规、监管和合同要求",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.31（法律、法规、监管和合同要求）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-32",
+              "code": "5.32",
+              "name": "知识产权",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.32（知识产权）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-33",
+              "code": "5.33",
+              "name": "记录保护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.33（记录保护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-privacy-procedure",
+          "code": "ORG.8",
+          "name": "隐私与操作程序控制",
+          "description": "包含 5.34 至 5.37 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-5-34",
+              "code": "5.34",
+              "name": "隐私与个人可识别信息保护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.34（隐私与个人可识别信息保护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-35",
+              "code": "5.35",
+              "name": "信息安全独立评审",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.35（信息安全独立评审）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-36",
+              "code": "5.36",
+              "name": "信息安全方针、规则和标准符合性",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.36（信息安全方针、规则和标准符合性）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-5-37",
+              "code": "5.37",
+              "name": "文档化操作程序",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 5.37（文档化操作程序）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "code": "PPL",
+      "name": "人员类控制",
+      "description": "涵盖人员安全与职责管理的控制。",
+      "requirements": 8,
+      "subcategories": [
+        {
+          "id": "ppl-screening",
+          "code": "PPL.1",
+          "name": "筛选与入职",
+          "description": "包含 6.1 至 6.4 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-6-1",
+              "code": "6.1",
+              "name": "背景调查",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.1（背景调查）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-2",
+              "code": "6.2",
+              "name": "雇佣条款和条件",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.2（雇佣条款和条件）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-3",
+              "code": "6.3",
+              "name": "信息安全意识、教育与培训",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.3（信息安全意识、教育与培训）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-4",
+              "code": "6.4",
+              "name": "纪律处分流程",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.4（纪律处分流程）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "ppl-employment",
+          "code": "PPL.2",
+          "name": "雇佣周期与报告",
+          "description": "包含 6.5 至 6.8 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-6-5",
+              "code": "6.5",
+              "name": "雇佣终止或变更后的责任",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.5（雇佣终止或变更后的责任）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-6",
+              "code": "6.6",
+              "name": "保密或不披露协议",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.6（保密或不披露协议）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-7",
+              "code": "6.7",
+              "name": "远程办公",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.7（远程办公）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-6-8",
+              "code": "6.8",
+              "name": "信息安全事件报告",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 6.8（信息安全事件报告）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "code": "PHY",
+      "name": "物理类控制",
+      "description": "涵盖物理区域、设备与环境防护控制。",
+      "requirements": 14,
+      "subcategories": [
+        {
+          "id": "phy-perimeter",
+          "code": "PHY.1",
+          "name": "边界与进入控制",
+          "description": "包含 7.1 至 7.5 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-7-1",
+              "code": "7.1",
+              "name": "物理安全边界",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.1（物理安全边界）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-2",
+              "code": "7.2",
+              "name": "物理进入控制",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.2（物理进入控制）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-3",
+              "code": "7.3",
+              "name": "办公室、机房和设施安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.3（办公室、机房和设施安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-4",
+              "code": "7.4",
+              "name": "物理安全监控",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.4（物理安全监控）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-5",
+              "code": "7.5",
+              "name": "物理和环境威胁防护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.5（物理和环境威胁防护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "phy-equipment",
+          "code": "PHY.2",
+          "name": "安全区域作业与设备",
+          "description": "包含 7.6 至 7.10 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-7-6",
+              "code": "7.6",
+              "name": "在安全区域内工作",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.6（在安全区域内工作）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-7",
+              "code": "7.7",
+              "name": "清桌面和清屏",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.7（清桌面和清屏）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-8",
+              "code": "7.8",
+              "name": "设备安置与防护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.8（设备安置与防护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-9",
+              "code": "7.9",
+              "name": "场外资产安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.9（场外资产安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-10",
+              "code": "7.10",
+              "name": "存储介质",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.10（存储介质）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "phy-operations",
+          "code": "PHY.3",
+          "name": "基础设施与生命周期运维",
+          "description": "包含 7.11 至 7.14 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-7-11",
+              "code": "7.11",
+              "name": "支撑性公用设施",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.11（支撑性公用设施）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-12",
+              "code": "7.12",
+              "name": "布线安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.12（布线安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-13",
+              "code": "7.13",
+              "name": "设备维护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.13（设备维护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-7-14",
+              "code": "7.14",
+              "name": "设备安全处置或再利用",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 7.14（设备安全处置或再利用）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technological",
+      "code": "TEC",
+      "name": "技术类控制",
+      "description": "涵盖系统、网络与开发生命周期中的技术控制。",
+      "requirements": 34,
+      "subcategories": [
+        {
+          "id": "tec-access",
+          "code": "TEC.1",
+          "name": "访问与认证",
+          "description": "包含 8.1 至 8.5 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-1",
+              "code": "8.1",
+              "name": "终端用户设备",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.1（终端用户设备）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-2",
+              "code": "8.2",
+              "name": "特权访问权限",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.2（特权访问权限）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-3",
+              "code": "8.3",
+              "name": "信息访问限制",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.3（信息访问限制）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-4",
+              "code": "8.4",
+              "name": "源代码访问",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.4（源代码访问）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-5",
+              "code": "8.5",
+              "name": "安全认证",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.5（安全认证）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-operations",
+          "code": "TEC.2",
+          "name": "技术运行基线",
+          "description": "包含 8.6 至 8.10 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-6",
+              "code": "8.6",
+              "name": "容量管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.6（容量管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-7",
+              "code": "8.7",
+              "name": "恶意软件防护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.7（恶意软件防护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-8",
+              "code": "8.8",
+              "name": "技术漏洞管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.8（技术漏洞管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-9",
+              "code": "8.9",
+              "name": "配置管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.9（配置管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-10",
+              "code": "8.10",
+              "name": "信息删除",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.10（信息删除）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-data-protection",
+          "code": "TEC.3",
+          "name": "数据保护控制",
+          "description": "包含 8.11 至 8.15 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-11",
+              "code": "8.11",
+              "name": "数据脱敏",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.11（数据脱敏）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-12",
+              "code": "8.12",
+              "name": "数据泄露防护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.12（数据泄露防护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-13",
+              "code": "8.13",
+              "name": "信息备份",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.13（信息备份）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-14",
+              "code": "8.14",
+              "name": "信息处理设施冗余",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.14（信息处理设施冗余）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-15",
+              "code": "8.15",
+              "name": "日志记录",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.15（日志记录）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-monitoring",
+          "code": "TEC.4",
+          "name": "监控与系统完整性",
+          "description": "包含 8.16 至 8.20 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-16",
+              "code": "8.16",
+              "name": "监控活动",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.16（监控活动）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-17",
+              "code": "8.17",
+              "name": "时钟同步",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.17（时钟同步）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-18",
+              "code": "8.18",
+              "name": "特权实用程序使用",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.18（特权实用程序使用）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-19",
+              "code": "8.19",
+              "name": "运行系统上的软件安装",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.19（运行系统上的软件安装）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-20",
+              "code": "8.20",
+              "name": "网络安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.20（网络安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-network",
+          "code": "TEC.5",
+          "name": "网络与密码控制",
+          "description": "包含 8.21 至 8.25 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-21",
+              "code": "8.21",
+              "name": "网络服务安全",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.21（网络服务安全）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-22",
+              "code": "8.22",
+              "name": "网络隔离",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.22（网络隔离）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-23",
+              "code": "8.23",
+              "name": "Web 过滤",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.23（Web 过滤）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-24",
+              "code": "8.24",
+              "name": "密码技术使用",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.24（密码技术使用）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-25",
+              "code": "8.25",
+              "name": "安全开发生命周期",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.25（安全开发生命周期）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-secure-development",
+          "code": "TEC.6",
+          "name": "安全开发控制",
+          "description": "包含 8.26 至 8.30 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-26",
+              "code": "8.26",
+              "name": "应用安全需求",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.26（应用安全需求）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-27",
+              "code": "8.27",
+              "name": "安全系统架构和工程原则",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.27（安全系统架构和工程原则）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-28",
+              "code": "8.28",
+              "name": "安全编码",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.28（安全编码）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-29",
+              "code": "8.29",
+              "name": "开发和验收阶段的安全测试",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.29（开发和验收阶段的安全测试）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-30",
+              "code": "8.30",
+              "name": "外包开发",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.30（外包开发）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-change-audit",
+          "code": "TEC.7",
+          "name": "变更与审计防护",
+          "description": "包含 8.31 至 8.34 控制项。",
+          "requirements": [
+            {
+              "id": "iso27001-2022-8-31",
+              "code": "8.31",
+              "name": "开发、测试和生产环境隔离",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.31（开发、测试和生产环境隔离）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-32",
+              "code": "8.32",
+              "name": "变更管理",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.32（变更管理）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-33",
+              "code": "8.33",
+              "name": "测试信息",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.33（测试信息）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            },
+            {
+              "id": "iso27001-2022-8-34",
+              "code": "8.34",
+              "name": "审计测试期间的信息系统保护",
+              "description": "依据 ISO/IEC 27002:2022 对控制项 8.34（审计测试期间的信息系统保护）进行实施，并与 ISO/IEC 27001:2022 附录 A 的适用性声明保持一致。",
+              "level": "1",
+              "verification": "核查与该控制相关的制度文件、实施证据和定期评审记录。",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-standard-catalog",
+    "primaryUrl": "https://www.iso.org/standard/82875.html"
+  }
+}

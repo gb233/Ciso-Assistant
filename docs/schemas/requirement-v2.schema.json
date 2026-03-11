@@ -1,0 +1,476 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sfip.local/schemas/requirement-v2.schema.json",
+  "title": "SFIP Requirement V2",
+  "description": "Core + extension schema for mixed framework semantics (obligation, control, maturity).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "code",
+    "name",
+    "description",
+    "instrumentKinds",
+    "semantics",
+    "source",
+    "profile",
+    "audit"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable requirement identifier."
+    },
+    "code": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Framework-native clause/control code."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instrumentKinds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "law",
+          "regulation",
+          "standard",
+          "framework",
+          "guideline"
+        ]
+      }
+    },
+    "semantics": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "obligation",
+          "control",
+          "maturity",
+          "evidence"
+        ]
+      },
+      "description": "Multi-axis meaning. A record may have multiple semantics."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "date",
+        "captureMethod",
+        "provenance"
+      ],
+      "properties": {
+        "sourceRef": {
+          "type": "string",
+          "description": "Article/clause reference in the source text."
+        },
+        "sourcePointer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "locator": {
+              "type": "string",
+              "description": "Page/chapter/section locator."
+            },
+            "excerpt": {
+              "type": "string",
+              "description": "Short non-authoritative excerpt."
+            }
+          }
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "captureMethod": {
+          "type": "string",
+          "enum": [
+            "official-machine-readable",
+            "official-pdf",
+            "official-html",
+            "licensed-source",
+            "manual-extraction"
+          ]
+        },
+        "accessConstraint": {
+          "type": "string",
+          "enum": [
+            "none",
+            "paywall",
+            "auth-required",
+            "anti-bot",
+            "license-restricted",
+            "unknown"
+          ],
+          "default": "none"
+        },
+        "provenance": {
+          "$ref": "#/$defs/valueStateString"
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "sourceRef"
+          ]
+        },
+        {
+          "required": [
+            "sourcePointer"
+          ]
+        }
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "targetTier"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "control-baseline",
+            "maturity-baseline",
+            "regulatory-obligation"
+          ]
+        },
+        "targetTier": {
+          "type": "string",
+          "enum": [
+            "bronze",
+            "silver",
+            "gold"
+          ]
+        }
+      }
+    },
+    "extension": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "compliance": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "obligationStrength": {
+              "$ref": "#/$defs/valueStateObligation"
+            },
+            "applicability": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "subject": {
+                  "$ref": "#/$defs/valueStateStringArray"
+                },
+                "scenario": {
+                  "$ref": "#/$defs/valueStateStringArray"
+                },
+                "dataClass": {
+                  "$ref": "#/$defs/valueStateStringArray"
+                },
+                "region": {
+                  "$ref": "#/$defs/valueStateStringArray"
+                },
+                "triggerConditions": {
+                  "$ref": "#/$defs/valueStateStringArray"
+                }
+              }
+            },
+            "penaltyImpact": {
+              "$ref": "#/$defs/valueStatePenalty"
+            }
+          }
+        },
+        "control": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "implementationGuidance": {
+              "$ref": "#/$defs/valueStateString"
+            },
+            "verificationMethod": {
+              "$ref": "#/$defs/valueStateStringArray"
+            },
+            "evidenceExamples": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/evidenceItem"
+              }
+            }
+          }
+        },
+        "maturity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "level": {
+              "$ref": "#/$defs/valueStateNumber"
+            },
+            "levelName": {
+              "$ref": "#/$defs/valueStateString"
+            },
+            "intent": {
+              "$ref": "#/$defs/valueStateString"
+            }
+          }
+        },
+        "mapping": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "edges": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/mappingEdge"
+              }
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lastReviewedAt",
+        "reviewedBy"
+      ],
+      "properties": {
+        "lastReviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "reviewedBy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "valueStateBase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "basis"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "exact",
+            "inferred",
+            "unknown",
+            "na"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "valueStateString": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/valueStateBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "valueStateStringArray": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/valueStateBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "valueStateNumber": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/valueStateBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "valueStateObligation": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/valueStateBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "must",
+                "should",
+                "may",
+                "na"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "valueStatePenalty": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/valueStateBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "severe",
+                "unknown",
+                "na"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "description"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "policy",
+            "procedure",
+            "log",
+            "ticket",
+            "config",
+            "scan-report",
+            "test-report",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "examplePath": {
+          "type": "string"
+        }
+      }
+    },
+    "mappingEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "targetFrameworkId",
+        "targetRequirementId",
+        "relationshipType",
+        "confidence",
+        "rationale"
+      ],
+      "properties": {
+        "targetFrameworkId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targetRequirementId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationshipType": {
+          "type": "string",
+          "enum": [
+            "equivalent",
+            "partial-overlap",
+            "superset",
+            "subset",
+            "related"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

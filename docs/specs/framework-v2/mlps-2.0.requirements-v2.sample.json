@@ -1,0 +1,211 @@
+[
+  {
+    "id": "mlps2-s1-1-1",
+    "code": "S1.1.1",
+    "name": "机房位置",
+    "description": "应选择具有防水、防火、防震等基础保障条件的机房位置。",
+    "instrumentKinds": [
+      "standard",
+      "regulation"
+    ],
+    "semantics": [
+      "obligation",
+      "control"
+    ],
+    "source": {
+      "sourceRef": "GB/T 22239-2019 安全物理环境相关条款",
+      "version": "GB/T 22239-2019",
+      "date": "2019-08-30",
+      "captureMethod": "official-html",
+      "accessConstraint": "anti-bot",
+      "provenance": {
+        "value": "Mapped from canonical mlps control text with expert review notes",
+        "status": "inferred",
+        "basis": "OpenSTD source access constraint; clause linkage maintained in extraction workbook"
+      }
+    },
+    "profile": {
+      "id": "regulatory-obligation",
+      "targetTier": "silver"
+    },
+    "extension": {
+      "compliance": {
+        "obligationStrength": {
+          "value": "must",
+          "status": "inferred",
+          "basis": "Normative language and GB/T control style interpretation"
+        },
+        "applicability": {
+          "subject": {
+            "value": [
+              "network-operator",
+              "critical-information-infrastructure-operator"
+            ],
+            "status": "inferred",
+            "basis": "MLPS control applicability model"
+          },
+          "scenario": {
+            "value": [
+              "physical-security"
+            ],
+            "status": "exact",
+            "basis": "Control category mapping"
+          },
+          "dataClass": {
+            "status": "unknown",
+            "basis": "Data class needs external policy binding"
+          },
+          "region": {
+            "value": [
+              "CN"
+            ],
+            "status": "exact",
+            "basis": "Jurisdiction of MLPS"
+          },
+          "triggerConditions": {
+            "value": [
+              "system-in-scope-of-mlps"
+            ],
+            "status": "inferred",
+            "basis": "MLPS scoping process"
+          }
+        },
+        "penaltyImpact": {
+          "status": "unknown",
+          "basis": "Penalty mapping is modeled in legal package, not in GB/T baseline"
+        }
+      },
+      "control": {
+        "implementationGuidance": {
+          "value": "Perform site risk assessment and document hazard controls before deployment.",
+          "status": "inferred",
+          "basis": "Common MLPS implementation practice"
+        },
+        "verificationMethod": {
+          "value": [
+            "onsite-inspection",
+            "design-review"
+          ],
+          "status": "inferred",
+          "basis": "Audit method baseline"
+        },
+        "evidenceExamples": [
+          {
+            "type": "policy",
+            "description": "Data center site selection policy"
+          },
+          {
+            "type": "test-report",
+            "description": "Environmental hazard assessment report"
+          }
+        ]
+      },
+      "mapping": {
+        "edges": [
+          {
+            "targetFrameworkId": "nist-800-53",
+            "targetRequirementId": "PE-18",
+            "relationshipType": "partial-overlap",
+            "confidence": 0.74,
+            "rationale": "Both address physical facility protection and environmental resilience"
+          }
+        ]
+      }
+    },
+    "audit": {
+      "lastReviewedAt": "2026-02-28T00:00:00Z",
+      "reviewedBy": "framework-team",
+      "notes": "Pilot record for V2 migration"
+    }
+  },
+  {
+    "id": "mlps2-s2-3-2",
+    "code": "S2.3.2",
+    "name": "通信完整性保护",
+    "description": "应对关键通信链路采取完整性保护措施，防止篡改。",
+    "instrumentKinds": [
+      "standard"
+    ],
+    "semantics": [
+      "control",
+      "obligation"
+    ],
+    "source": {
+      "sourceRef": "GB/T 22239-2019 安全通信网络相关条款",
+      "version": "GB/T 22239-2019",
+      "date": "2019-08-30",
+      "captureMethod": "official-html",
+      "accessConstraint": "anti-bot",
+      "provenance": {
+        "value": "Derived from MLPS communication network control block",
+        "status": "inferred",
+        "basis": "Clause-to-control extraction workbook"
+      }
+    },
+    "profile": {
+      "id": "regulatory-obligation",
+      "targetTier": "silver"
+    },
+    "extension": {
+      "compliance": {
+        "obligationStrength": {
+          "value": "must",
+          "status": "inferred",
+          "basis": "Normative wording interpretation"
+        },
+        "applicability": {
+          "subject": {
+            "value": [
+              "network-operator"
+            ],
+            "status": "inferred",
+            "basis": "MLPS scoping profile"
+          },
+          "scenario": {
+            "value": [
+              "network-communication"
+            ],
+            "status": "exact",
+            "basis": "Category assignment"
+          },
+          "region": {
+            "value": [
+              "CN"
+            ],
+            "status": "exact",
+            "basis": "MLPS applies in China"
+          }
+        },
+        "penaltyImpact": {
+          "status": "unknown",
+          "basis": "Penalty linkage to governing law kept in legal package"
+        }
+      },
+      "control": {
+        "verificationMethod": {
+          "value": [
+            "config-review",
+            "packet-integrity-test"
+          ],
+          "status": "inferred",
+          "basis": "Control assurance baseline"
+        },
+        "evidenceExamples": [
+          {
+            "type": "config",
+            "description": "Integrity-protected transport configuration snapshot"
+          },
+          {
+            "type": "scan-report",
+            "description": "Network tamper-detection validation report"
+          }
+        ]
+      }
+    },
+    "audit": {
+      "lastReviewedAt": "2026-02-28T00:00:00Z",
+      "reviewedBy": "framework-team",
+      "notes": "Pilot record for V2 migration"
+    }
+  }
+]

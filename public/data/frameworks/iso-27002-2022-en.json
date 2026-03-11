@@ -1,0 +1,1065 @@
+{
+  "id": "iso-27002-2022",
+  "name": "ISO 27002:2022",
+  "fullName": "ISO/IEC 27002:2022 Information Security Controls",
+  "version": "2022",
+  "type": "control",
+  "domain": "cybersecurity",
+  "description": "ISO/IEC 27002:2022 is an international practice guide for information security controls, providing implementation guidance for the controls defined in ISO/IEC 27001. The 2022 version reorganizes the controls into four thematic categories (organizational, people, physical, and technological), contains 93 controls, and introduces 11 new controls.",
+  "website": "https://www.iso.org/standard/75652.html",
+  "organization": "ISO/IEC",
+  "releaseDate": "2022-02-15",
+  "lastUpdated": "2022-02-15",
+  "language": "en",
+  "stats": {
+    "totalRequirements": 93,
+    "organizational": 37,
+    "people": 8,
+    "physical": 14,
+    "technological": 34,
+    "totalCategories": 4,
+    "totalSubcategories": 20,
+    "level1": 93,
+    "level2": 0,
+    "level3": 0
+  },
+  "categories": [
+    {
+      "id": "organizational",
+      "code": "ORG",
+      "name": "Organizational controls",
+      "description": "Governance, operational, supplier and compliance-related controls.",
+      "requirements": 37,
+      "subcategories": [
+        {
+          "id": "org-governance",
+          "code": "ORG.1",
+          "name": "Governance and policy",
+          "description": "Contains controls 5.1 through 5.5.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-1",
+              "code": "5.1",
+              "name": "Policies for information security",
+              "description": "Implement control 5.1 (Policies for information security) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-2",
+              "code": "5.2",
+              "name": "Information security roles and responsibilities",
+              "description": "Implement control 5.2 (Information security roles and responsibilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-3",
+              "code": "5.3",
+              "name": "Segregation of duties",
+              "description": "Implement control 5.3 (Segregation of duties) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-4",
+              "code": "5.4",
+              "name": "Management responsibilities",
+              "description": "Implement control 5.4 (Management responsibilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-5",
+              "code": "5.5",
+              "name": "Contact with authorities",
+              "description": "Implement control 5.5 (Contact with authorities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-risk",
+          "code": "ORG.2",
+          "name": "Risk and asset governance",
+          "description": "Contains controls 5.6 through 5.10.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-6",
+              "code": "5.6",
+              "name": "Contact with special interest groups",
+              "description": "Implement control 5.6 (Contact with special interest groups) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-7",
+              "code": "5.7",
+              "name": "Threat intelligence",
+              "description": "Implement control 5.7 (Threat intelligence) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-8",
+              "code": "5.8",
+              "name": "Information security in project management",
+              "description": "Implement control 5.8 (Information security in project management) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-9",
+              "code": "5.9",
+              "name": "Inventory of information and other associated assets",
+              "description": "Implement control 5.9 (Inventory of information and other associated assets) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-10",
+              "code": "5.10",
+              "name": "Acceptable use of information and other associated assets",
+              "description": "Implement control 5.10 (Acceptable use of information and other associated assets) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-operations",
+          "code": "ORG.3",
+          "name": "Operational information controls",
+          "description": "Contains controls 5.11 through 5.15.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-11",
+              "code": "5.11",
+              "name": "Return of assets",
+              "description": "Implement control 5.11 (Return of assets) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-12",
+              "code": "5.12",
+              "name": "Classification of information",
+              "description": "Implement control 5.12 (Classification of information) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-13",
+              "code": "5.13",
+              "name": "Labelling of information",
+              "description": "Implement control 5.13 (Labelling of information) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-14",
+              "code": "5.14",
+              "name": "Information transfer",
+              "description": "Implement control 5.14 (Information transfer) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-15",
+              "code": "5.15",
+              "name": "Access control",
+              "description": "Implement control 5.15 (Access control) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-identity-access",
+          "code": "ORG.4",
+          "name": "Identity and access governance",
+          "description": "Contains controls 5.16 through 5.18.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-16",
+              "code": "5.16",
+              "name": "Identity management",
+              "description": "Implement control 5.16 (Identity management) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-17",
+              "code": "5.17",
+              "name": "Authentication information",
+              "description": "Implement control 5.17 (Authentication information) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-18",
+              "code": "5.18",
+              "name": "Access rights",
+              "description": "Implement control 5.18 (Access rights) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-supplier",
+          "code": "ORG.5",
+          "name": "Supplier security governance",
+          "description": "Contains controls 5.19 through 5.22.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-19",
+              "code": "5.19",
+              "name": "Information security in supplier relationships",
+              "description": "Implement control 5.19 (Information security in supplier relationships) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-20",
+              "code": "5.20",
+              "name": "Addressing information security within supplier agreements",
+              "description": "Implement control 5.20 (Addressing information security within supplier agreements) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-21",
+              "code": "5.21",
+              "name": "Managing information security in the ICT supply chain",
+              "description": "Implement control 5.21 (Managing information security in the ICT supply chain) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-22",
+              "code": "5.22",
+              "name": "Monitoring, review and change management of supplier services",
+              "description": "Implement control 5.22 (Monitoring, review and change management of supplier services) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-cloud-incident",
+          "code": "ORG.6",
+          "name": "Cloud and incident controls",
+          "description": "Contains controls 5.23 through 5.28.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-23",
+              "code": "5.23",
+              "name": "Information security for use of cloud services",
+              "description": "Implement control 5.23 (Information security for use of cloud services) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-24",
+              "code": "5.24",
+              "name": "Information security incident management planning and preparation",
+              "description": "Implement control 5.24 (Information security incident management planning and preparation) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-25",
+              "code": "5.25",
+              "name": "Assessment and decision on information security events",
+              "description": "Implement control 5.25 (Assessment and decision on information security events) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-26",
+              "code": "5.26",
+              "name": "Response to information security incidents",
+              "description": "Implement control 5.26 (Response to information security incidents) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-27",
+              "code": "5.27",
+              "name": "Learning from information security incidents",
+              "description": "Implement control 5.27 (Learning from information security incidents) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-28",
+              "code": "5.28",
+              "name": "Collection of evidence",
+              "description": "Implement control 5.28 (Collection of evidence) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-resilience-compliance",
+          "code": "ORG.7",
+          "name": "Resilience and compliance controls",
+          "description": "Contains controls 5.29 through 5.33.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-29",
+              "code": "5.29",
+              "name": "Information security during disruption",
+              "description": "Implement control 5.29 (Information security during disruption) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-30",
+              "code": "5.30",
+              "name": "ICT readiness for business continuity",
+              "description": "Implement control 5.30 (ICT readiness for business continuity) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-31",
+              "code": "5.31",
+              "name": "Legal, statutory, regulatory and contractual requirements",
+              "description": "Implement control 5.31 (Legal, statutory, regulatory and contractual requirements) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-32",
+              "code": "5.32",
+              "name": "Intellectual property rights",
+              "description": "Implement control 5.32 (Intellectual property rights) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-33",
+              "code": "5.33",
+              "name": "Protection of records",
+              "description": "Implement control 5.33 (Protection of records) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "org-privacy-procedure",
+          "code": "ORG.8",
+          "name": "Privacy and operating procedure controls",
+          "description": "Contains controls 5.34 through 5.37.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-5-34",
+              "code": "5.34",
+              "name": "Privacy and protection of PII",
+              "description": "Implement control 5.34 (Privacy and protection of PII) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-35",
+              "code": "5.35",
+              "name": "Independent review of information security",
+              "description": "Implement control 5.35 (Independent review of information security) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-36",
+              "code": "5.36",
+              "name": "Compliance with policies, rules and standards for information security",
+              "description": "Implement control 5.36 (Compliance with policies, rules and standards for information security) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-5-37",
+              "code": "5.37",
+              "name": "Documented operating procedures",
+              "description": "Implement control 5.37 (Documented operating procedures) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "code": "PPL",
+      "name": "People controls",
+      "description": "Controls related to personnel security and security responsibilities.",
+      "requirements": 8,
+      "subcategories": [
+        {
+          "id": "ppl-screening",
+          "code": "PPL.1",
+          "name": "Screening and onboarding",
+          "description": "Contains controls 6.1 through 6.4.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-6-1",
+              "code": "6.1",
+              "name": "Screening",
+              "description": "Implement control 6.1 (Screening) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-2",
+              "code": "6.2",
+              "name": "Terms and conditions of employment",
+              "description": "Implement control 6.2 (Terms and conditions of employment) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-3",
+              "code": "6.3",
+              "name": "Information security awareness, education and training",
+              "description": "Implement control 6.3 (Information security awareness, education and training) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-4",
+              "code": "6.4",
+              "name": "Disciplinary process",
+              "description": "Implement control 6.4 (Disciplinary process) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "ppl-employment",
+          "code": "PPL.2",
+          "name": "Employment lifecycle and reporting",
+          "description": "Contains controls 6.5 through 6.8.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-6-5",
+              "code": "6.5",
+              "name": "Responsibilities after termination or change of employment",
+              "description": "Implement control 6.5 (Responsibilities after termination or change of employment) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-6",
+              "code": "6.6",
+              "name": "Confidentiality or non-disclosure agreements",
+              "description": "Implement control 6.6 (Confidentiality or non-disclosure agreements) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-7",
+              "code": "6.7",
+              "name": "Remote working",
+              "description": "Implement control 6.7 (Remote working) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-6-8",
+              "code": "6.8",
+              "name": "Information security event reporting",
+              "description": "Implement control 6.8 (Information security event reporting) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "code": "PHY",
+      "name": "Physical controls",
+      "description": "Controls for physical areas, equipment and environmental protection.",
+      "requirements": 14,
+      "subcategories": [
+        {
+          "id": "phy-perimeter",
+          "code": "PHY.1",
+          "name": "Perimeter and access",
+          "description": "Contains controls 7.1 through 7.5.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-7-1",
+              "code": "7.1",
+              "name": "Physical security perimeters",
+              "description": "Implement control 7.1 (Physical security perimeters) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-2",
+              "code": "7.2",
+              "name": "Physical entry",
+              "description": "Implement control 7.2 (Physical entry) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-3",
+              "code": "7.3",
+              "name": "Securing offices, rooms and facilities",
+              "description": "Implement control 7.3 (Securing offices, rooms and facilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-4",
+              "code": "7.4",
+              "name": "Physical security monitoring",
+              "description": "Implement control 7.4 (Physical security monitoring) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-5",
+              "code": "7.5",
+              "name": "Protecting against physical and environmental threats",
+              "description": "Implement control 7.5 (Protecting against physical and environmental threats) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "phy-equipment",
+          "code": "PHY.2",
+          "name": "Secure area operations and equipment",
+          "description": "Contains controls 7.6 through 7.10.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-7-6",
+              "code": "7.6",
+              "name": "Working in secure areas",
+              "description": "Implement control 7.6 (Working in secure areas) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-7",
+              "code": "7.7",
+              "name": "Clear desk and clear screen",
+              "description": "Implement control 7.7 (Clear desk and clear screen) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-8",
+              "code": "7.8",
+              "name": "Equipment siting and protection",
+              "description": "Implement control 7.8 (Equipment siting and protection) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-9",
+              "code": "7.9",
+              "name": "Security of assets off-premises",
+              "description": "Implement control 7.9 (Security of assets off-premises) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-10",
+              "code": "7.10",
+              "name": "Storage media",
+              "description": "Implement control 7.10 (Storage media) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "phy-operations",
+          "code": "PHY.3",
+          "name": "Infrastructure and lifecycle operations",
+          "description": "Contains controls 7.11 through 7.14.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-7-11",
+              "code": "7.11",
+              "name": "Supporting utilities",
+              "description": "Implement control 7.11 (Supporting utilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-12",
+              "code": "7.12",
+              "name": "Cabling security",
+              "description": "Implement control 7.12 (Cabling security) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-13",
+              "code": "7.13",
+              "name": "Equipment maintenance",
+              "description": "Implement control 7.13 (Equipment maintenance) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-7-14",
+              "code": "7.14",
+              "name": "Secure disposal or re-use of equipment",
+              "description": "Implement control 7.14 (Secure disposal or re-use of equipment) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technological",
+      "code": "TEC",
+      "name": "Technological controls",
+      "description": "Controls for technical safeguards across systems, networks and development.",
+      "requirements": 34,
+      "subcategories": [
+        {
+          "id": "tec-access",
+          "code": "TEC.1",
+          "name": "Access and authentication",
+          "description": "Contains controls 8.1 through 8.5.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-1",
+              "code": "8.1",
+              "name": "User endpoint devices",
+              "description": "Implement control 8.1 (User endpoint devices) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-2",
+              "code": "8.2",
+              "name": "Privileged access rights",
+              "description": "Implement control 8.2 (Privileged access rights) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-3",
+              "code": "8.3",
+              "name": "Information access restriction",
+              "description": "Implement control 8.3 (Information access restriction) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-4",
+              "code": "8.4",
+              "name": "Access to source code",
+              "description": "Implement control 8.4 (Access to source code) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-5",
+              "code": "8.5",
+              "name": "Secure authentication",
+              "description": "Implement control 8.5 (Secure authentication) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-operations",
+          "code": "TEC.2",
+          "name": "Technical operations baseline",
+          "description": "Contains controls 8.6 through 8.10.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-6",
+              "code": "8.6",
+              "name": "Capacity management",
+              "description": "Implement control 8.6 (Capacity management) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-7",
+              "code": "8.7",
+              "name": "Protection against malware",
+              "description": "Implement control 8.7 (Protection against malware) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-8",
+              "code": "8.8",
+              "name": "Management of technical vulnerabilities",
+              "description": "Implement control 8.8 (Management of technical vulnerabilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-9",
+              "code": "8.9",
+              "name": "Configuration management",
+              "description": "Implement control 8.9 (Configuration management) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-10",
+              "code": "8.10",
+              "name": "Information deletion",
+              "description": "Implement control 8.10 (Information deletion) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-data-protection",
+          "code": "TEC.3",
+          "name": "Data protection controls",
+          "description": "Contains controls 8.11 through 8.15.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-11",
+              "code": "8.11",
+              "name": "Data masking",
+              "description": "Implement control 8.11 (Data masking) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-12",
+              "code": "8.12",
+              "name": "Data leakage prevention",
+              "description": "Implement control 8.12 (Data leakage prevention) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-13",
+              "code": "8.13",
+              "name": "Information backup",
+              "description": "Implement control 8.13 (Information backup) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-14",
+              "code": "8.14",
+              "name": "Redundancy of information processing facilities",
+              "description": "Implement control 8.14 (Redundancy of information processing facilities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-15",
+              "code": "8.15",
+              "name": "Logging",
+              "description": "Implement control 8.15 (Logging) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-monitoring",
+          "code": "TEC.4",
+          "name": "Monitoring and system integrity",
+          "description": "Contains controls 8.16 through 8.20.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-16",
+              "code": "8.16",
+              "name": "Monitoring activities",
+              "description": "Implement control 8.16 (Monitoring activities) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-17",
+              "code": "8.17",
+              "name": "Clock synchronization",
+              "description": "Implement control 8.17 (Clock synchronization) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-18",
+              "code": "8.18",
+              "name": "Use of privileged utility programs",
+              "description": "Implement control 8.18 (Use of privileged utility programs) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-19",
+              "code": "8.19",
+              "name": "Installation of software on operational systems",
+              "description": "Implement control 8.19 (Installation of software on operational systems) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-20",
+              "code": "8.20",
+              "name": "Network security",
+              "description": "Implement control 8.20 (Network security) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-network",
+          "code": "TEC.5",
+          "name": "Network and crypto controls",
+          "description": "Contains controls 8.21 through 8.25.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-21",
+              "code": "8.21",
+              "name": "Security of network services",
+              "description": "Implement control 8.21 (Security of network services) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-22",
+              "code": "8.22",
+              "name": "Segregation of networks",
+              "description": "Implement control 8.22 (Segregation of networks) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-23",
+              "code": "8.23",
+              "name": "Web filtering",
+              "description": "Implement control 8.23 (Web filtering) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-24",
+              "code": "8.24",
+              "name": "Use of cryptography",
+              "description": "Implement control 8.24 (Use of cryptography) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-25",
+              "code": "8.25",
+              "name": "Secure development life cycle",
+              "description": "Implement control 8.25 (Secure development life cycle) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-secure-development",
+          "code": "TEC.6",
+          "name": "Secure development controls",
+          "description": "Contains controls 8.26 through 8.30.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-26",
+              "code": "8.26",
+              "name": "Application security requirements",
+              "description": "Implement control 8.26 (Application security requirements) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-27",
+              "code": "8.27",
+              "name": "Secure system architecture and engineering principles",
+              "description": "Implement control 8.27 (Secure system architecture and engineering principles) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-28",
+              "code": "8.28",
+              "name": "Secure coding",
+              "description": "Implement control 8.28 (Secure coding) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-29",
+              "code": "8.29",
+              "name": "Security testing in development and acceptance",
+              "description": "Implement control 8.29 (Security testing in development and acceptance) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-30",
+              "code": "8.30",
+              "name": "Outsourced development",
+              "description": "Implement control 8.30 (Outsourced development) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        },
+        {
+          "id": "tec-change-audit",
+          "code": "TEC.7",
+          "name": "Change and audit protections",
+          "description": "Contains controls 8.31 through 8.34.",
+          "requirements": [
+            {
+              "id": "iso-27002-2022-8-31",
+              "code": "8.31",
+              "name": "Separation of development, test and production environments",
+              "description": "Implement control 8.31 (Separation of development, test and production environments) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-32",
+              "code": "8.32",
+              "name": "Change management",
+              "description": "Implement control 8.32 (Change management) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-33",
+              "code": "8.33",
+              "name": "Test information",
+              "description": "Implement control 8.33 (Test information) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            },
+            {
+              "id": "iso-27002-2022-8-34",
+              "code": "8.34",
+              "name": "Protection of information systems during audit testing",
+              "description": "Implement control 8.34 (Protection of information systems during audit testing) in line with ISO/IEC 27002:2022 guidance and align with ISO/IEC 27001:2022 Annex A applicability.",
+              "level": "1",
+              "verification": "Verify documented policy/procedure, implementation evidence, and periodic review records for this control.",
+              "questionType": "control"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "official-standard-catalog",
+    "primaryUrl": "https://www.iso.org/standard/75652.html"
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "id": "nist-800-161",
+  "name": "NIST SP 800-161",
+  "fullName": "NIST SP 800-161 Rev.1 Update 1 Cybersecurity Supply Chain Risk Management",
+  "version": "Rev.1 Update 1",
+  "type": "standard",
+  "domain": "supply-chain-security",
+  "description": "NIST SP 800-161 Rev.1 Update 1 C-SCRM assessment scoping questionnaire (Table 26) extracted from the official machine-readable workbook.",
+  "website": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final",
+  "organization": "NIST",
+  "releaseDate": "2024-11-01",
+  "lastUpdated": "2026-02-26",
+  "language": "en",
+  "source": {
+    "type": "official-machine-readable",
+    "url": "https://csrc.nist.gov/files/pubs/sp/800/161/r1/upd1/final/docs/sp800-161r1-table26.xlsx",
+    "documentPage": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final",
+    "version": "NIST SP 800-161 Rev.1 Update 1 (2024-11-01)"
+  },
+  "stats": {
+    "totalRequirements": 88,
+    "totalCategories": 7,
+    "totalSubcategories": 7,
+    "level1": 88,
+    "level2": 0,
+    "level3": 0
+  },
+  "categories": [
+    {
+      "id": "section-1",
+      "code": "S1",
+      "name": "Section 1: Request Overview",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 7,
+      "subcategories": [
+        {
+          "id": "table26-s1",
+          "code": "T26.S1",
+          "name": "Section 1: Request Overview",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s1-1",
+              "code": "T26.S1.1",
+              "name": "Requestor Name",
+              "description": "Requestor Name\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-2",
+              "code": "T26.S1.2",
+              "name": "C-SCRA Purpose and Objective",
+              "description": "C-SCRA Purpose and Objective\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-3",
+              "code": "T26.S1.3",
+              "name": "System Description",
+              "description": "System Description\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-4",
+              "code": "T26.S1.4",
+              "name": "Architecture Overview",
+              "description": "Architecture Overview\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-5",
+              "code": "T26.S1.5",
+              "name": "Boundary Definition",
+              "description": "Boundary Definition\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-6",
+              "code": "T26.S1.6",
+              "name": "Date of Assessment",
+              "description": "Date of Assessment\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s1-7",
+              "code": "T26.S1.7",
+              "name": "Assessor Name",
+              "description": "Assessor Name\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "code": "S2",
+      "name": "Section 2: Product/Service Internal Risk Overview",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 18,
+      "subcategories": [
+        {
+          "id": "table26-s2",
+          "code": "T26.S2",
+          "name": "Section 2: Product/Service Internal Risk Overview",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s2-1",
+              "code": "T26.S2.1",
+              "name": "What % of this supplier’s sales of this product/service does your enterprise consume?",
+              "description": "What % of this supplier’s sales of this product/service does your enterprise consume?\n\nResponse provided by: Acquirer or Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-2",
+              "code": "T26.S2.2",
+              "name": "How widely used is or will the product or service be in your enterprise?",
+              "description": "How widely used is or will the product or service be in your enterprise?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-3",
+              "code": "T26.S2.3",
+              "name": "Is the product/service manufactured in a geographic location that is considered an area of geopolitical risk for your enterprise based on it sprimary area of operation (e.g., in the United States)?",
+              "description": "Is the product/service manufactured in a geographic location that is considered an area of geopolitical risk for your enterprise based on it sprimary area of operation (e.g., in the United States)?\n\nResponse provided by: Acquirer or Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-4",
+              "code": "T26.S2.4",
+              "name": "Is the product manufactured or developed in acountry identified as a foreign adversary or country of special concern?",
+              "description": "Is the product manufactured or developed in acountry identified as a foreign adversary or country of special concern?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-5",
+              "code": "T26.S2.5",
+              "name": "Would switching to an alternative supplier for this product or service constitute significant cost or effort for your enterprise?",
+              "description": "Would switching to an alternative supplier for this product or service constitute significant cost or effort for your enterprise?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-6",
+              "code": "T26.S2.6",
+              "name": "Does your enterprise have an existing relationship with another supplier for this product/service?",
+              "description": "Does your enterprise have an existing relationship with another supplier for this product/service?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-7",
+              "code": "T26.S2.7",
+              "name": "How confident is your enterprise that they will be able to obtain quality products/services regardless of major supply chain disruptions, both human and natural?",
+              "description": "How confident is your enterprise that they will be able to obtain quality products/services regardless of major supply chain disruptions, both human and natural?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-8",
+              "code": "T26.S2.8",
+              "name": "Does your enterprise maintain a reserve of this product or service?",
+              "description": "Does your enterprise maintain a reserve of this product or service?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-9",
+              "code": "T26.S2.9",
+              "name": "Is the product/service fit for purpose? (i.e., capable of meeting objectives or service levels)?",
+              "description": "Is the product/service fit for purpose? (i.e., capable of meeting objectives or service levels)?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-10",
+              "code": "T26.S2.10",
+              "name": "Does the product/service perform an essential security function? If so, please describe.",
+              "description": "Does the product/service perform an essential security function? If so, please describe.\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-11",
+              "code": "T26.S2.11",
+              "name": "Does the product/service have root access to IT networks, OT systems, or sensitive platforms?",
+              "description": "Does the product/service have root access to IT networks, OT systems, or sensitive platforms?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-12",
+              "code": "T26.S2.12",
+              "name": "Can compromise of the product/service lead to system failure or severe degradation?",
+              "description": "Can compromise of the product/service lead to system failure or severe degradation?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-13",
+              "code": "T26.S2.13",
+              "name": "In the event of compromise leading to system failure or severe degradation, is there a known independent reliable mitigation?",
+              "description": "In the event of compromise leading to system failure or severe degradation, is there a known independent reliable mitigation?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-14",
+              "code": "T26.S2.14",
+              "name": "Will/does the product/service connect to a platform that is provided to customers by your enterprise?",
+              "description": "Will/does the product/service connect to a platform that is provided to customers by your enterprise?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-15",
+              "code": "T26.S2.15",
+              "name": "Will/does the product/service transmit, generate, maintain, or process high-value data (e.g., PII, PHI, PCI)?",
+              "description": "Will/does the product/service transmit, generate, maintain, or process high-value data (e.g., PII, PHI, PCI)?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-16",
+              "code": "T26.S2.16",
+              "name": "Will/does the product/service have access to systems that transmit, generate, maintain, or process high-value data (e.g., PII, PHI, PCI)?",
+              "description": "Will/does the product/service have access to systems that transmit, generate, maintain, or process high-value data (e.g., PII, PHI, PCI)?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-17",
+              "code": "T26.S2.17",
+              "name": "Will/does the supplier require physical access to the company’s facilities as a result of its provision of the product/service?",
+              "description": "Will/does the supplier require physical access to the company’s facilities as a result of its provision of the product/service?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s2-18",
+              "code": "T26.S2.18",
+              "name": "Based on holistic consideration of the above responses, how critical is this product/service to your enterprise (i.e., critical, high, moderate, low)?",
+              "description": "Based on holistic consideration of the above responses, how critical is this product/service to your enterprise (i.e., critical, high, moderate, low)?\n\nResponse provided by: Acquirer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "code": "S3",
+      "name": "Section 3: Supplier Review",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 17,
+      "subcategories": [
+        {
+          "id": "table26-s3",
+          "code": "T26.S3",
+          "name": "Section 3: Supplier Review",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s3-1",
+              "code": "T26.S3.1",
+              "name": "Have you identified the supplier’s critical suppliers? Supplier Did you verify the supplier ownership, whether foreign and domestic?",
+              "description": "Have you identified the supplier’s critical suppliers? Supplier Did you verify the supplier ownership, whether foreign and domestic?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-2",
+              "code": "T26.S3.2",
+              "name": "If the supplier uses distributors, did you investigate them for potential risks?",
+              "description": "If the supplier uses distributors, did you investigate them for potential risks?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-3",
+              "code": "T26.S3.3",
+              "name": "Is the supplier located in the United States?",
+              "description": "Is the supplier located in the United States?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-4",
+              "code": "T26.S3.4",
+              "name": "Does the supplier have personnel and/or professional ties (including its officers, directors, or similar officials, employees, consultants, or contractors) with any foreign government?",
+              "description": "Does the supplier have personnel and/or professional ties (including its officers, directors, or similar officials, employees, consultants, or contractors) with any foreign government?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-5",
+              "code": "T26.S3.5",
+              "name": "Is there foreign ownership, control, or influence (FOCI) over the supplier or any business entities involved in the supply chain? If so, is the FOCI from a foreign adversary of the United States or country of concern?",
+              "description": "Is there foreign ownership, control, or influence (FOCI) over the supplier or any business entities involved in the supply chain? If so, is the FOCI from a foreign adversary of the United States or country of concern?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-6",
+              "code": "T26.S3.6",
+              "name": "Do the laws and regulations of any foreign country in which the supplier has headquarters, research development, manufacturing, testing, packaging, distribution, or service facilities or other operations require the sharing of technology or data with that foreign country?",
+              "description": "Do the laws and regulations of any foreign country in which the supplier has headquarters, research development, manufacturing, testing, packaging, distribution, or service facilities or other operations require the sharing of technology or data with that foreign country?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-7",
+              "code": "T26.S3.7",
+              "name": "Has the supplier declared where replacement components will be purchased from?",
+              "description": "Has the supplier declared where replacement components will be purchased from?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-8",
+              "code": "T26.S3.8",
+              "name": "Have the owners and locations of all of the suppliers, subcontractors, and sub-tier suppliers been identified and validated?",
+              "description": "Have the owners and locations of all of the suppliers, subcontractors, and sub-tier suppliers been identified and validated?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-9",
+              "code": "T26.S3.9",
+              "name": "Does the supplier employ the use of threat scenarios to inform the vetting of sub-tier suppliers?",
+              "description": "Does the supplier employ the use of threat scenarios to inform the vetting of sub-tier suppliers?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-10",
+              "code": "T26.S3.10",
+              "name": "Does the supplier have documents that track part numbers to manufacturers?",
+              "description": "Does the supplier have documents that track part numbers to manufacturers?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-11",
+              "code": "T26.S3.11",
+              "name": "Can the supplier provide a list of who they procure hardware and software from that is utilized in the performance of the contract?",
+              "description": "Can the supplier provide a list of who they procure hardware and software from that is utilized in the performance of the contract?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-12",
+              "code": "T26.S3.12",
+              "name": "Does the supplier have counterfeit controls in place?",
+              "description": "Does the supplier have counterfeit controls in place?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-13",
+              "code": "T26.S3.13",
+              "name": "Does the supplier safeguard key program information that may be exposed through interactions with other suppliers?",
+              "description": "Does the supplier safeguard key program information that may be exposed through interactions with other suppliers?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-14",
+              "code": "T26.S3.14",
+              "name": "Does the supplier perform reviews and inspections and have safeguards to detect or avoid counterfeit equipment, tampered hardware or software (HW/SW), vulnerable HW/SW, and/or operations security leaks?",
+              "description": "Does the supplier perform reviews and inspections and have safeguards to detect or avoid counterfeit equipment, tampered hardware or software (HW/SW), vulnerable HW/SW, and/or operations security leaks?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-15",
+              "code": "T26.S3.15",
+              "name": "Does the supplier use industry standard baselines (e.g., CIS, NES) when purchasing software?",
+              "description": "Does the supplier use industry standard baselines (e.g., CIS, NES) when purchasing software?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-16",
+              "code": "T26.S3.16",
+              "name": "Does the supplier comply with regulatory and legislative mandates?",
+              "description": "Does the supplier comply with regulatory and legislative mandates?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s3-17",
+              "code": "T26.S3.17",
+              "name": "Does the supplier have procedures for secure maintenance and upgrades following deployment?",
+              "description": "Does the supplier have procedures for secure maintenance and upgrades following deployment?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "code": "S4",
+      "name": "Section 4: Policies and Procedures",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 9,
+      "subcategories": [
+        {
+          "id": "table26-s4",
+          "code": "T26.S4",
+          "name": "Section 4: Policies and Procedures",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s4-1",
+              "code": "T26.S4.1",
+              "name": "Does the supplier have definitive policies and procedures that help minimize supply chain risk, including subsidiary sourcing needs?",
+              "description": "Does the supplier have definitive policies and procedures that help minimize supply chain risk, including subsidiary sourcing needs?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-2",
+              "code": "T26.S4.2",
+              "name": "Does the supplier define and manage system criticality and capabilities?",
+              "description": "Does the supplier define and manage system criticality and capabilities?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-3",
+              "code": "T26.S4.3",
+              "name": "Does everyone associated with the procurement (e.g., supplier, C-SCRM PMO) understand the potential threats to and risks in the subject supply chain?",
+              "description": "Does everyone associated with the procurement (e.g., supplier, C-SCRM PMO) understand the potential threats to and risks in the subject supply chain?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-4",
+              "code": "T26.S4.4",
+              "name": "What is the citizenship of all engaged personnel? If required, are all engaged personnel US citizens?",
+              "description": "What is the citizenship of all engaged personnel? If required, are all engaged personnel US citizens?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-5",
+              "code": "T26.S4.5",
+              "name": "Does the supplier have “insider threat” controls in place?",
+              "description": "Does the supplier have “insider threat” controls in place?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-6",
+              "code": "T26.S4.6",
+              "name": "Does the supplier verify and monitor all personnel who interact with the subject product, system, or service to know if they pose a threat?",
+              "description": "Does the supplier verify and monitor all personnel who interact with the subject product, system, or service to know if they pose a threat?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-7",
+              "code": "T26.S4.7",
+              "name": "Does the supplier use, record, and track risk mitigation activities throughout the life cycle of the product, system, or service?",
+              "description": "Does the supplier use, record, and track risk mitigation activities throughout the life cycle of the product, system, or service?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-8",
+              "code": "T26.S4.8",
+              "name": "Have all of the supplier’s personnel signed non- disclosure agreements?",
+              "description": "Have all of the supplier’s personnel signed non- disclosure agreements?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s4-9",
+              "code": "T26.S4.9",
+              "name": "Does the supplier allow its personnel or suppliers to remotely access environments?",
+              "description": "Does the supplier allow its personnel or suppliers to remotely access environments?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "code": "S5",
+      "name": "Section 5: Logistics (if applicable)",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 8,
+      "subcategories": [
+        {
+          "id": "table26-s5",
+          "code": "T26.S5",
+          "name": "Section 5: Logistics (if applicable)",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s5-1",
+              "code": "T26.S5.1",
+              "name": "Does the supplier have documented tracking and version controls in place?",
+              "description": "Does the supplier have documented tracking and version controls in place?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-2",
+              "code": "T26.S5.2",
+              "name": "Does the supplier analyze events (environmental or human-made) that could interrupt their supply chain?",
+              "description": "Does the supplier analyze events (environmental or human-made) that could interrupt their supply chain?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-3",
+              "code": "T26.S5.3",
+              "name": "Are the supplier’s completed parts controlled so that they are never left unattended or exposed to tampering?",
+              "description": "Are the supplier’s completed parts controlled so that they are never left unattended or exposed to tampering?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-4",
+              "code": "T26.S5.4",
+              "name": "Are the supplier’s completed parts locked up?",
+              "description": "Are the supplier’s completed parts locked up?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-5",
+              "code": "T26.S5.5",
+              "name": "Does the supplier have a process that ensures integrity when ordering inventory from their supplier?",
+              "description": "Does the supplier have a process that ensures integrity when ordering inventory from their supplier?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-6",
+              "code": "T26.S5.6",
+              "name": "Is the supplier’s inventory periodically inspected for exposure or tampering?",
+              "description": "Is the supplier’s inventory periodically inspected for exposure or tampering?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-7",
+              "code": "T26.S5.7",
+              "name": "Does the supplier have secure material destruction procedures for unused and scrap parts procured from their supplier?",
+              "description": "Does the supplier have secure material destruction procedures for unused and scrap parts procured from their supplier?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s5-8",
+              "code": "T26.S5.8",
+              "name": "Is there a documented chain of custody for the deployment of products and systems?",
+              "description": "Is there a documented chain of custody for the deployment of products and systems?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "code": "S6",
+      "name": "Section 6: Software Design and Development (if applicable)",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 10,
+      "subcategories": [
+        {
+          "id": "table26-s6",
+          "code": "T26.S6",
+          "name": "Section 6: Software Design and Development (if applicable)",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s6-1",
+              "code": "T26.S6.1",
+              "name": "Is the supplier familiar with all of their suppliers that will work on the design of the product/system?",
+              "description": "Is the supplier familiar with all of their suppliers that will work on the design of the product/system?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-2",
+              "code": "T26.S6.2",
+              "name": "Does the supplier align its SDLC to a secure software development standard (e.g., Microsoft Security Development Life Cycle)?",
+              "description": "Does the supplier align its SDLC to a secure software development standard (e.g., Microsoft Security Development Life Cycle)?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-3",
+              "code": "T26.S6.3",
+              "name": "Does the supplier perform all development onshore?",
+              "description": "Does the supplier perform all development onshore?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-4",
+              "code": "T26.S6.4",
+              "name": "Do only United States citizens have access to development environments?",
+              "description": "Do only United States citizens have access to development environments?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-5",
+              "code": "T26.S6.5",
+              "name": "Does the supplier provide cybersecurity training to its developers?",
+              "description": "Does the supplier provide cybersecurity training to its developers?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-6",
+              "code": "T26.S6.6",
+              "name": "Does the supplier use trustworthy software development tools?",
+              "description": "Does the supplier use trustworthy software development tools?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-7",
+              "code": "T26.S6.7",
+              "name": "Is the supplier using trustworthy information assurance controls to safeguard the development environment (e.g., secure network configurations, strict access controls, dynamic/static vulnerability management tools, penetration testing)?",
+              "description": "Is the supplier using trustworthy information assurance controls to safeguard the development environment (e.g., secure network configurations, strict access controls, dynamic/static vulnerability management tools, penetration testing)?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-8",
+              "code": "T26.S6.8",
+              "name": "Does the supplier validate open source software prior to use?",
+              "description": "Does the supplier validate open source software prior to use?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-9",
+              "code": "T26.S6.9",
+              "name": "Are the supplier’s software compilers continuously monitored?",
+              "description": "Are the supplier’s software compilers continuously monitored?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s6-10",
+              "code": "T26.S6.10",
+              "name": "Does the supplier have codified software test andconfiguration standards?",
+              "description": "Does the supplier have codified software test andconfiguration standards?\n\nResponse provided by: Supplier and Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "code": "S7",
+      "name": "Section 7: Product or Service-specific Security (if applicable, one questionnaire per product or service)",
+      "description": "C-SCRM assessment scoping questionnaire section.",
+      "requirements": 19,
+      "subcategories": [
+        {
+          "id": "table26-s7",
+          "code": "T26.S7",
+          "name": "Section 7: Product or Service-specific Security (if applicable, one questionnaire per product or service)",
+          "description": "Questions extracted from NIST SP 800-161 Rev.1 Update 1 Table 26.",
+          "requirements": [
+            {
+              "id": "t26-s7-1",
+              "code": "T26.S7.1",
+              "name": "Name of Product or Service Manufacturer",
+              "description": "Name of Product or Service Manufacturer\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-2",
+              "code": "T26.S7.2",
+              "name": "Product Type (i.e., hardware, software, service) Manufacturer",
+              "description": "Product Type (i.e., hardware, software, service) Manufacturer\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-3",
+              "code": "T26.S7.3",
+              "name": "Description of Product or Service Manufacturer",
+              "description": "Description of Product or Service Manufacturer\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-4",
+              "code": "T26.S7.4",
+              "name": "Part Number (if applicable) Manufacturer",
+              "description": "Part Number (if applicable) Manufacturer\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-5",
+              "code": "T26.S7.5",
+              "name": "Does the manufacturer implement formal enterprise roles and governance responsible for the implementation and oversight of secure engineering across the development or manufacturing process for product offerings?",
+              "description": "Does the manufacturer implement formal enterprise roles and governance responsible for the implementation and oversight of secure engineering across the development or manufacturing process for product offerings?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-6",
+              "code": "T26.S7.6",
+              "name": "Does the manufacturer have processes for product integrity that conform to standards such as ISO 27036 or SAE AS6171?",
+              "description": "Does the manufacturer have processes for product integrity that conform to standards such as ISO 27036 or SAE AS6171?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-7",
+              "code": "T26.S7.7",
+              "name": "Is the product compliant with Federal Information Processing Standards (FIPS) 140-2? If yes, please provide the FIPS level.",
+              "description": "Is the product compliant with Federal Information Processing Standards (FIPS) 140-2? If yes, please provide the FIPS level.\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-8",
+              "code": "T26.S7.8",
+              "name": "Does the manufacturer document and communicate security control requirements for your hardware, software, or solution offering?",
+              "description": "Does the manufacturer document and communicate security control requirements for your hardware, software, or solution offering?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-9",
+              "code": "T26.S7.9",
+              "name": "Has the manufacturer received fines or sanctions from any governmental entity or regulatory body in the past year related to delivery of the product or service? If yes, please describe.",
+              "description": "Has the manufacturer received fines or sanctions from any governmental entity or regulatory body in the past year related to delivery of the product or service? If yes, please describe.\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-10",
+              "code": "T26.S7.10",
+              "name": "Has the manufacturer experienced litigation claims over the past year related to the delivery of the product or service? If yes, please describe.",
+              "description": "Has the manufacturer experienced litigation claims over the past year related to the delivery of the product or service? If yes, please describe.\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-11",
+              "code": "T26.S7.11",
+              "name": "Does the manufacturer provide a bill of materials (BOM) for the products, service, or components, including all logic-bearing (e.g., readable, writable, programmable) hardware, firmware, and software?",
+              "description": "Does the manufacturer provide a bill of materials (BOM) for the products, service, or components, including all logic-bearing (e.g., readable, writable, programmable) hardware, firmware, and software?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-12",
+              "code": "T26.S7.12",
+              "name": "For hardware components included in the product or service offering, does the supplier only buy from original equipment manufacturers or licensed resellers?",
+              "description": "For hardware components included in the product or service offering, does the supplier only buy from original equipment manufacturers or licensed resellers?\n\nResponse provided by: Supplier",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-13",
+              "code": "T26.S7.13",
+              "name": "Does the manufacturer have a policy or process to ensure that none of your suppliers or third-party components are on any banned list?",
+              "description": "Does the manufacturer have a policy or process to ensure that none of your suppliers or third-party components are on any banned list?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-14",
+              "code": "T26.S7.14",
+              "name": "How does the manufacturer prevent malicious and/or counterfeit IP components in their product offerings or solutions?",
+              "description": "How does the manufacturer prevent malicious and/or counterfeit IP components in their product offerings or solutions?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-15",
+              "code": "T26.S7.15",
+              "name": "Does the manufacturer manage the integrity of IP for its products or service offerings?",
+              "description": "Does the manufacturer manage the integrity of IP for its products or service offerings?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-16",
+              "code": "T26.S7.16",
+              "name": "How does the manufacturer assess, prioritize, and remediate reported product or service vulnerabilities?",
+              "description": "How does the manufacturer assess, prioritize, and remediate reported product or service vulnerabilities?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-17",
+              "code": "T26.S7.17",
+              "name": "How does the manufacturer ensure that product or service vulnerabilities are remediated in a timely period to reduce the window of opportunity for attackers?",
+              "description": "How does the manufacturer ensure that product or service vulnerabilities are remediated in a timely period to reduce the window of opportunity for attackers?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-18",
+              "code": "T26.S7.18",
+              "name": "Does the manufacturer maintain and manage a Product Security Incident Reporting and Response program (PSRT)?",
+              "description": "Does the manufacturer maintain and manage a Product Security Incident Reporting and Response program (PSRT)?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            },
+            {
+              "id": "t26-s7-19",
+              "code": "T26.S7.19",
+              "name": "What is the manufacturer’s process for ensuring that customers and external entities (such as government agencies) are notified of an incident when their product or service is impacted?",
+              "description": "What is the manufacturer’s process for ensuring that customers and external entities (such as government agencies) are notified of an incident when their product or service is impacted?\n\nResponse provided by: Manufacturer",
+              "level": "1",
+              "verification": "Review documented questionnaire response and supporting evidence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

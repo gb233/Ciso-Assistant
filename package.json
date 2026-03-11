@@ -1,0 +1,52 @@
+{
+  "name": "ciso-assistant",
+  "version": "1.0.0",
+  "description": "CISO助手 - 面向CISO的安全框架评估与治理工作台",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "frameworks:audit": "node scripts/frameworks/audit-sammy.mjs",
+    "frameworks:pull-asvs": "python3 scripts/frameworks/pull-owasp-asvs.py",
+    "frameworks:pull-sammy": "python3 scripts/frameworks/pull-sammy-batch.py",
+    "frameworks:pull-sammy-one": "python3 scripts/frameworks/pull-sammy-batch.py --framework",
+    "frameworks:pull-ssdf": "python3 scripts/frameworks/pull-nist-ssdf.py",
+    "frameworks:pull-800-161": "python3 scripts/frameworks/pull-nist-800-161.py",
+    "frameworks:pull-cmmc": "python3 scripts/frameworks/pull-cmmc-l1-l2.py",
+    "frameworks:sync-index": "node scripts/frameworks/sync-index-counts.mjs",
+    "frameworks:derive": "node scripts/frameworks/derive-translations.mjs",
+    "frameworks:validate": "node scripts/frameworks/validate-translations.mjs",
+    "frameworks:sync-profiles": "node scripts/frameworks/sync-framework-profiles.mjs",
+    "frameworks:verify-profile-gate": "node scripts/frameworks/verify-profile-gate.mjs --mode=report",
+    "frameworks:verify-profile-one": "node scripts/frameworks/verify-profile-gate.mjs --mode=report",
+    "frameworks:sanitize": "node scripts/frameworks/sanitize-requirements.mjs",
+    "frameworks:migrate-rubrics": "node scripts/frameworks/migrate-rubrics-from-history.mjs",
+    "frameworks:verify-data-quality": "node scripts/frameworks/verify-data-quality.mjs",
+    "frameworks:verify-presentation-gate": "node scripts/frameworks/verify-presentation-gate.mjs --mode=ci",
+    "frameworks:verify-presentation-report": "node scripts/frameworks/verify-presentation-gate.mjs --mode=report",
+    "frameworks:verify-gate": "node scripts/frameworks/verify-extraction-gate.mjs",
+    "frameworks:verify-one": "node scripts/frameworks/verify-extraction-gate.mjs"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "lucide-react": "^0.294.0",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/http-cache-semantics": "^4.2.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "autoprefixer": "^10.4.16",
+    "bing-translate-api": "^4.2.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
