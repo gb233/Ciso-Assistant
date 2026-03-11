@@ -58,25 +58,6 @@
 | 31 | owasp-masvs-2.1 | OWASP Mobile Application Security Verification Standard 2.1 | 2.1 | global | 12 |
 | 32 | owasp-asvs-5.0 | OWASP Application Security Verification Standard 5.0 | 5.0.0 | global | 12 |
 
-## 你指定的 14 项框架（命名映射）
-
-| 序号 | 目标框架 | 当前映射 |
-|---|---|---|
-| 1 | PCI DSS 4.0.1 | 直接支持：`pci-dss`（v4.0.1） |
-| 2 | CMMC v2 | 直接支持：`cmmc-l1-l2`（v2 L1-L2） |
-| 3 | PSPF（Australia） | 近似覆盖：`secure-controls-framework` + `nist-800-53` |
-| 4 | GDPR（全文+检查清单） | 直接支持：`eu-gdpr`（Article-level） |
-| 5 | Essential Eight（Australia） | 近似覆盖：`cis-csc-v8` + `nist-csf-2.0` |
-| 6 | NYDFS 500（含 2023-11 修订） | 近似覆盖：`nist-csf-2.0` + `nis2` + `pci-dss` |
-| 7 | DORA（Act/RTS/ITS/GL） | 直接支持：`eu-dora`（Act 条文层；RTS/ITS/GL 可按需扩展） |
-| 8 | NIST AI RMF | 近似覆盖：`aima` + `eu-ai-act` |
-| 9 | NIST SP 800-53 rev5 | 直接支持：`nist-800-53`（Rev 5.2.0） |
-| 10 | France LPM/OIV | 近似覆盖：`nis2` + `eu-cyber-resilience-act` + `eu-dora` |
-| 11 | CCB CyberFundamentals Framework | 直接支持：`cyberfundamentals-20` |
-| 12 | NIST SP 800-66（HIPAA） | 近似覆盖：`nist-800-53` + `nist-800-171` |
-| 13 | HDS/HDH（France） | 近似覆盖：`iso27001-2022` + `iso-27002-2022` + `eu-gdpr` |
-| 14 | OWASP ASVS 4 | 直接支持：`owasp-asvs`（4.0.3） |
-
 ## 核心能力
 
 - 框架页即评估页：在控制项页直接设置评估状态和备注。
