@@ -21,6 +21,61 @@
 - 中国框架：`4`
 - 国际框架：`28`
 
+## 项目目录结构与作用
+
+```text
+.
+├─ src/
+│  ├─ app/
+│  │  ├─ frameworks/[id]/page.tsx                     # 框架主页面（左侧导航 + 右侧控制项）
+│  │  ├─ frameworks/[id]/report/page.tsx              # 评估报告页
+│  │  ├─ frameworks/[id]/requirements/[reqId]/page.tsx# 控制项详情页
+│  │  ├─ frameworks/[id]/assessment/page.tsx          # 旧评估入口（重定向到框架主页）
+│  │  ├─ api/ai-assistant/analyze/route.ts            # AI 评估助手后端接口
+│  │  └─ layout.tsx                                   # 全局布局与元信息
+│  ├─ components/
+│  │  ├─ FrameworkSidebar.tsx                         # 左侧框架导航
+│  │  ├─ RequirementList.tsx                          # 右侧控制项列表与筛选
+│  │  ├─ RequirementCard.tsx                          # 单条控制项评估卡片
+│  │  ├─ ReportClient.tsx                             # 报告页统计与导出
+│  │  ├─ AIAssessmentAssistant.tsx                    # AI 安全专家交互组件
+│  │  └─ framework-modes/*                            # default/sammy/regulation 三种展示模式
+│  ├─ hooks/useAssessment.ts                          # 评估状态与备注读写逻辑
+│  ├─ lib/assessment-model.ts                         # 统一评估状态模型定义
+│  ├─ lib/data-loader-server.ts                       # 服务端框架数据加载
+│  ├─ lib/data-loader.ts                              # 客户端框架数据加载
+│  └─ config/framework-display-profiles.json          # 框架展示 profile 配置
+├─ public/
+│  ├─ data/frameworks/                                # 框架数据（中英双语）
+│  │  ├─ index.json / index-en.json                   # 框架索引与统计
+│  │  └─ <framework-id>.json / <framework-id>-en.json
+│  ├─ favicon.ico                                     # 浏览器标签图标
+│  └─ site.webmanifest                                # PWA/站点元配置
+├─ scripts/frameworks/
+│  ├─ verify-data-quality.mjs                         # 数据质量门禁
+│  ├─ verify-presentation-gate.mjs                    # 展示逻辑门禁
+│  ├─ verify-profile-gate.mjs                         # profile 一致性门禁
+│  ├─ sync-index-counts.mjs                           # 索引计数同步
+│  └─ pull-*.py / sync-*.py                           # 官方源拉取与同步脚本
+├─ docs/
+│  ├─ schemas/requirement-v2.schema.json              # requirement-v2 结构规范
+│  └─ specs/                                          # requirement-v2 示例与样本
+├─ .github/workflows/                                 # CI 与仓库保护流程
+├─ package.json                                       # npm scripts 与依赖入口
+└─ README.md                                          # 项目说明
+```
+
+主要子文件说明（建议先读）：
+
+- `src/components/framework-modes/FrameworkModeLayout.tsx`：按框架类型切换右侧展示模式的核心入口。
+- `src/components/RequirementCard.tsx`：控制项评估状态（6档）与备注编辑的主交互组件。
+- `src/components/ReportClient.tsx`：评估进度、状态分布、导出与 AI 助手入口。
+- `src/hooks/useAssessment.ts`：评估数据存取和聚合计算，供框架页与报告页共用。
+- `src/lib/assessment-model.ts`：统一定义评估状态枚举、标签映射和统计辅助函数。
+- `src/config/framework-display-profiles.json`：声明每个框架使用何种展示语义（default/sammy/regulation）。
+- `scripts/frameworks/verify-profile-gate.mjs`：防止框架展示 profile 与数据结构失配。
+- `public/data/frameworks/index.json`：中文主索引（框架列表、版本、要求数）的基准文件。
+
 ## 支持的完整框架列表（32）
 
 | # | ID | 名称 | 版本 | 区域 | 要求数 |
