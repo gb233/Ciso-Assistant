@@ -76,6 +76,16 @@ function resolveAnthropicMessagesUrl(rawBase: string): string {
   return `${trimmed}/v1/messages`;
 }
 
+function shouldAttachAuthorizationForAnthropic(providerConfig: ProviderConfig): boolean {
+  const providerId = (providerConfig.providerId || '').trim().toLowerCase();
+  const apiBaseUrl = (providerConfig.apiBaseUrl || '').trim().toLowerCase();
+
+  // MiniMax Anthropic-compatible endpoint requires Authorization header.
+  if (providerId === 'minimax') return true;
+  if (apiBaseUrl.includes('minimaxi.com')) return true;
+  return false;
+}
+
 function resolveOllamaChatUrl(rawBase: string): string {
   const trimmed = rawBase.trim().replace(/\/+$/, '');
   if (trimmed.endsWith('/api/chat')) return trimmed;
@@ -189,7 +199,11 @@ async function callAnthropicMessages(
     'anthropic-version': '2023-06-01',
   };
   if (providerConfig.apiKey?.trim()) {
-    headers['x-api-key'] = providerConfig.apiKey.trim();
+    const apiKey = providerConfig.apiKey.trim();
+    headers['x-api-key'] = apiKey;
+    if (shouldAttachAuthorizationForAnthropic(providerConfig)) {
+      headers.Authorization = `Bearer ${apiKey}`;
+    }
   }
 
   const upstreamResponse = await fetch(resolveAnthropicMessagesUrl(providerConfig.apiBaseUrl), {
@@ -473,4 +487,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
-
