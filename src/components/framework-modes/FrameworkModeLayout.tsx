@@ -126,6 +126,15 @@ export default function FrameworkModeLayout({
               <RequirementList
                 requirements={filteredRequirements}
                 frameworkId={framework.id}
+                frameworkInfo={{
+                  id: framework.id,
+                  name: framework.name,
+                  fullName: framework.fullName,
+                  version: framework.version,
+                  type: framework.type,
+                  domain: framework.domain,
+                  presentationMode: presentationProfile.mode,
+                }}
                 enableAssessment={true}
                 totalRequirements={allRequirementsCount}
                 presentationProfile={presentationProfile}

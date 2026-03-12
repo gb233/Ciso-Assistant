@@ -18,9 +18,20 @@ interface RequirementSection {
   requirements: RequirementWithContext[];
 }
 
+interface RequirementListFrameworkInfo {
+  id: string;
+  name: string;
+  fullName?: string;
+  version: string;
+  type?: string;
+  domain?: string;
+  presentationMode?: string;
+}
+
 interface RequirementListProps {
   requirements: RequirementWithContext[];
   frameworkId: string;
+  frameworkInfo?: RequirementListFrameworkInfo;
   enableAssessment?: boolean;
   presentationProfile?: FrameworkPresentationProfile;
   totalRequirements?: number;
@@ -37,6 +48,7 @@ interface RequirementListProps {
 export default function RequirementList({
   requirements,
   frameworkId,
+  frameworkInfo,
   enableAssessment = false,
   presentationProfile,
   totalRequirements,
@@ -119,6 +131,13 @@ export default function RequirementList({
             <RequirementCard
               key={requirement.id}
               requirement={requirement}
+              frameworkInfo={
+                frameworkInfo || {
+                  id: frameworkId,
+                  name: frameworkId,
+                  version: '',
+                }
+              }
               assessment={enableAssessment ? getAssessment(requirement.id) : undefined}
               onAssessmentChange={enableAssessment ? handleAssessmentChange : undefined}
               enableAssessment={enableAssessment}

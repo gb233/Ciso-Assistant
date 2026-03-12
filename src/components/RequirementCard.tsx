@@ -9,8 +9,20 @@ import {
   type AssessmentData,
   type AssessmentStatus,
 } from '@/lib/assessment-model';
+import AIRequirementInterpreter from './AIRequirementInterpreter';
+
+interface FrameworkInfo {
+  id: string;
+  name: string;
+  fullName?: string;
+  version: string;
+  type?: string;
+  domain?: string;
+  presentationMode?: string;
+}
 
 interface RequirementCardProps {
+  frameworkInfo: FrameworkInfo;
   requirement: Requirement & {
     categoryName?: string;
     subcategoryName?: string;
@@ -32,6 +44,7 @@ const assessmentStatusTextColors: Record<AssessmentStatus, string> = {
 };
 
 export default function RequirementCard({
+  frameworkInfo,
   requirement,
   assessment,
   onAssessmentChange,
@@ -120,6 +133,11 @@ export default function RequirementCard({
     onAssessmentChange?.(requirement.id, { ...currentAssessment, notes: newNotes });
   };
 
+  const handleApplyInterpretationToNotes = (interpretation: string) => {
+    const merged = notes.trim() ? `${notes.trim()}\n\n${interpretation.trim()}` : interpretation.trim();
+    handleNotesChange(merged);
+  };
+
   return (
     <div className="border-b border-slate-200 p-4 hover:bg-cyan-50/30 transition-colors">
       <div className="flex-1 min-w-0">
@@ -145,6 +163,27 @@ export default function RequirementCard({
           </div>
 
           <div className="flex items-center gap-3">
+            {enableAssessment && (
+              <AIRequirementInterpreter
+                isZh={isZh}
+                framework={frameworkInfo}
+                requirement={{
+                  id: requirement.id,
+                  code: requirement.code,
+                  name: requirement.name,
+                  description: requirement.description,
+                  categoryName: requirement.categoryName,
+                  subcategoryName: requirement.subcategoryName,
+                  sourceRef: requirement.sourceRef,
+                  obligationStrength: requirement.obligationStrength,
+                  verification: requirement.verification,
+                  contentLanguage: requirement.contentLanguage,
+                  applicability: requirement.applicability,
+                }}
+                assessment={assessment}
+                onApplyToNotes={handleApplyInterpretationToNotes}
+              />
+            )}
             {enableAssessment && assessmentStatus !== 'UNASSESSED' ? (
               <div className="flex items-center gap-2">
                 <span className={`text-xs font-medium ${assessmentStatusTextColors[assessmentStatus]}`}>

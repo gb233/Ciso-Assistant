@@ -1,8 +1,17 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { AlertCircle, CheckCircle2, Loader2, Save, Sparkles, Settings2 } from 'lucide-react';
+import { AlertCircle, Loader2, Save, Settings2, Sparkles } from 'lucide-react';
 import type { AssessmentStatus } from '@/lib/assessment-model';
+import AIProviderConfigModal from './AIProviderConfigModal';
+import {
+  AI_PROVIDER_CONFIG_UPDATED_EVENT,
+  buildProviderConfigPayload,
+  isApiKeyRequired,
+  loadPersistedAIProviderConfig,
+  persistAIProviderConfig,
+  type AIProviderConfig,
+} from '@/lib/ai-provider-config';
 
 interface AssistantFrameworkInfo {
   id: string;
@@ -30,39 +39,6 @@ interface AssistantRequirement {
   notes: string;
 }
 
-type ProviderId =
-  | 'openai'
-  | 'anthropic'
-  | 'ollama'
-  | 'deepseek'
-  | 'minimax'
-  | 'kimi'
-  | 'generic';
-
-type ProviderProtocol = 'openai-compatible' | 'anthropic-messages' | 'ollama-chat';
-
-interface ProviderPreset {
-  id: ProviderId;
-  protocol: ProviderProtocol;
-  defaultApiBaseUrl: string;
-  defaultModel: string;
-  apiKeyRequired: boolean;
-  labelZh: string;
-  labelEn: string;
-  hintZh: string;
-  hintEn: string;
-}
-
-interface AssistantConfig {
-  providerId: ProviderId;
-  genericProtocol: ProviderProtocol;
-  apiBaseUrl: string;
-  apiKey: string;
-  model: string;
-  temperature: number;
-  maxTokens: number;
-}
-
 interface BusinessContext {
   industry: string;
   organizationSize: string;
@@ -80,11 +56,6 @@ interface AIAssessmentAssistantProps {
   summary: AssistantSummary;
   assessmentStatusDistribution: Record<AssessmentStatus, number>;
   assessedRequirements: AssistantRequirement[];
-}
-
-interface ConnectionState {
-  status: 'idle' | 'success' | 'error';
-  message: string;
 }
 
 function escapeHtml(input: string): string {
@@ -204,151 +175,7 @@ function markdownToHtml(markdown: string): string {
   return html.join('\n');
 }
 
-const PROVIDER_PRESETS: ProviderPreset[] = [
-  {
-    id: 'openai',
-    protocol: 'openai-compatible',
-    defaultApiBaseUrl: 'https://api.openai.com/v1',
-    defaultModel: 'gpt-4o-mini',
-    apiKeyRequired: true,
-    labelZh: 'OpenAI 官方',
-    labelEn: 'OpenAI Official',
-    hintZh: '官方 OpenAI 接口（也可替换为国内中转 OpenAI 兼容地址）。',
-    hintEn: 'Official OpenAI endpoint (or replace with OpenAI-compatible relay URL).',
-  },
-  {
-    id: 'anthropic',
-    protocol: 'anthropic-messages',
-    defaultApiBaseUrl: 'https://api.anthropic.com',
-    defaultModel: 'claude-3-5-sonnet-latest',
-    apiKeyRequired: true,
-    labelZh: 'Anthropic 官方',
-    labelEn: 'Anthropic Official',
-    hintZh: '官方 Claude Messages API。',
-    hintEn: 'Official Claude Messages API.',
-  },
-  {
-    id: 'ollama',
-    protocol: 'ollama-chat',
-    defaultApiBaseUrl: 'http://localhost:11434',
-    defaultModel: 'llama3.1',
-    apiKeyRequired: false,
-    labelZh: 'Ollama 本地',
-    labelEn: 'Ollama Local',
-    hintZh: '本地模型服务（默认不要求 API Key）。',
-    hintEn: 'Local model runtime (API key optional).',
-  },
-  {
-    id: 'deepseek',
-    protocol: 'openai-compatible',
-    defaultApiBaseUrl: 'https://api.deepseek.com/v1',
-    defaultModel: 'deepseek-chat',
-    apiKeyRequired: true,
-    labelZh: 'DeepSeek 官方',
-    labelEn: 'DeepSeek Official',
-    hintZh: 'DeepSeek 官方（OpenAI 兼容）。',
-    hintEn: 'DeepSeek official (OpenAI-compatible).',
-  },
-  {
-    id: 'minimax',
-    protocol: 'openai-compatible',
-    defaultApiBaseUrl: 'https://api.minimaxi.com/v1',
-    defaultModel: 'MiniMax-Text-01',
-    apiKeyRequired: true,
-    labelZh: 'MiniMax',
-    labelEn: 'MiniMax',
-    hintZh: 'MiniMax 或其兼容中转地址。',
-    hintEn: 'MiniMax official or compatible relay endpoint.',
-  },
-  {
-    id: 'kimi',
-    protocol: 'openai-compatible',
-    defaultApiBaseUrl: 'https://api.moonshot.cn/v1',
-    defaultModel: 'moonshot-v1-8k',
-    apiKeyRequired: true,
-    labelZh: 'Kimi (Moonshot)',
-    labelEn: 'Kimi (Moonshot)',
-    hintZh: 'Kimi 官方或 OpenAI 兼容中转。',
-    hintEn: 'Kimi official or OpenAI-compatible relay.',
-  },
-  {
-    id: 'generic',
-    protocol: 'openai-compatible',
-    defaultApiBaseUrl: 'https://api.openai.com/v1',
-    defaultModel: 'gpt-4o-mini',
-    apiKeyRequired: true,
-    labelZh: '通用适配',
-    labelEn: 'Generic Adapter',
-    hintZh: '用于自定义官方/中转平台，支持三种协议。',
-    hintEn: 'Use custom official/relay provider with selectable protocol.',
-  },
-];
-
-const PROTOCOL_OPTIONS: Array<{ value: ProviderProtocol; labelZh: string; labelEn: string }> = [
-  {
-    value: 'openai-compatible',
-    labelZh: 'OpenAI 兼容',
-    labelEn: 'OpenAI Compatible',
-  },
-  {
-    value: 'anthropic-messages',
-    labelZh: 'Anthropic Messages',
-    labelEn: 'Anthropic Messages',
-  },
-  {
-    value: 'ollama-chat',
-    labelZh: 'Ollama Chat',
-    labelEn: 'Ollama Chat',
-  },
-];
-
-const GENERIC_PROTOCOL_DEFAULTS: Record<ProviderProtocol, { apiBaseUrl: string; model: string; apiKeyRequired: boolean }> = {
-  'openai-compatible': {
-    apiBaseUrl: 'https://api.openai.com/v1',
-    model: 'gpt-4o-mini',
-    apiKeyRequired: true,
-  },
-  'anthropic-messages': {
-    apiBaseUrl: 'https://api.anthropic.com',
-    model: 'claude-3-5-sonnet-latest',
-    apiKeyRequired: true,
-  },
-  'ollama-chat': {
-    apiBaseUrl: 'http://localhost:11434',
-    model: 'llama3.1',
-    apiKeyRequired: false,
-  },
-};
-
-const ASSISTANT_CONFIG_KEY = 'ai-assessment-assistant-config-v2';
 const ASSISTANT_CONTEXT_KEY = 'ai-assessment-assistant-context-v1';
-
-function getProviderPreset(providerId: ProviderId): ProviderPreset {
-  return PROVIDER_PRESETS.find((provider) => provider.id === providerId) || PROVIDER_PRESETS[0];
-}
-
-function toProviderId(raw: string | undefined): ProviderId {
-  if (!raw) return 'openai';
-  const matched = PROVIDER_PRESETS.find((provider) => provider.id === raw);
-  return matched ? matched.id : 'openai';
-}
-
-function toProtocol(raw: string | undefined, fallback: ProviderProtocol): ProviderProtocol {
-  if (raw === 'openai-compatible' || raw === 'anthropic-messages' || raw === 'ollama-chat') {
-    return raw;
-  }
-  return fallback;
-}
-
-const DEFAULT_CONFIG: AssistantConfig = {
-  providerId: 'openai',
-  genericProtocol: 'openai-compatible',
-  apiBaseUrl: getProviderPreset('openai').defaultApiBaseUrl,
-  apiKey: '',
-  model: getProviderPreset('openai').defaultModel,
-  temperature: 0.2,
-  maxTokens: 1800,
-};
 
 const DEFAULT_CONTEXT: BusinessContext = {
   industry: '',
@@ -370,20 +197,6 @@ const GAP_STATUS_ORDER: Record<AssessmentStatus, number> = {
   UNASSESSED: 5,
 };
 
-function resolveProtocol(config: AssistantConfig): ProviderProtocol {
-  if (config.providerId === 'generic') {
-    return config.genericProtocol;
-  }
-  return getProviderPreset(config.providerId).protocol;
-}
-
-function isApiKeyRequired(config: AssistantConfig): boolean {
-  if (config.providerId === 'generic') {
-    return GENERIC_PROTOCOL_DEFAULTS[config.genericProtocol].apiKeyRequired;
-  }
-  return getProviderPreset(config.providerId).apiKeyRequired;
-}
-
 export default function AIAssessmentAssistant({
   isZh,
   framework,
@@ -391,47 +204,17 @@ export default function AIAssessmentAssistant({
   assessmentStatusDistribution,
   assessedRequirements,
 }: AIAssessmentAssistantProps) {
-  const [config, setConfig] = useState<AssistantConfig>(DEFAULT_CONFIG);
+  const [config, setConfig] = useState<AIProviderConfig>(() => loadPersistedAIProviderConfig());
   const [businessContext, setBusinessContext] = useState<BusinessContext>(DEFAULT_CONTEXT);
   const [isGenerating, setIsGenerating] = useState(false);
-  const [isTestingConnection, setIsTestingConnection] = useState(false);
   const [error, setError] = useState<string>('');
   const [analysisResult, setAnalysisResult] = useState<string>('');
   const [generatedAt, setGeneratedAt] = useState<string>('');
-  const [connectionState, setConnectionState] = useState<ConnectionState>({ status: 'idle', message: '' });
+  const [isConfigModalOpen, setIsConfigModalOpen] = useState(false);
 
   useEffect(() => {
     try {
-      const rawConfig = localStorage.getItem(ASSISTANT_CONFIG_KEY);
-      if (rawConfig) {
-        const parsed = JSON.parse(rawConfig) as Partial<AssistantConfig>;
-        const providerId = toProviderId(typeof parsed.providerId === 'string' ? parsed.providerId : undefined);
-        const preset = getProviderPreset(providerId);
-        const genericProtocol = toProtocol(
-          typeof parsed.genericProtocol === 'string' ? parsed.genericProtocol : undefined,
-          'openai-compatible'
-        );
-
-        setConfig((prev) => ({
-          ...prev,
-          providerId,
-          genericProtocol,
-          apiBaseUrl:
-            typeof parsed.apiBaseUrl === 'string' && parsed.apiBaseUrl.trim()
-              ? parsed.apiBaseUrl
-              : providerId === 'generic'
-                ? GENERIC_PROTOCOL_DEFAULTS[genericProtocol].apiBaseUrl
-                : preset.defaultApiBaseUrl,
-          model:
-            typeof parsed.model === 'string' && parsed.model.trim()
-              ? parsed.model
-              : providerId === 'generic'
-                ? GENERIC_PROTOCOL_DEFAULTS[genericProtocol].model
-                : preset.defaultModel,
-          temperature: typeof parsed.temperature === 'number' ? parsed.temperature : prev.temperature,
-          maxTokens: typeof parsed.maxTokens === 'number' ? parsed.maxTokens : prev.maxTokens,
-        }));
-      }
+      setConfig(loadPersistedAIProviderConfig());
 
       const rawBusinessContext = localStorage.getItem(ASSISTANT_CONTEXT_KEY);
       if (rawBusinessContext) {
@@ -448,8 +231,16 @@ export default function AIAssessmentAssistant({
     }
   }, []);
 
-  const activePreset = useMemo(() => getProviderPreset(config.providerId), [config.providerId]);
-  const activeProtocol = resolveProtocol(config);
+  useEffect(() => {
+    const syncConfig = () => setConfig(loadPersistedAIProviderConfig());
+    window.addEventListener(AI_PROVIDER_CONFIG_UPDATED_EVENT, syncConfig);
+    window.addEventListener('storage', syncConfig);
+    return () => {
+      window.removeEventListener(AI_PROVIDER_CONFIG_UPDATED_EVENT, syncConfig);
+      window.removeEventListener('storage', syncConfig);
+    };
+  }, []);
+
   const apiKeyRequired = isApiKeyRequired(config);
 
   const prioritizedGaps = useMemo(() => {
@@ -469,9 +260,7 @@ export default function AIAssessmentAssistant({
 
   const persistSettings = () => {
     try {
-      // API key is intentionally not persisted.
-      const { apiKey: _apiKey, ...safeConfig } = config;
-      localStorage.setItem(ASSISTANT_CONFIG_KEY, JSON.stringify(safeConfig));
+      persistAIProviderConfig(config);
       localStorage.setItem(ASSISTANT_CONTEXT_KEY, JSON.stringify(businessContext));
       setError('');
     } catch (saveError) {
@@ -493,75 +282,11 @@ export default function AIAssessmentAssistant({
     return null;
   };
 
-  const buildProviderConfigPayload = () => ({
-    providerId: config.providerId,
-    providerName: isZh ? activePreset.labelZh : activePreset.labelEn,
-    protocol: activeProtocol,
-    apiBaseUrl: config.apiBaseUrl.trim(),
-    apiKey: config.apiKey.trim(),
-    model: config.model.trim(),
-    temperature: config.temperature,
-    maxTokens: config.maxTokens,
-    requiresApiKey: apiKeyRequired,
-  });
-
-  const handleTestConnection = async () => {
-    const validationError = validateProviderConfig();
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
-
-    setError('');
-    setConnectionState({ status: 'idle', message: '' });
-    setIsTestingConnection(true);
-
-    try {
-      const response = await fetch('/api/ai-assistant/analyze/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          requestType: 'connection-test',
-          language: isZh ? 'zh' : 'en',
-          providerConfig: buildProviderConfigPayload(),
-        }),
-      });
-
-      const payload = await response.json();
-      if (!response.ok) {
-        throw new Error(payload?.error || (isZh ? '连接测试失败。' : 'Connection test failed.'));
-      }
-
-      const message =
-        typeof payload?.message === 'string' && payload.message.trim()
-          ? payload.message
-          : isZh
-            ? '连接成功。'
-            : 'Connection successful.';
-
-      setConnectionState({ status: 'success', message });
-    } catch (testError) {
-      console.error('AI provider connection test failed', testError);
-      setConnectionState({
-        status: 'error',
-        message:
-          testError instanceof Error
-            ? testError.message
-            : isZh
-              ? '连接测试失败，请检查配置后重试。'
-              : 'Connection test failed. Please verify the settings.',
-      });
-    } finally {
-      setIsTestingConnection(false);
-    }
-  };
-
   const handleGenerate = async () => {
     const validationError = validateProviderConfig();
     if (validationError) {
       setError(validationError);
+      setIsConfigModalOpen(true);
       return;
     }
 
@@ -577,7 +302,7 @@ export default function AIAssessmentAssistant({
         body: JSON.stringify({
           requestType: 'analysis',
           language: isZh ? 'zh' : 'en',
-          providerConfig: buildProviderConfigPayload(),
+          providerConfig: buildProviderConfigPayload(config, isZh),
           framework,
           reportSummary: summary,
           assessmentStatusDistribution,
@@ -827,187 +552,37 @@ export default function AIAssessmentAssistant({
               : 'Generate phased and actionable plans from current assessment results and business context.'}
           </p>
         </div>
-        <button
-          type="button"
-          onClick={persistSettings}
-          className="inline-flex items-center px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
-        >
-          <Save className="w-4 h-4 mr-2" />
-          {isZh ? '保存配置' : 'Save'}
-        </button>
-      </div>
-
-      <div className="rounded-lg border border-gray-200 p-4 space-y-4">
-        <div className="text-sm font-medium text-gray-800 flex items-center gap-2">
-          <Settings2 className="w-4 h-4 text-gray-500" />
-          {isZh ? 'AI 接入配置' : 'AI Provider Configuration'}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <label className="text-sm text-gray-700">
-            <span className="block mb-1">{isZh ? '提供商' : 'Provider'}</span>
-            <select
-              value={config.providerId}
-              onChange={(event) => {
-                const providerId = toProviderId(event.target.value);
-                const preset = getProviderPreset(providerId);
-
-                setConfig((prev) => ({
-                  ...prev,
-                  providerId,
-                  apiBaseUrl:
-                    providerId === 'generic'
-                      ? GENERIC_PROTOCOL_DEFAULTS[prev.genericProtocol].apiBaseUrl
-                      : preset.defaultApiBaseUrl,
-                  model:
-                    providerId === 'generic'
-                      ? GENERIC_PROTOCOL_DEFAULTS[prev.genericProtocol].model
-                      : preset.defaultModel,
-                  apiKey: '',
-                }));
-
-                setConnectionState({ status: 'idle', message: '' });
-                setError('');
-              }}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            >
-              {PROVIDER_PRESETS.map((provider) => (
-                <option key={provider.id} value={provider.id}>
-                  {isZh ? provider.labelZh : provider.labelEn}
-                </option>
-              ))}
-            </select>
-            <span className="text-xs text-gray-500 mt-1 block">
-              {isZh ? activePreset.hintZh : activePreset.hintEn}
-            </span>
-          </label>
-
-          {config.providerId === 'generic' && (
-            <label className="text-sm text-gray-700">
-              <span className="block mb-1">{isZh ? '协议类型' : 'Protocol'}</span>
-              <select
-                value={config.genericProtocol}
-                onChange={(event) => {
-                  const protocol = toProtocol(event.target.value, config.genericProtocol);
-                  const defaults = GENERIC_PROTOCOL_DEFAULTS[protocol];
-                  setConfig((prev) => ({
-                    ...prev,
-                    genericProtocol: protocol,
-                    apiBaseUrl: defaults.apiBaseUrl,
-                    model: defaults.model,
-                    apiKey: defaults.apiKeyRequired ? prev.apiKey : '',
-                  }));
-                  setConnectionState({ status: 'idle', message: '' });
-                  setError('');
-                }}
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-              >
-                {PROTOCOL_OPTIONS.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {isZh ? option.labelZh : option.labelEn}
-                  </option>
-                ))}
-              </select>
-            </label>
-          )}
-
-          <label className="text-sm text-gray-700">
-            <span className="block mb-1">{isZh ? 'API 地址' : 'API Base URL'}</span>
-            <input
-              value={config.apiBaseUrl}
-              onChange={(event) => setConfig((prev) => ({ ...prev, apiBaseUrl: event.target.value }))}
-              placeholder={activePreset.defaultApiBaseUrl}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </label>
-
-          <label className="text-sm text-gray-700">
-            <span className="block mb-1">{isZh ? '模型' : 'Model'}</span>
-            <input
-              value={config.model}
-              onChange={(event) => setConfig((prev) => ({ ...prev, model: event.target.value }))}
-              placeholder={activePreset.defaultModel}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </label>
-
-          <label className="text-sm text-gray-700 md:col-span-2">
-            <span className="block mb-1">
-              API Key
-              {apiKeyRequired ? '' : isZh ? '（可选）' : ' (Optional)'}
-            </span>
-            <input
-              type="password"
-              value={config.apiKey}
-              onChange={(event) => setConfig((prev) => ({ ...prev, apiKey: event.target.value }))}
-              placeholder={apiKeyRequired ? 'sk-...' : isZh ? '本地模型可留空' : 'Can be empty for local models'}
-              autoComplete="off"
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-            <span className="text-xs text-gray-500 mt-1 block">
-              {isZh
-                ? '安全提示：API Key 仅保存在当前页面内存中，不会写入本地存储。'
-                : 'Security note: API key stays in memory for this page and is not persisted.'}
-            </span>
-          </label>
-
-          <label className="text-sm text-gray-700">
-            <span className="block mb-1">Temperature</span>
-            <input
-              type="number"
-              min={0}
-              max={1}
-              step={0.1}
-              value={config.temperature}
-              onChange={(event) => {
-                const value = Number(event.target.value);
-                setConfig((prev) => ({ ...prev, temperature: Number.isFinite(value) ? value : prev.temperature }));
-              }}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </label>
-          <label className="text-sm text-gray-700">
-            <span className="block mb-1">{isZh ? '最大输出 Token' : 'Max Output Tokens'}</span>
-            <input
-              type="number"
-              min={400}
-              max={4000}
-              step={100}
-              value={config.maxTokens}
-              onChange={(event) => {
-                const value = Number(event.target.value);
-                setConfig((prev) => ({ ...prev, maxTokens: Number.isFinite(value) ? value : prev.maxTokens }));
-              }}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </label>
-        </div>
-
-        <div className="flex items-center flex-wrap gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             type="button"
-            onClick={handleTestConnection}
-            disabled={isTestingConnection}
-            className="inline-flex items-center px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-60 disabled:cursor-not-allowed"
+            onClick={() => setIsConfigModalOpen(true)}
+            className="inline-flex items-center px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
           >
-            {isTestingConnection ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <CheckCircle2 className="w-4 h-4 mr-2" />}
-            {isTestingConnection
-              ? isZh
-                ? '测试中...'
-                : 'Testing...'
-              : isZh
-                ? '测试连接'
-                : 'Test Connection'}
+            <Settings2 className="w-4 h-4 mr-2" />
+            {isZh ? 'AI配置' : 'AI Config'}
           </button>
+          <button
+            type="button"
+            onClick={persistSettings}
+            className="inline-flex items-center px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+          >
+            <Save className="w-4 h-4 mr-2" />
+            {isZh ? '保存输入' : 'Save Inputs'}
+          </button>
+        </div>
+      </div>
 
-          {connectionState.status !== 'idle' && (
-            <span
-              className={`text-sm ${
-                connectionState.status === 'success' ? 'text-green-700' : 'text-red-700'
-              }`}
-            >
-              {connectionState.message}
-            </span>
-          )}
+      <div className="rounded-lg border border-gray-200 bg-slate-50 p-4">
+        <div className="text-sm text-slate-700 flex flex-wrap items-center gap-3">
+          <span className="inline-flex items-center rounded border border-slate-300 bg-white px-2.5 py-1 text-xs">
+            {isZh ? '提供商' : 'Provider'}: {config.providerId}
+          </span>
+          <span className="inline-flex items-center rounded border border-slate-300 bg-white px-2.5 py-1 text-xs">
+            Model: {config.model || '-'}
+          </span>
+          <span className="text-xs text-slate-500">
+            {isZh ? '报告生成与控制项解读共享同一套 AI 配置。' : 'Report generation and control interpretation share the same AI configuration.'}
+          </span>
         </div>
       </div>
 
@@ -1146,6 +721,18 @@ export default function AIAssessmentAssistant({
           <pre className="text-sm text-gray-800 whitespace-pre-wrap leading-6 font-sans">{analysisResult}</pre>
         </div>
       )}
+
+      <AIProviderConfigModal
+        isZh={isZh}
+        isOpen={isConfigModalOpen}
+        initialConfig={config}
+        onClose={() => setIsConfigModalOpen(false)}
+        onSave={(next) => {
+          setConfig(next);
+          persistAIProviderConfig(next);
+          setError('');
+        }}
+      />
     </div>
   );
 }
